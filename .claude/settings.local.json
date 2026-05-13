@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mv /c/Users/stacy/projects/thegem-nextjs/app/\\\\[pillar\\\\]/page.txt /c/Users/stacy/projects/thegem-nextjs/app/\\\\[pillar\\\\]/page.tsx)",
+      "Bash(mv /c/Users/stacy/projects/thegem-nextjs/.env.txt /c/Users/stacy/projects/thegem-nextjs/.env.local)",
+      "Bash(git -C /c/Users/stacy/projects/thegem-nextjs status)",
+      "Bash(gh auth *)",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}

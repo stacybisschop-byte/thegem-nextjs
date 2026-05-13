@@ -1,0 +1,137 @@
+import { client } from './sanity'
+import type { Article, ArticleCard } from './sanity'
+
+// ---- Fragment: card fields (used everywhere we show a card/list item) --------
+const CARD_FIELDS = `
+  _id,
+  title,
+  slug,
+  pillar,
+  metaDescription,
+  heroImage { asset, hotspot, alt, caption },
+  kickerExtra,
+  publishedAt,
+  "readMin": round(length(body) / 1100),
+  featured,
+  featuredOrder
+`
+
+// ---- Fragment: full article --------------------------------------------------
+const FULL_ARTICLE_FIELDS = `
+  _id,
+  title,
+  slug,
+  pillar,
+  author,
+  published,
+  publishedAt,
+  lastReviewedAt,
+  metaTitle,
+  metaDescription,
+  heroImage { asset, hotspot, alt, caption },
+  kickerExtra,
+  body,
+  affiliateDisclosure
+`
+
+// ---- Homepage ----------------------------------------------------------------
+
+export interface HomePageData {
+  latest: ArticleCard[]        // up to 3 featured articles for the Latest grid
+  stories: ArticleCard[]       // up to 10 stories for the pillar list
+  guides: ArticleCard[]        // up to 10 guides for the pillar list
+  style: ArticleCard[]         // up to 5 style articles for the Style Edit block
+  recent: ArticleCard[]        // up to 4 recent articles for the Recent grid
+  storiesHeadline: ArticleCard | null
+  guidesHeadline: ArticleCard | null
+}
+
+export async function getHomePageData(): Promise<HomePageData> {
+  const data = await client.fetch<HomePageData>(
+    `{
+      "latest": *[_type == "article" && published == true && featured == true]
+               | order(featuredOrder asc)[0...3] { ${CARD_FIELDS} },
+
+      "storiesHeadline": *[_type == "article" && published == true && pillar == "Stories" && featured != true]
+               | order(publishedAt desc)[0] { ${CARD_FIELDS} },
+
+      "guidesHeadline": *[_type == "article" && published == true && pillar == "Guides" && featured != true]
+               | order(publishedAt desc)[0] { ${CARD_FIELDS} },
+
+      "stories": *[_type == "article" && published == true && pillar == "Stories"]
+               | order(publishedAt desc)[0...10] { ${CARD_FIELDS} },
+
+      "guides": *[_type == "article" && published == true && pillar == "Guides"]
+               | order(publishedAt desc)[0...10] { ${CARD_FIELDS} },
+
+      "style": *[_type == "article" && published == true && pillar == "Style"]
+               | order(publishedAt desc)[0...5] { ${CARD_FIELDS} },
+
+      "recent": *[_type == "article" && published == true && featured != true]
+               | order(publishedAt desc)[0...4] { ${CARD_FIELDS} },
+    }`,
+    {},
+    { next: { revalidate: 60 } }
+  )
+  return data
+}
+
+// ---- Article page -----------------------------------------------------------
+
+export async function getArticle(
+  pillar: string,
+  slug: string
+): Promise<Article | null> {
+  const pillarCapitalised = pillar.charAt(0).toUpperCase() + pillar.slice(1)
+  const data = await client.fetch<Article | null>(
+    `*[_type == "article" && slug.current == $slug && pillar == $pillar && published == true][0] {
+      ${FULL_ARTICLE_FIELDS}
+    }`,
+    { slug, pillar: pillarCapitalised },
+    { next: { revalidate: 60 } }
+  )
+  return data ?? null
+}
+
+// ---- Static params ----------------------------------------------------------
+
+export async function getAllArticleSlugs(): Promise<
+  Array<{ pillar: string; slug: string }>
+> {
+  const articles = await client.fetch<Array<{ pillar: string; slug: { current: string } }>>(
+    `*[_type == "article" && published == true] { pillar, slug }`,
+    {},
+    { cache: 'force-cache' }
+  )
+  return articles.map((a) => ({
+    pillar: a.pillar.toLowerCase(),
+    slug: a.slug.current,
+  }))
+}
+
+// ---- Related articles -------------------------------------------------------
+
+export async function getRelatedArticles(
+  currentId: string,
+  pillar: string,
+  count = 3
+): Promise<ArticleCard[]> {
+  return client.fetch<ArticleCard[]>(
+    `*[_type == "article" && published == true && pillar == $pillar && _id != $currentId]
+      | order(publishedAt desc)[0...$count] { ${CARD_FIELDS} }`,
+    { currentId, pillar, count },
+    { next: { revalidate: 60 } }
+  )
+}
+
+// ---- Pillar index -----------------------------------------------------------
+
+export async function getPillarArticles(pillar: string): Promise<ArticleCard[]> {
+  const pillarCapitalised = pillar.charAt(0).toUpperCase() + pillar.slice(1)
+  return client.fetch<ArticleCard[]>(
+    `*[_type == "article" && published == true && pillar == $pillar]
+      | order(publishedAt desc) { ${CARD_FIELDS} }`,
+    { pillar: pillarCapitalised },
+    { next: { revalidate: 60 } }
+  )
+}
