@@ -28,5 +28,8 @@ yarn-error.log*
 # vercel
 .vercel
 
+# claude code (per-machine)
+.claude/settings.local.json
+
 # typescript
 *.tsbuildinfo
