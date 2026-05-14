@@ -17,6 +17,12 @@ export const metadata: Metadata = {
     type: 'website',
   },
   twitter: { card: 'summary_large_image' },
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    apple: '/apple-touch-icon.svg',
+  },
 }
 
 const orgSchema = {
@@ -24,15 +30,10 @@ const orgSchema = {
   '@type': 'Organization',
   name: 'The Gem',
   url: 'https://thegem.press',
-  description:
-    'Editorial jewellery publication. For people who buy beautiful things and want to know the story behind them.',
-  logo: 'https://thegem.press/logo.png',
+  description: 'Editorial jewellery publication. For people who buy beautiful things and want to know the story behind them.',
+  logo: 'https://thegem.press/favicon.svg',
   foundingDate: '2026',
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'London',
-    addressCountry: 'GB',
-  },
+  address: { '@type': 'PostalAddress', addressLocality: 'London', addressCountry: 'GB' },
   sameAs: [],
 }
 

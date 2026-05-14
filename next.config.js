@@ -1,4 +1,55 @@
 /** @type {import('next').NextConfig} */
+
+const ContentSecurityPolicy = [
+  "default-src 'self'",
+  // Next.js needs unsafe-inline for its runtime; JSON-LD script tags also need it
+  "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
+  // Google Fonts CSS + Fathom analytics (add your Fathom script domain when wiring)
+  "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+  "font-src 'self' https://fonts.gstatic.com data:",
+  // Sanity CDN + Unsplash placeholders (remove unsplash once real images are in)
+  "img-src 'self' data: blob: https://cdn.sanity.io https://images.unsplash.com",
+  // Sanity API + Vercel vitals
+  "connect-src 'self' https://*.api.sanity.io https://vitals.vercel-insights.com https://cdn.sanity.io",
+  "media-src 'self'",
+  // Sanity Studio needs to frame some Sanity-hosted content
+  "frame-src 'self' https://www.sanity.io https://*.sanity.studio",
+  "frame-ancestors 'none'",
+  "base-uri 'self'",
+  "form-action 'self'",
+].join('; ')
+
+const securityHeaders = [
+  {
+    key: 'Content-Security-Policy',
+    value: ContentSecurityPolicy,
+  },
+  {
+    key: 'Strict-Transport-Security',
+    value: 'max-age=63072000; includeSubDomains; preload',
+  },
+  {
+    key: 'X-Frame-Options',
+    value: 'DENY',
+  },
+  {
+    key: 'X-Content-Type-Options',
+    value: 'nosniff',
+  },
+  {
+    key: 'Referrer-Policy',
+    value: 'strict-origin-when-cross-origin',
+  },
+  {
+    key: 'Permissions-Policy',
+    value: 'camera=(), microphone=(), geolocation=(), interest-cohort=()',
+  },
+  {
+    key: 'X-DNS-Prefetch-Control',
+    value: 'on',
+  },
+]
+
 const nextConfig = {
   images: {
     remotePatterns: [
@@ -7,10 +58,18 @@ const nextConfig = {
     ],
   },
 
+  async headers() {
+    return [
+      {
+        // Apply security headers to all routes except /studio
+        // The Studio is a Sanity-controlled iframe environment with its own needs
+        source: '/((?!studio).*)',
+        headers: securityHeaders,
+      },
+    ]
+  },
+
   async redirects() {
-    // 301 redirects from the old gemstonesinsider.com URL structure.
-    // Full list in /redirects.js — drop that file in this directory to activate.
-    // Format: [{ source: '/old-path', destination: '/new-path', permanent: true }]
     try {
       const redirectMap = require('./redirects')
       return redirectMap
