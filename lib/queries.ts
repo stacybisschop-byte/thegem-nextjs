@@ -11,8 +11,6 @@ const CARD_FIELDS = `
   heroImage { asset, hotspot, alt, caption },
   heroImageUrl,
   heroImageAlt,
-  heroImageUrl,
-  heroImageAlt,
   kickerExtra,
   publishedAt,
   "readMin": round(length(body) / 1100),
