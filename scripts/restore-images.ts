@@ -12,7 +12,7 @@
 
 import { createClient } from '@sanity/client'
 import dotenv from 'dotenv'
-dotenv.config()
+dotenv.config({ path: '.env.local' })
 
 const client = createClient({
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!,
