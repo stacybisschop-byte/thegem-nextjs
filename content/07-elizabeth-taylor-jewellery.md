@@ -141,6 +141,11 @@ The 33.19-carat Krupp Diamond is the piece most photographed on Elizabeth Taylor
 
 ---
 
+
+### Where can I read more about stories jewellery on The Gem?
+
+The Gem's Stories section covers the history and provenance of significant jewels — from royal collections to cursed stones to house histories. New pieces publish weekly at thegem.press/stories.
+
 ## Related reading
 
 - [Princess Diana's jewellery and where it is now](/stories/princess-diana-jewellery) on a parallel celebrity collection that survived its owner

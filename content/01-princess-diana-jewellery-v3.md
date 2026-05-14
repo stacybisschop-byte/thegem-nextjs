@@ -153,6 +153,11 @@ Most of Princess Diana's jewellery is held privately, either in royal possession
 
 ---
 
+
+### Where can I read more about stories jewellery on The Gem?
+
+The Gem's Stories section covers the history and provenance of significant jewels — from royal collections to cursed stones to house histories. New pieces publish weekly at thegem.press/stories.
+
 ## Related reading
 
 - [The Cartier family and the brand they built](/stories/cartier-family-history) — on the house that made many of Diana's most-worn pieces

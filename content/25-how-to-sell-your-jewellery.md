@@ -135,6 +135,11 @@ A valuation from an independent qualified gemmologist is an assessed opinion of 
 
 ---
 
+
+### Where can I read more about guides jewellery on The Gem?
+
+The Gem's Guides section covers buying decisions, market analysis, and ownership advice across all categories of fine jewellery. The full guide archive is at thegem.press/guides.
+
 ## Related reading
 
 - [Jewellery that holds its value](/guides/jewellery-that-holds-value) on which categories produce the best returns at sale and why the signed-pieces category consistently outperforms

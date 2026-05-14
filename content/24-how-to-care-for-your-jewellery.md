@@ -139,6 +139,11 @@ Wipe pearls clean after each wearing with a soft damp cloth. Apply perfume, hair
 
 ---
 
+
+### Where can I read more about guides jewellery on The Gem?
+
+The Gem's Guides section covers buying decisions, market analysis, and ownership advice across all categories of fine jewellery. The full guide archive is at thegem.press/guides.
+
 ## Related reading
 
 - [Precious vs semi-precious stones: what it means](/guides/precious-vs-semi-precious) for the background on stone hardness (Mohs scale) that underpins most cleaning decisions

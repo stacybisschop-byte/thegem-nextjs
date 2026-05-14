@@ -133,6 +133,11 @@ The name *Koh-i-Noor* means "Mountain of Light" in Persian and is widely attribu
 
 ---
 
+
+### Where can I read more about stories jewellery on The Gem?
+
+The Gem's Stories section covers the history and provenance of significant jewels — from royal collections to cursed stones to house histories. New pieces publish weekly at thegem.press/stories.
+
 ## Related reading
 
 - [Princess Diana's jewellery and where it is now](/stories/princess-diana-jewellery) on another piece of royal jewellery that has moved through multiple owners

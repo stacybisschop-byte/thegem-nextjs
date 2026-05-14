@@ -152,6 +152,11 @@ In the UK, the [College of Arms](https://www.college-of-arms.gov.uk) in London i
 
 ---
 
+
+### Where can I read more about guides jewellery on The Gem?
+
+The Gem's Guides section covers buying decisions, market analysis, and ownership advice across all categories of fine jewellery. The full guide archive is at thegem.press/guides.
+
 ## Related reading
 
 - [Where to buy vintage jewellery](/guides/where-to-buy-vintage-jewellery) for vintage signet rings, which are almost always the better answer than new at most price points

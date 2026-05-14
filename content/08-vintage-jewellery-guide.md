@@ -148,6 +148,11 @@ A good vintage engagement ring can be acquired for as little as £500 (smaller E
 
 ---
 
+
+### Where can I read more about guides jewellery on The Gem?
+
+The Gem's Guides section covers buying decisions, market analysis, and ownership advice across all categories of fine jewellery. The full guide archive is at thegem.press/guides.
+
 ## Related reading
 
 - [Engagement ring stones beyond diamond](/guides/engagement-ring-stones) for buyers considering alternative stones, many of which look particularly well in vintage settings

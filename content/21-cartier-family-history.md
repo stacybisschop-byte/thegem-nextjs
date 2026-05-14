@@ -137,6 +137,11 @@ The Cartier New York flagship is at 653 Fifth Avenue, at the corner of 52nd Stre
 
 ---
 
+
+### Where can I read more about stories jewellery on The Gem?
+
+The Gem's Stories section covers the history and provenance of significant jewels — from royal collections to cursed stones to house histories. New pieces publish weekly at thegem.press/stories.
+
 ## Related reading
 
 - [Tiffany & Co: A History](/stories/tiffany-and-co-history) — the parallel story of the New York house that became Cartier's greatest rival in the American market

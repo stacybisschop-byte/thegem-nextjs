@@ -165,6 +165,11 @@ The 1961 film *Breakfast at Tiffany's*, based on Truman Capote's 1958 novella, w
 
 ---
 
+
+### Where can I read more about stories jewellery on The Gem?
+
+The Gem's Stories section covers the history and provenance of significant jewels — from royal collections to cursed stones to house histories. New pieces publish weekly at thegem.press/stories.
+
 ## Related reading
 
 - [The Cartier family history](/stories/cartier-family-history) for the parallel French story of the other great twentieth-century jewellery dynasty

@@ -5,7 +5,73 @@ import { urlForImage, articleHref } from '@/lib/sanity'
 import ArticleCard from '@/components/ArticleCard'
 import Newsletter from '@/components/Newsletter'
 
-export const revalidate = 60 // ISR: revalidate every minute
+export const revalidate = 60
+
+// ── Homepage FAQPage schema ────────────────────────────────────────────────
+// These questions answer the brand + modifier searches AI systems process.
+// Brand name in every answer so cited snippets contain unambiguous attribution.
+const homepageFaqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What is The Gem?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The Gem is an independent editorial jewellery publication based in London, covering the history, culture, and commerce of fine jewellery. The Gem was founded in 2026 by Florence, a magazine writer and editor with fifteen years of experience.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Who writes The Gem?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The Gem is edited and primarily written by Florence, a magazine writer and editor based in London. Florence has fifteen years of experience in features journalism and specialises in jewellery history, provenance, and buying guides.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What topics does The Gem cover?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The Gem covers three areas: Stories (long-form jewellery history and provenance, from royal jewels to celebrity collections), Guides (practical buying guides, market analysis, and ownership advice), and Style (how to wear jewellery and build a wardrobe in 2026).',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is The Gem free to read?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. All content on The Gem is free to read. The Gem is supported by affiliate commissions on buying guides — affiliate relationships are disclosed on every article that contains them.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Does The Gem have a newsletter?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. The Gem publishes a weekly newsletter every Friday. Each issue contains one long piece worth reading, three things worth knowing, and one thing worth buying. It is free to subscribe.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Does The Gem cover men\'s jewellery?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. The Gem covers jewellery for men and women. The Gem\'s Style section includes guides on wearing jewellery as a man in 2026, and the Guides section includes a dedicated piece on the best signet rings for men.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Are The Gem\'s buying guides independent?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. The Gem\'s editorial is independent. Buying guides recommend products and retailers the editor would recommend to a friend, regardless of commercial relationships. Where affiliate links are used, they are disclosed clearly in the article.',
+      },
+    },
+  ],
+}
 
 export default async function HomePage() {
   const { latest, stories, guides, style, recent, storiesHeadline, guidesHeadline } =
@@ -13,17 +79,16 @@ export default async function HomePage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageFaqSchema) }}
+      />
+
       {/* ── Latest Grid ─────────────────────────────────────────────── */}
       <section className="latest-grid">
-        {latest[0] && (
-          <ArticleCard article={latest[0]} size="large" showExcerpt />
-        )}
-        {latest[1] && (
-          <ArticleCard article={latest[1]} size="medium" showExcerpt />
-        )}
-        {latest[2] && (
-          <ArticleCard article={latest[2]} size="medium" showExcerpt />
-        )}
+        {latest[0] && <ArticleCard article={latest[0]} size="large" showExcerpt />}
+        {latest[1] && <ArticleCard article={latest[1]} size="medium" showExcerpt />}
+        {latest[2] && <ArticleCard article={latest[2]} size="medium" showExcerpt />}
       </section>
 
       {/* ── Editorial Break ─────────────────────────────────────────── */}
@@ -43,27 +108,23 @@ export default async function HomePage() {
       </div>
 
       <section className="pillar-pair">
-        {/* Stories */}
         <div className="pillar-block">
           {storiesHeadline && (
             <>
-              <div className="pillar-label">The Stories · Cursed Stones</div>
+              <div className="pillar-label">The Stories</div>
               <Link href={articleHref(storiesHeadline)} className="headline-card">
                 {storiesHeadline.heroImage && (
                   <div className="image-wrap">
                     <Image
                       src={urlForImage(storiesHeadline.heroImage).width(800).height(533).url()}
                       alt={storiesHeadline.heroImage.alt ?? storiesHeadline.title}
-                      width={800}
-                      height={533}
+                      width={800} height={533}
                       style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                     />
                   </div>
                 )}
                 <h3 dangerouslySetInnerHTML={{ __html: storiesHeadline.title }} />
-                {storiesHeadline.metaDescription && (
-                  <p>{storiesHeadline.metaDescription}</p>
-                )}
+                {storiesHeadline.metaDescription && <p>{storiesHeadline.metaDescription}</p>}
               </Link>
             </>
           )}
@@ -79,27 +140,23 @@ export default async function HomePage() {
           </ul>
         </div>
 
-        {/* Guides */}
         <div className="pillar-block">
           {guidesHeadline && (
             <>
-              <div className="pillar-label">The Guides · Considered Buying</div>
+              <div className="pillar-label">The Guides</div>
               <Link href={articleHref(guidesHeadline)} className="headline-card">
                 {guidesHeadline.heroImage && (
                   <div className="image-wrap">
                     <Image
                       src={urlForImage(guidesHeadline.heroImage).width(800).height(533).url()}
                       alt={guidesHeadline.heroImage.alt ?? guidesHeadline.title}
-                      width={800}
-                      height={533}
+                      width={800} height={533}
                       style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                     />
                   </div>
                 )}
                 <h3 dangerouslySetInnerHTML={{ __html: guidesHeadline.title }} />
-                {guidesHeadline.metaDescription && (
-                  <p>{guidesHeadline.metaDescription}</p>
-                )}
+                {guidesHeadline.metaDescription && <p>{guidesHeadline.metaDescription}</p>}
               </Link>
             </>
           )}
@@ -131,7 +188,6 @@ export default async function HomePage() {
         </>
       )}
 
-      {/* ── Newsletter ──────────────────────────────────────────────── */}
       <Newsletter />
 
       {/* ── Recent Grid ─────────────────────────────────────────────── */}

@@ -140,6 +140,11 @@ Well-cared-for fine pearls last indefinitely as gemstones, with documented stran
 
 ---
 
+
+### Where can I read more about style jewellery on The Gem?
+
+The Gem's Style section covers how to wear jewellery, build a wardrobe, and interpret trends — for men and women. The full archive is at thegem.press/style.
+
 ## Related reading
 
 - [The Best Signet Rings for Men](/guides/best-signet-rings-men) — the other piece with a long history of meaning: where to buy, what to engrave, what to avoid

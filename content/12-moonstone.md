@@ -134,6 +134,11 @@ Sri Lanka (historically Ceylon) is the premium source for blue sheen moonstone, 
 
 ---
 
+
+### Where can I read more about stories jewellery on The Gem?
+
+The Gem's Stories section covers the history and provenance of significant jewels — from royal collections to cursed stones to house histories. New pieces publish weekly at thegem.press/stories.
+
 ## Related reading
 
 - [Tolkien's Gemstones](/stories/tolkiens-gemstones) — how one writer drew on the mythology and mineralogy of real stones to build an imaginary world

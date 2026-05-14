@@ -155,6 +155,11 @@ The contemporary styling principles for pink jewellery favour single focal piece
 
 ---
 
+
+### Where can I read more about style jewellery on The Gem?
+
+The Gem's Style section covers how to wear jewellery, build a wardrobe, and interpret trends — for men and women. The full archive is at thegem.press/style.
+
 ## Related reading
 
 - [How to wear pearls in 2026: the new rules](/style/how-to-wear-pearls) for the parallel guide on the other classical women's stone undergoing a contemporary revival

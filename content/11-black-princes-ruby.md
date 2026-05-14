@@ -129,6 +129,11 @@ The stone is named for Edward of Woodstock, the eldest son of King Edward III an
 
 ---
 
+
+### Where can I read more about stories jewellery on The Gem?
+
+The Gem's Stories section covers the history and provenance of significant jewels — from royal collections to cursed stones to house histories. New pieces publish weekly at thegem.press/stories.
+
 ## Related reading
 
 - [The Koh-i-Noor diamond and a 700-year argument](/stories/koh-i-noor) on the other major historical stone in the British Crown Jewels and the contested questions of provenance and ownership

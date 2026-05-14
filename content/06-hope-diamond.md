@@ -133,6 +133,11 @@ The jeweller Harry Winston donated the Hope Diamond to the Smithsonian Instituti
 
 ---
 
+
+### Where can I read more about stories jewellery on The Gem?
+
+The Gem's Stories section covers the history and provenance of significant jewels — from royal collections to cursed stones to house histories. New pieces publish weekly at thegem.press/stories.
+
 ## Related reading
 
 - [Pyrite and the Gold Rush](/stories/pyrite-and-the-gold-rush) — another story of beautiful deception: how a worthless mineral derailed an entire economy

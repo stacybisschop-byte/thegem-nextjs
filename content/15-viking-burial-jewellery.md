@@ -123,6 +123,11 @@ Hack silver is the technical term for silver objects (typically arm rings, brooc
 
 ---
 
+
+### Where can I read more about stories jewellery on The Gem?
+
+The Gem's Stories section covers the history and provenance of significant jewels — from royal collections to cursed stones to house histories. New pieces publish weekly at thegem.press/stories.
+
 ## Related reading
 
 - [The Koh-i-Noor diamond and a 700-year argument](/stories/koh-i-noor) on a parallel story of how precious objects move with power across centuries

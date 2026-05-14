@@ -162,6 +162,11 @@ Mass-market retail jewellery, lab-grown diamonds (currently), trend pieces (anyt
 
 ---
 
+
+### Where can I read more about guides jewellery on The Gem?
+
+The Gem's Guides section covers buying decisions, market analysis, and ownership advice across all categories of fine jewellery. The full guide archive is at thegem.press/guides.
+
 ## Related reading
 
 - [The Diamond Market in 2026](/guides/diamond-market-2026) — the broader context for diamond valuations and why the investment case has shifted

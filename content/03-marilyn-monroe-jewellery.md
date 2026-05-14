@@ -113,6 +113,11 @@ In the studio era of Hollywood (roughly 1930 to 1960), wardrobe jewellery was ge
 
 ---
 
+
+### Where can I read more about stories jewellery on The Gem?
+
+The Gem's Stories section covers the history and provenance of significant jewels — from royal collections to cursed stones to house histories. New pieces publish weekly at thegem.press/stories.
+
 ## Related reading
 
 - [Princess Diana's jewellery and where it is now](/stories/princess-diana-jewellery) on another collection that survived its owner and went on to be worn by others

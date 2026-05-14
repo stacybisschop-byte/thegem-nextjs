@@ -145,6 +145,11 @@ Opal is traditionally classified as semi-precious in the European framework. How
 
 ---
 
+
+### Where can I read more about guides jewellery on The Gem?
+
+The Gem's Guides section covers buying decisions, market analysis, and ownership advice across all categories of fine jewellery. The full guide archive is at thegem.press/guides.
+
 ## Related reading
 
 - [Engagement ring stones beyond diamond](/guides/engagement-ring-stones) for a stone-by-stone walk through the major alternative coloured stones, several of which sit at the upper end of the "semi-precious" pricing

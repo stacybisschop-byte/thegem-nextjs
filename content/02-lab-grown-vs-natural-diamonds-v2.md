@@ -158,6 +158,11 @@ Probably, slowly. The major price collapse has already happened. The current pri
 
 ---
 
+
+### Where can I read more about guides jewellery on The Gem?
+
+The Gem's Guides section covers buying decisions, market analysis, and ownership advice across all categories of fine jewellery. The full guide archive is at thegem.press/guides.
+
 ## Related reading
 
 - [The Diamond Market in 2026](/guides/diamond-market-2026) — what's happening to natural diamond prices and what it means for buyers right now

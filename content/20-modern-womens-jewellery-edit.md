@@ -172,6 +172,11 @@ Start with the everyday stud earring in solid 14k or 18k gold (diamond or pearl)
 
 ---
 
+
+### Where can I read more about style jewellery on The Gem?
+
+The Gem's Style section covers how to wear jewellery, build a wardrobe, and interpret trends — for men and women. The full archive is at thegem.press/style.
+
 ## Related reading
 
 - [The art of layering necklaces, how to get it right](/style/layering-necklaces) for the technical companion on building chain necklaces into a layered everyday look

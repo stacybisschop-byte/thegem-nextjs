@@ -142,6 +142,11 @@ Mithril is an invented metal in Tolkien's Middle-earth writings, called "true-si
 
 ---
 
+
+### Where can I read more about stories jewellery on The Gem?
+
+The Gem's Stories section covers the history and provenance of significant jewels — from royal collections to cursed stones to house histories. New pieces publish weekly at thegem.press/stories.
+
 ## Related reading
 
 - [The Black Prince's Ruby and the gemstone that isn't a ruby](/stories/black-princes-ruby) on a real historical stone with the kind of accumulated narrative weight Tolkien gave his fictional ones

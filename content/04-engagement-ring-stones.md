@@ -188,6 +188,11 @@ Online retailers (James Allen, Blue Nile, Brilliant Earth) offer significantly b
 
 ---
 
+
+### Where can I read more about guides jewellery on The Gem?
+
+The Gem's Guides section covers buying decisions, market analysis, and ownership advice across all categories of fine jewellery. The full guide archive is at thegem.press/guides.
+
 ## Related reading
 
 - [Lab-grown vs natural diamonds in 2026](/guides/lab-grown-vs-natural-diamonds), the full guide on the diamond question if you decide white-stone is the way
