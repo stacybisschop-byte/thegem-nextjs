@@ -93,7 +93,11 @@ The Koh-i-Noor is, as of May 2026, in the Tower of London. It is set in Queen Ma
 
 The Palace has not announced any future plans for the diamond. The Indian, Pakistani, Iranian, and Afghan claims remain on the table and are likely to remain on the table indefinitely. The most plausible near-term scenario is that the next Queen Consort, whoever and whenever, will be crowned without it, in the same way Camilla was. Then the question can be deferred again.
 
-What I find compelling about the Koh-i-Noor, in 2026, is not the question of who should own it. The legal and moral arguments are well-developed on every side and will not be resolved by anything I might write. What I find compelling is what the diamond reveals about how empires actually work. Cultural objects move with power. They come to rest where the power is strongest. They are wept over, retrospectively, by the cultures that lost them, and they are quietly polished, prospectively, by the cultures that hold them. The Koh-i-Noor has been a Mughal jewel, a Persian war prize, an Afghan inheritance, a Sikh armband, a Victorian brooch, and a British coronation stone. It will be whatever the next dominant power asks it to be.
+
+What I find compelling about the Koh-i-Noor, in 2026, is not the question of who should own it. The legal and moral arguments are well-developed on every side and will not be resolved by anything I might write. What I find compelling is what the diamond reveals about how empires actually work. Cultural objects move with power. They come to rest where the power is strongest.
+
+They are wept over, retrospectively, by the cultures that lost them, and they are quietly polished, prospectively, by the cultures that hold them. The Koh-i-Noor has been a Mughal jewel, a Persian war prize, an Afghan inheritance, a Sikh armband, a Victorian brooch, and a British coronation stone. It will be whatever the next dominant power asks it to be.
+
 
 For the moment, it is in a vitrine in Tower Hamlets.
 

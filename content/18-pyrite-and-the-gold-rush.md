@@ -13,7 +13,7 @@ word_count: ~2,700
 status: First draft. Voice, SEO and GEO compliant. Fact-check pass recommended for Frobisher expedition tonnage figures and Gold Rush narrative details before publication.
 ---
 
-# Pyrite and the Gold Rush: A History of the World's Most Beautiful Mistake
+# Pyrite and the Gold Rush: The History of Fool's Gold
 
 In the summer of 1577, the English navigator Sir Martin Frobisher returned from his second voyage to what is now Baffin Island, in the Canadian Arctic, with two hundred tons of rock. The rock was, in Frobisher's confident description, gold ore, recovered from outcrops he had identified on the previous voyage in 1576. The investors who had funded Frobisher's second expedition (which included Queen Elizabeth I, several senior figures of the Privy Council, and a syndicate of City of London merchants) were delighted. A third voyage was funded immediately. Frobisher returned in 1578 with one thousand three hundred and fifty additional tons of the same rock.
 
@@ -21,7 +21,11 @@ In Bristol, where the cargo was unloaded, the assayers and refiners hired to ext
 
 What makes the Frobisher episode worth remembering, four and a half centuries on, is that it was not a unique mistake. The same thing has happened, in varying scales, in every subsequent gold rush. The California Gold Rush of 1849 produced hundreds of recorded examples of prospectors staking claims, financing operations, and exhausting themselves on pyrite deposits. The Klondike of 1898 produced more. The Witwatersrand of the 1880s onwards became the world's largest gold mining region partly because the geologists were specifically careful, after Frobisher and after California, not to repeat the standard error.
 
-What I find worth saying about pyrite, and the reason it deserves a more considered treatment than its conventional reputation as "fool's gold," is that pyrite is genuinely a beautiful and important mineral in its own right. It is harder than gold. It forms in better-defined crystals than gold. It has been used in jewellery since antiquity (Marcasite jewellery, the Victorian and Art Deco staple, is almost entirely made from pyrite). It is the principal industrial source of sulphuric acid. It has played a substantial role in the development of semiconductor physics. The label "fool's gold" does pyrite a disservice. The fact that some prospectors confused it with gold is, in the long view, more interesting as a statement about the prospectors than about the pyrite.
+
+What I find worth saying about pyrite, and the reason it deserves a more considered treatment than its conventional reputation as "fool's gold," is that pyrite is genuinely a beautiful and important mineral in its own right. It is harder than gold. It forms in better-defined crystals than gold. It has been used in jewellery since antiquity (Marcasite jewellery, the Victorian and Art Deco staple, is almost entirely made from pyrite).
+
+It is the principal industrial source of sulphuric acid. It has played a substantial role in the development of semiconductor physics. The label "fool's gold" does pyrite a disservice. The fact that some prospectors confused it with gold is, in the long view, more interesting as a statement about the prospectors than about the pyrite.
+
 
 This is the history of the mistake and the mineral.
 

@@ -13,7 +13,7 @@ word_count: ~2,900
 status: Third draft. Voice and SEO compliant. Fact-check pass recommended before publication, particularly specific dates and provenance claims.
 ---
 
-# Princess Diana's Jewellery: The Pieces, the Stories, and Where They Are Now
+# Princess Diana's Jewellery: The Pieces, the Provenance
 
 On the morning of 24 February 1981, the day her engagement to the Prince of Wales was announced, Lady Diana Spencer (soon to become Princess Diana) arrived at the press conference wearing twelve carats of Ceylon sapphire on her left hand. Fourteen brilliant-cut diamonds around it. Eighteen-carat white gold. A serious ring.
 
@@ -155,7 +155,7 @@ Most of Princess Diana's jewellery is held privately, either in royal possession
 
 ## Related reading
 
-- [The Cartier family and the brand they built](/stories/cartier-family) — on the house that made many of Diana's most-worn pieces
+- [The Cartier family and the brand they built](/stories/cartier-family-history) — on the house that made many of Diana's most-worn pieces
 - [Engagement ring stones beyond diamond](/guides/engagement-ring-stones) — including a section on sapphire, the stone Diana made famous
 - [How to wear pearls in 2026](/style/how-to-wear-pearls) — the modern continuation of Diana's pearl story
 - [The Hope Diamond and the politics of cursed stones](/stories/hope-diamond) — another piece on a stone with a long royal history

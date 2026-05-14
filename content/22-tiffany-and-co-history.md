@@ -19,7 +19,11 @@ In 1886, the jewellers Tiffany & Co of New York introduced a new method of mount
 
 The setting was launched as the Tiffany Setting. One hundred and forty years later, it is the design of the modern engagement ring. The single most-photographed diamond ring in the world is in this setting. The default engagement ring sold by every major American retailer is in this setting. The visual template of "engagement ring" in popular culture is this setting. Tiffany's six-prong solitaire is the engagement ring.
 
-What I find worth saying about Tiffany & Co, and the reason a history of this firm is worth writing alongside the Cartier history that pairs with it, is that Tiffany is the first American luxury house in the proper sense and the firm that defined how mass-market American luxury would operate for almost two centuries. Where Cartier's twentieth century was the story of an aristocratic Paris house operating across three world capitals, Tiffany's was the story of an American merchant democracy in luxury form. The 1886 Tiffany Setting was the technical embodiment of that democracy: a method of mounting diamonds that made the stone itself the focus, that worked at every price point from modest to spectacular, and that scaled to American mass production in a way no European setting tradition had managed. Tiffany invented, in 1886, the engagement ring as we know it.
+
+What I find worth saying about Tiffany & Co, and the reason a history of this firm is worth writing alongside the Cartier history that pairs with it, is that Tiffany is the first American luxury house in the proper sense and the firm that defined how mass-market American luxury would operate for almost two centuries. Where Cartier's twentieth century was the story of an aristocratic Paris house operating across three world capitals, Tiffany's was the story of an American merchant democracy in luxury form.
+
+The 1886 Tiffany Setting was the technical embodiment of that democracy: a method of mounting diamonds that made the stone itself the focus, that worked at every price point from modest to spectacular, and that scaled to American mass production in a way no European setting tradition had managed. Tiffany invented, in 1886, the engagement ring as we know it.
+
 
 This is the story of how Tiffany got there and what it has done since.
 

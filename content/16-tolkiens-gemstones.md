@@ -15,9 +15,16 @@ status: First draft. Voice, SEO and GEO compliant. Verify Tolkien quotation cont
 
 # Tolkien's Gemstones: The Stones of Middle-earth, and What They Meant
 
-J. R. R. Tolkien took gems seriously. This is not a small claim to make about a twentieth-century novelist, but it is the central fact about how Tolkien's gemstones work in the fiction. The Silmarils, the Three Rings of the Elves, the Arkenstone, the Phial of Galadriel, the One Ring, the Greenstone of Aragorn: these are not decorative objects in his writing. They are moral characters with histories, capacities, and consequences. The plot of *The Silmarillion* turns on the theft of three gems. The plot of *The Lord of the Rings* turns on the destruction of a single ring without a gem. The plot of *The Hobbit* turns on a missing white jewel in a mountain. In each case, the stones are doing the work that, in other fantasy traditions, would have been done by armies, by gods, or by prophecy. Tolkien gave the work to the stones themselves.
 
-What I find worth saying about Tolkien's gemstones, and the reason they remain genuinely worth reading carefully a century after Tolkien began his Middle-earth writings, is that the stones operate on a moral economy that almost no other fantasy literature has matched. The Silmarils contain captured holiness, which their thief cannot destroy and which makes them unbearable to anyone of evil intent. The Rings of Power are beautiful and bound up with gems, but the One Ring, the master of them all, is unembellished gold with no stone at all. The Phial of Galadriel is a portable piece of starlight that shines brighter against more concentrated darkness. The Arkenstone is so beautiful that the king who owns it loses his sanity over it. Every stone, in Tolkien's work, has a character. Most of them are unwell.
+J. R. R. Tolkien took gems seriously. This is not a small claim to make about a twentieth-century novelist, but it is the central fact about how Tolkien's gemstones work in the fiction. The Silmarils, the Three Rings of the Elves, the Arkenstone, the Phial of Galadriel, the One Ring, the Greenstone of Aragorn: these are not decorative objects in his writing. They are moral characters with histories, capacities, and consequences.
+
+The plot of *The Silmarillion* turns on the theft of three gems. The plot of *The Lord of the Rings* turns on the destruction of a single ring without a gem. The plot of *The Hobbit* turns on a missing white jewel in a mountain. In each case, the stones are doing the work that, in other fantasy traditions, would have been done by armies, by gods, or by prophecy. Tolkien gave the work to the stones themselves.
+
+
+What I find worth saying about Tolkien's gemstones, and the reason they remain genuinely worth reading carefully a century after Tolkien began his Middle-earth writings, is that the stones operate on a moral economy that almost no other fantasy literature has matched. The Silmarils contain captured holiness, which their thief cannot destroy and which makes them unbearable to anyone of evil intent.
+
+The Rings of Power are beautiful and bound up with gems, but the One Ring, the master of them all, is unembellished gold with no stone at all. The Phial of Galadriel is a portable piece of starlight that shines brighter against more concentrated darkness. The Arkenstone is so beautiful that the king who owns it loses his sanity over it. Every stone, in Tolkien's work, has a character. Most of them are unwell.
+
 
 What follows is a reading of the major stones, in roughly the order they enter Tolkien's narrative chronologically, with attention to what each stone is and what it is doing in the moral structure of the work.
 
@@ -27,7 +34,11 @@ The Silmarils are the foundational gems of Tolkien's mythology and the source of
 
 This is the founding object of Tolkien's universe. Almost everything that happens in the next three thousand years of Middle-earth history is, at some level, a consequence of the Silmarils' existence.
 
-Melkor (later Morgoth), the great enemy of the gods, stole the Silmarils, killed Fëanor's father Finwë in the process, and fled Valinor with the three jewels set into an iron crown he wore. Fëanor and his seven sons swore an oath to recover them from anyone, including the gods, who held them, and the oath bound their descendants for generations. The wars of Beleriand that fill *The Silmarillion* are, in their underlying cause, the working-out of that oath. Three Silmarils, three eventual outcomes: one cast into the sea by Maglor, one cast into a fiery chasm by Maedhros, and the third borne through the sky by Eärendil on his ship, where it became the Morning and Evening Star that the readers of Tolkien's later books would know as the light Galadriel captures in her Phial.
+
+Melkor (later Morgoth), the great enemy of the gods, stole the Silmarils, killed Fëanor's father Finwë in the process, and fled Valinor with the three jewels set into an iron crown he wore. Fëanor and his seven sons swore an oath to recover them from anyone, including the gods, who held them, and the oath bound their descendants for generations.
+
+The wars of Beleriand that fill *The Silmarillion* are, in their underlying cause, the working-out of that oath. Three Silmarils, three eventual outcomes: one cast into the sea by Maglor, one cast into a fiery chasm by Maedhros, and the third borne through the sky by Eärendil on his ship, where it became the Morning and Evening Star that the readers of Tolkien's later books would know as the light Galadriel captures in her Phial.
+
 
 What makes the Silmarils work as a literary object, and what distinguishes them from the magic stones of most other fantasy traditions, is that they are unambiguously holy. The light they contain is described as the original light of creation, before Melkor's corruption. No evil hand can hold them without being burned; Morgoth, who steals them, is burned by them constantly throughout his possession. They cannot be remade. They cannot be unmade by anyone living. They are, in Tolkien's terms, sub-creations of unique status: the most successful objects ever made by an Elf, of a craftsmanship so exceptional that the maker himself could not reproduce it.
 
@@ -75,7 +86,11 @@ The Phial of Galadriel is given to Frodo at Lothlórien as the company prepares 
 
 The Phial is the only one of Tolkien's major gem-objects that is, in any straightforward sense, a tool. It does what it is supposed to do, repeatedly, without corrupting its bearer or producing complications. Frodo uses it twice in the second half of the quest: once at the encounter with Shelob in her tunnels, and once at the gates of Cirith Ungol. In both cases, the light's brightness scales to the darkness around it. The greater the evil, the brighter the Phial shines.
 
-What makes the Phial work as an object, and what distinguishes it from the morally ambiguous gem-objects elsewhere in Tolkien's writing, is that the light it contains is not contained in the conventional sense. The light is from Eärendil's star, which is the Silmaril that Eärendil bears through the sky. Galadriel's gift to Frodo is, in chemical terms, a small piece of the original light of Valinor, captured at fourth remove and contained in a glass vessel. The Phial is, more or less, a portable Silmaril. The fact that it does not produce any of the disasters associated with Silmaril ownership is presumably because no one is trying to keep it as a possession; it is a gift, designed for use.
+
+What makes the Phial work as an object, and what distinguishes it from the morally ambiguous gem-objects elsewhere in Tolkien's writing, is that the light it contains is not contained in the conventional sense. The light is from Eärendil's star, which is the Silmaril that Eärendil bears through the sky.
+
+Galadriel's gift to Frodo is, in chemical terms, a small piece of the original light of Valinor, captured at fourth remove and contained in a glass vessel. The Phial is, more or less, a portable Silmaril. The fact that it does not produce any of the disasters associated with Silmaril ownership is presumably because no one is trying to keep it as a possession; it is a gift, designed for use.
+
 
 This is, possibly, Tolkien's quietest argument about gemstones: that the problem with the Silmarils was not the stones themselves but the kind of relationship the owners insisted on having with them.
 

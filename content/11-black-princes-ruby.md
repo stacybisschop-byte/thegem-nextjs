@@ -21,7 +21,11 @@ It is widely believed, including in much of the official Royal Collection Trust 
 
 It is not a ruby. It is a spinel.
 
-What I find worth saying about the Black Prince's Ruby, which is the most direct way to phrase a sentence in which the noun and the description are in active contradiction, is that the misnomer is older than the science that proved it. By the time nineteenth-century gemmologists worked out that ruby (a corundum, chemically aluminium oxide coloured by chromium) and spinel (a magnesium aluminate, also coloured by chromium, but with a different crystal structure and a slightly lower hardness) were entirely distinct minerals, the stone in the front of the British crown had been called the Black Prince's Ruby for nearly five hundred years. There was, by then, no real possibility of renaming it. The name had become more historically substantial than the chemistry it incorrectly described.
+
+What I find worth saying about the Black Prince's Ruby, which is the most direct way to phrase a sentence in which the noun and the description are in active contradiction, is that the misnomer is older than the science that proved it.
+
+By the time nineteenth-century gemmologists worked out that ruby (a corundum, chemically aluminium oxide coloured by chromium) and spinel (a magnesium aluminate, also coloured by chromium, but with a different crystal structure and a slightly lower hardness) were entirely distinct minerals, the stone in the front of the British crown had been called the Black Prince's Ruby for nearly five hundred years. There was, by then, no real possibility of renaming it. The name had become more historically substantial than the chemistry it incorrectly described.
+
 
 The Crown made a choice, and the choice was to keep the name.
 
@@ -85,7 +89,11 @@ The drilled hole in the stone, presumably from a much earlier setting in which i
 
 The decision to keep calling the Black Prince's Ruby a ruby, after nineteenth-century mineralogy had established that it wasn't one, was never, as far as I have been able to determine, formally taken. There is no Royal Warrant, no decree of the College of Arms, no parliamentary debate, on the question of whether to rename it. The name simply continued because the alternative would have required revising six hundred years of inscription, chronicle, royal record, and public reference. The name was older, and more substantial, than the science.
 
-What I find quietly compelling about this, as a piece of cultural object lesson, is that the stone has effectively been allowed to remain what its history made it, even when the history was based on a misidentification. Most institutions, faced with the gap between what an object is and what it has been called, will correct the description. The Crown declined to. The Black Prince's Ruby remains the Black Prince's Ruby. The fact that it is mineralogically a spinel is offered, in the official guidebooks, as an interesting parenthetical, alongside the assassination, the battle, the Restoration, and the various royal heads that have worn it. None of these things are more or less true than the others. All of them, together, are what the stone is.
+
+What I find quietly compelling about this, as a piece of cultural object lesson, is that the stone has effectively been allowed to remain what its history made it, even when the history was based on a misidentification. Most institutions, faced with the gap between what an object is and what it has been called, will correct the description. The Crown declined to.
+
+The Black Prince's Ruby remains the Black Prince's Ruby. The fact that it is mineralogically a spinel is offered, in the official guidebooks, as an interesting parenthetical, alongside the assassination, the battle, the Restoration, and the various royal heads that have worn it. None of these things are more or less true than the others. All of them, together, are what the stone is.
+
 
 It is in the Jewel House. You can go and see it.
 

@@ -20,7 +20,11 @@ The first time you see a fine moonstone in good light, the visual effect doesn't
 
 This is the visual fact on which everything else about moonstone depends.
 
-What I find worth saying about moonstone in 2026, after roughly six thousand years of human relationship with the stone and a particularly busy current revival, is that the stone's resilience as a piece of jewellery is best explained by the fact that the moonstone visual effect cannot be reproduced by anything else. Opals do something rainbow-coloured. Labradorite does something darker and metallic. Pearls have their own optical character that no other stone shares. Moonstone is the only mineral on earth that does the cool blue floating-light effect, and as a result, every time it has been declared out of fashion, it has come back. It is, more or less, a stone that wouldn't stay out of fashion because nothing else can do its job.
+
+What I find worth saying about moonstone in 2026, after roughly six thousand years of human relationship with the stone and a particularly busy current revival, is that the stone's resilience as a piece of jewellery is best explained by the fact that the moonstone visual effect cannot be reproduced by anything else. Opals do something rainbow-coloured.
+
+Labradorite does something darker and metallic. Pearls have their own optical character that no other stone shares. Moonstone is the only mineral on earth that does the cool blue floating-light effect, and as a result, every time it has been declared out of fashion, it has come back. It is, more or less, a stone that wouldn't stay out of fashion because nothing else can do its job.
+
 
 This is the story of how it kept coming back.
 
@@ -131,6 +135,8 @@ Sri Lanka (historically Ceylon) is the premium source for blue sheen moonstone, 
 ---
 
 ## Related reading
+
+- [Tolkien's Gemstones](/stories/tolkiens-gemstones) — how one writer drew on the mythology and mineralogy of real stones to build an imaginary world
 
 - [How to wear pearls in 2026: the new rules](/style/how-to-wear-pearls) on another organic, optical stone with a long mythological tradition and a current revival
 - [Where to buy vintage jewellery](/guides/where-to-buy-vintage-jewellery) for Art Nouveau moonstone pieces, which are some of the most beautiful vintage jewellery on the market

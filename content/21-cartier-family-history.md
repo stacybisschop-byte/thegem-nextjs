@@ -13,13 +13,17 @@ word_count: ~2,800
 status: First draft. Voice, SEO and GEO compliant. Fact-check pass recommended for dates and family genealogy before publication.
 ---
 
-# The Cartier Family History: How a Paris Workshop Became the World's Most Important Jeweller
+# The Cartier Family: How a Paris Workshop Became a Dynasty
 
 On 21 February 1917, Pierre Cartier completed one of the more unusual real estate transactions in the history of Manhattan. He acquired the mansion at 653 Fifth Avenue, which had belonged to the railway and hotels magnate Morton Plant, in exchange for a double-strand necklace of natural Oriental pearls and one hundred dollars in cash. The pearls had been valued at one million dollars in 1917 currency, which was approximately the value of the building. The cash, presumably, was the balancing payment.
 
 A century later, the building is still Cartier's New York flagship. The pearl necklace, broken up at some point in the intervening decades, would now be worth a fraction of what the building is worth. Natural pearls collapsed in market value after Mikimoto's cultured-pearl technology became commercially viable in the 1920s. Fifth Avenue real estate did not collapse. Pierre Cartier, by purchasing the building with pearls in 1917, accidentally made one of the better long-term financial decisions of the twentieth-century jewellery trade.
 
-What I find worth saying about Cartier, and the reason a family history of this firm is genuinely worth writing, is that Cartier is one of the few luxury jewellery houses to have maintained substantive creative continuity across three centuries. From the founding of the workshop in 1847 to the current Richemont-owned operation in 2026, the brand has produced, in every decade across that span, designs that are recognisably Cartier and recognisably of their moment. This is a much harder thing to do than it sounds. Most luxury brands either calcify into pastiche of their founders' work or drift so far from their origins that the original character is lost. Cartier has done neither. The Panthère bracelet sold today shares design DNA with the Panthère brooch made for the Duchess of Windsor in 1948, which shares DNA with the panther-pattern enamel of 1914, which shares DNA with the workshop discipline of Louis-François Cartier in 1847.
+
+What I find worth saying about Cartier, and the reason a family history of this firm is genuinely worth writing, is that Cartier is one of the few luxury jewellery houses to have maintained substantive creative continuity across three centuries. From the founding of the workshop in 1847 to the current Richemont-owned operation in 2026, the brand has produced, in every decade across that span, designs that are recognisably Cartier and recognisably of their moment.
+
+This is a much harder thing to do than it sounds. Most luxury brands either calcify into pastiche of their founders' work or drift so far from their origins that the original character is lost. Cartier has done neither. The Panthère bracelet sold today shares design DNA with the Panthère brooch made for the Duchess of Windsor in 1948, which shares DNA with the panther-pattern enamel of 1914, which shares DNA with the workshop discipline of Louis-François Cartier in 1847.
+
 
 This is the story of how that continuity was built.
 
@@ -134,6 +138,8 @@ The Cartier New York flagship is at 653 Fifth Avenue, at the corner of 52nd Stre
 ---
 
 ## Related reading
+
+- [Tiffany & Co: A History](/stories/tiffany-and-co-history) — the parallel story of the New York house that became Cartier's greatest rival in the American market
 
 - [The Koh-i-Noor diamond and a 700-year argument](/stories/koh-i-noor) on the parallel Indian-stone trade routes that Jacques Cartier's expeditions worked within
 - [Elizabeth Taylor's jewellery and the auction that rewrote the rules](/stories/elizabeth-taylor-jewellery) for the parallel story of a major twentieth-century jewellery collection sold at Christie's in 2011, with substantial Cartier representation

@@ -13,7 +13,7 @@ word_count: ~3,000
 status: First draft. Voice and audit compliant. Fact-check pass recommended for specific auction figures and provenance claims before publication.
 ---
 
-# Marilyn Monroe's Jewellery: What She Owned, What She Borrowed, and What Came Up at Auction
+# Marilyn Monroe's Jewellery: What She Owned, What She Borrowed
 
 In October 1999, Christie's New York held a two-day sale called *The Personal Property of Marilyn Monroe*. It included her cars, her furniture, her cookbooks, a notebook of phone numbers, the white dress from *The Seven Year Itch*, and one hundred and forty-two lots of jewellery. The sale's pre-auction estimate ran to roughly $3 million. The actual total ran to $13.4 million. A single strand of cultured pearls, bought from Mikimoto in Tokyo by Joe DiMaggio in 1954 for the equivalent of about $700, sold to a Japanese buyer for $211,500.
 
@@ -116,7 +116,7 @@ In the studio era of Hollywood (roughly 1930 to 1960), wardrobe jewellery was ge
 ## Related reading
 
 - [Princess Diana's jewellery and where it is now](/stories/princess-diana-jewellery) on another collection that survived its owner and went on to be worn by others
-- [The Cartier family and the brand they built](/stories/cartier-family) on the house that loaned much of what Marilyn wore on red carpets
+- [The Cartier family and the brand they built](/stories/cartier-family-history) on the house that loaned much of what Marilyn wore on red carpets
 - [Lab-grown vs natural diamonds in 2026](/guides/lab-grown-vs-natural-diamonds) for buyers thinking about how to actually own a diamond worth keeping
 
 ---

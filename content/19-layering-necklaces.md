@@ -18,7 +18,11 @@ affiliate_disclosure: This article contains affiliate links. We earn a small com
 
 Layered necklaces became, sometime around 2018, the dominant women's jewellery format of the decade. Mejuri built its business on the principle. Missoma scaled rapidly on it. Sophie Bille Brahe's quiet Copenhagen aesthetic of pearl-and-chain combinations became the reference point. By 2025, walking into any well-considered jewellery counter from Liberty's to Net-a-Porter, you would find chain-by-chain layering as the dominant visual proposition for women's fine jewellery, with most major brands selling their pieces as components in a layered stack rather than as standalone items.
 
-The thing about the layered look, and the reason it has been the dominant women's jewellery format for the past decade, is that done well it solves several problems simultaneously. It lets a fine jewellery wardrobe grow incrementally (you buy one chain, you wear it on its own, then six months later you buy another, and now you have a layered stack). It works across casual and formal wear (the same three-chain combination reads as relaxed with a sweatshirt and as polished with a black dress). It accommodates a personal narrative (the gifted pendant, the inherited locket, the holiday souvenir, all layered together). And it allows for genuine mixing of metals, textures, and price points, in a way that single-piece styling does not.
+
+The thing about the layered look, and the reason it has been the dominant women's jewellery format for the past decade, is that done well it solves several problems simultaneously. It lets a fine jewellery wardrobe grow incrementally (you buy one chain, you wear it on its own, then six months later you buy another, and now you have a layered stack).
+
+It works across casual and formal wear (the same three-chain combination reads as relaxed with a sweatshirt and as polished with a black dress). It accommodates a personal narrative (the gifted pendant, the inherited locket, the holiday souvenir, all layered together). And it allows for genuine mixing of metals, textures, and price points, in a way that single-piece styling does not.
+
 
 The problem is that done poorly, layered necklaces look exactly as they were assembled: as a jumble of similar chains at similar lengths tangling around each other, with no clear focal point and no rhythm. The difference between layered necklaces looking deliberate and looking accidental is the difference between knowing a handful of practical rules and not knowing them. This is the piece on the rules.
 

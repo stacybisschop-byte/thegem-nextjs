@@ -20,7 +20,11 @@ The single most important thing to know about jewellery that holds its value is 
 
 The small minority of jewellery that actually holds or appreciates in value follows a different pattern. Specific categories of fine signed pieces, vintage work from documented periods, certain stones at certain weight thresholds, and natural pearls all behave more like fine art or rare watches than like the broader jewellery market. Over the long term, these categories preserve their value reliably and, in many cases, appreciate at rates broadly comparable to fine art (roughly 4 to 7 per cent annualised, depending on the specific category and period).
 
-What I find worth saying about jewellery investment, before any of the specific advice that follows, is that "investment" is, on balance, the wrong frame for thinking about jewellery purchases. Even at the best end of the value-retention market, jewellery is not a growth asset in the way that equities or property are. It is a category that preserves value reasonably well and provides optionality (the piece can be worn, sold, or held), with modest appreciation over long timeframes. Anyone thinking about jewellery primarily as financial investment is choosing the wrong vehicle. Anyone thinking about jewellery as a piece that does not lose substantial value the moment they buy it, that can be enjoyed daily, and that can be sold for a sensible figure if needed, is asking the right question.
+
+What I find worth saying about jewellery investment, before any of the specific advice that follows, is that "investment" is, on balance, the wrong frame for thinking about jewellery purchases. Even at the best end of the value-retention market, jewellery is not a growth asset in the way that equities or property are.
+
+It is a category that preserves value reasonably well and provides optionality (the piece can be worn, sold, or held), with modest appreciation over long timeframes. Anyone thinking about jewellery primarily as financial investment is choosing the wrong vehicle. Anyone thinking about jewellery as a piece that does not lose substantial value the moment they buy it, that can be enjoyed daily, and that can be sold for a sensible figure if needed, is asking the right question.
+
 
 This is the guide for that question.
 
@@ -159,6 +163,8 @@ Mass-market retail jewellery, lab-grown diamonds (currently), trend pieces (anyt
 ---
 
 ## Related reading
+
+- [The Diamond Market in 2026](/guides/diamond-market-2026) — the broader context for diamond valuations and why the investment case has shifted
 
 - [Where to buy vintage jewellery](/guides/where-to-buy-vintage-jewellery) for the practical guide to the most reliable category of value-retaining jewellery
 - [Lab-grown vs natural diamonds in 2026](/guides/lab-grown-vs-natural-diamonds) on the diamond question and why lab-grown does not currently retain value

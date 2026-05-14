@@ -135,6 +135,8 @@ The jeweller Harry Winston donated the Hope Diamond to the Smithsonian Instituti
 
 ## Related reading
 
+- [Pyrite and the Gold Rush](/stories/pyrite-and-the-gold-rush) — another story of beautiful deception: how a worthless mineral derailed an entire economy
+
 - [The Koh-i-Noor: a diamond, an empire, and a 700-year argument](/stories/koh-i-noor) on the Hope's older sister stone from the same Golconda mines
 - [Princess Diana's jewellery and where it is now](/stories/princess-diana-jewellery) on another famous stone with a long ownership chain
 - [Engagement ring stones beyond diamond](/guides/engagement-ring-stones), including a section on sapphire as the modern alternative to white-stone tradition

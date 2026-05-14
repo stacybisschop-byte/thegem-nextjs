@@ -142,6 +142,8 @@ Well-cared-for fine pearls last indefinitely as gemstones, with documented stran
 
 ## Related reading
 
+- [The Best Signet Rings for Men](/guides/best-signet-rings-men) — the other piece with a long history of meaning: where to buy, what to engrave, what to avoid
+
 - [Where to buy vintage jewellery](/guides/where-to-buy-vintage-jewellery) for vintage pearl strands, which often offer better quality at lower prices than new equivalent pieces
 - [Princess Diana's jewellery and where it is now](/stories/princess-diana-jewellery) on the most photographed pearl wearer of the late twentieth century
 - [Elizabeth Taylor's jewellery and the Christie's auction](/stories/elizabeth-taylor-jewellery) on the most extraordinary single pearl in private collecting history, La Peregrina

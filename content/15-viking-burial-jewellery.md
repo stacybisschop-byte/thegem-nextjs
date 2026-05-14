@@ -19,13 +19,21 @@ In August 1903, a farmer named Knut Rom, digging into a low mound on his family 
 
 It was the most spectacular Viking burial ever found in Scandinavia, and it remains so a century and a quarter later. What was unusual about the Oseberg ship was not its size, which was modest by Viking longship standards, or its quantity of precious metal, which was actually rather restrained. What was unusual was the preservation. The mound had effectively sealed everything inside it in airless clay, and what came out, when the Norwegian archaeological team excavated the burial in 1904 and 1905, gave the most complete picture we will ever have of how a Viking-age burial actually worked.
 
-What I find worth saying about Viking burial jewellery, and the reason it remains genuinely interesting territory rather than simply a museum-cabinet subject, is that the Vikings were unusually explicit about why they buried their dead with the things they did. The grave goods were not, primarily, decoration of the corpse, nor were they treasure intended to remain in the ground. They were a kind of provision for the next life — a portable wealth that the dead person was expected to use in the afterlife economy, to pay for passage to Hel or Valhalla, to maintain status in the company of the gods, and to remain identifiable as themselves after death. The jewellery, the silver arm rings, the bead strands, the brooches: these were what a person took with them, in the most practical sense the Vikings could think about. They were what the dead would have to spend on the other side.
+
+What I find worth saying about Viking burial jewellery, and the reason it remains genuinely interesting territory rather than simply a museum-cabinet subject, is that the Vikings were unusually explicit about why they buried their dead with the things they did. The grave goods were not, primarily, decoration of the corpse, nor were they treasure intended to remain in the ground.
+
+They were a kind of provision for the next life — a portable wealth that the dead person was expected to use in the afterlife economy, to pay for passage to Hel or Valhalla, to maintain status in the company of the gods, and to remain identifiable as themselves after death. The jewellery, the silver arm rings, the bead strands, the brooches: these were what a person took with them, in the most practical sense the Vikings could think about. They were what the dead would have to spend on the other side.
+
 
 This is the framework. The rest is what we have found.
 
 ## Why the Vikings buried gold
 
-The Viking belief structure regarding death is not as completely documented as later Christian theology, and the picture we have is reconstructed from sagas written down centuries after the actual practices ended. What is clear from the texts that survive (the *Poetic Edda*, the *Prose Edda* of Snorri Sturluson, and the various sagas) is that the Viking afterlife was understood as a continuation of social life. There were several possible destinations: Valhalla for warriors who died in battle, Folkvangr for warriors claimed by Freyja, Hel for those who died of illness or old age, and various other realms for specific causes of death. In none of these destinations was the dead person stripped of identity or possessions. They arrived as they had been in life, with what they had brought.
+
+The Viking belief structure regarding death is not as completely documented as later Christian theology, and the picture we have is reconstructed from sagas written down centuries after the actual practices ended. What is clear from the texts that survive (the *Poetic Edda*, the *Prose Edda* of Snorri Sturluson, and the various sagas) is that the Viking afterlife was understood as a continuation of social life.
+
+There were several possible destinations: Valhalla for warriors who died in battle, Folkvangr for warriors claimed by Freyja, Hel for those who died of illness or old age, and various other realms for specific causes of death. In none of these destinations was the dead person stripped of identity or possessions. They arrived as they had been in life, with what they had brought.
+
 
 This is the practical theology behind the burial deposits. A high-status woman buried with her jewellery would arrive in the afterlife with that jewellery and the social standing it represented. A warrior buried with his weapons would arrive armed. The economic logic was that of moving house: you took your useful and your prestigious things with you. The afterlife was elsewhere, but not very far away. The jewellery you wore in death was the jewellery you wore in the next world.
 

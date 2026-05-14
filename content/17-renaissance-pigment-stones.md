@@ -19,7 +19,11 @@ By the late fifteenth century, a Renaissance painter taking a commission for a s
 
 The Virgin Mary's robe, in the convention of the period, had to be ultramarine. So did the sky in the most expensive paintings. So did the inscribed lettering, where blue lettering appeared. The hierarchy of pigments mapped directly onto the hierarchy of subjects: ultramarine for the most important figures, azurite for the slightly less important, indigo or smalt for the secondary blues. The painter was, in effect, a custodian of an extraordinarily expensive substance, entrusted with applying it in the right places.
 
-What I find worth saying about Renaissance pigment stones, and the reason this is more than a piece of art-historical trivia, is that the great paintings of the Italian Renaissance were not, primarily, made by painters. They were made by international mining and trading networks, of which the painters were the final processing stage. The colour we see in a Botticelli, a Bellini, or a Vermeer is, in the most literal possible sense, a piece of Afghan geology that travelled four thousand miles to a Venetian dockside, was sold by Venetian merchants to Italian intermediaries, was ground and refined and processed through a multi-stage chemical extraction in a Florentine workshop, and was finally applied, in the smallest possible quantities, to the most prominent surfaces of the most important pictures. The Renaissance, as a visual project, was funded and structurally made possible by stones.
+
+What I find worth saying about Renaissance pigment stones, and the reason this is more than a piece of art-historical trivia, is that the great paintings of the Italian Renaissance were not, primarily, made by painters. They were made by international mining and trading networks, of which the painters were the final processing stage.
+
+The colour we see in a Botticelli, a Bellini, or a Vermeer is, in the most literal possible sense, a piece of Afghan geology that travelled four thousand miles to a Venetian dockside, was sold by Venetian merchants to Italian intermediaries, was ground and refined and processed through a multi-stage chemical extraction in a Florentine workshop, and was finally applied, in the smallest possible quantities, to the most prominent surfaces of the most important pictures. The Renaissance, as a visual project, was funded and structurally made possible by stones.
+
 
 This is the story of the stones.
 
@@ -35,7 +39,11 @@ The valley has been worked under successive political controls: Bactrian, Persia
 
 Turning lapis lazuli into ultramarine pigment is not a matter of grinding the stone to powder. If you grind lapis directly, you get a pale, greyish-blue dust of mixed minerals, with the visible flecks of pyrite and calcite still present. The lazurite, the actual blue-producing mineral, has to be separated from the other constituents of the rock. This is what makes ultramarine genuinely expensive rather than merely valuable.
 
-The classical extraction process, described in detail in Cennino Cennini's *Il Libro dell'Arte* (composed in Florence around 1400 and the most important surviving Renaissance technical treatise), involves grinding the lapis to a fine powder, mixing it with melted pine resin, mastic, and beeswax to form a stiff paste, allowing the paste to cool and cure, then kneading the paste under a solution of lye for an extended period (a week or more for the finest material). The lye partly dissolves the wax and resin, releasing the mineral particles. The lazurite, being finer and more soluble than the other components, comes out first. Successive kneadings produce successively paler, less saturated extractions: the first yield is the finest deep ultramarine, the second is a lower grade, and so on. The final residue is broadly grey and useless.
+
+The classical extraction process, described in detail in Cennino Cennini's *Il Libro dell'Arte* (composed in Florence around 1400 and the most important surviving Renaissance technical treatise), involves grinding the lapis to a fine powder, mixing it with melted pine resin, mastic, and beeswax to form a stiff paste, allowing the paste to cool and cure, then kneading the paste under a solution of lye for an extended period (a week or more for the finest material).
+
+The lye partly dissolves the wax and resin, releasing the mineral particles. The lazurite, being finer and more soluble than the other components, comes out first. Successive kneadings produce successively paler, less saturated extractions: the first yield is the finest deep ultramarine, the second is a lower grade, and so on. The final residue is broadly grey and useless.
+
 
 The process took weeks of skilled labour, used substantial quantities of raw lapis, and produced, by some accounts, no more than an ounce or two of first-grade pigment from a pound of starting rock. This is why ultramarine cost what it cost. The pigment was not the rock; the pigment was the rock plus several weeks of expert workshop time, plus loss of much of the original material as lower-grade residues.
 
@@ -87,7 +95,11 @@ Natural ultramarine continues to be made, in tiny quantities, by a handful of sp
 
 ## The modern echo
 
-The relationship between Renaissance pigment stones and the modern jewellery trade is closer than it first appears. The trade routes that brought lapis to Venice are the same trade routes that brought rubies, sapphires, and emeralds to the same Venetian dealers. The colour psychology that placed ultramarine at the top of the Renaissance painting hierarchy (the most precious material reserved for the most important subjects) is the same colour psychology that places fine blue sapphire at the top of the modern coloured-stone market. The economics that produced two-tier pricing in Renaissance studios (the expensive blue vs the cheaper substitute) are the economics that produce two-tier pricing in modern gemmology (the natural stone vs the synthetic equivalent, the Burmese ruby vs the Mozambique ruby).
+
+The relationship between Renaissance pigment stones and the modern jewellery trade is closer than it first appears. The trade routes that brought lapis to Venice are the same trade routes that brought rubies, sapphires, and emeralds to the same Venetian dealers. The colour psychology that placed ultramarine at the top of the Renaissance painting hierarchy (the most precious material reserved for the most important subjects) is the same colour psychology that places fine blue sapphire at the top of the modern coloured-stone market.
+
+The economics that produced two-tier pricing in Renaissance studios (the expensive blue vs the cheaper substitute) are the economics that produce two-tier pricing in modern gemmology (the natural stone vs the synthetic equivalent, the Burmese ruby vs the Mozambique ruby).
+
 
 The Sar-e-Sang lapis that became Vermeer's blue, and the lapis that became Botticelli's, and the lapis that became Bellini's, came from the same valley that produces fine lapis jewellery today. The mines have continued. The trade routes have continued, in modified forms. The colour has continued. What changed in 1828 was the painters' relationship with the colour. What did not change was the colour itself.
 
@@ -126,6 +138,8 @@ The Sar-e-Sang valley in Badakhshan, Afghanistan, remains the principal world so
 ---
 
 ## Related reading
+
+- [Tolkien's Gemstones](/stories/tolkiens-gemstones) — from Renaissance pigments to Middle-earth: how stones became symbols across literary history
 
 - [Moonstone, the stone that wouldn't stay out of fashion](/stories/moonstone) on a stone with a comparable continuous-trade history, with the Sri Lankan deposits running on a similar time scale to Sar-e-Sang
 - [The Koh-i-Noor diamond and a 700-year argument](/stories/koh-i-noor) on Indian gem trade routes that paralleled the Afghan lapis trade

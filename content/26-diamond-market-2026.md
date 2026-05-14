@@ -19,7 +19,11 @@ The diamond market in 2026 is not the market it was five years ago. In May 2021,
 
 The diamond market has not recovered its pre-2022 pricing since. Natural diamond wholesale prices are down approximately 30 to 40 per cent from their 2021 peak. Lab-grown diamond wholesale prices are down approximately 75 per cent from their 2022 levels and continue to fall as production capacity expands. The engagement ring market, which had been the primary driver of diamond demand for the previous four decades, has shifted significantly toward lab-grown stones at every price point below approximately £5,000. The commercial-grade natural diamond, the bread-and-butter of every high-street jeweller's engagement ring case, is in its most difficult period since the 1980s recession.
 
-What I find worth writing about, clearly, on the diamond market in 2026, is not that it is in crisis (the trade press has covered that adequately), but that the market transition creates specific, practical information asymmetries that are costly if you're on the wrong side of them. People are still buying diamonds for engagement rings. People are still holding diamonds they bought in 2019 and are wondering what they're worth now. People are still being told by some retailers that natural diamonds are a "natural investment" (they were never really that, but the claim is harder to make at current price levels than it was in 2019). The information gap between what is happening in the diamond market and what the average buyer knows about it is large, and costly, and this is the piece intended to close it.
+
+What I find worth writing about, clearly, on the diamond market in 2026, is not that it is in crisis (the trade press has covered that adequately), but that the market transition creates specific, practical information asymmetries that are costly if you're on the wrong side of them. People are still buying diamonds for engagement rings. People are still holding diamonds they bought in 2019 and are wondering what they're worth now.
+
+People are still being told by some retailers that natural diamonds are a "natural investment" (they were never really that, but the claim is harder to make at current price levels than it was in 2019). The information gap between what is happening in the diamond market and what the average buyer knows about it is large, and costly, and this is the piece intended to close it.
+
 
 ## What drove diamond prices to their 2021 peak
 

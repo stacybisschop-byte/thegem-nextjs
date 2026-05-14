@@ -160,6 +160,8 @@ Probably, slowly. The major price collapse has already happened. The current pri
 
 ## Related reading
 
+- [The Diamond Market in 2026](/guides/diamond-market-2026) — what's happening to natural diamond prices and what it means for buyers right now
+
 - [The engagement ring guide: every stone beyond diamond](/guides/engagement-ring-stones), for buyers considering sapphire, emerald, moissanite or other alternatives
 - [Jewellery that actually holds its value](/guides/jewellery-that-holds-value), what to buy if resale matters
 - [Where to buy vintage jewellery](/guides/where-to-buy-vintage-jewellery), for natural diamonds with provenance and character

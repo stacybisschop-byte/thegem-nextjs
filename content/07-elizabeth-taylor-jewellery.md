@@ -15,13 +15,21 @@ status: First draft. Voice, SEO and GEO compliant. Fact-check pass recommended f
 
 # Elizabeth Taylor's Jewellery: A Collection That Rewrote the Rules
 
-On the evening of 13 December 2011, at Christie's headquarters on Park Avenue in New York, the auctioneer Andrea Fiuczynski stood at a podium for the opening of *The Collection of Elizabeth Taylor*. Lot 13, a pear-shaped natural pearl with a documented five-hundred-year provenance traceable to the Spanish royal family, had been estimated at two to three million dollars. Bidding opened at one million. Within ninety seconds it had passed three. Within five minutes it had passed eight. The hammer came down at $10.5 million, with the buyer's premium bringing the total to $11.84 million. The room applauded. La Peregrina, the pearl that Philip II of Spain had given to Mary I of England as a betrothal gift in 1554, had sold for nearly four times its estimate, to an anonymous Asian buyer bidding by telephone.
+
+On the evening of 13 December 2011, at Christie's headquarters on Park Avenue in New York, the auctioneer Andrea Fiuczynski stood at a podium for the opening of *The Collection of Elizabeth Taylor*. Lot 13, a pear-shaped natural pearl with a documented five-hundred-year provenance traceable to the Spanish royal family, had been estimated at two to three million dollars. Bidding opened at one million.
+
+Within ninety seconds it had passed three. Within five minutes it had passed eight. The hammer came down at $10.5 million, with the buyer's premium bringing the total to $11.84 million. The room applauded. La Peregrina, the pearl that Philip II of Spain had given to Mary I of England as a betrothal gift in 1554, had sold for nearly four times its estimate, to an anonymous Asian buyer bidding by telephone.
+
 
 The Taylor sale ran across four sessions over four days. The jewellery sessions, on the evenings of 13 and 14 December, totalled $115.9 million. Every single lot exceeded its estimate. Most exceeded their estimates by several multiples. The 33.19-carat Krupp Diamond, which Richard Burton had bought for Elizabeth at auction in 1968 for $305,000, sold for $8.8 million. A Bulgari emerald and diamond brooch, given to Elizabeth by Burton during the filming of *Cleopatra*, sold for $6.5 million. By the end of the second jewellery evening, Christie's had set the record for the highest total at any single private collection sale in auction history, a record that has held since.
 
 The proceeds, by Elizabeth Taylor's prior arrangement, went to her AIDS foundation. She had been dead nine months at the time of the sale.
 
-What I find worth noting about Elizabeth Taylor's jewellery, and what I think genuinely separates her collection from any other twentieth-century private collection of comparable size, is that she wore it. She did not vault it. She did not lend it to museums. She wore the Krupp Diamond, a 33-carat Asscher-cut diamond originally mined for the Krupp munitions family, to school runs. She wore La Peregrina, a piece of Spanish royal regalia of incalculable historical importance, on a yacht in Sardinia. She wore the Bulgari emerald suite, which Burton had assembled for her over the course of three years, to dinner parties at her home in Bel Air. She had, as she put it in her 2002 memoir *My Love Affair with Jewelry*, a working relationship with her stones. They were objects to live with, not investments to admire from a distance.
+
+What I find worth noting about Elizabeth Taylor's jewellery, and what I think genuinely separates her collection from any other twentieth-century private collection of comparable size, is that she wore it. She did not vault it. She did not lend it to museums. She wore the Krupp Diamond, a 33-carat Asscher-cut diamond originally mined for the Krupp munitions family, to school runs.
+
+She wore La Peregrina, a piece of Spanish royal regalia of incalculable historical importance, on a yacht in Sardinia. She wore the Bulgari emerald suite, which Burton had assembled for her over the course of three years, to dinner parties at her home in Bel Air. She had, as she put it in her 2002 memoir *My Love Affair with Jewelry*, a working relationship with her stones. They were objects to live with, not investments to admire from a distance.
+
 
 This is, more or less, the story of every important piece she owned.
 
@@ -29,7 +37,11 @@ This is, more or less, the story of every important piece she owned.
 
 Mike Todd, Elizabeth Taylor's third husband, married her in February 1957 and died in a plane crash in March 1958, fourteen months later. In that fourteen months, he gave her substantially more important jewellery than any of her seven husbands would give her, with the eventual exception of Burton.
 
-The cornerstone was a Cartier suite of Burmese cabochon rubies and diamonds, comprising a necklace, bracelet, earrings, and a ring, all made by Cartier Paris in the 1950s and chosen by Todd at the Cartier showroom in New York. Todd had been a successful film producer (*Around the World in 80 Days*, 1956) and was, by every account, devoted to Elizabeth in a way she had not previously experienced. The ruby suite was a Christmas gift in 1957. She wore the earrings to greet him at the door at his birthday dinner in 1958, in lieu of any other clothing or jewellery. She was twenty-six. She remained, by her own account, in love with him for the rest of her life.
+
+The cornerstone was a Cartier suite of Burmese cabochon rubies and diamonds, comprising a necklace, bracelet, earrings, and a ring, all made by Cartier Paris in the 1950s and chosen by Todd at the Cartier showroom in New York. Todd had been a successful film producer (*Around the World in 80 Days*, 1956) and was, by every account, devoted to Elizabeth in a way she had not previously experienced.
+
+The ruby suite was a Christmas gift in 1957. She wore the earrings to greet him at the door at his birthday dinner in 1958, in lieu of any other clothing or jewellery. She was twenty-six. She remained, by her own account, in love with him for the rest of her life.
+
 
 The Todd suite was the first major jewellery she had been given that she actually wore daily. She kept it through the next forty years and through the Eddie Fisher and Burton marriages and the various retreats from public life. The ruby necklace appeared at the 2011 Christie's sale as Lot 27 and sold for $3.78 million against a $200,000 estimate.
 
@@ -55,7 +67,11 @@ The Krupp Diamond, sold at the 2011 Christie's auction, brought $8.81 million. T
 
 In January 1969, at Sotheby's in London, a pear-shaped natural saltwater pearl was offered for sale. The pearl had been documented for over four centuries. It had been discovered in the Gulf of Panama in the 1530s, taken to Spain, presented by King Philip II to Mary I of England as part of their 1554 betrothal arrangement, returned to Spain at Mary's death, worn by every Spanish queen for the next two and a half centuries (it appears in three Velázquez court portraits), removed to France during the Napoleonic upheavals, and acquired by the Duke of Abercorn's family in the late nineteenth century. The Sotheby's estimate was $50,000. Burton bid by telephone from California and bought it for $37,000.
 
-Elizabeth's account of the pearl's first month with her, published in *My Love Affair with Jewelry*, includes one of the most-cited anecdotes in the history of celebrity jewellery. The pearl had been removed from its setting for cleaning and reset in a temporary chain. She was sitting on the bedroom carpet at her home in Bel Air and noticed that one of her Maltese dogs was chewing on something white that she assumed was a piece of carrot. She caught the pearl between the dog's teeth, in her words, "just before he crunched it." The pearl was unharmed. The dog received a stern talking-to. Elizabeth subsequently commissioned Cartier to create a new setting for La Peregrina, weaving the pearl into a Renaissance-revival necklace of rubies, diamonds, and additional natural pearls. The Cartier setting, which Elizabeth designed in consultation with Al Durante at Cartier New York, is the form in which the pearl was sold at the 2011 auction. It sold for $11.84 million, the highest price ever paid at auction for a pearl.
+
+Elizabeth's account of the pearl's first month with her, published in *My Love Affair with Jewelry*, includes one of the most-cited anecdotes in the history of celebrity jewellery. The pearl had been removed from its setting for cleaning and reset in a temporary chain. She was sitting on the bedroom carpet at her home in Bel Air and noticed that one of her Maltese dogs was chewing on something white that she assumed was a piece of carrot. She caught the pearl between the dog's teeth, in her words, "just before he crunched it."
+
+The pearl was unharmed. The dog received a stern talking-to. Elizabeth subsequently commissioned Cartier to create a new setting for La Peregrina, weaving the pearl into a Renaissance-revival necklace of rubies, diamonds, and additional natural pearls. The Cartier setting, which Elizabeth designed in consultation with Al Durante at Cartier New York, is the form in which the pearl was sold at the 2011 auction. It sold for $11.84 million, the highest price ever paid at auction for a pearl.
+
 
 I find the La Peregrina story compelling because it captures, in a single object, the particular character of Elizabeth's relationship with her jewellery. She owned, briefly, a 35-carat natural pearl that had touched the hands of Mary Tudor, Philip II, every Spanish queen of the sixteenth and seventeenth centuries, Napoleon's first wife, and four British dukes. She nearly fed it to a dog. She got it back, had it reset in a way that no museum or curator would have approved, and wore it to dinner. This was, more or less, how she conducted herself with everything she owned.
 

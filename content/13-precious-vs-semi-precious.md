@@ -13,7 +13,7 @@ word_count: ~2,600
 status: First draft. Voice, SEO and GEO compliant. Verify current per-carat pricing against trade data before publication.
 ---
 
-# Precious vs Semi-Precious Stones: What the Distinction Means, and Doesn't
+# Precious vs Semi-Precious Stones: Does the Distinction Matter?
 
 The traditional precious vs semi-precious distinction places four stones, sometimes five, in the first category and roughly everything else in the second. Diamond, ruby, sapphire, and emerald are precious. Pearl is sometimes counted as a fifth. Every other gem-quality stone — aquamarine, tourmaline, opal, alexandrite, tanzanite, tsavorite, peridot, garnet, topaz, amethyst, citrine, moonstone, lapis lazuli, turquoise, jade, and so on — is, in this older framework, semi-precious.
 
