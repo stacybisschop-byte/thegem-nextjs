@@ -31,6 +31,8 @@ const FULL_ARTICLE_FIELDS = `
   metaTitle,
   metaDescription,
   heroImage { asset, hotspot, alt, caption },
+  heroImageUrl,
+  heroImageAlt,
   kickerExtra,
   body,
   affiliateDisclosure
