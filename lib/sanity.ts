@@ -61,6 +61,8 @@ export interface ArticleCard {
   pillar: 'Stories' | 'Guides' | 'Style'
   metaDescription?: string
   heroImage?: SanityImage
+  heroImageUrl?: string
+  heroImageAlt?: string
   kickerExtra?: string
   publishedAt?: string
   readMin?: number
