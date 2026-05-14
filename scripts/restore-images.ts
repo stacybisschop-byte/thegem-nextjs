@@ -63,8 +63,8 @@ const IMAGE_MAP: Record<string, { url: string; alt: string }> = {
     alt: 'A pearl necklace against a neutral background',
   },
   'best-signet-rings-men': {
-    url: 'https://images.unsplash.com/photo-1574155376612-bfa4ed8aabfd?w=1600&q=85',
-    alt: 'A gold signet ring on a surface',
+    url: 'https://images.unsplash.com/photo-1705326455036-0fab8ecba04d?w=2400&q=80&fit=crop&crop=entropy',
+    alt: 'A close-up of a gold ring on a white surface',
   },
   'black-princes-ruby': {
     url: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1600&q=85',
