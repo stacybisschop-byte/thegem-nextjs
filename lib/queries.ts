@@ -49,6 +49,7 @@ export interface HomePageData {
 }
 
 export async function getHomePageData(): Promise<HomePageData> {
+  // Over-fetch so we can drop the headline articles from the list views below.
   const data = await client.fetch<HomePageData>(
     `{
       "latest": *[_type == "article" && published == true && featured == true]
@@ -61,21 +62,31 @@ export async function getHomePageData(): Promise<HomePageData> {
                | order(publishedAt desc)[0] { ${CARD_FIELDS} },
 
       "stories": *[_type == "article" && published == true && pillar == "Stories"]
-               | order(publishedAt desc)[0...10] { ${CARD_FIELDS} },
+               | order(publishedAt desc)[0...11] { ${CARD_FIELDS} },
 
       "guides": *[_type == "article" && published == true && pillar == "Guides"]
-               | order(publishedAt desc)[0...10] { ${CARD_FIELDS} },
+               | order(publishedAt desc)[0...11] { ${CARD_FIELDS} },
 
       "style": *[_type == "article" && published == true && pillar == "Style"]
                | order(publishedAt desc)[0...5] { ${CARD_FIELDS} },
 
       "recent": *[_type == "article" && published == true && featured != true]
-               | order(publishedAt desc)[0...4] { ${CARD_FIELDS} },
+               | order(publishedAt desc)[0...6] { ${CARD_FIELDS} },
     }`,
     {},
     { next: { revalidate: 60 } }
   )
-  return data
+
+  const storiesHeadId = data.storiesHeadline?._id
+  const guidesHeadId = data.guidesHeadline?._id
+  const headlineIds = new Set([storiesHeadId, guidesHeadId].filter(Boolean) as string[])
+
+  return {
+    ...data,
+    stories: data.stories.filter((a) => a._id !== storiesHeadId).slice(0, 10),
+    guides: data.guides.filter((a) => a._id !== guidesHeadId).slice(0, 10),
+    recent: data.recent.filter((a) => !headlineIds.has(a._id)).slice(0, 4),
+  }
 }
 
 // ---- Article page -----------------------------------------------------------

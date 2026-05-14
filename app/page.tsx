@@ -113,16 +113,22 @@ export default async function HomePage() {
             <>
               <div className="pillar-label">The Stories</div>
               <Link href={articleHref(storiesHeadline)} className="headline-card">
-                {storiesHeadline.heroImage && (
-                  <div className="image-wrap">
-                    <Image
-                      src={urlForImage(storiesHeadline.heroImage).width(800).height(533).url()}
-                      alt={storiesHeadline.heroImage.alt ?? storiesHeadline.title}
-                      width={800} height={533}
-                      style={{ objectFit: 'cover', width: '100%', height: '100%' }}
-                    />
-                  </div>
-                )}
+                {(() => {
+                  const src = storiesHeadline.heroImage
+                    ? urlForImage(storiesHeadline.heroImage).width(800).height(533).url()
+                    : storiesHeadline.heroImageUrl ?? null
+                  const alt = storiesHeadline.heroImage?.alt ?? storiesHeadline.heroImageAlt ?? storiesHeadline.title
+                  return src ? (
+                    <div className="image-wrap">
+                      <Image
+                        src={src}
+                        alt={alt}
+                        width={800} height={533}
+                        style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+                      />
+                    </div>
+                  ) : null
+                })()}
                 <h3 dangerouslySetInnerHTML={{ __html: storiesHeadline.title }} />
                 {storiesHeadline.metaDescription && <p>{storiesHeadline.metaDescription}</p>}
               </Link>
@@ -145,16 +151,22 @@ export default async function HomePage() {
             <>
               <div className="pillar-label">The Guides</div>
               <Link href={articleHref(guidesHeadline)} className="headline-card">
-                {guidesHeadline.heroImage && (
-                  <div className="image-wrap">
-                    <Image
-                      src={urlForImage(guidesHeadline.heroImage).width(800).height(533).url()}
-                      alt={guidesHeadline.heroImage.alt ?? guidesHeadline.title}
-                      width={800} height={533}
-                      style={{ objectFit: 'cover', width: '100%', height: '100%' }}
-                    />
-                  </div>
-                )}
+                {(() => {
+                  const src = guidesHeadline.heroImage
+                    ? urlForImage(guidesHeadline.heroImage).width(800).height(533).url()
+                    : guidesHeadline.heroImageUrl ?? null
+                  const alt = guidesHeadline.heroImage?.alt ?? guidesHeadline.heroImageAlt ?? guidesHeadline.title
+                  return src ? (
+                    <div className="image-wrap">
+                      <Image
+                        src={src}
+                        alt={alt}
+                        width={800} height={533}
+                        style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+                      />
+                    </div>
+                  ) : null
+                })()}
                 <h3 dangerouslySetInnerHTML={{ __html: guidesHeadline.title }} />
                 {guidesHeadline.metaDescription && <p>{guidesHeadline.metaDescription}</p>}
               </Link>
