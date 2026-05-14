@@ -85,6 +85,18 @@ export const articleType = defineType({
       ],
     }),
     defineField({
+      name: 'heroImageUrl',
+      title: 'Hero Image URL (placeholder)',
+      type: 'url',
+      description: 'Temporary external image URL. Overridden once licensed photography is uploaded above.',
+    }),
+    defineField({
+      name: 'heroImageAlt',
+      title: 'Hero Image Alt (placeholder)',
+      type: 'string',
+      description: 'Alt text for the placeholder image URL.',
+    }),
+    defineField({
       name: 'heroImageBrief',
       title: 'Photography Brief',
       type: 'text',

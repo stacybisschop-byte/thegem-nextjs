@@ -15,7 +15,8 @@ export default function ArticleCard({ article, size = 'medium', showExcerpt = tr
 
   const heroSrc = article.heroImage
     ? urlForImage(article.heroImage).width(800).height(600).url()
-    : null
+    : article.heroImageUrl ?? null
+  const heroAlt = article.heroImage?.alt ?? article.heroImageAlt ?? article.title
 
   const cardClass = `article-card ${size}`
 
@@ -26,7 +27,7 @@ export default function ArticleCard({ article, size = 'medium', showExcerpt = tr
           {heroSrc ? (
             <Image
               src={heroSrc}
-              alt={article.heroImage?.alt ?? article.title}
+              alt={heroAlt}
               width={400}
               height={500}
               className="image-fill"
@@ -60,7 +61,7 @@ export default function ArticleCard({ article, size = 'medium', showExcerpt = tr
         {heroSrc ? (
           <Image
             src={heroSrc}
-            alt={article.heroImage?.alt ?? article.title}
+            alt={heroAlt}
             fill
             className="image-fill"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

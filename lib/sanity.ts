@@ -43,6 +43,8 @@ export interface Article {
   metaTitle?: string
   metaDescription?: string
   heroImage?: SanityImage
+  heroImageUrl?: string
+  heroImageAlt?: string
   heroCaption?: string
   kickerExtra?: string
   body: string
