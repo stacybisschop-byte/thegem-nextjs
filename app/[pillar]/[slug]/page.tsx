@@ -11,13 +11,11 @@ interface Props {
   params: { pillar: string; slug: string }
 }
 
-// Pre-render all published article routes at build time
 export async function generateStaticParams() {
   const slugs = await getAllArticleSlugs()
   return slugs.map(({ pillar, slug }) => ({ pillar, slug }))
 }
 
-// Dynamic Open Graph metadata per article
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const article = await getArticle(params.pillar, params.slug)
   if (!article) return {}
@@ -52,7 +50,6 @@ export default async function ArticlePage({ params }: Props) {
 
   const related = await getRelatedArticles(article._id, article.pillar, 3)
   const faqs = extractFAQs(article.body)
-  const wordCount = article.body.split(/\s+/).length
   const readingMin = readMin(article.body)
 
   const heroSrc = article.heroImage
@@ -60,22 +57,71 @@ export default async function ArticlePage({ params }: Props) {
     : null
 
   const kicker = `${article.pillar} · ${article.kickerExtra ?? 'The Gem'}`
+  const articleUrl = `https://thegem.press/${params.pillar}/${params.slug}`
+  const pillarName = article.pillar.charAt(0).toUpperCase() + article.pillar.slice(1)
 
-  // JSON-LD structured data
+  // ── Structured data ────────────────────────────────────────────
+
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: article.title,
     description: article.metaDescription,
-    author: { '@type': 'Person', name: article.author ?? 'Florence' },
-    datePublished: article.publishedAt,
-    dateModified: article.lastReviewedAt ?? article.publishedAt,
+    author: {
+      '@type': 'Person',
+      name: article.author ?? 'Florence',
+      url: 'https://thegem.press/about',
+    },
     publisher: {
       '@type': 'Organization',
       name: 'The Gem',
-      url: 'https://thegem.co',
+      url: 'https://thegem.press',
     },
+    datePublished: article.publishedAt,
+    dateModified: article.lastReviewedAt ?? article.publishedAt,
+    url: articleUrl,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': articleUrl },
+    articleSection: article.pillar,
     ...(heroSrc && { image: heroSrc }),
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['.article-hero .deck', '.article-body p:first-of-type'],
+    },
+  }
+
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://thegem.press' },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: pillarName,
+        item: `https://thegem.press/${params.pillar}`,
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: article.title,
+        item: articleUrl,
+      },
+    ],
+  }
+
+  const authorJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: 'Florence',
+    url: 'https://thegem.press/about',
+    jobTitle: 'Founding Editor',
+    worksFor: { '@type': 'Organization', name: 'The Gem', url: 'https://thegem.press' },
+    description:
+      'Magazine writer and editor based in London with fifteen years of experience.',
+    knowsAbout: [
+      'fine jewellery', 'gemstones', 'jewellery history', 'antique jewellery',
+      'vintage jewellery', 'diamond grading', 'jewellery valuation',
+    ],
   }
 
   const faqJsonLd =
@@ -93,19 +139,13 @@ export default async function ArticlePage({ params }: Props) {
 
   return (
     <>
-      {/* ── Structured Data ──────────────────────────────────────────── */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(authorJsonLd) }} />
       {faqJsonLd && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       )}
 
-      {/* ── Affiliate Disclosure ─────────────────────────────────────── */}
       {article.affiliateDisclosure && (
         <div
           style={{
@@ -124,13 +164,10 @@ export default async function ArticlePage({ params }: Props) {
         </div>
       )}
 
-      {/* ── Article Hero ─────────────────────────────────────────────── */}
       <header className="article-hero">
         <div className="kicker">{kicker}</div>
         <h1>{article.title}</h1>
-        {article.metaDescription && (
-          <p className="deck">{article.metaDescription}</p>
-        )}
+        {article.metaDescription && <p className="deck">{article.metaDescription}</p>}
         <div className="article-meta">
           <span className="byline">By {article.author ?? 'Florence'}</span>
           <span className="meta-dot" />
@@ -149,7 +186,6 @@ export default async function ArticlePage({ params }: Props) {
         </div>
       </header>
 
-      {/* ── Hero Image ───────────────────────────────────────────────── */}
       {heroSrc && (
         <div className="article-hero-image">
           <div className="image-wrap">
@@ -162,18 +198,14 @@ export default async function ArticlePage({ params }: Props) {
               style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             />
           </div>
-          {article.heroImage?.caption && (
-            <p className="caption">{article.heroImage.caption}</p>
-          )}
+          {article.heroImage?.caption && <p className="caption">{article.heroImage.caption}</p>}
         </div>
       )}
 
-      {/* ── Article Body ─────────────────────────────────────────────── */}
       <article>
         <ArticleBody body={article.body} />
       </article>
 
-      {/* ── Author Bio ───────────────────────────────────────────────── */}
       <div className="article-footer">
         <div className="avatar">F</div>
         <div className="bio">
@@ -185,7 +217,6 @@ export default async function ArticlePage({ params }: Props) {
         </div>
       </div>
 
-      {/* ── Related Articles ─────────────────────────────────────────── */}
       {related.length > 0 && (
         <section className="related-section">
           <h2>Further <em>reading</em></h2>
@@ -198,7 +229,6 @@ export default async function ArticlePage({ params }: Props) {
         </section>
       )}
 
-      {/* ── Newsletter ───────────────────────────────────────────────── */}
       <Newsletter />
     </>
   )
