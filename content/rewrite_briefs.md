@@ -50,7 +50,7 @@ For shared reference: the launch dozen briefs (Princess Diana, Elizabeth Taylor,
 
 ### Brief M3 — How Cartier Became Cartier
 
-**Old URLs:** `/how-the-cartier-family-built-their-brand/` AND `/cartier-a-timeless-icon/` → **New URL:** `/stories/cartier-family/`
+**Old URLs:** `/how-the-cartier-family-built-their-brand/` AND `/cartier-a-timeless-icon/` → **New URL:** `/stories/cartier-family-history/`
 
 **Current performance:** 10 clicks combined, position 6.83 on the family-history piece. Two existing pieces on the same subject splitting their authority — consolidating them into one strong piece is the migration win.
 
