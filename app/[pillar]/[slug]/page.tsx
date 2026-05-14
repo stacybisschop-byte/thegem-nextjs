@@ -3,7 +3,9 @@ import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { getArticle, getAllArticleSlugs, getRelatedArticles } from '@/lib/queries'
 import { urlForImage, readMin } from '@/lib/sanity'
-import ArticleBody, { extractFAQs } from '@/components/ArticleBody'
+import dynamic from 'next/dynamic'
+import { extractFAQs } from '@/components/ArticleBody'
+const ArticleBody = dynamic(() => import('@/components/ArticleBody'), { ssr: true })
 import ArticleCard from '@/components/ArticleCard'
 import Newsletter from '@/components/Newsletter'
 

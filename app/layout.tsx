@@ -1,7 +1,12 @@
 import type { Metadata } from 'next'
+import { Fraunces, Plus_Jakarta_Sans, JetBrains_Mono } from 'next/font/google'
 import '../styles/globals.css'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
+
+const fraunces = Fraunces({ subsets: ['latin'], variable: '--font-display', display: 'swap', axes: ['opsz', 'SOFT', 'WONK'] })
+const plusJakarta = Plus_Jakarta_Sans({ subsets: ['latin'], variable: '--font-body', display: 'swap', weight: ['300', '400', '500', '600', '700'] })
+const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono', display: 'swap', weight: ['400', '500'] })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://thegem.press'),
@@ -52,7 +57,7 @@ const websiteSchema = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${fraunces.variable} ${plusJakarta.variable} ${jetbrainsMono.variable}`}>
       <body>
         <script
           type="application/ld+json"
