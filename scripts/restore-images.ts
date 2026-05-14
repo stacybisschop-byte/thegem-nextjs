@@ -67,16 +67,16 @@ const IMAGE_MAP: Record<string, { url: string; alt: string }> = {
     alt: 'A gold signet ring on a surface',
   },
   'black-princes-ruby': {
-    url: 'https://images.unsplash.com/photo-1583937443351-c6b1c2c4f7f5?w=1600&q=85',
-    alt: 'A large red gemstone',
+    url: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1600&q=85',
+    alt: 'A large faceted gemstone against a dark background',
   },
   'moonstone': {
     url: 'https://images.unsplash.com/photo-1567361808960-dec9cb578182?w=1600&q=85',
     alt: 'A moonstone with its characteristic adularescence',
   },
   'precious-vs-semi-precious': {
-    url: 'https://images.unsplash.com/photo-1551732998-9573f695fdbb?w=1600&q=85',
-    alt: 'An array of coloured gemstones',
+    url: 'https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?w=1600&q=85',
+    alt: 'A selection of contemporary fine jewellery',
   },
   'jewellery-that-holds-value': {
     url: 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=1600&q=85',
@@ -87,32 +87,32 @@ const IMAGE_MAP: Record<string, { url: string; alt: string }> = {
     alt: 'Ancient metalwork jewellery',
   },
   'tolkiens-gemstones': {
-    url: 'https://images.unsplash.com/photo-1551122080-2eb3f8d97f2c?w=1600&q=85',
-    alt: 'A faceted gemstone with deep internal colour',
+    url: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=1600&q=85',
+    alt: 'A deep blue gemstone',
   },
   'renaissance-pigment-stones': {
-    url: 'https://images.unsplash.com/photo-1542039217-5e7eed30b97a?w=1600&q=85',
-    alt: 'Lapis lazuli, the source of ultramarine pigment',
+    url: 'https://images.unsplash.com/photo-1611735341450-74d61e660ad2?w=1600&q=85',
+    alt: 'Raw mineral crystals',
   },
   'pyrite-and-the-gold-rush': {
     url: 'https://images.unsplash.com/photo-1611735341450-74d61e660ad2?w=1600&q=85',
     alt: "Pyrite crystals — nature's most famous impostor",
   },
   'layering-necklaces': {
-    url: 'https://images.unsplash.com/photo-1611755644068-2c0f8b4b8c7e?w=1600&q=85',
-    alt: 'Multiple necklaces layered together',
+    url: 'https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=1600&q=85',
+    alt: 'Fine jewellery displayed on a pale surface',
   },
   'modern-womens-jewellery-edit': {
     url: 'https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?w=1600&q=85',
     alt: 'Contemporary fine jewellery selection',
   },
   'cartier-family-history': {
-    url: 'https://images.unsplash.com/photo-1606293926249-ed22a4f97c64?w=1600&q=85',
-    alt: 'Fine jewellery from a luxury house',
+    url: 'https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=1600&q=85',
+    alt: 'Diamond and gold jewellery on a dark background',
   },
   'tiffany-and-co-history': {
-    url: 'https://images.unsplash.com/photo-1561591437281-460bfbe1220a?w=1600&q=85',
-    alt: 'A diamond solitaire in a classic setting',
+    url: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1600&q=85',
+    alt: 'A round brilliant-cut diamond examined with a loupe',
   },
   'pink-jewellery': {
     url: 'https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=1600&q=85',
