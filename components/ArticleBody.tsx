@@ -11,6 +11,11 @@ function stripFrontmatter(md: string): string {
   return match ? match[1] : md
 }
 
+// Strip a leading H1 — the article hero already renders the title.
+function stripLeadingH1(md: string): string {
+  return md.replace(/^\s*#\s+[^\n]+\n+/, '')
+}
+
 // Extract FAQ pairs for JSON-LD structured data
 export function extractFAQs(body: string): Array<{ question: string; answer: string }> {
   const faqSection = body.match(/## Frequently asked questions\n([\s\S]*?)(?=\n##|$)/i)
@@ -31,7 +36,7 @@ export function extractFAQs(body: string): Array<{ question: string; answer: str
 }
 
 export default function ArticleBody({ body }: Props) {
-  const cleaned = stripFrontmatter(body)
+  const cleaned = stripLeadingH1(stripFrontmatter(body))
 
   return (
     <div className="article-body">
