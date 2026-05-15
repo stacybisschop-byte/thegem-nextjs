@@ -84,12 +84,59 @@ export default async function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageFaqSchema) }}
       />
 
-      {/* ── Latest Grid ─────────────────────────────────────────────── */}
-      <section className="latest-grid">
-        {latest[0] && <ArticleCard article={latest[0]} size="large" showExcerpt />}
-        {latest[1] && <ArticleCard article={latest[1]} size="medium" showExcerpt />}
-        {latest[2] && <ArticleCard article={latest[2]} size="medium" showExcerpt />}
-      </section>
+      {/* ── Hero Feature ────────────────────────────────────────────── */}
+      {latest[0] && (() => {
+        const lead = latest[0]
+        const src = lead.heroImage
+          ? urlForImage(lead.heroImage).width(2400).height(1350).url()
+          : lead.heroImageUrl ?? null
+        const alt = lead.heroImage?.alt ?? lead.heroImageAlt ?? lead.title
+        const kicker = `${lead.pillar}${lead.kickerExtra ? ` · ${lead.kickerExtra}` : ''}`
+        return (
+          <Link href={articleHref(lead)} className="hero-feature">
+            {src && (
+              <div className="image-wrap">
+                <Image
+                  src={src}
+                  alt={alt}
+                  fill
+                  priority
+                  sizes="100vw"
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+            )}
+            <div className="scrim" />
+            <div className="hero-feature-content">
+              <div className="kicker">{kicker}</div>
+              <h1
+                dangerouslySetInnerHTML={{
+                  __html: lead.title.replace(/\*([^*]+)\*/g, '<em>$1</em>'),
+                }}
+              />
+              {lead.metaDescription && <p className="deck">{lead.metaDescription}</p>}
+              <div className="meta">
+                <span>By Florence</span>
+                <span className="meta-dot" />
+                <span>{lead.readMin ?? 10} min read</span>
+              </div>
+            </div>
+          </Link>
+        )
+      })()}
+
+      {/* ── Also New This Week (slots 2 + 3) ────────────────────────── */}
+      {(latest[1] || latest[2]) && (
+        <section className="also-new">
+          <div className="section-head">
+            <h2>Also new <em>this week</em></h2>
+          </div>
+          <div className="also-new-grid">
+            {latest[1] && <ArticleCard article={latest[1]} size="medium" showExcerpt />}
+            {latest[2] && <ArticleCard article={latest[2]} size="medium" showExcerpt />}
+          </div>
+        </section>
+      )}
 
       {/* ── Editorial Break ─────────────────────────────────────────── */}
       <div className="editorial-break">

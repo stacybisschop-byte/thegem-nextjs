@@ -188,7 +188,7 @@ const HERO_IMAGES: Record<string, { url: string; alt: string }> = {
     alt: 'A GIA-certified round brilliant diamond',
   },
   'chopard-cannes': {
-    url: '/blog/chopard-cannes.jpg',
+    url: '/blog/chopard-cannes.webp',
     alt: 'Demi Moore wearing a Chopard diamond bib necklace on the red carpet at Cannes 2026.',
   },
 }
