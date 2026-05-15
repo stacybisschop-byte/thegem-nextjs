@@ -18,6 +18,8 @@ import { readFileSync, readdirSync } from 'fs'
 import { join, basename } from 'path'
 import dotenv from 'dotenv'
 
+dotenv.config({ path: '.env.local' })
+
 // ── Sanity client (write access) ─────────────────────────────────────────────
 
 const client = createClient({
@@ -36,7 +38,7 @@ const MD_DIR = join(__dirname, '../content')
 // Specifies which three articles go in the homepage Latest grid and what order.
 // 1 = large card, 2 and 3 = medium cards.
 const FEATURED: Record<string, number> = {
-  'black-princes-ruby':    1,
+  'chopard-cannes':         1,
   'cartier-family-history': 2,
   'tiffany-and-co-history': 3,
 }

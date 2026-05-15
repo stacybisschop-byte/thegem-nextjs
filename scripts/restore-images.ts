@@ -130,6 +130,10 @@ const IMAGE_MAP: Record<string, { url: string; alt: string }> = {
     url: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1600&q=85',
     alt: 'A GIA-certified round brilliant diamond',
   },
+  'chopard-cannes': {
+    url: '/blog/chopard-cannes.jpg',
+    alt: 'Demi Moore wearing a Chopard diamond bib necklace on the red carpet at Cannes 2026.',
+  },
 }
 
 async function restore() {
