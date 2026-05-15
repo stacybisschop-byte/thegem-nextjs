@@ -65,6 +65,7 @@ const KICKER_EXTRAS: Record<string, string> = {
   'modern-womens-jewellery-edit': 'The Edit',
   'cartier-family-history':      'House Histories',
   'tiffany-and-co-history':      'House Histories',
+  'chopard-cannes':              'House Histories',
   'pink-jewellery':              'A Reclamation',
   'how-to-care-for-your-jewellery': 'Complete Guide',
   'how-to-sell-your-jewellery':  'Complete Guide',
