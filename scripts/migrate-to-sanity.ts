@@ -241,6 +241,14 @@ async function migrate() {
     const docId = `article-${slug}`
     const hero = HERO_IMAGES[slug]
 
+    // Preserve any heroImage asset that was uploaded through Sanity Studio.
+    // createOrReplace overwrites the document wholesale, so without this read
+    // the asset reference would be wiped on every migration run.
+    const existing = await client.fetch<{ heroImage?: unknown } | null>(
+      `*[_id == $id][0]{ heroImage }`,
+      { id: docId }
+    )
+
     const doc = {
       _id: docId,
       _type: 'article',
@@ -261,6 +269,7 @@ async function migrate() {
       kickerExtra: KICKER_EXTRAS[slug] ?? undefined,
       body: content.trim(),
       affiliateDisclosure: content.includes('affiliate') ? true : false,
+      ...(existing?.heroImage != null && { heroImage: existing.heroImage }),
       ...(FEATURED[slug] != null && {
         featured: true,
         featuredOrder: FEATURED[slug],
@@ -270,7 +279,7 @@ async function migrate() {
     try {
       await client.createOrReplace(doc)
       const featuredTag = FEATURED[slug] != null ? ` ⭐ featured(${FEATURED[slug]})` : ''
-      const imageTag = hero ? ' 📸' : ''
+      const imageTag = existing?.heroImage != null ? ' 🖼️ ' : hero ? ' 📸' : ''
       console.log(`  ✅  ${pillar} · ${slug}${featuredTag}${imageTag}`)
       successCount++
     } catch (err) {
