@@ -38,9 +38,9 @@ const MD_DIR = join(__dirname, '../content')
 // ── Homepage feature config ────────────────────────────────────────────────────
 // Three article slugs in the homepage Latest grid. 1 = large card, 2 and 3 = medium.
 const FEATURED: Record<string, number> = {
-  'chopard-cannes':         1,
-  'cartier-family-history': 2,
-  'tiffany-and-co-history': 3,
+  'floral-jewellery':       1,
+  'chopard-cannes':         2,
+  'cartier-family-history': 3,
 }
 
 // ── Kicker extras map ─────────────────────────────────────────────────────────
@@ -72,6 +72,7 @@ const KICKER_EXTRAS: Record<string, string> = {
   'how-to-care-for-your-jewellery': 'Complete Guide',
   'how-to-sell-your-jewellery':  'Complete Guide',
   'diamond-market-2026':         'Market Analysis',
+  'floral-jewellery':            'Floral Motifs',
 }
 
 // ── Hero image map ────────────────────────────────────────────────────────────
@@ -190,6 +191,10 @@ const HERO_IMAGES: Record<string, { url: string; alt: string }> = {
   'chopard-cannes': {
     url: '/blog/chopard-cannes.webp',
     alt: 'Demi Moore wearing a Chopard diamond bib necklace on the red carpet at Cannes 2026.',
+  },
+  'floral-jewellery': {
+    url: '/blog/floral-jewellery.webp',
+    alt: 'A delicate floral motif ring in gold against a soft cream background.',
   },
 }
 
