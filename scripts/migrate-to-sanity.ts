@@ -12,6 +12,10 @@
  * Safe to re-run. Uses createOrReplace, so existing documents are updated,
  * not duplicated. heroImageUrl is sourced from the HERO_IMAGES map below so
  * that re-running the migration doesn't wipe placeholder images.
+ *
+ * Scheduling: if an article's frontmatter sets `publishDate: YYYY-MM-DD`, the
+ * script writes published=false while that date is in the future and flips it
+ * to published=true on/after the date — re-run the migration to publish.
  */
 
 import { createClient } from '@sanity/client'
@@ -37,10 +41,29 @@ const MD_DIR = join(__dirname, '../content')
 
 // ── Homepage feature config ────────────────────────────────────────────────────
 // Three article slugs in the homepage Latest grid. 1 = large card, 2 and 3 = medium.
+// Featured docs that are still unpublished (publishDate in the future) won't
+// appear on the homepage — they're filtered out by the published==true gate in
+// lib/queries.ts. Until they publish, the remaining slots shuffle up by
+// featuredOrder.
 const FEATURED: Record<string, number> = {
-  'floral-jewellery':       1,
-  'chopard-cannes':         2,
-  'cartier-family-history': 3,
+  'garrard-history':                     1,
+  'tennis-bracelet-history':             2,
+  'ring-stacking-guide':                 3,
+  'jewellery-hallmarks-uk':              4,
+  'cullinan-diamond':                    5,
+  'how-to-build-a-jewellery-collection': 6,
+  'platinum-vs-white-gold':              7,
+  'wallis-simpson-jewellery':            8,
+  'hatton-garden-guide':                 9,
+  'cartier-love-bracelet-guide':        10,
+  'mens-jewellery-guide':               11,
+  'victorian-mourning-jewellery':       12,
+  'van-cleef-alhambra-guide':           13,
+  'how-to-wear-a-brooch':               14,
+  'bulgari-history':                    15,
+  'floral-jewellery':                   16,
+  'chopard-cannes':                     17,
+  'cartier-family-history':             18,
 }
 
 // ── Kicker extras map ─────────────────────────────────────────────────────────
@@ -73,6 +96,21 @@ const KICKER_EXTRAS: Record<string, string> = {
   'how-to-sell-your-jewellery':  'Complete Guide',
   'diamond-market-2026':         'Market Analysis',
   'floral-jewellery':            'Floral Motifs',
+  'bulgari-history':             'House Histories',
+  'how-to-wear-a-brooch':        'How To',
+  'van-cleef-alhambra-guide':    'Buying Guides',
+  'victorian-mourning-jewellery':'Heritage',
+  'mens-jewellery-guide':        'The Edit',
+  'cartier-love-bracelet-guide': 'Buying Guides',
+  'hatton-garden-guide':         'London Shopping',
+  'wallis-simpson-jewellery':    'Celebrity Jewellery',
+  'platinum-vs-white-gold':      'Buying Guides',
+  'how-to-build-a-jewellery-collection': 'Building a Collection',
+  'cullinan-diamond':            'Famous Stones',
+  'jewellery-hallmarks-uk':      'Buying Guides',
+  'ring-stacking-guide':         'How To',
+  'tennis-bracelet-history':     'Famous Pieces',
+  'garrard-history':             'House Histories',
 }
 
 // ── Hero image map ────────────────────────────────────────────────────────────
@@ -212,6 +250,28 @@ function pillarFromFrontmatter(rawSlug: string, rawPillar?: string): string {
   return 'Stories'
 }
 
+// Resolve scheduling from frontmatter. If publishDate is set:
+//   - past/today → published=true, publishedAt=<publishDate at 00:00 UTC>
+//   - future      → published=false, publishedAt=<publishDate at 00:00 UTC>
+// If no publishDate is set, behave as before: publish immediately with now.
+function resolveSchedule(rawPublishDate: unknown, now: Date): {
+  published: boolean
+  publishedAt: string
+} {
+  if (rawPublishDate == null || rawPublishDate === '') {
+    return { published: true, publishedAt: now.toISOString() }
+  }
+  const parsed =
+    rawPublishDate instanceof Date
+      ? rawPublishDate
+      : new Date(String(rawPublishDate))
+  if (Number.isNaN(parsed.getTime())) {
+    console.warn(`  ⚠️  Unparseable publishDate: ${String(rawPublishDate)} — defaulting to now`)
+    return { published: true, publishedAt: now.toISOString() }
+  }
+  return { published: parsed.getTime() <= now.getTime(), publishedAt: parsed.toISOString() }
+}
+
 // ── Main ──────────────────────────────────────────────────────────────────────
 
 async function migrate() {
@@ -230,6 +290,7 @@ async function migrate() {
 
   let successCount = 0
   let skipCount = 0
+  const now = new Date()
 
   for (const file of files) {
     const raw = readFileSync(join(MD_DIR, file), 'utf8')
@@ -245,6 +306,7 @@ async function migrate() {
     const pillar = pillarFromFrontmatter(fm.slug, fm.pillar)
     const docId = `article-${slug}`
     const hero = HERO_IMAGES[slug]
+    const { published, publishedAt } = resolveSchedule(fm.publishDate, now)
 
     // Preserve any heroImage asset that was uploaded through Sanity Studio.
     // createOrReplace overwrites the document wholesale, so without this read
@@ -261,8 +323,8 @@ async function migrate() {
       slug: { _type: 'slug', current: slug },
       pillar,
       author: fm.author ?? 'Florence',
-      published: true,
-      publishedAt: new Date().toISOString(),
+      published,
+      publishedAt,
       lastReviewedAt: fm.last_reviewed_at
         ? `${fm.last_reviewed_at}-01`
         : undefined,
@@ -285,7 +347,8 @@ async function migrate() {
       await client.createOrReplace(doc)
       const featuredTag = FEATURED[slug] != null ? ` ⭐ featured(${FEATURED[slug]})` : ''
       const imageTag = existing?.heroImage != null ? ' 🖼️ ' : hero ? ' 📸' : ''
-      console.log(`  ✅  ${pillar} · ${slug}${featuredTag}${imageTag}`)
+      const scheduledTag = !published ? ` ⏳ scheduled ${publishedAt.slice(0, 10)}` : ''
+      console.log(`  ✅  ${pillar} · ${slug}${featuredTag}${imageTag}${scheduledTag}`)
       successCount++
     } catch (err) {
       console.error(`  ❌  Failed: ${slug}`, err)

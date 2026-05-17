@@ -19,7 +19,7 @@ The Chelsea Flower Show opens tomorrow at the Royal Hospital Chelsea, and for fi
 
 Which brings me, in a way that I hope will become clear, to jewellery.
 
-For a stretch of roughly a century between the 1820s and the First World War, flowers in Britain and much of Europe carried a precise coded vocabulary. The forget-me-not meant true love. The pansy — from *pensée*, the French for thought — meant *I am thinking of you*. Ivy meant fidelity. A daisy offered to someone meant they were considered innocent. The violet said modesty; the rosemary said remembrance; the lily of the valley said the sender hoped for the return of happiness. These meanings were not folk memory. They were published, circulated, and discussed. Charlotte de Latour's *Le Language des Fleurs*, first published in Paris in 1819, went through dozens of editions in French and English over the following decades. Victorian women gave each other tussy-mussies — small, dense nosegays carried in the hand or pinned to a dress — as a form of communication that their social context made explicit speech difficult to replace.
+For a stretch of roughly a century between the 1820s and the First World War, flowers in Britain and much of Europe carried a precise coded vocabulary. The forget-me-not meant true love. The pansy — from *pensée*, the French for thought — meant *I am thinking of you*. Ivy meant fidelity. A daisy offered to someone meant they were considered innocent. The violet said modesty; the rosemary said remembrance; the lily of the valley said the sender hoped for the return of happiness. These meanings were not folk memory. They were published, circulated, and discussed. Charlotte de Latour's *Le Language des Fleurs*, first published in Paris in 1819, went through dozens of editions in French and English over the following decades. [Victorian](/stories/victorian-mourning-jewellery) women gave each other tussy-mussies — small, dense nosegays carried in the hand or pinned to a dress — as a form of communication that their social context made explicit speech difficult to replace.
 
 The jewellery industry noticed.
 
@@ -35,7 +35,7 @@ The forget-me-not's persistence in jewellery — it remained common through Edwa
 
 The pansy is the more interesting case, partly because the meaning requires knowledge of French to unlock. A Victorian woman who received a pansy brooch from a man she was not supposed to be corresponding with would understand it in a way that her mother, examining the same piece, might not. *Pensée* — thought — said *I am thinking of you* in a deniable register. The flower looked innocent. The message was not.
 
-Pansy brooches in gold and enamel — purple and yellow petals being the most common palette — appear frequently in estate sales and auction catalogues from the mid-Victorian period through the Edwardian. They are sometimes described, in estate records, simply as "floral brooch." The recipients knew what they were.
+[Pansy brooches](/style/how-to-wear-a-brooch) in gold and enamel — purple and yellow petals being the most common palette — appear frequently in estate sales and auction catalogues from the mid-Victorian period through the Edwardian. They are sometimes described, in estate records, simply as "floral brooch." The recipients knew what they were.
 
 The daisy operated differently. Daisy motifs in jewellery — ring settings with a central diamond surrounded by smaller stones in a ring, mimicking the flower's structure — were often called "daisy settings" or "marginot settings" in contemporary jewellery catalogues. By the late nineteenth century, the daisy ring was so common that it had become structural rather than symbolic; the meaning had faded into the form. The daisy setting is still in production. Van Cleef & Arpels' Frivole collection — their widely owned daisy-petal motif in yellow gold, white gold, and diamond — is a direct descendant of the Victorian daisy setting, though the house uses the fleur as a formal design element rather than a message. Whether the original meaning survives into the modern piece depends on who is giving it, and who knows enough to receive it.
 
@@ -102,6 +102,16 @@ Van Cleef & Arpels' Frivole collection uses a daisy-petal motif — a central di
 ### Where can I buy Victorian floral jewellery in London?
 
 Victorian floral jewellery — including forget-me-not rings and brooches, pansy pieces, and occasional acrostic rings — is available through specialist antique jewellery dealers, Christie's South Kensington, Woolley & Wallis in Salisbury, and the antique dealers of Portobello Road and the King's Road in London. Prices for good enamel pieces in gold start at around £150 and run to approximately £2,500 for fine acrostic rings with original stones.
+
+---
+
+## Related reading
+
+- [How to Wear a Brooch in 2026](/style/how-to-wear-a-brooch) — the practical guide to wearing the Victorian floral brooches discussed here
+- [Victorian Mourning Jewellery](/stories/victorian-mourning-jewellery) — the parallel Victorian decorative vocabulary, drawing on the same period and the same coded language
+- [Pink Jewellery: A Reclamation](/style/pink-jewellery) — the contemporary case for coloured floral pieces
+- [Where to Buy Vintage Jewellery in the UK](/guides/where-to-buy-vintage-jewellery) — sourcing antique floral brooches and pendants
+- [The Modern Women's Jewellery Edit](/style/modern-womens-jewellery-edit) — where floral pieces sit in a contemporary wardrobe
 
 ---
 
