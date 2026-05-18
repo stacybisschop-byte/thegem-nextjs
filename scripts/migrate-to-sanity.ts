@@ -61,9 +61,10 @@ const FEATURED: Record<string, number> = {
   'van-cleef-alhambra-guide':           13,
   'how-to-wear-a-brooch':               14,
   'bulgari-history':                    15,
-  'floral-jewellery':                   16,
-  'chopard-cannes':                     17,
-  'cartier-family-history':             18,
+  'paraiba-tourmaline':                 16,
+  'floral-jewellery':                   17,
+  'chopard-cannes':                     18,
+  'cartier-family-history':             19,
 }
 
 // ── Kicker extras map ─────────────────────────────────────────────────────────
@@ -95,6 +96,7 @@ const KICKER_EXTRAS: Record<string, string> = {
   'how-to-care-for-your-jewellery': 'Complete Guide',
   'how-to-sell-your-jewellery':  'Complete Guide',
   'diamond-market-2026':         'Market Analysis',
+  'paraiba-tourmaline':          'Famous Stones',
   'floral-jewellery':            'Floral Motifs',
   'bulgari-history':             'House Histories',
   'how-to-wear-a-brooch':        'How To',
@@ -233,6 +235,10 @@ const HERO_IMAGES: Record<string, { url: string; alt: string }> = {
   'floral-jewellery': {
     url: '/blog/floral-jewellery.webp',
     alt: 'A delicate floral motif ring in gold against a soft cream background.',
+  },
+  'paraiba-tourmaline': {
+    url: '/blog/paraiba-tourmaline.webp',
+    alt: 'A neon blue-green paraiba tourmaline showing the electric copper-bearing colour discovered in northeast Brazil in 1989.',
   },
 }
 
