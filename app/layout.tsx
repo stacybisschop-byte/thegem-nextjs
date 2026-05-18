@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
+import { Analytics } from '@vercel/analytics/react'
 import { Fraunces, Plus_Jakarta_Sans, JetBrains_Mono } from 'next/font/google'
 import '../styles/globals.css'
 import Nav from '@/components/Nav'
@@ -74,7 +76,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Nav />
         <main>{children}</main>
         <Footer />
+        <Analytics />
       </body>
+      <Script
+        src="https://tracker.metricool.com/resources/be.js"
+        strategy="afterInteractive"
+      />
+      <Script id="metricool-init" strategy="afterInteractive">
+        {`beTracker.t({hash:"1fe944ce138ee4b75030a9cc864d7681"})`}
+      </Script>
     </html>
   )
 }
