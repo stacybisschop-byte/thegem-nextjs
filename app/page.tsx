@@ -4,6 +4,7 @@ import { getHomePageData } from '@/lib/queries'
 import { urlForImage, articleHref } from '@/lib/sanity'
 import ArticleCard from '@/components/ArticleCard'
 import Newsletter from '@/components/Newsletter'
+import styles from './home.module.css'
 
 export const revalidate = 60
 
@@ -127,11 +128,11 @@ export default async function HomePage() {
 
       {/* ── Also New This Week (slots 2 + 3) ────────────────────────── */}
       {(latest[1] || latest[2]) && (
-        <section className="also-new">
+        <section className={styles.alsoNew}>
           <div className="section-head">
             <h2>Also new <em>this week</em></h2>
           </div>
-          <div className="also-new-grid">
+          <div className={styles.alsoNewGrid}>
             {latest[1] && <ArticleCard article={latest[1]} size="medium" showExcerpt />}
             {latest[2] && <ArticleCard article={latest[2]} size="medium" showExcerpt />}
           </div>
@@ -139,7 +140,7 @@ export default async function HomePage() {
       )}
 
       {/* ── Editorial Break ─────────────────────────────────────────── */}
-      <div className="editorial-break">
+      <div className={styles.editorialBreak}>
         <span className="quote-mark">&ldquo;</span>
         <blockquote>
           For people who buy beautiful things,<br />
@@ -154,8 +155,8 @@ export default async function HomePage() {
         <Link href="/stories">More stories →</Link>
       </div>
 
-      <section className="pillar-pair">
-        <div className="pillar-block">
+      <section className={styles.pillarPair}>
+        <div className={styles.pillarBlock}>
           {storiesHeadline && (
             <>
               <div className="pillar-label">The Stories</div>
@@ -181,7 +182,7 @@ export default async function HomePage() {
               </Link>
             </>
           )}
-          <ul className="pillar-list">
+          <ul className={styles.pillarList}>
             {stories.slice(0, 9).map((a) => (
               <li key={a._id}>
                 <Link href={articleHref(a)}>
@@ -193,7 +194,7 @@ export default async function HomePage() {
           </ul>
         </div>
 
-        <div className="pillar-block">
+        <div className={styles.pillarBlock}>
           {guidesHeadline && (
             <>
               <div className="pillar-label">The Guides</div>
@@ -219,7 +220,7 @@ export default async function HomePage() {
               </Link>
             </>
           )}
-          <ul className="pillar-list">
+          <ul className={styles.pillarList}>
             {guides.slice(0, 9).map((a) => (
               <li key={a._id}>
                 <Link href={articleHref(a)}>
@@ -239,7 +240,7 @@ export default async function HomePage() {
             <h2>The <em>Style</em> edit</h2>
             <Link href="/style">More style →</Link>
           </div>
-          <section className="style-edit">
+          <section className={styles.styleEdit}>
             {style.map((a) => (
               <ArticleCard key={a._id} article={a} size="medium" showExcerpt />
             ))}
@@ -250,12 +251,12 @@ export default async function HomePage() {
       <Newsletter />
 
       {/* ── Recent Grid ─────────────────────────────────────────────── */}
-      <div className="recent-grid-section">
+      <div className={styles.recentGridSection}>
         <div className="section-head" style={{ padding: 0, marginBottom: 40 }}>
           <h2>More from the <em>magazine</em></h2>
           <Link href="/archive">Full archive →</Link>
         </div>
-        <div className="recent-grid">
+        <div className={styles.recentGrid}>
           {recent.map((a) => (
             <ArticleCard key={a._id} article={a} size="recent" />
           ))}

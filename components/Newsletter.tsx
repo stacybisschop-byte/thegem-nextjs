@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import styles from './Newsletter.module.css'
 
 // Wire BEEHIIV_PUBLICATION_ID in .env.local and update the action URL.
 // Current: demo only.
@@ -16,8 +17,8 @@ export default function Newsletter() {
   }
 
   return (
-    <section className="newsletter" id="newsletter">
-      <div className="kicker">The Gem, in your inbox · every Friday</div>
+    <section className={styles.newsletter} id="newsletter">
+      <div className={styles.kicker}>The Gem, in your inbox · every Friday</div>
       <h2>One letter from <em>Florence</em>, every Friday morning.</h2>
       <p>
         A long piece worth reading, three things worth knowing, one thing worth buying.

@@ -6,6 +6,7 @@ import { urlForImage, readMin } from '@/lib/sanity'
 import ArticleBody, { extractFAQs } from '@/components/ArticleBody'
 import ArticleCard from '@/components/ArticleCard'
 import Newsletter from '@/components/Newsletter'
+import styles from './article.module.css'
 
 interface Props {
   params: { pillar: string; slug: string }
@@ -126,13 +127,13 @@ export default async function ArticlePage({ params }: Props) {
       )}
 
       {/* ── Article Hero ─────────────────────────────────────────────── */}
-      <header className="article-hero">
+      <header className={styles.articleHero}>
         <div className="kicker">{kicker}</div>
         <h1>{article.title}</h1>
         {article.metaDescription && (
           <p className="deck">{article.metaDescription}</p>
         )}
-        <div className="article-meta">
+        <div className={styles.articleMeta}>
           <span className="byline">By {article.author ?? 'Florence'}</span>
           <span className="meta-dot" />
           <span className="byline">{readingMin} min read</span>
@@ -152,7 +153,7 @@ export default async function ArticlePage({ params }: Props) {
 
       {/* ── Hero Image ───────────────────────────────────────────────── */}
       {heroSrc && (
-        <div className="article-hero-image">
+        <div className={styles.articleHeroImage}>
           <div className="image-wrap">
             <Image
               src={heroSrc}
@@ -175,7 +176,7 @@ export default async function ArticlePage({ params }: Props) {
       </article>
 
       {/* ── Author Bio ───────────────────────────────────────────────── */}
-      <div className="article-footer">
+      <div className={styles.articleFooter}>
         <div className="avatar">F</div>
         <div className="bio">
           <strong>Florence</strong>
@@ -188,10 +189,10 @@ export default async function ArticlePage({ params }: Props) {
 
       {/* ── Related Articles ─────────────────────────────────────────── */}
       {related.length > 0 && (
-        <section className="related-section">
+        <section className={styles.relatedSection}>
           <h2>Further <em>reading</em></h2>
           <p className="subhead">Pieces that pair well with this one.</p>
-          <div className="related-grid">
+          <div className={styles.relatedGrid}>
             {related.map((a) => (
               <ArticleCard key={a._id} article={a} size="medium" showExcerpt={false} />
             ))}
