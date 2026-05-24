@@ -177,12 +177,12 @@ export default async function ArticlePage({ params }: Props) {
           {article.publishedAt && (
             <>
               <span className="meta-dot" />
-              <span className="byline">
+              <time className="byline" dateTime={article.publishedAt}>
                 {new Date(article.publishedAt).toLocaleDateString('en-GB', {
                   month: 'long',
                   year: 'numeric',
                 })}
-              </span>
+              </time>
             </>
           )}
         </div>
