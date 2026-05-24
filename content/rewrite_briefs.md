@@ -297,7 +297,7 @@ For each book: hardback or paperback, approximate price, who it's actually for. 
 
 **Affiliates:** Heavy. Amazon UK and US (Amazon Associates pays modestly on books — but consistently). Bookshop.org as an alternative for UK readers who prefer independent bookshops. Some books may have direct publisher affiliate options.
 
-**Update cadence:** Annual review needed — new monographs come out yearly. Build the `lastReviewedAt` field into the schema.
+**Update cadence:** Annual review needed — new monographs come out yearly. Edit the article in Sanity when reviewing; `_updatedAt` bumps automatically and the sitemap `lastmod` refreshes.
 
 **Pinterest:** 3 pins. Coffee-table book imagery is Pinterest-strong.
 
@@ -365,7 +365,7 @@ For each book: hardback or paperback, approximate price, who it's actually for. 
 
 4. **Set up the redirect before publishing.** The 301 from old URL to new URL needs to be live the day the new piece publishes — and the old piece must be removed from the index (a noindex tag plus the redirect, ideally).
 
-5. **Mark `lastReviewedAt`** in Sanity for any piece that should be updated annually (Lab vs Natural Diamonds, Best Jewellery Books, Jewellery Trends).
+5. **Refresh annually:** Lab vs Natural Diamonds, Best Jewellery Books, Jewellery Trends. Edit each in Sanity when reviewing — `_updatedAt` bumps and the sitemap `lastmod` refreshes.
 
 6. **Voice check before publish:** read aloud. If anywhere it sounds like a press release, an Instagram caption, or a university essay, it's failed. Particular failure modes for AI-assisted drafts: stacked tricolons, em-dash overuse, "It's not just X, it's Y" constructions, tidy reflective summary endings, the words *delve, tapestry, realm, intersection, journey, vibrant, iconic, robust*.
 
