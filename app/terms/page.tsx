@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   description: 'Terms of use for The Gem, the editorial jewellery publication.',
   alternates: { canonical: '/terms' },
   openGraph: {
+    type: 'website',
+    siteName: 'The Gem',
+    locale: 'en_GB',
     url: '/terms',
     title: 'Terms of Use',
     description: 'Terms of use for The Gem, the editorial jewellery publication.',

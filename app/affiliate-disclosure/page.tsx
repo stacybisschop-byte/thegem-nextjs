@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   description: 'How The Gem uses affiliate links and why it does not influence our editorial coverage.',
   alternates: { canonical: '/affiliate-disclosure' },
   openGraph: {
+    type: 'website',
+    siteName: 'The Gem',
+    locale: 'en_GB',
     url: '/affiliate-disclosure',
     title: 'Affiliate Disclosure',
     description: 'How The Gem uses affiliate links and why it does not influence our editorial coverage.',

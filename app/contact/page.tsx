@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   description: 'How to get in touch with The Gem — for editorial enquiries, corrections, press, and reader questions.',
   alternates: { canonical: '/contact' },
   openGraph: {
+    type: 'website',
+    siteName: 'The Gem',
+    locale: 'en_GB',
     url: '/contact',
     title: 'Contact',
     description: 'How to get in touch with The Gem — for editorial enquiries, corrections, press, and reader questions.',

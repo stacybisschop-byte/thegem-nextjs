@@ -77,6 +77,9 @@ export async function generateMetadata({ params }: { params: { pillar: string } 
     description: pillar.description,
     alternates: { canonical: path },
     openGraph: {
+      type: 'website',
+      siteName: 'The Gem',
+      locale: 'en_GB',
       url: path,
       title: pillar.title,
       description: pillar.description,

@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   description: 'The Gem accessibility statement. Our commitment to WCAG 2.1 AA compliance.',
   alternates: { canonical: '/accessibility' },
   openGraph: {
+    type: 'website',
+    siteName: 'The Gem',
+    locale: 'en_GB',
     url: '/accessibility',
     title: 'Accessibility Statement',
     description: 'The Gem accessibility statement. Our commitment to WCAG 2.1 AA compliance.',

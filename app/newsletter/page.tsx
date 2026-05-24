@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   description: 'One letter from Florence every Friday morning. A long piece worth reading, three things worth knowing, one thing worth buying. Free.',
   alternates: { canonical: '/newsletter' },
   openGraph: {
+    type: 'website',
+    siteName: 'The Gem',
+    locale: 'en_GB',
     url: '/newsletter',
     title: 'The Newsletter',
     description: 'One letter from Florence every Friday morning. A long piece worth reading, three things worth knowing, one thing worth buying. Free.',

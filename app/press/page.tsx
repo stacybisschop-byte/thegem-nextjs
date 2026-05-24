@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   description: 'Press information for The Gem — what we cover, how to send samples and pitches, and our editorial standards.',
   alternates: { canonical: '/press' },
   openGraph: {
+    type: 'website',
+    siteName: 'The Gem',
+    locale: 'en_GB',
     url: '/press',
     title: 'Press',
     description: 'Press information for The Gem — what we cover, how to send samples and pitches, and our editorial standards.',

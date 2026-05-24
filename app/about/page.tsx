@@ -6,6 +6,9 @@ export const metadata: Metadata = {
     'About Florence, founding editor of The Gem. Magazine writer and editor based in London with fifteen years of experience.',
   alternates: { canonical: '/about' },
   openGraph: {
+    type: 'profile',
+    siteName: 'The Gem',
+    locale: 'en_GB',
     url: '/about',
     title: 'About Florence',
     description:

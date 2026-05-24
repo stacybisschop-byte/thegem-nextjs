@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   description: 'How The Gem collects, uses, and protects your personal data. GDPR and UK GDPR compliant.',
   alternates: { canonical: '/privacy' },
   openGraph: {
+    type: 'website',
+    siteName: 'The Gem',
+    locale: 'en_GB',
     url: '/privacy',
     title: 'Privacy Policy',
     description: 'How The Gem collects, uses, and protects your personal data. GDPR and UK GDPR compliant.',

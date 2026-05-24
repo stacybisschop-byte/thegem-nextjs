@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   description: 'How to pitch The Gem. What we publish, what we pay, and what we are looking for from outside writers.',
   alternates: { canonical: '/contribute' },
   openGraph: {
+    type: 'website',
+    siteName: 'The Gem',
+    locale: 'en_GB',
     url: '/contribute',
     title: 'Contribute',
     description: 'How to pitch The Gem. What we publish, what we pay, and what we are looking for from outside writers.',

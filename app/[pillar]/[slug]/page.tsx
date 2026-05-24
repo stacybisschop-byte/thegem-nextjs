@@ -23,9 +23,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const article = await getArticle(params.pillar, params.slug)
   if (!article) return {}
 
-  const ogImage = article.heroImage
+  // og:image must be absolute. Prefer Sanity heroImage, fall back to legacy
+  // /blog/*.webp via heroImageUrl prefixed with the canonical origin.
+  const sanityOgImage = article.heroImage
     ? urlForImage(article.heroImage).width(1200).height(630).url()
     : undefined
+  const fallbackOgImage = !sanityOgImage && article.heroImageUrl
+    ? article.heroImageUrl.startsWith('http')
+      ? article.heroImageUrl
+      : `https://thegem.press${article.heroImageUrl.startsWith('/') ? article.heroImageUrl : `/${article.heroImageUrl}`}`
+    : undefined
+  const ogImage = sanityOgImage ?? fallbackOgImage
   const path = `/${params.pillar}/${params.slug}`
 
   return {
@@ -33,10 +41,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: article.metaDescription,
     alternates: { canonical: path },
     openGraph: {
+      type: 'article',
+      siteName: 'The Gem',
+      locale: 'en_GB',
       url: path,
       title: article.metaTitle ?? article.title,
       description: article.metaDescription,
-      type: 'article',
       publishedTime: article.publishedAt,
       authors: [article.author ?? 'Florence'],
       ...(ogImage && { images: [{ url: ogImage, width: 1200, height: 630 }] }),

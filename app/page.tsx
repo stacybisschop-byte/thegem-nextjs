@@ -10,6 +10,9 @@ import styles from './home.module.css'
 export const metadata: Metadata = {
   alternates: { canonical: '/' },
   openGraph: {
+    type: 'website',
+    siteName: 'The Gem',
+    locale: 'en_GB',
     url: '/',
     images: [{ url: '/og-cover.jpg', width: 1200, height: 630 }],
   },

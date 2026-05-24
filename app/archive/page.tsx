@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   description: 'Every piece published on The Gem, grouped by section.',
   alternates: { canonical: '/archive' },
   openGraph: {
+    type: 'website',
+    siteName: 'The Gem',
+    locale: 'en_GB',
     url: '/archive',
     title: 'Archive',
     description: 'Every piece published on The Gem, grouped by section.',
