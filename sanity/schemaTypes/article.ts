@@ -50,11 +50,6 @@ export const articleType = defineType({
       title: 'Published At',
       type: 'datetime',
     }),
-    defineField({
-      name: 'lastReviewedAt',
-      title: 'Last Reviewed',
-      type: 'date',
-    }),
 
     // SEO
     defineField({

@@ -335,9 +335,6 @@ async function migrate() {
       author: fm.author ?? 'Florence',
       published,
       publishedAt,
-      lastReviewedAt: fm.last_reviewed_at
-        ? `${fm.last_reviewed_at}-01`
-        : undefined,
       metaTitle: fm.meta_title ?? undefined,
       metaDescription: fm.meta_description ?? undefined,
       heroImageBrief: fm.hero_image_brief ?? undefined,

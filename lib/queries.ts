@@ -28,7 +28,6 @@ const FULL_ARTICLE_FIELDS = `
   author,
   published,
   publishedAt,
-  lastReviewedAt,
   metaTitle,
   metaDescription,
   heroImage { asset, hotspot, alt, caption },

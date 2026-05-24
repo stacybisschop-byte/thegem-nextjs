@@ -39,7 +39,6 @@ export interface Article {
   author: string
   published: boolean
   publishedAt?: string
-  lastReviewedAt?: string
   metaTitle?: string
   metaDescription?: string
   heroImage?: SanityImage
