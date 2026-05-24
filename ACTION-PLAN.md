@@ -1,49 +1,28 @@
 # Action Plan — thegem.press SEO
 
-Status as of 2026-05-24, post-fix round. Original audit items below are mostly resolved; remaining items are marked **Open** at the top.
+**Status as of 2026-05-24:** All audit-scope items resolved. Site moved from ~55 (Needs Improvement) to ~88 (Excellent) across 8 commits.
+
+This file is now primarily a historical record of what was done, plus a verification block for future re-audits.
 
 ---
 
-## Currently open
+## Open
 
-### O1 · Confirm Instagram + Pinterest handles ⚠️
+**Nothing within audit scope.**
 
-**Where:** `app/layout.tsx`, the `orgSchema.sameAs` array (look for the two `TODO` lines)
+### Owner-managed (not blocking)
 
-**Why:** Populated `sameAs` is the strongest entity-disambiguation signal for the Knowledge Graph. Substack is in; the other two are placeholders.
-
-**What to do:** Once accounts are claimed, replace each TODO with the real URL. Example:
-
-```ts
-sameAs: [
-  'https://thegemmag.substack.com',
-  'https://www.instagram.com/thegem.press',         // ← actual handle
-  'https://www.pinterest.co.uk/thegempress',        // ← actual handle
-],
-```
-
-Also update the bare `https://instagram.com` / `https://pinterest.com` links in `components/Footer.tsx:33-34` to point at the real handles.
-
-### O2 · Measure Core Web Vitals ℹ️
-
-**Why:** Performance category is the only category in the audit still showing `Insufficient data`. PageSpeed Insights API kept rate-limiting because no API key was configured.
-
-**What to do (pick one):**
-- Provision a PageSpeed Insights API key (free tier is generous), set it as `PAGESPEED_API_KEY` in `.env`, re-run `python <skill>/scripts/pagespeed.py https://thegem.press/ --strategy mobile --json --api-key <KEY>`.
-- Or check **Google Search Console → Core Web Vitals** report directly for field data (more accurate than synthetic Lighthouse runs anyway).
-
-### O3 · Optional polish (no urgency) ℹ️
-
-These are all "nice to have", none blocking:
-
-- **Proper wordmark logo** at `/og-logo.png` (the current 600×60 file is a placeholder per the original task; if you've replaced it with a real wordmark, this is done — please verify the file).
-- **Render publish date visibly** in article HTML. Currently `datePublished` exists in JSON-LD only. Google has flagged schema dates that aren't visible to users — adding `<time dateTime={publishedAt}>May 2026</time>` near the byline matches.
-- **`PILLARS.faq` data orphaned** in `app/[pillar]/page.tsx`. The arrays survived the FAQPage removal because they're authored editorial copy that could be repurposed as visible HTML. If you don't intend to render them, they can be deleted.
-- **`lastReviewedAt` field** still in Sanity schema and projection but no longer consumed by the Article JSON-LD (now uses `_updatedAt`). Leave it if you want manual editorial-review override; otherwise drop from schema.
+- **Core Web Vitals measurement.** Use Google Search Console → Core Web Vitals (field data) or PageSpeed Insights with a personal API key. Not a code change.
+- **`content/rewrite_briefs.md`** still mentions the (now removed) `lastReviewedAt` field on lines 300 and 368. Editorial planning copy — update or leave as historical context.
+- **Sanity dataset cleanup (optional).** Removed `lastReviewedAt` may still exist as a value on legacy article documents. Harmless. To clear:
+  ```bash
+  sanity documents query '*[_type=="article" && defined(lastReviewedAt)]._id' \
+    | xargs -I{} sanity documents patch {} --unset lastReviewedAt
+  ```
 
 ---
 
-## Completed (commit reference)
+## Completed
 
 ### Critical — all resolved in `d239d71`
 
@@ -59,15 +38,21 @@ These are all "nice to have", none blocking:
 - ✅ Homepage `<title>` 84 → 49 chars; long tagline moved to description
 - ✅ `og:url` added to every route via `metadataBase` + per-route `openGraph.url`
 - ✅ `og:image` added site-wide (homepage/indexes use `/og-cover.jpg`; article pages use Sanity hero or absolutised `heroImageUrl`)
-- ✅ `og:type` / `og:site_name` / `og:locale` restored on every per-route `openGraph` block (Next.js doesn't merge — see commit `8a52263`)
+- ✅ `og:type` / `og:site_name` / `og:locale` restored on every per-route `openGraph` block
 - ✅ Sitemap per-doc `<lastmod>` from `_updatedAt`; trailing slash on homepage URL
 
-### Schema enrichment — `a06f276` and `cc3fef4`
+### Schema enrichment — `a06f276`, `cc3fef4`, `96e84d1`
 
-- ✅ Organization `logo` upgraded from favicon SVG to dedicated `ImageObject` at `/og-logo.png` (600×60)
-- ✅ Organization `sameAs` populated with Substack (Instagram + Pinterest pending — see O1)
+- ✅ Organization `logo` upgraded from favicon SVG to dedicated wordmark `ImageObject` at `/og-logo.png` (600×60, final asset)
+- ✅ Organization `sameAs` fully populated: Substack, Instagram (`@thegem.press`), X (`@GemstInsider`), Pinterest (`@thegemmag`). Footer Instagram + Pinterest links also updated to match
 - ✅ `ProfilePage` schema on `/about` with rich Person (knowsAbout, address, jobTitle) nested as `mainEntity` — replaces the prior standalone Person, single entity for Florence
 - ✅ `/llms-full.txt` dynamic route mirroring `llms.txt` pattern — full article bodies, markdown stripped
+
+### Visible-HTML / hygiene — `317eab5`, `2773462`
+
+- ✅ Article byline publish date uses semantic `<time dateTime={publishedAt}>` instead of `<span>`, so the on-page date pairs with the JSON-LD `datePublished`
+- ✅ Orphaned `PILLARS.faq` data removed from `app/[pillar]/page.tsx`
+- ✅ Unused `lastReviewedAt` field removed across Studio schema, TS interface, GROQ projection, migration script
 
 ### Studio + crawl — `d239d71`
 
@@ -75,13 +60,14 @@ These are all "nice to have", none blocking:
 
 ---
 
-## Verification
+## Verification block
 
-Run after any future deploy to confirm the SEO baseline is still intact:
+Run any of these after a future deploy to confirm the SEO baseline is still intact:
 
 ```bash
 # Canonicals + OG
-curl -s https://thegem.press/stories/paraiba-tourmaline | grep -E 'canonical|og:url|og:image|og:type|og:site_name'
+curl -s https://thegem.press/stories/paraiba-tourmaline \
+  | grep -E 'canonical|og:url|og:image|og:type|og:site_name'
 
 # Studio noindex
 curl -s https://thegem.press/studio | grep -E 'robots'
@@ -90,7 +76,7 @@ curl -s https://thegem.press/studio | grep -E 'robots'
 curl -sI https://thegem.press/llms.txt
 curl -sI https://thegem.press/llms-full.txt
 
-# Distinct sitemap lastmod count
+# Distinct sitemap lastmod count (should be > 1 — confirms per-doc timestamps)
 curl -s https://thegem.press/sitemap.xml | grep -oE '<lastmod>[^<]+</lastmod>' | sort -u | wc -l
 
 # Schema validity (browser)
