@@ -4,6 +4,7 @@ slug: stories/chopard-cannes
 pillar: Stories
 author: Florence
 published: false
+publishDate: 2026-03-30
 last_reviewed_at: 2026-05
 meta_title: "Chopard at Cannes 2026: Dressing the Festival"
 meta_description: "Chopard has dressed Cannes since 1998 — including making the Palme d'Or itself. What the jewellery choices on the 2026 red carpet actually say."

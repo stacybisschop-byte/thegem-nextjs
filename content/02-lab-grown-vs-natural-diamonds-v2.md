@@ -4,6 +4,7 @@ slug: guides/lab-grown-vs-natural-diamonds
 pillar: Guides
 author: Florence
 published: false
+publishDate: 2026-04-23
 last_reviewed_at: 2026-05
 meta_title: "Lab-Grown vs Natural Diamonds: An Honest 2026 Guide"
 meta_description: "Lab-grown diamond prices fell roughly 75% in four years. A clear, honest guide to whether lab or natural diamonds are worth it in 2026."
@@ -159,7 +160,7 @@ Probably, slowly. The major price collapse has already happened. The current pri
 ---
 
 
-### Where can I read more about guides jewellery on The Gem?
+### Where can I read more guides on The Gem?
 
 The Gem's Guides section covers buying decisions, market analysis, and ownership advice across all categories of fine jewellery. The full guide archive is at thegem.press/guides.
 

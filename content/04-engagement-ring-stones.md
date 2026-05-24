@@ -4,6 +4,7 @@ slug: guides/engagement-ring-stones
 pillar: Guides
 author: Florence
 published: false
+publishDate: 2026-05-11
 last_reviewed_at: 2026-05
 meta_title: "Engagement Ring Stones: A 2026 Guide Beyond Diamond"
 meta_description: "An honest guide to engagement ring stones beyond diamond — sapphire, emerald, ruby, moissanite, morganite, paraiba, salt-and-pepper, and how to choose."
@@ -189,7 +190,7 @@ Online retailers (James Allen, Blue Nile, Brilliant Earth) offer significantly b
 ---
 
 
-### Where can I read more about guides jewellery on The Gem?
+### Where can I read more guides on The Gem?
 
 The Gem's Guides section covers buying decisions, market analysis, and ownership advice across all categories of fine jewellery. The full guide archive is at thegem.press/guides.
 

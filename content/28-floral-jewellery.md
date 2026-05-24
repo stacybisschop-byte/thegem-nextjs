@@ -4,6 +4,7 @@ slug: style/floral-jewellery
 pillar: Style
 author: Florence
 published: false
+publishDate: 2026-02-04
 last_reviewed_at: 2026-05
 meta_title: "The Language of Flowers in Fine Jewellery"
 meta_description: "Victorian floriography gave flowers coded meanings set in gold. A guide to floral jewellery, from forget-me-nots to acrostic rings and Van Cleef."

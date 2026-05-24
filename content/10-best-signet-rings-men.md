@@ -4,6 +4,7 @@ slug: guides/best-signet-rings-men
 pillar: Guides
 author: Florence
 published: false
+publishDate: 2026-05-20
 last_reviewed_at: 2026-05
 meta_title: "The Best Signet Rings for Men: A 2026 Guide"
 meta_description: "The best signet rings for men in 2026, from Rebus and Castro Smith to vintage Hatton Garden finds. Shapes, engraving, makers, and how to wear one."
@@ -153,7 +154,7 @@ In the UK, the [College of Arms](https://www.college-of-arms.gov.uk) in London i
 ---
 
 
-### Where can I read more about guides jewellery on The Gem?
+### Where can I read more guides on The Gem?
 
 The Gem's Guides section covers buying decisions, market analysis, and ownership advice across all categories of fine jewellery. The full guide archive is at thegem.press/guides.
 

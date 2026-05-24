@@ -4,6 +4,7 @@ slug: stories/princess-diana-jewellery
 pillar: Stories
 author: Florence
 published: false
+publishDate: 2026-03-03
 last_reviewed_at: 2026-05
 meta_title: "Princess Diana's Jewellery and Where It Is Now"
 meta_description: "Every major piece of Princess Diana's jewellery, including the sapphire ring, the Cambridge tiara and the Swan Lake suite, and where each one is today."
@@ -154,7 +155,7 @@ Most of Princess Diana's jewellery is held privately, either in royal possession
 ---
 
 
-### Where can I read more about stories jewellery on The Gem?
+### Where can I read more stories on The Gem?
 
 The Gem's Stories section covers the history and provenance of significant jewels — from royal collections to cursed stones to house histories. New pieces publish weekly at thegem.press/stories.
 

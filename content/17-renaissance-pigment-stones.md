@@ -4,6 +4,7 @@ slug: stories/renaissance-pigment-stones
 pillar: Stories
 author: Florence
 published: false
+publishDate: 2026-02-25
 last_reviewed_at: 2026-05
 meta_title: "Renaissance Pigment Stones: When Blue Cost More Than Gold"
 meta_description: "Renaissance pigment stones, how lapis lazuli became ultramarine, why it cost more than gold, and the medieval economics behind the great paintings."
@@ -138,7 +139,7 @@ The Sar-e-Sang valley in Badakhshan, Afghanistan, remains the principal world so
 ---
 
 
-### Where can I read more about stories jewellery on The Gem?
+### Where can I read more stories on The Gem?
 
 The Gem's Stories section covers the history and provenance of significant jewels — from royal collections to cursed stones to house histories. New pieces publish weekly at thegem.press/stories.
 

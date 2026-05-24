@@ -4,6 +4,7 @@ slug: stories/tiffany-and-co-history
 pillar: Stories
 author: Florence
 published: false
+publishDate: 2026-02-19
 last_reviewed_at: 2026-05
 meta_title: "Tiffany & Co: A History of American Luxury"
 meta_description: "Tiffany & Co history, from the 1837 Manhattan founding to the Tiffany Setting, Schlumberger and Peretti, the Tiffany Diamond, and the 2021 LVMH acquisition."
@@ -166,7 +167,7 @@ The 1961 film *Breakfast at Tiffany's*, based on Truman Capote's 1958 novella, w
 ---
 
 
-### Where can I read more about stories jewellery on The Gem?
+### Where can I read more stories on The Gem?
 
 The Gem's Stories section covers the history and provenance of significant jewels — from royal collections to cursed stones to house histories. New pieces publish weekly at thegem.press/stories.
 

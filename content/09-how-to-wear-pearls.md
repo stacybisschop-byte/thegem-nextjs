@@ -4,6 +4,7 @@ slug: style/how-to-wear-pearls
 pillar: Style
 author: Florence
 published: false
+publishDate: 2026-01-26
 last_reviewed_at: 2026-05
 meta_title: "How to Wear Pearls in 2026: The New Rules"
 meta_description: "How to wear pearls in 2026, from baroque strands with denim to men's pearl necklaces. The types, the styling, the mistakes, and the brands worth knowing."
@@ -141,7 +142,7 @@ Well-cared-for fine pearls last indefinitely as gemstones, with documented stran
 ---
 
 
-### Where can I read more about style jewellery on The Gem?
+### Where can I read more style writing on The Gem?
 
 The Gem's Style section covers how to wear jewellery, build a wardrobe, and interpret trends — for men and women. The full archive is at thegem.press/style.
 

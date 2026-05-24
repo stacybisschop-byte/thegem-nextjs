@@ -4,6 +4,7 @@ slug: stories/paraiba-tourmaline
 pillar: Stories
 author: Florence
 published: false
+publishDate: 2026-03-06
 last_reviewed_at: 2026-05
 meta_title: "Paraiba Tourmaline: The Stone Found in 1989"
 meta_description: "Paraiba tourmaline was found in 1989 in northeast Brazil. Why two houses chose this neon copper-bearing stone for Cannes 2026 — and what to know if you're buying."

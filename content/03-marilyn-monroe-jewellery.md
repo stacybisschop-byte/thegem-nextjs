@@ -4,6 +4,7 @@ slug: stories/marilyn-monroe-jewellery
 pillar: Stories
 author: Florence
 published: false
+publishDate: 2026-03-12
 last_reviewed_at: 2026-05
 meta_title: "Marilyn Monroe's Jewellery: What She Owned and Borrowed"
 meta_description: "Every major piece of Marilyn Monroe's jewellery, what she actually owned, what was loaned from studios, and what came up at the 1999 Christie's auction."
@@ -114,7 +115,7 @@ In the studio era of Hollywood (roughly 1930 to 1960), wardrobe jewellery was ge
 ---
 
 
-### Where can I read more about stories jewellery on The Gem?
+### Where can I read more stories on The Gem?
 
 The Gem's Stories section covers the history and provenance of significant jewels — from royal collections to cursed stones to house histories. New pieces publish weekly at thegem.press/stories.
 

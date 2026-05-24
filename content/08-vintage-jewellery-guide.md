@@ -4,6 +4,7 @@ slug: guides/where-to-buy-vintage-jewellery
 pillar: Guides
 author: Florence
 published: false
+publishDate: 2026-04-11
 last_reviewed_at: 2026-05
 meta_title: "Where to Buy Vintage Jewellery: London and Online Guide"
 meta_description: "Where to buy vintage jewellery in London and online, from Hatton Garden to 1stDibs, with budget tiers, hallmark tips, and what to walk away from."
@@ -149,7 +150,7 @@ A good vintage engagement ring can be acquired for as little as £500 (smaller E
 ---
 
 
-### Where can I read more about guides jewellery on The Gem?
+### Where can I read more guides on The Gem?
 
 The Gem's Guides section covers buying decisions, market analysis, and ownership advice across all categories of fine jewellery. The full guide archive is at thegem.press/guides.
 

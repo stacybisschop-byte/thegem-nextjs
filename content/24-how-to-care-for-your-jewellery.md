@@ -4,6 +4,7 @@ slug: guides/how-to-care-for-your-jewellery
 pillar: Guides
 author: Florence
 published: false
+publishDate: 2026-05-05
 last_reviewed_at: 2026-05
 meta_title: "How to Care for Your Jewellery: A Complete Guide"
 meta_description: "How to clean and care for your jewellery: by metal type, by stone type, storage, the chlorine problem, and when to see a professional jeweller."
@@ -140,7 +141,7 @@ Wipe pearls clean after each wearing with a soft damp cloth. Apply perfume, hair
 ---
 
 
-### Where can I read more about guides jewellery on The Gem?
+### Where can I read more guides on The Gem?
 
 The Gem's Guides section covers buying decisions, market analysis, and ownership advice across all categories of fine jewellery. The full guide archive is at thegem.press/guides.
 

@@ -4,6 +4,7 @@ slug: stories/black-princes-ruby
 pillar: Stories
 author: Florence
 published: false
+publishDate: 2026-04-08
 last_reviewed_at: 2026-05
 meta_title: "The Black Prince's Ruby: The Gemstone That Isn't a Ruby"
 meta_description: "The Black Prince's Ruby is 170 carats, sits at the centre of the Imperial State Crown, and is not a ruby. It is a spinel. The history of a famous misnomer."
@@ -130,7 +131,7 @@ The stone is named for Edward of Woodstock, the eldest son of King Edward III an
 ---
 
 
-### Where can I read more about stories jewellery on The Gem?
+### Where can I read more stories on The Gem?
 
 The Gem's Stories section covers the history and provenance of significant jewels — from royal collections to cursed stones to house histories. New pieces publish weekly at thegem.press/stories.
 

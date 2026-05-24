@@ -4,6 +4,7 @@ slug: stories/tolkiens-gemstones
 pillar: Stories
 author: Florence
 published: false
+publishDate: 2026-02-16
 last_reviewed_at: 2026-05
 meta_title: "Tolkien's Gemstones: The Stones of Middle-earth"
 meta_description: "J. R. R. Tolkien took gems seriously. A close reading of the Silmarils, the Three Elven Rings, the Arkenstone, the Phial, and why the One Ring has no stone."
@@ -143,7 +144,7 @@ Mithril is an invented metal in Tolkien's Middle-earth writings, called "true-si
 ---
 
 
-### Where can I read more about stories jewellery on The Gem?
+### Where can I read more stories on The Gem?
 
 The Gem's Stories section covers the history and provenance of significant jewels — from royal collections to cursed stones to house histories. New pieces publish weekly at thegem.press/stories.
 

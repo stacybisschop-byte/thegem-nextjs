@@ -4,6 +4,7 @@ slug: guides/jewellery-that-holds-value
 pillar: Guides
 author: Florence
 published: false
+publishDate: 2026-04-26
 last_reviewed_at: 2026-05
 meta_title: "Jewellery That Holds Its Value: A Realistic Guide"
 meta_description: "Which jewellery actually holds or appreciates in value: signed pieces, fine vintage, certain stones. What doesn't: mass-market retail, lab-grown, trend pieces."
@@ -163,7 +164,7 @@ Mass-market retail jewellery, lab-grown diamonds (currently), trend pieces (anyt
 ---
 
 
-### Where can I read more about guides jewellery on The Gem?
+### Where can I read more guides on The Gem?
 
 The Gem's Guides section covers buying decisions, market analysis, and ownership advice across all categories of fine jewellery. The full guide archive is at thegem.press/guides.
 

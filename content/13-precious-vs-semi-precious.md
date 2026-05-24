@@ -4,6 +4,7 @@ slug: guides/precious-vs-semi-precious
 pillar: Guides
 author: Florence
 published: false
+publishDate: 2026-04-17
 last_reviewed_at: 2026-05
 meta_title: "Precious vs Semi-Precious Stones: What It Means"
 meta_description: "Precious vs semi-precious stones, where the distinction came from, why most gemmologists now ignore it, and what actually drives gemstone value today."
@@ -146,7 +147,7 @@ Opal is traditionally classified as semi-precious in the European framework. How
 ---
 
 
-### Where can I read more about guides jewellery on The Gem?
+### Where can I read more guides on The Gem?
 
 The Gem's Guides section covers buying decisions, market analysis, and ownership advice across all categories of fine jewellery. The full guide archive is at thegem.press/guides.
 

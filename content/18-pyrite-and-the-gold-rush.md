@@ -4,6 +4,7 @@ slug: stories/pyrite-and-the-gold-rush
 pillar: Stories
 author: Florence
 published: false
+publishDate: 2026-02-28
 last_reviewed_at: 2026-05
 meta_title: "Pyrite and the Gold Rush: A Beautiful Mistake"
 meta_description: "Pyrite was mistaken for gold from Martin Frobisher's 1577 Baffin Island expedition to the 1849 Gold Rush. The history of fool's gold and its real beauty."
@@ -122,7 +123,7 @@ Pyrite specimens are widely available in mineral and natural history museum coll
 ---
 
 
-### Where can I read more about stories jewellery on The Gem?
+### Where can I read more stories on The Gem?
 
 The Gem's Stories section covers the history and provenance of significant jewels — from royal collections to cursed stones to house histories. New pieces publish weekly at thegem.press/stories.
 

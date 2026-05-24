@@ -4,6 +4,7 @@ slug: style/modern-womens-jewellery-edit
 pillar: Style
 author: Florence
 published: false
+publishDate: 2026-01-17
 last_reviewed_at: 2026-05
 meta_title: "The Modern Women's Jewellery Edit: Seven Pieces"
 meta_description: "A modern women's jewellery edit: the seven pieces actually worth owning, with specific recommendations at entry, mid, and fine price tiers for 2026."
@@ -173,7 +174,7 @@ Start with the everyday stud earring in solid 14k or 18k gold (diamond or pearl)
 ---
 
 
-### Where can I read more about style jewellery on The Gem?
+### Where can I read more style writing on The Gem?
 
 The Gem's Style section covers how to wear jewellery, build a wardrobe, and interpret trends — for men and women. The full archive is at thegem.press/style.
 

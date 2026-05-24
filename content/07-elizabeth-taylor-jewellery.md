@@ -4,6 +4,7 @@ slug: stories/elizabeth-taylor-jewellery
 pillar: Stories
 author: Florence
 published: false
+publishDate: 2026-03-24
 last_reviewed_at: 2026-05
 meta_title: "Elizabeth Taylor's Jewellery: The Collection and the Auction"
 meta_description: "Every major piece of Elizabeth Taylor's jewellery, from the Krupp Diamond worn to school runs to La Peregrina, and the 2011 Christie's record auction."
@@ -142,7 +143,7 @@ The 33.19-carat Krupp Diamond is the piece most photographed on Elizabeth Taylor
 ---
 
 
-### Where can I read more about stories jewellery on The Gem?
+### Where can I read more stories on The Gem?
 
 The Gem's Stories section covers the history and provenance of significant jewels — from royal collections to cursed stones to house histories. New pieces publish weekly at thegem.press/stories.
 

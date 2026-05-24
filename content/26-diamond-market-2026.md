@@ -4,6 +4,7 @@ slug: guides/diamond-market-2026
 pillar: Guides
 author: Florence
 published: false
+publishDate: 2026-05-14
 last_reviewed_at: 2026-05
 meta_title: "The Diamond Market in 2026: What's Happening"
 meta_description: "Natural diamond prices are down 30-40% from 2021. Lab-grown is down 75%+. What actually happened, who it affects, and what to do if you're buying or selling."
@@ -130,7 +131,7 @@ No significantly. The lab-grown disruption is largely specific to diamonds. Colo
 ---
 
 
-### Where can I read more about guides jewellery on The Gem?
+### Where can I read more guides on The Gem?
 
 The Gem's Guides section covers buying decisions, market analysis, and ownership advice across all categories of fine jewellery. The full guide archive is at thegem.press/guides.
 

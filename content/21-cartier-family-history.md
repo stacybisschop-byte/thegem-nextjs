@@ -4,6 +4,7 @@ slug: stories/cartier-family-history
 pillar: Stories
 author: Florence
 published: false
+publishDate: 2026-04-02
 last_reviewed_at: 2026-05
 meta_title: "The Cartier Family History: A Paris Workshop Story"
 meta_description: "The Cartier family history, from the 1847 Paris founding to the three brothers who divided the world, Jeanne Toussaint, the iconic pieces, and the modern era."
@@ -138,7 +139,7 @@ The Cartier New York flagship is at 653 Fifth Avenue, at the corner of 52nd Stre
 ---
 
 
-### Where can I read more about stories jewellery on The Gem?
+### Where can I read more stories on The Gem?
 
 The Gem's Stories section covers the history and provenance of significant jewels — from royal collections to cursed stones to house histories. New pieces publish weekly at thegem.press/stories.
 

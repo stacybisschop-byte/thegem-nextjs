@@ -4,6 +4,7 @@ slug: style/pink-jewellery
 pillar: Style
 author: Florence
 published: false
+publishDate: 2026-01-14
 last_reviewed_at: 2026-05
 meta_title: "Pink Jewellery, and the I-Hate-Pink Phase"
 meta_description: "Pink jewellery is back: the cultural moment, the stones (pink sapphire, morganite, tourmaline, padparadscha, pink diamonds), and the reclamation behind it."
@@ -156,7 +157,7 @@ The contemporary styling principles for pink jewellery favour single focal piece
 ---
 
 
-### Where can I read more about style jewellery on The Gem?
+### Where can I read more style writing on The Gem?
 
 The Gem's Style section covers how to wear jewellery, build a wardrobe, and interpret trends — for men and women. The full archive is at thegem.press/style.
 

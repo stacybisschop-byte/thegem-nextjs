@@ -4,6 +4,7 @@ slug: stories/koh-i-noor
 pillar: Stories
 author: Florence
 published: false
+publishDate: 2026-03-15
 last_reviewed_at: 2026-05
 meta_title: "The Koh-i-Noor Diamond: A 700-Year History and Argument"
 meta_description: "The Koh-i-Noor diamond, from a Golconda mine to the Tower of London. The history, the recutting, the four countries that claim it, and where it sits today."
@@ -134,7 +135,7 @@ The name *Koh-i-Noor* means "Mountain of Light" in Persian and is widely attribu
 ---
 
 
-### Where can I read more about stories jewellery on The Gem?
+### Where can I read more stories on The Gem?
 
 The Gem's Stories section covers the history and provenance of significant jewels — from royal collections to cursed stones to house histories. New pieces publish weekly at thegem.press/stories.
 

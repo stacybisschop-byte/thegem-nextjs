@@ -4,6 +4,7 @@ slug: guides/how-to-sell-your-jewellery
 pillar: Guides
 author: Florence
 published: false
+publishDate: 2026-05-02
 last_reviewed_at: 2026-05
 meta_title: "How to Sell Your Jewellery: Every Route, Honestly"
 meta_description: "How to sell jewellery: get an independent appraisal first, choose the right route (auction, dealer, or platform), and what to expect for inherited pieces."
@@ -136,7 +137,7 @@ A valuation from an independent qualified gemmologist is an assessed opinion of 
 ---
 
 
-### Where can I read more about guides jewellery on The Gem?
+### Where can I read more guides on The Gem?
 
 The Gem's Guides section covers buying decisions, market analysis, and ownership advice across all categories of fine jewellery. The full guide archive is at thegem.press/guides.
 

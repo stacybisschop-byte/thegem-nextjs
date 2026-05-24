@@ -4,6 +4,7 @@ slug: stories/hope-diamond
 pillar: Stories
 author: Florence
 published: false
+publishDate: 2026-03-18
 last_reviewed_at: 2026-05
 meta_title: "The Hope Diamond: History, Curse, and Where It Is Now"
 meta_description: "The Hope Diamond, from a 17th-century Golconda mine to the Smithsonian. The history, the chain of unfortunate owners, and the truth about its alleged curse."
@@ -134,7 +135,7 @@ The jeweller Harry Winston donated the Hope Diamond to the Smithsonian Instituti
 ---
 
 
-### Where can I read more about stories jewellery on The Gem?
+### Where can I read more stories on The Gem?
 
 The Gem's Stories section covers the history and provenance of significant jewels — from royal collections to cursed stones to house histories. New pieces publish weekly at thegem.press/stories.
 

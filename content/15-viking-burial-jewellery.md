@@ -4,6 +4,7 @@ slug: stories/viking-burial-jewellery
 pillar: Stories
 author: Florence
 published: false
+publishDate: 2026-02-10
 last_reviewed_at: 2026-05
 meta_title: "Viking Burial Jewellery: What the Graves Tell Us"
 meta_description: "What Viking grave goods reveal about jewellery, identity, and the afterlife economy, from the Oseberg ship burial to the Galloway Hoard and the Birka warrior."
@@ -124,7 +125,7 @@ Hack silver is the technical term for silver objects (typically arm rings, brooc
 ---
 
 
-### Where can I read more about stories jewellery on The Gem?
+### Where can I read more stories on The Gem?
 
 The Gem's Stories section covers the history and provenance of significant jewels — from royal collections to cursed stones to house histories. New pieces publish weekly at thegem.press/stories.
 

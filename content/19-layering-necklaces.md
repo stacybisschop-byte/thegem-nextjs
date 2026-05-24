@@ -4,6 +4,7 @@ slug: style/layering-necklaces
 pillar: Style
 author: Florence
 published: false
+publishDate: 2026-01-23
 last_reviewed_at: 2026-05
 meta_title: "The Art of Layering Necklaces: How to Get It Right"
 meta_description: "How to layer necklaces well: chain lengths, the two-inch rule, mixing metals, the pitfalls to avoid, and the brands worth knowing for 2026."
@@ -185,7 +186,7 @@ Yes, and the variation typically improves the visual result. Combining different
 ---
 
 
-### Where can I read more about style jewellery on The Gem?
+### Where can I read more style writing on The Gem?
 
 The Gem's Style section covers how to wear jewellery, build a wardrobe, and interpret trends — for men and women. The full archive is at thegem.press/style.
 
