@@ -240,6 +240,10 @@ const HERO_IMAGES: Record<string, { url: string; alt: string }> = {
     url: '/blog/paraiba-tourmaline.webp',
     alt: 'A neon blue-green paraiba tourmaline showing the electric copper-bearing colour discovered in northeast Brazil in 1989.',
   },
+  'how-to-wear-a-brooch': {
+    url: '/blog/how-to-wear-a-brooch.webp',
+    alt: 'A Victorian gold and enamel floral brooch pinned to the lapel of a black wool blazer.',
+  },
 }
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
