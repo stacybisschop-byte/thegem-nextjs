@@ -125,6 +125,25 @@ export async function getAllArticleSlugs(): Promise<
   }))
 }
 
+// Sitemap variant: includes _updatedAt so each URL gets an accurate per-document lastmod.
+// Uses time-based revalidation (1h) to keep the sitemap fresh without indefinite caching.
+export async function getAllArticlesForSitemap(): Promise<
+  Array<{ pillar: string; slug: string; updatedAt: string }>
+> {
+  const articles = await client.fetch<
+    Array<{ pillar: string; slug: { current: string }; _updatedAt: string }>
+  >(
+    `*[_type == "article" && published == true] { pillar, slug, _updatedAt }`,
+    {},
+    { next: { revalidate: 3600 } }
+  )
+  return articles.map((a) => ({
+    pillar: a.pillar.toLowerCase(),
+    slug: a.slug.current,
+    updatedAt: a._updatedAt,
+  }))
+}
+
 // ---- Related articles -------------------------------------------------------
 
 export async function getRelatedArticles(

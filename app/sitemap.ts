@@ -1,46 +1,47 @@
 import { MetadataRoute } from 'next'
-import { getAllArticleSlugs } from '@/lib/queries'
+import { getAllArticlesForSitemap } from '@/lib/queries'
 
 export const revalidate = 3600
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const slugs = await getAllArticleSlugs()
+  const records = await getAllArticlesForSitemap()
+  const buildDate = new Date()
 
-  const articles = slugs.map(({ pillar, slug }) => ({
+  const articles = records.map(({ pillar, slug, updatedAt }) => ({
     url: `https://thegem.press/${pillar}/${slug}`,
-    lastModified: new Date(),
+    lastModified: new Date(updatedAt),
     changeFrequency: 'monthly' as const,
     priority: 0.8,
   }))
 
   return [
     {
-      url: 'https://thegem.press',
-      lastModified: new Date(),
+      url: 'https://thegem.press/',
+      lastModified: buildDate,
       changeFrequency: 'daily',
       priority: 1.0,
     },
     {
       url: 'https://thegem.press/stories',
-      lastModified: new Date(),
+      lastModified: buildDate,
       changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
       url: 'https://thegem.press/guides',
-      lastModified: new Date(),
+      lastModified: buildDate,
       changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
       url: 'https://thegem.press/style',
-      lastModified: new Date(),
+      lastModified: buildDate,
       changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
       url: 'https://thegem.press/about',
-      lastModified: new Date(),
+      lastModified: buildDate,
       changeFrequency: 'yearly',
       priority: 0.6,
     },
