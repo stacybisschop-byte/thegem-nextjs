@@ -30,8 +30,8 @@ export default function Footer() {
           <h5>Subscribe</h5>
           <ul>
             <li><Link href="/newsletter">Newsletter</Link></li>
-            <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
-            <li><a href="https://pinterest.com" target="_blank" rel="noopener">Pinterest</a></li>
+            <li><a href="https://www.instagram.com/thegem.press/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.pinterest.com/thegemmag" target="_blank" rel="noopener">Pinterest</a></li>
             <li><Link href="/rss">RSS</Link></li>
           </ul>
         </div>
