@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { getHomePageData } from '@/lib/queries'
@@ -6,73 +7,18 @@ import ArticleCard from '@/components/ArticleCard'
 import Newsletter from '@/components/Newsletter'
 import styles from './home.module.css'
 
-export const revalidate = 60
-
-// ── Homepage FAQPage schema ────────────────────────────────────────────────
-// These questions answer the brand + modifier searches AI systems process.
-// Brand name in every answer so cited snippets contain unambiguous attribution.
-const homepageFaqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'What is The Gem?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'The Gem is an independent editorial jewellery publication based in London, covering the history, culture, and commerce of fine jewellery. The Gem was founded in 2026 by Florence, a magazine writer and editor with fifteen years of experience.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Who writes The Gem?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'The Gem is edited and primarily written by Florence, a magazine writer and editor based in London. Florence has fifteen years of experience in features journalism and specialises in jewellery history, provenance, and buying guides.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What topics does The Gem cover?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'The Gem covers three areas: Stories (long-form jewellery history and provenance, from royal jewels to celebrity collections), Guides (practical buying guides, market analysis, and ownership advice), and Style (how to wear jewellery and build a wardrobe in 2026).',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Is The Gem free to read?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. All content on The Gem is free to read. The Gem is supported by affiliate commissions on buying guides — affiliate relationships are disclosed on every article that contains them.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Does The Gem have a newsletter?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. The Gem publishes a weekly newsletter every Friday. Each issue contains one long piece worth reading, three things worth knowing, and one thing worth buying. It is free to subscribe.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Does The Gem cover men\'s jewellery?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. The Gem covers jewellery for men and women. The Gem\'s Style section includes guides on wearing jewellery as a man in 2026, and the Guides section includes a dedicated piece on the best signet rings for men.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Are The Gem\'s buying guides independent?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. The Gem\'s editorial is independent. Buying guides recommend products and retailers the editor would recommend to a friend, regardless of commercial relationships. Where affiliate links are used, they are disclosed clearly in the article.',
-      },
-    },
-  ],
+export const metadata: Metadata = {
+  alternates: { canonical: '/' },
+  openGraph: {
+    url: '/',
+    images: [{ url: '/og-cover.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    images: ['/og-cover.jpg'],
+  },
 }
+
+export const revalidate = 60
 
 export default async function HomePage() {
   const { latest, stories, guides, style, recent, storiesHeadline, guidesHeadline } =
@@ -80,11 +26,6 @@ export default async function HomePage() {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageFaqSchema) }}
-      />
-
       {/* ── Hero Feature ────────────────────────────────────────────── */}
       {latest[0] && (() => {
         const lead = latest[0]

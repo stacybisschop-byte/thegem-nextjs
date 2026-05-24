@@ -3,6 +3,16 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Accessibility Statement',
   description: 'The Gem accessibility statement. Our commitment to WCAG 2.1 AA compliance.',
+  alternates: { canonical: '/accessibility' },
+  openGraph: {
+    url: '/accessibility',
+    title: 'Accessibility Statement',
+    description: 'The Gem accessibility statement. Our commitment to WCAG 2.1 AA compliance.',
+    images: [{ url: '/og-cover.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    images: ['/og-cover.jpg'],
+  },
 }
 
 const lastUpdated = '14 May 2026'

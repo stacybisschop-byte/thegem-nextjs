@@ -3,6 +3,16 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Contact',
   description: 'How to get in touch with The Gem — for editorial enquiries, corrections, press, and reader questions.',
+  alternates: { canonical: '/contact' },
+  openGraph: {
+    url: '/contact',
+    title: 'Contact',
+    description: 'How to get in touch with The Gem — for editorial enquiries, corrections, press, and reader questions.',
+    images: [{ url: '/og-cover.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    images: ['/og-cover.jpg'],
+  },
 }
 
 export default function ContactPage() {

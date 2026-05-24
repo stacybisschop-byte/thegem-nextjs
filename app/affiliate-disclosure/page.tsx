@@ -3,6 +3,16 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Affiliate Disclosure',
   description: 'How The Gem uses affiliate links and why it does not influence our editorial coverage.',
+  alternates: { canonical: '/affiliate-disclosure' },
+  openGraph: {
+    url: '/affiliate-disclosure',
+    title: 'Affiliate Disclosure',
+    description: 'How The Gem uses affiliate links and why it does not influence our editorial coverage.',
+    images: [{ url: '/og-cover.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    images: ['/og-cover.jpg'],
+  },
 }
 
 const lastUpdated = '14 May 2026'

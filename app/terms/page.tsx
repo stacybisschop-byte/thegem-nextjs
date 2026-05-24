@@ -3,6 +3,16 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Terms of Use',
   description: 'Terms of use for The Gem, the editorial jewellery publication.',
+  alternates: { canonical: '/terms' },
+  openGraph: {
+    url: '/terms',
+    title: 'Terms of Use',
+    description: 'Terms of use for The Gem, the editorial jewellery publication.',
+    images: [{ url: '/og-cover.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    images: ['/og-cover.jpg'],
+  },
 }
 
 const lastUpdated = '14 May 2026'

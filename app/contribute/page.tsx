@@ -3,6 +3,16 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Contribute',
   description: 'How to pitch The Gem. What we publish, what we pay, and what we are looking for from outside writers.',
+  alternates: { canonical: '/contribute' },
+  openGraph: {
+    url: '/contribute',
+    title: 'Contribute',
+    description: 'How to pitch The Gem. What we publish, what we pay, and what we are looking for from outside writers.',
+    images: [{ url: '/og-cover.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    images: ['/og-cover.jpg'],
+  },
 }
 
 export default function ContributePage() {

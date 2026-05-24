@@ -21,6 +21,7 @@ const CARD_FIELDS = `
 // ---- Fragment: full article --------------------------------------------------
 const FULL_ARTICLE_FIELDS = `
   _id,
+  _updatedAt,
   title,
   slug,
   pillar,

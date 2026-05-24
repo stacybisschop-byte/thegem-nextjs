@@ -6,6 +6,16 @@ import { articleHref } from '@/lib/sanity'
 export const metadata: Metadata = {
   title: 'Archive',
   description: 'Every piece published on The Gem, grouped by section.',
+  alternates: { canonical: '/archive' },
+  openGraph: {
+    url: '/archive',
+    title: 'Archive',
+    description: 'Every piece published on The Gem, grouped by section.',
+    images: [{ url: '/og-cover.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    images: ['/og-cover.jpg'],
+  },
 }
 
 export const revalidate = 60

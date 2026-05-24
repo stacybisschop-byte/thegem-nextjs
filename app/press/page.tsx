@@ -3,6 +3,16 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Press',
   description: 'Press information for The Gem — what we cover, how to send samples and pitches, and our editorial standards.',
+  alternates: { canonical: '/press' },
+  openGraph: {
+    url: '/press',
+    title: 'Press',
+    description: 'Press information for The Gem — what we cover, how to send samples and pitches, and our editorial standards.',
+    images: [{ url: '/og-cover.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    images: ['/og-cover.jpg'],
+  },
 }
 
 export default function PressPage() {

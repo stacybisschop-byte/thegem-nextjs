@@ -13,11 +13,11 @@ const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mon
 export const metadata: Metadata = {
   metadataBase: new URL('https://thegem.press'),
   title: {
-    default: 'The Gem — For people who buy beautiful things and want to know the story behind them',
+    default: 'The Gem — Editorial Jewellery Publication, London',
     template: '%s — The Gem',
   },
   description:
-    'The Gem is an editorial jewellery publication covering the history, culture, and commerce of fine jewellery. Based in London.',
+    'The Gem is an editorial jewellery publication for people who buy beautiful things and want to know the story behind them. Covers the history, culture, and commerce of fine jewellery. Based in London.',
   openGraph: {
     siteName: 'The Gem',
     locale: 'en_GB',

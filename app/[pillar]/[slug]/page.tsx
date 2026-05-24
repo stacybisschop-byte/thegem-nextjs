@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { getArticle, getAllArticleSlugs, getRelatedArticles } from '@/lib/queries'
 import { urlForImage, readMin } from '@/lib/sanity'
-import ArticleBody, { extractFAQs } from '@/components/ArticleBody'
+import ArticleBody from '@/components/ArticleBody'
 import ArticleCard from '@/components/ArticleCard'
 import Newsletter from '@/components/Newsletter'
 import styles from './article.module.css'
@@ -26,11 +26,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const ogImage = article.heroImage
     ? urlForImage(article.heroImage).width(1200).height(630).url()
     : undefined
+  const path = `/${params.pillar}/${params.slug}`
 
   return {
     title: article.metaTitle ?? article.title,
     description: article.metaDescription,
+    alternates: { canonical: path },
     openGraph: {
+      url: path,
       title: article.metaTitle ?? article.title,
       description: article.metaDescription,
       type: 'article',
@@ -52,7 +55,6 @@ export default async function ArticlePage({ params }: Props) {
   if (!article) notFound()
 
   const related = await getRelatedArticles(article._id, article.pillar, 3)
-  const faqs = extractFAQs(article.body)
   const wordCount = article.body.split(/\s+/).length
   const readingMin = readMin(article.body)
 
@@ -63,6 +65,21 @@ export default async function ArticlePage({ params }: Props) {
 
   const kicker = `${article.pillar} · ${article.kickerExtra ?? 'The Gem'}`
 
+  // Schema image must be an absolute URL — heroImageUrl fallback may be relative.
+  const schemaImage = heroSrc
+    ? heroSrc.startsWith('http')
+      ? heroSrc
+      : `https://thegem.press${heroSrc.startsWith('/') ? heroSrc : `/${heroSrc}`}`
+    : null
+
+  // dateModified must be >= datePublished. Use Sanity's _updatedAt; clamp to
+  // publishedAt for posts that have never been edited (where _updatedAt < publishedAt).
+  const datePublished = article.publishedAt
+  const dateModified =
+    article._updatedAt && datePublished && article._updatedAt >= datePublished
+      ? article._updatedAt
+      : datePublished
+
   // JSON-LD structured data
   const articleJsonLd = {
     '@context': 'https://schema.org',
@@ -70,28 +87,40 @@ export default async function ArticlePage({ params }: Props) {
     headline: article.title,
     description: article.metaDescription,
     author: { '@type': 'Person', name: article.author ?? 'Florence' },
-    datePublished: article.publishedAt,
-    dateModified: article.lastReviewedAt ?? article.publishedAt,
+    ...(datePublished && { datePublished }),
+    ...(dateModified && { dateModified }),
     publisher: {
       '@type': 'Organization',
       name: 'The Gem',
-      url: 'https://thegem.co',
+      url: 'https://thegem.press',
     },
-    ...(heroSrc && { image: heroSrc }),
+    ...(schemaImage && { image: schemaImage }),
   }
 
-  const faqJsonLd =
-    faqs.length > 0
-      ? {
-          '@context': 'https://schema.org',
-          '@type': 'FAQPage',
-          mainEntity: faqs.map(({ question, answer }) => ({
-            '@type': 'Question',
-            name: question,
-            acceptedAnswer: { '@type': 'Answer', text: answer },
-          })),
-        }
-      : null
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://thegem.press/',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: article.pillar,
+        item: `https://thegem.press/${params.pillar}`,
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: article.title,
+        item: `https://thegem.press/${params.pillar}/${params.slug}`,
+      },
+    ],
+  }
 
   return (
     <>
@@ -100,12 +129,10 @@ export default async function ArticlePage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
-      {faqJsonLd && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-        />
-      )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
 
       {/* ── Affiliate Disclosure ─────────────────────────────────────── */}
       {article.affiliateDisclosure && (

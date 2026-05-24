@@ -4,6 +4,17 @@ export const metadata: Metadata = {
   title: 'About Florence',
   description:
     'About Florence, founding editor of The Gem. Magazine writer and editor based in London with fifteen years of experience.',
+  alternates: { canonical: '/about' },
+  openGraph: {
+    url: '/about',
+    title: 'About Florence',
+    description:
+      'About Florence, founding editor of The Gem. Magazine writer and editor based in London with fifteen years of experience.',
+    images: [{ url: '/og-cover.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    images: ['/og-cover.jpg'],
+  },
 }
 
 const personJsonLd = {

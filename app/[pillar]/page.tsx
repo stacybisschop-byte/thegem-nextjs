@@ -71,7 +71,23 @@ const PILLARS = {
 export async function generateMetadata({ params }: { params: { pillar: string } }): Promise<Metadata> {
   const pillar = PILLARS[params.pillar as keyof typeof PILLARS]
   if (!pillar) return {}
-  return { title: pillar.title, description: pillar.description }
+  const path = `/${params.pillar}`
+  return {
+    title: pillar.title,
+    description: pillar.description,
+    alternates: { canonical: path },
+    openGraph: {
+      url: path,
+      title: pillar.title,
+      description: pillar.description,
+      images: [{ url: '/og-cover.jpg', width: 1200, height: 630 }],
+    },
+    twitter: {
+      title: pillar.title,
+      description: pillar.description,
+      images: ['/og-cover.jpg'],
+    },
+  }
 }
 
 export default async function PillarPage({ params }: { params: { pillar: string } }) {
@@ -80,23 +96,31 @@ export default async function PillarPage({ params }: { params: { pillar: string 
 
   const articles = await getPillarArticles(params.pillar)
 
-  const faqSchema = {
+  const breadcrumbJsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: meta.faq.map(({ q, a }) => ({
-      '@type': 'Question',
-      name: q,
-      acceptedAnswer: { '@type': 'Answer', text: a },
-    })),
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://thegem.press/',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: meta.title,
+        item: `https://thegem.press/${params.pillar}`,
+      },
+    ],
   }
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
-
       <div style={{ maxWidth: 720, margin: '0 auto', padding: '80px var(--pad-x) 60px', textAlign: 'center' }}>
         <div style={{ fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: 20 }}>
           The Gem

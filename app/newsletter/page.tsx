@@ -4,6 +4,16 @@ import Newsletter from '@/components/Newsletter'
 export const metadata: Metadata = {
   title: 'The Newsletter',
   description: 'One letter from Florence every Friday morning. A long piece worth reading, three things worth knowing, one thing worth buying. Free.',
+  alternates: { canonical: '/newsletter' },
+  openGraph: {
+    url: '/newsletter',
+    title: 'The Newsletter',
+    description: 'One letter from Florence every Friday morning. A long piece worth reading, three things worth knowing, one thing worth buying. Free.',
+    images: [{ url: '/og-cover.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    images: ['/og-cover.jpg'],
+  },
 }
 
 export default function NewsletterPage() {
