@@ -38,10 +38,19 @@ const orgSchema = {
   name: 'The Gem',
   url: 'https://thegem.press',
   description: 'Editorial jewellery publication. For people who buy beautiful things and want to know the story behind them.',
-  logo: 'https://thegem.press/favicon.svg',
+  logo: {
+    '@type': 'ImageObject',
+    url: 'https://thegem.press/og-logo.png',
+    width: 600,
+    height: 60,
+  },
   foundingDate: '2026',
   address: { '@type': 'PostalAddress', addressLocality: 'London', addressCountry: 'GB' },
-  sameAs: [],
+  sameAs: [
+    'https://thegemmag.substack.com',
+    // TODO: confirm Instagram handle and add 'https://www.instagram.com/<handle>'
+    // TODO: confirm Pinterest handle and add 'https://www.pinterest.co.uk/<handle>'
+  ],
 }
 
 const websiteSchema = {

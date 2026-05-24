@@ -17,37 +17,40 @@ export const metadata: Metadata = {
   },
 }
 
-const personJsonLd = {
+const profilePageJsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'Person',
-  name: 'Florence',
-  url: 'https://thegem.press/about',
-  jobTitle: 'Founding Editor',
-  worksFor: {
-    '@type': 'Organization',
-    name: 'The Gem',
-    url: 'https://thegem.press',
-  },
-  description:
-    'Magazine writer and editor based in London with fifteen years of experience. Founding editor of The Gem, an editorial jewellery publication.',
-  knowsAbout: [
-    'fine jewellery',
-    'gemstones',
-    'jewellery history',
-    'antique jewellery',
-    'vintage jewellery',
-    'diamond grading',
-    'jewellery valuation',
-    'Cartier',
-    'Tiffany & Co',
-    'Victorian jewellery',
-    'Art Deco jewellery',
-    'jewellery investment',
-  ],
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'London',
-    addressCountry: 'GB',
+  '@type': 'ProfilePage',
+  mainEntity: {
+    '@type': 'Person',
+    name: 'Florence',
+    url: 'https://thegem.press/about',
+    jobTitle: 'Founding Editor',
+    worksFor: {
+      '@type': 'Organization',
+      name: 'The Gem',
+      url: 'https://thegem.press',
+    },
+    description:
+      'Florence is the founding editor of The Gem, a London-based editorial publication on fine jewellery. She has fifteen years of experience as a magazine writer and editor.',
+    knowsAbout: [
+      'fine jewellery',
+      'gemstones',
+      'jewellery history',
+      'antique jewellery',
+      'vintage jewellery',
+      'diamond grading',
+      'jewellery valuation',
+      'Cartier',
+      'Tiffany & Co',
+      'Victorian jewellery',
+      'Art Deco jewellery',
+      'jewellery investment',
+    ],
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'London',
+      addressCountry: 'GB',
+    },
   },
 }
 
@@ -56,7 +59,7 @@ export default function AboutPage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(profilePageJsonLd) }}
       />
 
       <div
