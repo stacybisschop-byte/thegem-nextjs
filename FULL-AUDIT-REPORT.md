@@ -2,7 +2,7 @@
 
 **Scope:** Full-site audit (homepage + representative interior pages + sitemap + robots/llms)
 **Initial audit:** 2026-05-24
-**Last verified:** 2026-05-24 (after full fix round)
+**Last verified:** 2026-05-24 (after full fix round + editorial cleanup)
 **Pages inspected:** `/`, `/about`, `/style/how-to-wear-a-brooch`, `/stories/paraiba-tourmaline`, `/stories/bulgari-history`, `/stories`, `sitemap.xml`, `robots.txt`, `llms.txt`, `llms-full.txt`
 **Composite score:** ~88 / 100 — **Excellent**
 **Score confidence:** Medium (Performance/CWV measured separately by site owner)
@@ -11,7 +11,7 @@
 
 ## A) Audit Summary
 
-The site went from ~55 (Needs Improvement) to ~88 (Excellent) in a single fix round. Every Critical, Warning, and Info finding from the initial audit is resolved. Strong content foundations and security baseline were already in place; the lift came from fixing schema hygiene, adding canonicals + per-route OG metadata, removing the restricted FAQPage schema, populating entity signals (`sameAs`, ProfilePage), shipping `/llms-full.txt`, and per-document sitemap timestamps.
+The site went from ~55 (Needs Improvement) to ~88 (Excellent) in a single fix round. Every Critical, Warning, and Info finding from the initial audit is resolved, plus the follow-up editorial cleanup of orphaned data. Strong content foundations and security baseline were already in place; the lift came from fixing schema hygiene, adding canonicals + per-route OG metadata, removing the restricted FAQPage schema, populating entity signals (`sameAs`, ProfilePage), shipping `/llms-full.txt`, and per-document sitemap timestamps.
 
 ### Original Top 3 Critical issues — all resolved
 
@@ -37,7 +37,11 @@ The site went from ~55 (Needs Improvement) to ~88 (Excellent) in a single fix ro
   - `og:type/siteName/locale` lost on per-route metadata
   - `og:image` missing on articles using `heroImageUrl` legacy fallback
 - Semantic `<time dateTime>` for visible publish date (commit `317eab5`)
-- Orphaned `PILLARS.faq` data + unused `lastReviewedAt` field removed (commit `2773462`)
+- Orphaned `PILLARS.faq` data + unused `lastReviewedAt` field removed across code, Studio schema, types, GROQ projection, and migration script (commit `2773462`)
+- Editorial cleanup follow-up (commit `6717968`):
+  - Sanity dataset patched: `lastReviewedAt` unset across all 46 documents (44 published + 2 drafts)
+  - 44 articles' review dates snapshotted to `content/review-schedule.md` before the patch — editorial calendar preserved in version control
+  - `content/rewrite_briefs.md` stale `lastReviewedAt` references updated to describe the new `_updatedAt`-based workflow
 
 ---
 
@@ -58,13 +62,13 @@ The site went from ~55 (Needs Improvement) to ~88 (Excellent) in a single fix ro
 | On-page | Warning | Confirmed | `og:image` missing on `/` and Paraiba | **Resolved** | Homepage uses `/og-cover.jpg`; Paraiba uses absolutised legacy hero |
 | On-page | Warning | Confirmed | `og:title`/`twitter:title` too long | **Resolved** | Both within limits after homepage title shortening |
 | On-page | Info | Likely | Visible publish date not in `<time>` element | **Resolved** | Article byline date now uses `<time dateTime={publishedAt}>` |
-| Sitemap | Warning | Confirmed | Every URL shared identical `<lastmod>` | **Resolved** | 32 distinct timestamps across 36 URLs (per-doc `_updatedAt` from Sanity) |
+| Sitemap | Warning | Confirmed | Every URL shared identical `<lastmod>` | **Resolved** | Per-doc `_updatedAt` from Sanity (note: dataset patch on 2026-05-24 reclusters all article timestamps; will diverge naturally with editorial activity) |
 | Sitemap | Info | Confirmed | Homepage entry lacked trailing slash | **Resolved** | Sitemap now emits `https://thegem.press/` |
 | Studio | Info | Confirmed | `/studio` indexable | **Resolved** | `<meta name="robots" content="noindex, nofollow"/>` via `app/studio/layout.tsx` |
 | E-E-A-T | Pass | Confirmed | Author identity strengthened | **Improved** | `/about` now ships `ProfilePage` with full Person (knowsAbout, address, jobTitle) as `mainEntity` |
 | GEO | Info | Confirmed | `/llms-full.txt` 404 | **Resolved** | 200 OK at `/llms-full.txt`, full article bodies with `Title:` / `URL:` / `Section:` / markdown-stripped body |
 | Code hygiene | Info | Confirmed | Orphaned `PILLARS.faq` data | **Resolved** | Removed; only `title` + `description` remain per pillar |
-| Code hygiene | Info | Confirmed | Unused `lastReviewedAt` field across schema, types, queries, migration | **Resolved** | Removed across all 4 layers (Studio schema, TS interface, GROQ projection, migration script) |
+| Code hygiene | Info | Confirmed | Unused `lastReviewedAt` field across schema, types, queries, migration | **Resolved** | Removed across all 4 code layers; field unset on all 46 Sanity documents (44 published + 2 drafts); editorial dates preserved in `content/review-schedule.md` |
 | Crawl | Pass | Confirmed | robots.txt + sitemap pointer | **Pass** | Unchanged from initial audit |
 | Crawl | Info | Confirmed | No explicit AI-crawler directives | **Pass (intentional)** | Acceptable for a publisher inviting AI citations |
 | Security | Pass | Confirmed | All major security headers present | **Pass (score 100)** | HSTS preload, full CSP, X-Frame-Options DENY, etc. |
@@ -81,7 +85,7 @@ The site went from ~55 (Needs Improvement) to ~88 (Excellent) in a single fix ro
 
 ## C) Open Items
 
-**None within audit scope.** All Critical, Warning, and Info findings are resolved.
+**None within audit scope.** All Critical, Warning, Info, and follow-up hygiene findings are resolved.
 
 Performance / Core Web Vitals measurement is owner-managed (Search Console / PageSpeed Insights with an API key) and not blocked on a code change.
 
@@ -115,10 +119,10 @@ Performance / Core Web Vitals measurement is owner-managed (Search Console / Pag
 | `3fab94f` | Audit docs updated to post-fix state |
 | `317eab5` | Semantic `<time>` for visible publish date |
 | `96e84d1` | sameAs populated with real Instagram/X/Pinterest handles |
-| `2773462` | Drop orphaned PILLARS.faq + lastReviewedAt field across all layers |
+| `2773462` | Drop orphaned PILLARS.faq + lastReviewedAt field across all code layers |
+| `8399584` | Close out audit docs |
+| `6717968` | Editorial cleanup: review-schedule.md snapshot + briefs update; Sanity dataset patched |
 
 ## F) Owner-managed follow-up (not blocking)
 
 - **Core Web Vitals.** Measure via Google Search Console → Core Web Vitals report (field data, more accurate than synthetic), or run PageSpeed Insights with a personal API key. Not a code task.
-- **`content/rewrite_briefs.md`** mentions `lastReviewedAt` in editorial planning notes (lines 300 and 368). The field is gone from the codebase, so those notes are stale — content edit you'd own.
-- **Sanity dataset cleanup (optional).** Existing documents may still carry a `lastReviewedAt` value. Harmless (Sanity ignores extra fields) but can be unset with a one-time CLI patch if desired.

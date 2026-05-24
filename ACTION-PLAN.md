@@ -1,6 +1,6 @@
 # Action Plan — thegem.press SEO
 
-**Status as of 2026-05-24:** All audit-scope items resolved. Site moved from ~55 (Needs Improvement) to ~88 (Excellent) across 8 commits.
+**Status as of 2026-05-24:** All audit-scope items resolved plus editorial-data cleanup. Site moved from ~55 (Needs Improvement) to ~88 (Excellent) across 10 commits.
 
 This file is now primarily a historical record of what was done, plus a verification block for future re-audits.
 
@@ -13,12 +13,6 @@ This file is now primarily a historical record of what was done, plus a verifica
 ### Owner-managed (not blocking)
 
 - **Core Web Vitals measurement.** Use Google Search Console → Core Web Vitals (field data) or PageSpeed Insights with a personal API key. Not a code change.
-- **`content/rewrite_briefs.md`** still mentions the (now removed) `lastReviewedAt` field on lines 300 and 368. Editorial planning copy — update or leave as historical context.
-- **Sanity dataset cleanup (optional).** Removed `lastReviewedAt` may still exist as a value on legacy article documents. Harmless. To clear:
-  ```bash
-  sanity documents query '*[_type=="article" && defined(lastReviewedAt)]._id' \
-    | xargs -I{} sanity documents patch {} --unset lastReviewedAt
-  ```
 
 ---
 
@@ -57,6 +51,14 @@ This file is now primarily a historical record of what was done, plus a verifica
 ### Studio + crawl — `d239d71`
 
 - ✅ `/studio` ships `<meta name="robots" content="noindex, nofollow"/>` via `app/studio/layout.tsx` (belt-and-braces alongside the existing `robots.txt` `Disallow: /studio/`)
+
+### Editorial-data cleanup — `6717968`
+
+- ✅ Sanity dataset: `lastReviewedAt` unset on all 46 documents (44 published + 2 drafts) via a single batched mutation; post-patch query confirms 0 remaining
+- ✅ `content/review-schedule.md` created — 44 articles snapshotted by review date (33 on 2026-05-01, 10 on 2026-06-01, 1 on 2026-07-01) before the patch, so the editorial-calendar info is preserved in version control
+- ✅ `content/rewrite_briefs.md` lines 300 and 368 updated — stale `lastReviewedAt` references replaced with the new workflow ("edit in Sanity, `_updatedAt` bumps, sitemap refreshes")
+
+  Side effect: the batched patch counted as a write on every document, so all 46 docs now share `_updatedAt = 2026-05-24T17:21:05Z`. The sitemap will show this clustered timestamp until natural editorial activity diverges them again.
 
 ---
 
