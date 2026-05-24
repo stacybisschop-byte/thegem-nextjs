@@ -1,100 +1,98 @@
 # Action Plan — thegem.press SEO
 
-Ordered by execution priority. Each item maps to a concrete code change in this Next.js repo.
+Status as of 2026-05-24, post-fix round. Original audit items below are mostly resolved; remaining items are marked **Open** at the top.
 
 ---
 
-## 1 · Immediate blockers (do first)
+## Currently open
 
-### 1.1 Fix Article `publisher.url` — `thegem.co` → `thegem.press` 🔴
-- **Impact:** Splits brand entity in Google's Knowledge Graph; weakens E-E-A-T attribution.
-- **Where:** Wherever Article JSON-LD is generated (likely `lib/seo.ts` / `lib/schema.ts` or in route-level metadata). Search the repo for `thegem.co`.
-- **Verify:** Open `https://search.google.com/test/rich-results` against `/stories/paraiba-tourmaline` → publisher URL should read `https://thegem.press`.
+### O1 · Confirm Instagram + Pinterest handles ⚠️
 
-### 1.2 Add canonical tags site-wide 🔴
-- **Impact:** Prevents duplicate content issues with query-string variants, trailing-slash variants, www/non-www edge cases. Currently missing on every page audited.
-- **Where:**
-  - In `app/layout.tsx`, set `export const metadata: Metadata = { metadataBase: new URL('https://thegem.press'), ... }`.
-  - In each route's `generateMetadata()` (or static `metadata`), add `alternates: { canonical: '/stories/paraiba-tourmaline' }` (path is fine once `metadataBase` is set).
-- **Verify:** `curl -s https://thegem.press/stories/paraiba-tourmaline | grep canonical` returns `<link rel="canonical" href="https://thegem.press/stories/paraiba-tourmaline" />`.
+**Where:** `app/layout.tsx`, the `orgSchema.sameAs` array (look for the two `TODO` lines)
 
-### 1.3 Remove `FAQPage` JSON-LD from `/` and `/stories` 🔴
-- **Impact:** FAQPage rich results are restricted to government/health authority sites since 2023-08-08. The schema is ignored by Google and signals outdated SEO. The visible FAQ HTML can stay — it still helps users and AI answer engines.
-- **Where:** Remove the `@type: FAQPage` block from the page that renders the home FAQ section and from the `/stories` index page. Grep for `"FAQPage"` in `app/`, `lib/`, `components/`.
+**Why:** Populated `sameAs` is the strongest entity-disambiguation signal for the Knowledge Graph. Substack is in; the other two are placeholders.
 
----
+**What to do:** Once accounts are claimed, replace each TODO with the real URL. Example:
 
-## 2 · Quick wins (this sprint)
+```ts
+sameAs: [
+  'https://thegemmag.substack.com',
+  'https://www.instagram.com/thegem.press',         // ← actual handle
+  'https://www.pinterest.co.uk/thegempress',        // ← actual handle
+],
+```
 
-### 2.1 Fix `Article.dateModified` logic ⚠️
-- **Current:** Brooch `datePublished: 2026-05-24` but `dateModified: 2026-05-01` (modified *before* published — impossible).
-- **Fix:** Use Sanity's `_updatedAt` for `dateModified` and `_createdAt` (or `publishedAt`) for `datePublished`. If `_updatedAt < publishedAt` (true for never-edited posts), set `dateModified = datePublished` or omit it.
+Also update the bare `https://instagram.com` / `https://pinterest.com` links in `components/Footer.tsx:33-34` to point at the real handles.
 
-### 2.2 Shorten homepage `<title>` ⚠️
-- **Current (84 chars):** `"The Gem — For people who buy beautiful things and want to know the story behind them"`
-- **Target (≤ 60):** `"The Gem — Editorial Jewellery Publication, London"` (49 chars)
-- The long tagline stays — move it to the meta description and `og:description` (current desc is already 125 chars — fine).
+### O2 · Measure Core Web Vitals ℹ️
 
-### 2.3 Add `og:url` and consistent `og:image` to every page ⚠️
-- **Where:** Once `metadataBase` is set (1.2), Next.js fills `og:url` automatically when you supply `openGraph: { url: '/...' }` per route. Add `openGraph.images` per page using the article hero (or a site-wide fallback for `/`, `/stories`, `/style`, `/guides`).
-- **Spec:** 1200×630, ≤ 1 MB, absolute URL.
+**Why:** Performance category is the only category in the audit still showing `Insufficient data`. PageSpeed Insights API kept rate-limiting because no API key was configured.
 
-### 2.4 Make Article `image` an absolute URL ⚠️
-- **Current (Paraiba):** `"image": "/blog/paraiba-tourmaline.webp"`
-- **Fix:** Prepend `https://thegem.press` (or use Sanity CDN URL with explicit dimensions). Schema.org image URLs must be absolute.
+**What to do (pick one):**
+- Provision a PageSpeed Insights API key (free tier is generous), set it as `PAGESPEED_API_KEY` in `.env`, re-run `python <skill>/scripts/pagespeed.py https://thegem.press/ --strategy mobile --json --api-key <KEY>`.
+- Or check **Google Search Console → Core Web Vitals** report directly for field data (more accurate than synthetic Lighthouse runs anyway).
+
+### O3 · Optional polish (no urgency) ℹ️
+
+These are all "nice to have", none blocking:
+
+- **Proper wordmark logo** at `/og-logo.png` (the current 600×60 file is a placeholder per the original task; if you've replaced it with a real wordmark, this is done — please verify the file).
+- **Render publish date visibly** in article HTML. Currently `datePublished` exists in JSON-LD only. Google has flagged schema dates that aren't visible to users — adding `<time dateTime={publishedAt}>May 2026</time>` near the byline matches.
+- **`PILLARS.faq` data orphaned** in `app/[pillar]/page.tsx`. The arrays survived the FAQPage removal because they're authored editorial copy that could be repurposed as visible HTML. If you don't intend to render them, they can be deleted.
+- **`lastReviewedAt` field** still in Sanity schema and projection but no longer consumed by the Article JSON-LD (now uses `_updatedAt`). Leave it if you want manual editorial-review override; otherwise drop from schema.
 
 ---
 
-## 3 · Strategic (next month)
+## Completed (commit reference)
 
-### 3.1 Add `BreadcrumbList` JSON-LD on `/stories/*`, `/style/*`, `/guides/*` ⚠️
-- **Why:** Enables SERP breadcrumb display ("thegem.press › Stories › Hope Diamond" instead of `https://thegem.press/stories/hope-diamond`). Improves CTR and crawl context.
-- **Shape:**
-  ```json
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "Stories", "item": "https://thegem.press/stories"},
-      {"@type": "ListItem", "position": 2, "name": "Paraiba Tourmaline", "item": "https://thegem.press/stories/paraiba-tourmaline"}
-    ]
-  }
-  ```
+### Critical — all resolved in `d239d71`
 
-### 3.2 Render publish/modified date visibly in article HTML ⚠️
-- **Why:** Google has been clear that schema dates not visible to users can be flagged as deceptive. Currently `datePublished` exists in JSON-LD only.
-- **Fix:** Add `<time dateTime={datePublished}>May 2026</time>` near the byline in the article component.
+- ✅ Article `publisher.url`: `thegem.co` → `https://thegem.press`
+- ✅ Canonical tags site-wide via `metadataBase` + per-route `alternates.canonical`
+- ✅ `FAQPage` JSON-LD removed from `/`, `/stories`, article pages
 
-### 3.3 Replace Organization `logo` SVG-favicon with a proper logo image ⚠️
-- **Why:** Knowledge Panel logo eligibility prefers an image that *looks like a logo* (wordmark or symbol) with declared `width`/`height`. The current favicon is a 32-ish-px glyph.
-- **Fix:** Add a dedicated `/og/logo.png` (e.g. 600×60) and reference it in the Organization schema with `width: 600, height: 60`.
+### Warning — resolved across `d239d71`, `cc3fef4`, `8a52263`
 
-### 3.4 Per-URL `<lastmod>` in sitemap ⚠️
-- **Current:** All 36 URLs share `2026-05-24T14:02:24.979Z` (build timestamp).
-- **Fix:** In `app/sitemap.ts`, fetch Sanity `_updatedAt` per content URL and use that. Static routes (`/`, `/about`) can keep the build timestamp.
+- ✅ `Article.dateModified` now derived from Sanity `_updatedAt`, clamped to ≥ `datePublished`
+- ✅ Article `image` made absolute (Sanity CDN when available; legacy `/blog/*.webp` prefixed with canonical origin)
+- ✅ `BreadcrumbList` on article routes (Home → Section → Article) and section indexes (Home → Section)
+- ✅ Homepage `<title>` 84 → 49 chars; long tagline moved to description
+- ✅ `og:url` added to every route via `metadataBase` + per-route `openGraph.url`
+- ✅ `og:image` added site-wide (homepage/indexes use `/og-cover.jpg`; article pages use Sanity hero or absolutised `heroImageUrl`)
+- ✅ `og:type` / `og:site_name` / `og:locale` restored on every per-route `openGraph` block (Next.js doesn't merge — see commit `8a52263`)
+- ✅ Sitemap per-doc `<lastmod>` from `_updatedAt`; trailing slash on homepage URL
 
-### 3.5 Add `ProfilePage` schema for `/about` ℹ️
-- **Why:** Strengthens Florence as the author entity → boosts E-E-A-T on every article she writes.
-- **Reference:** [templates.json](C:\Users\stacy\.claude\skills\seo\resources\schema\templates.json) — ProfilePage block.
+### Schema enrichment — `a06f276` and `cc3fef4`
 
-### 3.6 Populate Organization `sameAs` ℹ️
-- Add the canonical URL for every owned identity surface as you launch them: Instagram, LinkedIn, the newsletter (Substack), any Wikipedia/Wikidata entry.
+- ✅ Organization `logo` upgraded from favicon SVG to dedicated `ImageObject` at `/og-logo.png` (600×60)
+- ✅ Organization `sameAs` populated with Substack (Instagram + Pinterest pending — see O1)
+- ✅ `ProfilePage` schema on `/about` with rich Person (knowsAbout, address, jobTitle) nested as `mainEntity` — replaces the prior standalone Person, single entity for Florence
+- ✅ `/llms-full.txt` dynamic route mirroring `llms.txt` pattern — full article bodies, markdown stripped
+
+### Studio + crawl — `d239d71`
+
+- ✅ `/studio` ships `<meta name="robots" content="noindex, nofollow"/>` via `app/studio/layout.tsx` (belt-and-braces alongside the existing `robots.txt` `Disallow: /studio/`)
 
 ---
 
-## 4 · Optional / nice-to-have
+## Verification
 
-- **Add `/llms-full.txt`** — a single concatenated full-text dump for AI ingestion. The skeleton `/llms.txt` is already there and scores 100/100.
-- **Sitemap homepage URL** — change `<loc>https://thegem.press</loc>` to `<loc>https://thegem.press/</loc>` for consistency with internal links.
-- **Provision Google PageSpeed Insights API key** so CWV can be measured on demand. Set `PAGESPEED_API_KEY` in `.env`.
+Run after any future deploy to confirm the SEO baseline is still intact:
 
----
+```bash
+# Canonicals + OG
+curl -s https://thegem.press/stories/paraiba-tourmaline | grep -E 'canonical|og:url|og:image|og:type|og:site_name'
 
-## Verification checklist after deploying fixes
+# Studio noindex
+curl -s https://thegem.press/studio | grep -E 'robots'
 
-- [ ] `curl -s https://thegem.press/stories/paraiba-tourmaline | grep -E 'canonical|og:url|publisher'` — canonical present, og:url present, publisher URL `thegem.press`
-- [ ] Rich Results Test passes for an Article URL with no `FAQPage` ignored-type warning
-- [ ] Schema Markup Validator on `/` shows no `FAQPage` block
-- [ ] `python <skill>/scripts/social_meta.py https://thegem.press/ --json` reports score 100, no missing OG tags
-- [ ] Sitemap shows distinct `<lastmod>` values across URLs
-- [ ] Search Console → Page indexing report unchanged or improved after 2 weeks
+# llms files
+curl -sI https://thegem.press/llms.txt
+curl -sI https://thegem.press/llms-full.txt
+
+# Distinct sitemap lastmod count
+curl -s https://thegem.press/sitemap.xml | grep -oE '<lastmod>[^<]+</lastmod>' | sort -u | wc -l
+
+# Schema validity (browser)
+# https://search.google.com/test/rich-results?url=https%3A%2F%2Fthegem.press%2Fstories%2Fparaiba-tourmaline
+```
