@@ -3,7 +3,7 @@ title: "How to Wear a Brooch in 2026 Without Looking Like Your Grandmother"
 slug: style/how-to-wear-a-brooch
 pillar: Style
 author: Florence
-published: false
+published: true
 publishDate: 2026-05-24
 last_reviewed_at: 2026-05
 meta_title: "How to Wear a Brooch in 2026: Where to Pin It"
