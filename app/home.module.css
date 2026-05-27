@@ -46,7 +46,7 @@
   color: var(--ink);
   margin-bottom: 20px;
 }
-.editorialBreak blockquote em { font-style: normal; color: var(--gold); }
+.editorialBreak blockquote em { font-style: normal; color: var(--gold-accessible); }
 .editorialBreak cite {
   font-family: var(--font-mono);
   font-size: 11px;
@@ -97,7 +97,7 @@
   margin-bottom: 10px;
   font-variation-settings: 'opsz' 48;
 }
-.pillarBlock :global(.headline-card h3 em) { font-style: italic; color: var(--gold); font-weight: 300; }
+.pillarBlock :global(.headline-card h3 em) { font-style: italic; color: var(--gold-accessible); font-weight: 300; }
 .pillarBlock :global(.headline-card p) {
   font-size: 15px;
   color: var(--ink-muted);
@@ -124,7 +124,7 @@
   font-weight: 350;
   font-variation-settings: 'opsz' 24;
 }
-.pillarList :global(.title em) { font-style: italic; color: var(--gold); }
+.pillarList :global(.title em) { font-style: italic; color: var(--gold-accessible); }
 .pillarList :global(.read-time) {
   font-family: var(--font-mono);
   font-size: 10px;

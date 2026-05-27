@@ -27,7 +27,7 @@ export default function NewsletterPage() {
           The Gem · Every Friday
         </div>
         <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 56px)', fontWeight: 300, lineHeight: 1.1, letterSpacing: '-0.02em', marginBottom: 24 }}>
-          One letter from <em style={{ fontStyle: 'italic', color: 'var(--gold)' }}>Florence</em>, every Friday morning.
+          One letter from <em style={{ fontStyle: 'italic', color: 'var(--gold-large)' }}>Florence</em>, every Friday morning.
         </h1>
         <p style={{ fontSize: 18, color: 'var(--ink-muted)', lineHeight: 1.6, maxWidth: 560, margin: '0 auto' }}>
           A long piece worth reading, three things worth knowing, one thing worth buying. Free.

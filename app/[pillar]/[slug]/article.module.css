@@ -25,7 +25,7 @@
   margin-bottom: 24px;
   font-variation-settings: 'opsz' 72, 'SOFT' 20;
 }
-.articleHero h1 em { font-style: italic; color: var(--gold); font-weight: 200; }
+.articleHero h1 em { font-style: italic; color: var(--gold-large); font-weight: 200; }
 .articleHero :global(.deck) {
   font-size: clamp(16px, 2vw, 20px);
   color: var(--ink-muted);
@@ -107,7 +107,7 @@
   margin-bottom: 8px;
   font-variation-settings: 'opsz' 48;
 }
-.relatedSection h2 em { font-style: italic; color: var(--gold); font-weight: 200; }
+.relatedSection h2 em { font-style: italic; color: var(--gold-large); font-weight: 200; }
 .relatedSection :global(.subhead) { font-size: 14px; color: var(--ink-muted); margin-bottom: 40px; }
 .relatedGrid {
   display: grid;
