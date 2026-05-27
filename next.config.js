@@ -4,9 +4,9 @@ const ContentSecurityPolicy = [
   "default-src 'self'",
   // Next.js needs unsafe-inline for its runtime; JSON-LD script tags also need it
   "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
-  // Google Fonts CSS + Fathom analytics (add your Fathom script domain when wiring)
-  "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-  "font-src 'self' https://fonts.gstatic.com data:",
+  // Fonts are self-hosted via next/font; add your Fathom script domain to script-src when wiring
+  "style-src 'self' 'unsafe-inline'",
+  "font-src 'self' data:",
   // Sanity CDN + Unsplash placeholders (remove unsplash once real images are in)
   "img-src 'self' data: blob: https://cdn.sanity.io https://images.unsplash.com",
   // Sanity API + Vercel vitals
