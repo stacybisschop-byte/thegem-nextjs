@@ -153,9 +153,9 @@ a { color: inherit; text-decoration: none; }
   z-index: 1;
   background: linear-gradient(
     to top,
-    rgba(20, 16, 12, 0.78) 0%,
-    rgba(20, 16, 12, 0.45) 30%,
-    rgba(20, 16, 12, 0.10) 60%,
+    rgba(20, 16, 12, 0.92) 0%,
+    rgba(20, 16, 12, 0.78) 25%,
+    rgba(20, 16, 12, 0.50) 55%,
     rgba(20, 16, 12, 0) 100%
   );
 }
