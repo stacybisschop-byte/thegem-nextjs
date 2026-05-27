@@ -52,6 +52,9 @@ const securityHeaders = [
 
 const nextConfig = {
   images: {
+    // AVIF first: ~15-25% smaller than WebP at matched quality. Browsers without
+    // AVIF support fall through to WebP automatically.
+    formats: ['image/avif', 'image/webp'],
     remotePatterns: [
       { protocol: 'https', hostname: 'images.unsplash.com' },
       { protocol: 'https', hostname: 'cdn.sanity.io' },
