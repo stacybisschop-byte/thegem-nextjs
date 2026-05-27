@@ -59,6 +59,9 @@ Links:
 - Minimum 3 internal links to related pieces on the site (use placeholders like `/stories/cartier-family` if the target piece doesn't exist yet — the slug map is in the redirect file)
 - Minimum 2 external links to authoritative sources (Royal Collection Trust, GIA, Christie's, museum archives, peer-reviewed sources, established trade publications). Avoid linking to competitor blogs.
 
+Inline images:
+- Real inline images must be Sanity asset blocks, not markdown `![](url)`. Markdown images bypass `next/image` and ship un-optimised (no AVIF, no responsive srcset); the renderer only applies `loading="lazy"` as a safety net.
+
 ## During drafting — GEO checks
 
 Generative engines (ChatGPT, Perplexity, Google AI Overviews, Claude) cite pieces that are easy to extract from. Make extraction easy:

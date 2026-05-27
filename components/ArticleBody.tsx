@@ -62,6 +62,13 @@ export default function ArticleBody({ body }: Props) {
               <table {...props}>{children}</table>
             </div>
           ),
+          // Safety net for any markdown ![](...) that slips into body content.
+          // Real inline images should be Sanity asset blocks so they get full
+          // next/image optimization (AVIF, responsive srcset, etc.).
+          img: ({ src, alt, ...props }) => (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={src} alt={alt ?? ''} loading="lazy" decoding="async" {...props} />
+          ),
         }}
       >
         {cleaned}
