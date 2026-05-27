@@ -11,6 +11,7 @@
     "migrate": "npx tsx scripts/migrate-to-sanity.ts"
   },
   "dependencies": {
+    "@sanity/client": "^7.22.0",
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.45.0",
     "@vercel/analytics": "^2.0.1",
@@ -25,6 +26,7 @@
     "sanity": "^3.45.0"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^16.2.6",
     "@types/node": "^20.0.0",
     "@types/react": "^18.3.0",
     "@types/react-dom": "^18.3.0",

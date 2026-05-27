@@ -1,4 +1,10 @@
-import { createClient } from 'next-sanity'
+// Import createClient directly from @sanity/client, NOT from next-sanity.
+// next-sanity re-exports @sanity/client.createClient unchanged, but its barrel also
+// pulls in @sanity/next-loader + visual-editing client components as a side effect,
+// which drags @sanity/client + xstate + buffer polyfill (~50 kB gz) into the browser
+// bundle on every content route. Switch back to next-sanity here only when wiring up
+// Sanity live preview, visual editing, or draft mode.
+import { createClient } from '@sanity/client'
 import imageUrlBuilder from '@sanity/image-url'
 
 export const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!
