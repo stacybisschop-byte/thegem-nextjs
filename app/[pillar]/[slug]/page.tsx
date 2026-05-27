@@ -198,6 +198,7 @@ export default async function ArticlePage({ params }: Props) {
               width={1600}
               height={900}
               priority
+              sizes="(max-width: 1200px) 100vw, 1200px"
               style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             />
           </div>

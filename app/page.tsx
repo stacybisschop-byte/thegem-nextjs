@@ -116,6 +116,7 @@ export default async function HomePage() {
                         src={src}
                         alt={alt}
                         width={800} height={533}
+                        sizes="(max-width: 900px) 100vw, 50vw"
                         style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                       />
                     </div>
@@ -154,6 +155,7 @@ export default async function HomePage() {
                         src={src}
                         alt={alt}
                         width={800} height={533}
+                        sizes="(max-width: 900px) 100vw, 50vw"
                         style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                       />
                     </div>

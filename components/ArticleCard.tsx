@@ -30,6 +30,7 @@ export default function ArticleCard({ article, size = 'medium', showExcerpt = tr
               alt={heroAlt}
               width={400}
               height={500}
+              sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 25vw"
               className="image-fill"
             />
           ) : (
