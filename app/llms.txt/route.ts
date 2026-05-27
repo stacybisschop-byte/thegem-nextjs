@@ -31,6 +31,8 @@ export async function GET() {
     '> For people who buy beautiful things and want to know the story behind them.',
     '> Editor: Florence. London. Est. 2026.',
     '',
+    '> Full content: https://thegem.press/llms-full.txt',
+    '',
     '## About',
     '',
     'The Gem is an independent editorial publication covering the history, culture, and',

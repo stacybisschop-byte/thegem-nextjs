@@ -52,7 +52,13 @@ export async function GET() {
     ].join('\n')
   })
 
-  return new Response(blocks.join('\n\n'), {
+  const header = [
+    '# The Gem — Full Content Index',
+    '> Summary version: https://thegem.press/llms.txt',
+    `> Last updated: ${new Date().toISOString().slice(0, 10)}`,
+  ].join('\n')
+
+  return new Response([header, ...blocks].join('\n\n'), {
     headers: {
       'Content-Type': 'text/plain; charset=utf-8',
       'Cache-Control': 'public, max-age=3600, stale-while-revalidate=86400',
