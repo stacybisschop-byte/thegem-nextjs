@@ -9,7 +9,7 @@ export default function Footer() {
           <p className="footer-tag">For people who buy beautiful things and want to know the story behind them.</p>
         </div>
         <div>
-          <h5>The Magazine</h5>
+          <h2>The Magazine</h2>
           <ul>
             <li><Link href="/stories">Stories</Link></li>
             <li><Link href="/style">Style</Link></li>
@@ -18,7 +18,7 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <h5>About</h5>
+          <h2>About</h2>
           <ul>
             <li><Link href="/about">About Florence</Link></li>
             <li><Link href="/contact">Contact</Link></li>
@@ -27,7 +27,7 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <h5>Subscribe</h5>
+          <h2>Subscribe</h2>
           <ul>
             <li><Link href="/newsletter">Newsletter</Link></li>
             <li><a href="https://www.instagram.com/thegem.press/" target="_blank" rel="noopener">Instagram</a></li>
@@ -36,7 +36,7 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <h5>Legal</h5>
+          <h2>Legal</h2>
           <ul>
             <li><Link href="/privacy">Privacy</Link></li>
             <li><Link href="/terms">Terms</Link></li>
