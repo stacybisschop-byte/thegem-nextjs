@@ -53,4 +53,4 @@
   border-radius: var(--radius);
 }
 .newsletter button:hover { background: var(--gold-light); }
-.newsletter small { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.05em; color: rgba(245,240,232,0.35); }
+.newsletter small { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.05em; color: var(--ink-on-dark-muted); }

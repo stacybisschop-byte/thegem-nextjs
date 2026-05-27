@@ -395,8 +395,8 @@ footer {
   font-variation-settings: 'opsz' 48;
 }
 .footer-logo em { color: var(--gold); }
-.footer-tag { font-size: 13px; color: rgba(245,240,232,0.5); line-height: 1.6; }
-footer h5 { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(245,240,232,0.4); margin-bottom: 16px; }
+.footer-tag { font-size: 13px; color: rgba(245,240,232,0.6); line-height: 1.6; }
+footer h5 { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-on-dark-muted); margin-bottom: 16px; }
 footer ul { list-style: none; }
 footer li { margin-bottom: 10px; }
 footer a { font-size: 14px; color: rgba(245,240,232,0.65); transition: color 0.2s; }
@@ -409,7 +409,7 @@ footer a:hover { color: var(--cream); }
   font-family: var(--font-mono);
   font-size: 10px;
   letter-spacing: 0.05em;
-  color: var(--ink-secondary);
+  color: var(--ink-on-dark-muted);
   max-width: var(--max-w);
   margin: 0 auto;
 }
