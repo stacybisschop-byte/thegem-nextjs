@@ -3,7 +3,7 @@ title: "The Men's Jewellery Edit: What to Buy, What to Wear, and What to Ignore"
 slug: style/mens-jewellery-guide
 pillar: Style
 author: Florence
-published: false
+published: true
 publishDate: 2026-06-02
 last_reviewed_at: 2026-06
 meta_title: "Men's Jewellery Guide 2026: What to Wear"

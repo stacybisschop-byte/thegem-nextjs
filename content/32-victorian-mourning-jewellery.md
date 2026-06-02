@@ -3,7 +3,7 @@ title: "Victorian Mourning Jewellery: When the Dead Were Worn by the Living"
 slug: stories/victorian-mourning-jewellery
 pillar: Stories
 author: Florence
-published: false
+published: true
 publishDate: 2026-05-30
 last_reviewed_at: 2026-05
 meta_title: "Victorian Mourning Jewellery: Jet, Hair, and Grief"
