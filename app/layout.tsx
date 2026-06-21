@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/react'
+import Script from 'next/script'
 import { Fraunces, Plus_Jakarta_Sans, JetBrains_Mono } from 'next/font/google'
 import '../styles/globals.css'
 import Nav from '@/components/Nav'
@@ -86,6 +87,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <Footer />
         <Analytics />
+        <Script
+          src="https://s.skimresources.com/js/305061X1793253.skimlinks.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )
