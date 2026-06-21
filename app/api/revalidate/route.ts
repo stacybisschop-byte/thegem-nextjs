@@ -42,6 +42,21 @@ export async function POST(req: NextRequest) {
     revalidatePath(path)
   }
 
+  if (process.env.INDEXNOW_KEY) {
+    const key = process.env.INDEXNOW_KEY
+    const urlList = Array.from(paths).map(p => `https://thegem.press${p}`)
+    fetch('https://api.indexnow.org/IndexNow', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json; charset=utf-8' },
+      body: JSON.stringify({
+        host: 'thegem.press',
+        key,
+        keyLocation: `https://thegem.press/${key}.txt`,
+        urlList,
+      }),
+    }).catch(() => {})
+  }
+
   return Response.json({
     revalidated: true,
     paths: Array.from(paths),
