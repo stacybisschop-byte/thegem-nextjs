@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? article.heroImageUrl
       : `https://thegem.press${article.heroImageUrl.startsWith('/') ? article.heroImageUrl : `/${article.heroImageUrl}`}`
     : undefined
-  const ogImage = sanityOgImage ?? fallbackOgImage
+  const ogImage = sanityOgImage ?? fallbackOgImage ?? '/og-cover.jpg'
   const path = `/${params.pillar}/${params.slug}`
 
   return {
@@ -49,13 +49,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: article.metaDescription,
       publishedTime: article.publishedAt,
       authors: [article.author ?? 'Florence'],
-      ...(ogImage && { images: [{ url: ogImage, width: 1200, height: 630 }] }),
+      images: [{ url: ogImage, width: 1200, height: 630 }],
     },
     twitter: {
       card: 'summary_large_image',
       title: article.metaTitle ?? article.title,
       description: article.metaDescription,
-      ...(ogImage && { images: [ogImage] }),
+      images: [ogImage],
     },
   }
 }

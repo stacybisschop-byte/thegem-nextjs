@@ -30,6 +30,9 @@ export const metadata: Metadata = {
     ],
     apple: '/apple-touch-icon.svg',
   },
+  other: {
+    'p:domain_verify': 'b9a6901bde74566737f6c9a46df6ad95',
+  },
 }
 
 const orgSchema = {

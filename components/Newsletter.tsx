@@ -3,17 +3,33 @@
 import { useState } from 'react'
 import styles from './Newsletter.module.css'
 
-// Wire BEEHIIV_PUBLICATION_ID in .env.local and update the action URL.
-// Current: demo only.
-
 export default function Newsletter() {
   const [submitted, setSubmitted] = useState(false)
+  const [error, setError] = useState<string | null>(null)
+  const [loading, setLoading] = useState(false)
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    // TODO: POST to Beehiiv embed endpoint.
-    // fetch(`https://embeds.beehiiv.com/subscriptions`, { method: 'POST', ... })
-    setSubmitted(true)
+    setError(null)
+    setLoading(true)
+    const email = (e.currentTarget.elements.namedItem('email') as HTMLInputElement).value
+    try {
+      const res = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      })
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}))
+        setError(data.error ?? 'Something went wrong. Please try again.')
+      } else {
+        setSubmitted(true)
+      }
+    } catch {
+      setError('Something went wrong. Please try again.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -27,10 +43,13 @@ export default function Newsletter() {
       {submitted ? (
         <p style={{ fontSize: 18, color: 'var(--gold)' }}>You&rsquo;re in. See you Friday.</p>
       ) : (
-        <form onSubmit={handleSubmit}>
-          <input type="email" placeholder="your@email.com" aria-label="Email address" required />
-          <button type="submit">Subscribe</button>
-        </form>
+        <>
+          <form onSubmit={handleSubmit}>
+            <input type="email" name="email" placeholder="your@email.com" aria-label="Email address" required />
+            <button type="submit" disabled={loading}>{loading ? 'Subscribing…' : 'Subscribe'}</button>
+          </form>
+          {error && <p style={{ color: 'var(--error, #c0392b)', marginTop: 8 }}>{error}</p>}
+        </>
       )}
       <small>No spam. Unsubscribe whenever.</small>
     </section>
