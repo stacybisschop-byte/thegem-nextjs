@@ -47,21 +47,6 @@ body {
 img { display: block; max-width: 100%; }
 a { color: inherit; text-decoration: none; }
 
-/* ── Announcement Bar ─────────────────────────────────────────────────────── */
-
-.announce {
-  background: var(--burgundy);
-  color: var(--cream);
-  text-align: center;
-  padding: 10px var(--pad-x);
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-.announce a { color: var(--gold-light); text-decoration: underline; }
-.announce span { opacity: 0.5; margin: 0 8px; }
-
 /* ── Navigation ───────────────────────────────────────────────────────────── */
 
 .primary-nav {

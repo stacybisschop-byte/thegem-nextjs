@@ -74,6 +74,15 @@ export default function PressPage() {
         outlet, the angle, and your deadline.
       </p>
 
+      <h2>Collaborations</h2>
+      <p>
+        We&rsquo;re open to collaborating with others who write seriously about fine jewellery, gemstones,
+        antiques, or adjacent fields — whether that&rsquo;s a guest post on a relevant site, a mention on
+        a curated resource page, or simply getting to know other people working in this space. If
+        you&rsquo;re building something thoughtful and think there&rsquo;s a natural fit, email{' '}
+        <a href="mailto:thegemmag@proton.me">thegemmag@proton.me</a> and introduce yourself.
+      </p>
+
       <h2>Logos and assets</h2>
       <p>
         High-resolution logos and a short publication bio are available on request from{' '}

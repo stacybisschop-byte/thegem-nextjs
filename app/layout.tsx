@@ -82,10 +82,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
-        <div className="announce">
-          Issue No. 01 · The launch issue is here <span>·</span>{' '}
-          <a href="/stories/princess-diana-jewellery">Read the Diana flagship</a>
-        </div>
         <Nav />
         <main>{children}</main>
         <Footer />
