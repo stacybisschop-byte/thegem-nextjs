@@ -2,6 +2,17 @@
 
 /* ── Article Hero ─────────────────────────────────────────────────────────── */
 
+.breadcrumb {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 20px;
+}
+.breadcrumb a { color: var(--gold-accessible); text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+
 .articleHero {
   max-width: 860px;
   margin: 0 auto;

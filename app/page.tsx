@@ -96,7 +96,10 @@ export default async function HomePage() {
       {/* ── Stories + Guides Pillar Pair ────────────────────────────── */}
       <div className="section-head">
         <h2>Two stories, one <em>obsession</em></h2>
-        <Link href="/stories">More stories →</Link>
+        <div className={styles.pillarLinks}>
+          <Link href="/stories">More stories →</Link>
+          <Link href="/guides">More guides →</Link>
+        </div>
       </div>
 
       <section className={styles.pillarPair}>

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getArticle, getAllArticleSlugs, getRelatedArticles } from '@/lib/queries'
 import { urlForImage, readMin } from '@/lib/sanity'
@@ -165,6 +166,11 @@ export default async function ArticlePage({ params }: Props) {
 
       {/* ── Article Hero ─────────────────────────────────────────────── */}
       <header className={styles.articleHero}>
+        <nav aria-label="Breadcrumb" className={styles.breadcrumb}>
+          <Link href="/">Home</Link>
+          {' / '}
+          <Link href={`/${params.pillar}`}>{article.pillar}</Link>
+        </nav>
         <div className="kicker">{kicker}</div>
         <h1>{article.title}</h1>
         {article.metaDescription && (
@@ -217,7 +223,7 @@ export default async function ArticlePage({ params }: Props) {
       <div className={styles.articleFooter}>
         <div className="avatar">F</div>
         <div className="bio">
-          <strong>Florence</strong>
+          <Link href="/about"><strong>Florence</strong></Link>
           <p>
             Founding editor of The Gem. Writes about jewellery, history, and what to actually buy.
             Lives near the King&apos;s Road in London with too many books.

@@ -55,6 +55,11 @@
   color: var(--ink-muted);
 }
 
+.pillarLinks {
+  display: flex;
+  gap: 24px;
+}
+
 /* ── Pillar Pair ──────────────────────────────────────────────────────────── */
 
 .pillarPair {
