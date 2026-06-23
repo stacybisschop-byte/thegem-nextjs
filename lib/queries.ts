@@ -150,12 +150,18 @@ export async function getRelatedArticles(
   pillar: string,
   count = 3
 ): Promise<ArticleCard[]> {
-  return client.fetch<ArticleCard[]>(
-    `*[_type == "article" && published == true && pillar == $pillar && _id != $currentId]
-      | order(publishedAt desc)[0...$count] { ${CARD_FIELDS} }`,
-    { currentId, pillar, count },
+  const samePillarCount = count - 1
+  const data = await client.fetch<{ samePillar: ArticleCard[]; crossPillar: ArticleCard[] }>(
+    `{
+      "samePillar": *[_type == "article" && published == true && pillar == $pillar && _id != $currentId]
+        | order(publishedAt desc)[0...$samePillarCount] { ${CARD_FIELDS} },
+      "crossPillar": *[_type == "article" && published == true && pillar != $pillar && _id != $currentId]
+        | order(publishedAt desc)[0...1] { ${CARD_FIELDS} }
+    }`,
+    { currentId, pillar, samePillarCount },
     { next: { revalidate: 60 } }
   )
+  return [...data.samePillar, ...data.crossPillar].slice(0, count)
 }
 
 // ---- Pillar index -----------------------------------------------------------
