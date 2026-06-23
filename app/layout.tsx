@@ -87,6 +87,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <Analytics />
         <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-EM8L6SR6S7"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-EM8L6SR6S7');
+        `}</Script>
+        <Script
           src="https://s.skimresources.com/js/305061X1793253.skimlinks.js"
           strategy="afterInteractive"
         />
