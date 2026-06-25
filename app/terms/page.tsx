@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Terms of Use',
-  description: 'Terms of use for The Gem, the editorial jewellery publication.',
+  description: 'Terms of use for The Gem, the editorial fine jewellery publication. Read before using or reproducing content from thegem.press.',
   alternates: { canonical: '/terms' },
   openGraph: {
     type: 'website',
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     locale: 'en_GB',
     url: '/terms',
     title: 'Terms of Use',
-    description: 'Terms of use for The Gem, the editorial jewellery publication.',
+    description: 'Terms of use for The Gem, the editorial fine jewellery publication. Read before using or reproducing content from thegem.press.',
     images: [{ url: '/og-cover.jpg', width: 1200, height: 630 }],
   },
   twitter: {

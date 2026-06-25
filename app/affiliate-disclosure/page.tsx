@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Affiliate Disclosure',
-  description: 'How The Gem uses affiliate links and why it does not influence our editorial coverage.',
+  description: 'How The Gem uses affiliate links — and why our editorial recommendations are never influenced by commercial relationships.',
   alternates: { canonical: '/affiliate-disclosure' },
   openGraph: {
     type: 'website',
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     locale: 'en_GB',
     url: '/affiliate-disclosure',
     title: 'Affiliate Disclosure',
-    description: 'How The Gem uses affiliate links and why it does not influence our editorial coverage.',
+    description: 'How The Gem uses affiliate links — and why our editorial recommendations are never influenced by commercial relationships.',
     images: [{ url: '/og-cover.jpg', width: 1200, height: 630 }],
   },
   twitter: {

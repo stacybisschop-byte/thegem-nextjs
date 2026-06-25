@@ -5,7 +5,7 @@ import { articleHref } from '@/lib/sanity'
 
 export const metadata: Metadata = {
   title: 'Archive',
-  description: 'Every piece published on The Gem, grouped by section.',
+  description: 'Every piece published on The Gem, organised by section — Stories, Style, and Guides. Browse the full archive of fine jewellery writing.',
   alternates: { canonical: '/archive' },
   openGraph: {
     type: 'website',
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     locale: 'en_GB',
     url: '/archive',
     title: 'Archive',
-    description: 'Every piece published on The Gem, grouped by section.',
+    description: 'Every piece published on The Gem, organised by section — Stories, Style, and Guides. Browse the full archive of fine jewellery writing.',
     images: [{ url: '/og-cover.jpg', width: 1200, height: 630 }],
   },
   twitter: {

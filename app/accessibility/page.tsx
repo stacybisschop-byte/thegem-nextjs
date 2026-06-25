@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Accessibility Statement',
-  description: 'The Gem accessibility statement. Our commitment to WCAG 2.1 AA compliance.',
+  description: 'The Gem\'s accessibility statement: our commitment to WCAG 2.1 AA compliance and making fine jewellery writing available to all.',
   alternates: { canonical: '/accessibility' },
   openGraph: {
     type: 'website',
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     locale: 'en_GB',
     url: '/accessibility',
     title: 'Accessibility Statement',
-    description: 'The Gem accessibility statement. Our commitment to WCAG 2.1 AA compliance.',
+    description: 'The Gem\'s accessibility statement: our commitment to WCAG 2.1 AA compliance and making fine jewellery writing available to all.',
     images: [{ url: '/og-cover.jpg', width: 1200, height: 630 }],
   },
   twitter: {

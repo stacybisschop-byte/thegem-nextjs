@@ -143,7 +143,35 @@ export async function getAllArticlesForSitemap(): Promise<
   }))
 }
 
-// ---- Related articles -------------------------------------------------------
+// ---- Article + related (single round-trip) ----------------------------------
+
+export async function getArticleWithRelated(
+  pillar: string,
+  slug: string
+): Promise<{ article: Article | null; related: ArticleCard[] }> {
+  const pillarCapitalised = pillar.charAt(0).toUpperCase() + pillar.slice(1)
+  const data = await client.fetch<{
+    article: Article | null
+    samePillar: ArticleCard[]
+    crossPillar: ArticleCard[]
+  }>(
+    `{
+      "article": *[_type == "article" && slug.current == $slug && pillar == $pillar && published == true][0] {
+        ${FULL_ARTICLE_FIELDS}
+      },
+      "samePillar": *[_type == "article" && published == true && pillar == $pillar && slug.current != $slug]
+        | order(publishedAt desc)[0...2] { ${CARD_FIELDS} },
+      "crossPillar": *[_type == "article" && published == true && pillar != $pillar]
+        | order(publishedAt desc)[0...1] { ${CARD_FIELDS} }
+    }`,
+    { slug, pillar: pillarCapitalised },
+    { next: { revalidate: 60 } }
+  )
+  const related = [...data.samePillar, ...data.crossPillar].slice(0, 3)
+  return { article: data.article ?? null, related }
+}
+
+// ---- Related articles (standalone, kept for any direct callers) -------------
 
 export async function getRelatedArticles(
   currentId: string,

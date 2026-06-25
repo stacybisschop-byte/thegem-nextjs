@@ -8,12 +8,14 @@ import Newsletter from '@/components/Newsletter'
 import styles from './home.module.css'
 
 export const metadata: Metadata = {
+  description: 'The Gem is an editorial jewellery publication covering the history, culture, and commerce of fine jewellery. For people who buy beautiful things.',
   alternates: { canonical: '/' },
   openGraph: {
     type: 'website',
     siteName: 'The Gem',
     locale: 'en_GB',
     url: '/',
+    description: 'The Gem is an editorial jewellery publication covering the history, culture, and commerce of fine jewellery. For people who buy beautiful things.',
     images: [{ url: '/og-cover.jpg', width: 1200, height: 630 }],
   },
   twitter: {

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { getArticle, getAllArticleSlugs, getRelatedArticles } from '@/lib/queries'
+import { getArticleWithRelated, getAllArticleSlugs } from '@/lib/queries'
 import { urlForImage, readMin } from '@/lib/sanity'
 import ArticleBody from '@/components/ArticleBody'
 import ArticleCard from '@/components/ArticleCard'
@@ -21,7 +21,7 @@ export async function generateStaticParams() {
 
 // Dynamic Open Graph metadata per article
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const article = await getArticle(params.pillar, params.slug)
+  const { article } = await getArticleWithRelated(params.pillar, params.slug)
   if (!article) return {}
 
   // og:image must be absolute. Prefer Sanity heroImage, fall back to legacy
@@ -62,11 +62,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function ArticlePage({ params }: Props) {
-  const article = await getArticle(params.pillar, params.slug)
+  const { article, related } = await getArticleWithRelated(params.pillar, params.slug)
   if (!article) notFound()
-
-  const related = await getRelatedArticles(article._id, article.pillar, 3)
-  const wordCount = article.body.split(/\s+/).length
   const readingMin = readMin(article.body)
 
   const heroSrc = article.heroImage
