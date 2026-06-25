@@ -65,7 +65,7 @@ export default function ArticleCard({ article, size = 'medium', showExcerpt = tr
             alt={heroAlt}
             fill
             className="image-fill"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 650px"
           />
         ) : (
           <div className="image-fill" style={{ background: 'var(--border)' }} />
