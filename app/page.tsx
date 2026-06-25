@@ -5,7 +5,6 @@ import { getHomePageData } from '@/lib/queries'
 import { urlForImage, articleHref } from '@/lib/sanity'
 import ArticleCard from '@/components/ArticleCard'
 import Newsletter from '@/components/Newsletter'
-import styles from './home.module.css'
 
 export const metadata: Metadata = {
   description: 'The Gem is an editorial jewellery publication covering the history, culture, and commerce of fine jewellery. For people who buy beautiful things.',
@@ -74,11 +73,11 @@ export default async function HomePage() {
 
       {/* ── Also New This Week (slots 2 + 3) ────────────────────────── */}
       {(latest[1] || latest[2]) && (
-        <section className={styles.alsoNew}>
+        <section className="alsoNew">
           <div className="section-head">
             <h2>Also new <em>this week</em></h2>
           </div>
-          <div className={styles.alsoNewGrid}>
+          <div className="alsoNewGrid">
             {latest[1] && <ArticleCard article={latest[1]} size="medium" showExcerpt />}
             {latest[2] && <ArticleCard article={latest[2]} size="medium" showExcerpt />}
           </div>
@@ -86,7 +85,7 @@ export default async function HomePage() {
       )}
 
       {/* ── Editorial Break ─────────────────────────────────────────── */}
-      <div className={styles.editorialBreak}>
+      <div className="editorialBreak">
         <span className="quote-mark">&ldquo;</span>
         <blockquote>
           For people who buy beautiful things,<br />
@@ -98,14 +97,14 @@ export default async function HomePage() {
       {/* ── Stories + Guides Pillar Pair ────────────────────────────── */}
       <div className="section-head">
         <h2>Two stories, one <em>obsession</em></h2>
-        <div className={styles.pillarLinks}>
+        <div className="pillarLinks">
           <Link href="/stories">More stories →</Link>
           <Link href="/guides">More guides →</Link>
         </div>
       </div>
 
-      <section className={styles.pillarPair}>
-        <div className={styles.pillarBlock}>
+      <section className="pillarPair">
+        <div className="pillarBlock">
           {storiesHeadline && (
             <>
               <div className="pillar-label">The Stories</div>
@@ -132,7 +131,7 @@ export default async function HomePage() {
               </Link>
             </>
           )}
-          <ul className={styles.pillarList}>
+          <ul className="pillarList">
             {stories.slice(0, 9).map((a) => (
               <li key={a._id}>
                 <Link href={articleHref(a)}>
@@ -144,7 +143,7 @@ export default async function HomePage() {
           </ul>
         </div>
 
-        <div className={styles.pillarBlock}>
+        <div className="pillarBlock">
           {guidesHeadline && (
             <>
               <div className="pillar-label">The Guides</div>
@@ -171,7 +170,7 @@ export default async function HomePage() {
               </Link>
             </>
           )}
-          <ul className={styles.pillarList}>
+          <ul className="pillarList">
             {guides.slice(0, 9).map((a) => (
               <li key={a._id}>
                 <Link href={articleHref(a)}>
@@ -191,7 +190,7 @@ export default async function HomePage() {
             <h2>The <em>Style</em> edit</h2>
             <Link href="/style">More style →</Link>
           </div>
-          <section className={styles.styleEdit}>
+          <section className="styleEdit">
             {style.map((a) => (
               <ArticleCard key={a._id} article={a} size="medium" showExcerpt />
             ))}
@@ -202,12 +201,12 @@ export default async function HomePage() {
       <Newsletter />
 
       {/* ── Recent Grid ─────────────────────────────────────────────── */}
-      <div className={styles.recentGridSection}>
+      <div className="recentGridSection">
         <div className="section-head" style={{ padding: 0, marginBottom: 40 }}>
           <h2>More from the <em>magazine</em></h2>
           <Link href="/archive">Full archive →</Link>
         </div>
-        <div className={styles.recentGrid}>
+        <div className="recentGrid">
           {recent.map((a) => (
             <ArticleCard key={a._id} article={a} size="recent" />
           ))}
