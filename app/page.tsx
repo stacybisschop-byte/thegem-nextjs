@@ -40,20 +40,7 @@ export default async function HomePage() {
         const kicker = `${lead.pillar}${lead.kickerExtra ? ` · ${lead.kickerExtra}` : ''}`
         return (
           <Link href={articleHref(lead)} className="hero-feature">
-            {src && (
-              <div className="image-wrap">
-                <Image
-                  src={src}
-                  alt={alt}
-                  fill
-                  priority
-                  sizes="100vw"
-                  style={{ objectFit: 'cover' }}
-                />
-              </div>
-            )}
-            <div className="scrim" />
-            <div className="hero-feature-content">
+            <div className="hero-feature-text">
               <div className="kicker">{kicker}</div>
               <h1
                 dangerouslySetInnerHTML={{
@@ -61,12 +48,20 @@ export default async function HomePage() {
                 }}
               />
               {lead.metaDescription && <p className="deck">{lead.metaDescription}</p>}
-              <div className="meta">
-                <span>By Florence</span>
-                <span className="meta-dot" />
-                <span>{lead.readMin ?? 10} min read</span>
-              </div>
+              <span className="hero-read-more">Read More</span>
             </div>
+            {src && (
+              <div className="image-wrap">
+                <Image
+                  src={src}
+                  alt={alt}
+                  fill
+                  priority
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+            )}
           </Link>
         )
       })()}
