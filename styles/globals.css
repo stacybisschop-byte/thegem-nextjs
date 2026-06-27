@@ -497,6 +497,86 @@ footer a:hover { color: var(--cream); }
   text-transform: uppercase;
   color: var(--ink-muted);
 }
+/* ── Guides Grid (featured left + 2×2 right) ──────────────────────────────── */
+
+.guidesGrid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: var(--gap);
+  padding: 40px var(--pad-x) 80px;
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+
+.guide-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.guide-card .image-wrap {
+  position: relative;
+  aspect-ratio: 3/2;
+  overflow: hidden;
+  border-radius: var(--radius);
+  margin-bottom: 14px;
+}
+
+.guide-card .image-wrap img {
+  transition: transform 0.6s ease;
+}
+
+.guide-card:hover .image-wrap img { transform: scale(1.04); }
+
+.guide-card .kicker {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold-accessible);
+  margin-bottom: 8px;
+}
+
+.guide-card--featured h3 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 350;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+  font-variation-settings: 'opsz' 36;
+}
+
+.guide-card--featured h3 em { font-style: italic; color: var(--gold-large); font-weight: 300; }
+
+.guide-card--featured .excerpt {
+  font-size: 15px;
+  color: var(--ink-muted);
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.guide-card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-content: start;
+}
+
+.guide-card--small h3 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 350;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  font-variation-settings: 'opsz' 24;
+}
+
+.guide-card--small h3 em { font-style: italic; color: var(--gold-large); font-weight: 300; }
+
 .pillarLinks { display: flex; gap: 24px; }
 .pillarPair {
   display: grid;
@@ -610,6 +690,8 @@ footer a:hover { color: var(--cream); }
   .hero-feature-text {
     padding: clamp(32px, 8vw, 64px) clamp(24px, 6vw, 48px);
   }
+  .guidesGrid { grid-template-columns: 1fr; }
+  .guide-card-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 600px) {

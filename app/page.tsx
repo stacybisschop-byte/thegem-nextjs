@@ -95,41 +95,59 @@ export default async function HomePage() {
         <Link href="/guides">More guides →</Link>
       </div>
 
-      <section className="pillarSingle">
-        <div className="pillarBlock">
-          {guidesHeadline && (
-            <Link href={articleHref(guidesHeadline)} className="headline-card">
-              {(() => {
-                const src = guidesHeadline.heroImage
-                  ? urlForImage(guidesHeadline.heroImage).width(800).height(533).url()
-                  : guidesHeadline.heroImageUrl ?? null
-                const alt = guidesHeadline.heroImage?.alt ?? guidesHeadline.heroImageAlt ?? guidesHeadline.title
-                return src ? (
+      <section className="guidesGrid">
+        {guidesHeadline && (() => {
+          const src = guidesHeadline.heroImage
+            ? urlForImage(guidesHeadline.heroImage).width(1200).height(800).url()
+            : guidesHeadline.heroImageUrl ?? null
+          const alt = guidesHeadline.heroImage?.alt ?? guidesHeadline.heroImageAlt ?? guidesHeadline.title
+          const kicker = `${guidesHeadline.pillar}${guidesHeadline.kickerExtra ? ` · ${guidesHeadline.kickerExtra}` : ''}`
+          return (
+            <Link href={articleHref(guidesHeadline)} className="guide-card guide-card--featured">
+              {src && (
+                <div className="image-wrap">
+                  <Image
+                    src={src}
+                    alt={alt}
+                    width={1200}
+                    height={800}
+                    sizes="(max-width: 768px) 100vw, 60vw"
+                    style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+                  />
+                </div>
+              )}
+              <div className="kicker">{kicker}</div>
+              <h3 dangerouslySetInnerHTML={{ __html: guidesHeadline.title.replace(/\*([^*]+)\*/g, '<em>$1</em>') }} />
+              {guidesHeadline.metaDescription && <p className="excerpt">{guidesHeadline.metaDescription}</p>}
+            </Link>
+          )
+        })()}
+        <div className="guide-card-grid">
+          {guides.slice(0, 4).map((a) => {
+            const src = a.heroImage
+              ? urlForImage(a.heroImage).width(600).height(400).url()
+              : a.heroImageUrl ?? null
+            const alt = a.heroImage?.alt ?? a.heroImageAlt ?? a.title
+            const kicker = `${a.pillar}${a.kickerExtra ? ` · ${a.kickerExtra}` : ''}`
+            return (
+              <Link key={a._id} href={articleHref(a)} className="guide-card guide-card--small">
+                {src && (
                   <div className="image-wrap">
                     <Image
                       src={src}
                       alt={alt}
-                      width={800} height={533}
-                      sizes="(max-width: 900px) 100vw, 650px"
+                      width={600}
+                      height={400}
+                      sizes="(max-width: 768px) 100vw, 20vw"
                       style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                     />
                   </div>
-                ) : null
-              })()}
-              <h3 dangerouslySetInnerHTML={{ __html: guidesHeadline.title }} />
-              {guidesHeadline.metaDescription && <p>{guidesHeadline.metaDescription}</p>}
-            </Link>
-          )}
-          <ul className="pillarList">
-            {guides.slice(0, 9).map((a) => (
-              <li key={a._id}>
-                <Link href={articleHref(a)}>
-                  <span className="title" dangerouslySetInnerHTML={{ __html: a.title }} />
-                  <span className="read-time">{a.readMin ?? 10} min</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
+                )}
+                <div className="kicker">{kicker}</div>
+                <h3 dangerouslySetInnerHTML={{ __html: a.title.replace(/\*([^*]+)\*/g, '<em>$1</em>') }} />
+              </Link>
+            )
+          })}
         </div>
       </section>
 
