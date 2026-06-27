@@ -116,6 +116,12 @@ const KICKER_EXTRAS: Record<string, string> = {
   'fine-jewellery-festival-layering': 'How To',
   'architects-of-luxury':        'House Histories',
   'monica-vinader-vs-mejuri-vs-missoma': 'Buying Guides',
+  'emerald-cut':                         'Diamond Cuts',
+  'van-cleef-arpels-history':            'House Histories',
+  'sapphire-engagement-rings':           'Buying Guides',
+  'emerald-buying-guide':                'Buying Guides',
+  'cheapside-hoard':                     'London History',
+  'signet-ring-edit':                    'The Edit',
 }
 
 // ── Hero image map ────────────────────────────────────────────────────────────
@@ -246,6 +252,30 @@ const HERO_IMAGES: Record<string, { url: string; alt: string }> = {
   'how-to-wear-a-brooch': {
     url: '/blog/how-to-wear-a-brooch.webp',
     alt: 'A Victorian gold and enamel floral brooch pinned to the lapel of a black wool blazer.',
+  },
+  'emerald-cut': {
+    url: 'https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=1600&q=85',
+    alt: 'An emerald cut diamond ring, showing the characteristic step facets and long rectangular table.',
+  },
+  'van-cleef-arpels-history': {
+    url: 'https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=1600&q=85',
+    alt: 'Fine gold and diamond jewellery on a dark background.',
+  },
+  'sapphire-engagement-rings': {
+    url: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=1600&q=85',
+    alt: 'A deep blue sapphire engagement ring in a platinum setting.',
+  },
+  'emerald-buying-guide': {
+    url: 'https://images.unsplash.com/photo-1611735341450-74d61e660ad2?w=1600&q=85',
+    alt: 'A vivid green emerald showing the characteristic jardin inclusions of a natural stone.',
+  },
+  'cheapside-hoard': {
+    url: 'https://images.unsplash.com/photo-1518895312237-a9e23508077d?w=1600&q=85',
+    alt: 'Elizabethan jewellery from the Cheapside Hoard, discovered beneath a London cellar in 1912.',
+  },
+  'signet-ring-edit': {
+    url: 'https://images.unsplash.com/photo-1705326455036-0fab8ecba04d?w=2400&q=80&fit=crop&crop=entropy',
+    alt: 'A gold signet ring with hand-engraved crest on a pale surface.',
   },
 }
 
