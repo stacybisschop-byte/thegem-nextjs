@@ -64,15 +64,15 @@ For any significant purchase from a private seller or unfamiliar dealer, have th
 
 ## Where to buy pre-owned
 
-**Cartier Certified Pre-Owned:** Cartier now offers its own pre-owned programme in selected markets, with authentication and a limited guarantee. The pieces are priced at a smaller discount to new than the open market but carry the full authentication of the house. Worth considering if the provenance is important.
+**[Cartier Certified Pre-Owned](https://www.cartier.com/en-gb/jewellery/bracelets.html):** Cartier now offers its own pre-owned programme in selected markets, with authentication and a limited guarantee. The pieces are priced at a smaller discount to new than the open market but carry the full authentication of the house. Worth considering if the provenance is important.
 
 **Specialist dealers:** Several UK dealers specialise in Cartier and have the expertise to authenticate correctly. Their prices are typically 65–75% of new retail for pieces in good condition with papers. The dealer assumes the authentication risk.
 
-**1stDibs with authentication:** The platform offers an authentication service for pieces above a certain price threshold. Useful if a specific piece is only available there.
+**[1stDibs](https://www.1stdibs.com/jewelry/bracelets/bangles/) with authentication:** The platform offers an authentication service for pieces above a certain price threshold. Useful if a specific piece is only available there.
 
-**WP Diamonds and similar resellers:** These operate as direct buyers and sellers with authentication processes and published pricing. Less personal than a specialist dealer but reliable for well-documented pieces.
+**[WP Diamonds](https://www.wpdiamonds.com) and similar resellers:** These operate as direct buyers and sellers with authentication processes and published pricing. Less personal than a specialist dealer but reliable for well-documented pieces.
 
-**Vestiaire Collective:** Offers a Cartier Love bracelet category but the authentication is less rigorous than specialist dealers. Proceed with additional caution; if in doubt, pay for an independent authentication before completing a purchase.
+**[Vestiaire Collective](https://www.vestiairecollective.com/women-jewellery/bracelets/):** Offers a Cartier Love bracelet category but the authentication is less rigorous than specialist dealers. Proceed with additional caution; if in doubt, pay for an independent authentication before completing a purchase.
 
 **Avoid:** any platform without a clear returns policy, any price substantially below the secondary market rate without a clear explanation, any seller who cannot provide the serial number before purchase.
 
@@ -114,7 +114,7 @@ The bracelet requires a screwdriver to open and close. It is physically possible
 
 ### Where to buy a pre-owned Cartier Love bracelet in the UK?
 
-Reputable sources include Cartier's own Certified Pre-Owned programme, specialist Cartier dealers in London, authenticated listings on 1stDibs, and direct resellers such as WP Diamonds. Vestiaire Collective carries Love bracelets but authentication is less rigorous than specialist dealers; additional independent authentication is advisable for purchases above the platform's standard process.
+Reputable sources include Cartier's own Certified Pre-Owned programme, specialist Cartier dealers in London, authenticated listings on [1stDibs](https://www.1stdibs.com/jewelry/bracelets/bangles/), and direct resellers such as [WP Diamonds](https://www.wpdiamonds.com). Vestiaire Collective carries Love bracelets but authentication is less rigorous than specialist dealers; additional independent authentication is advisable for purchases above the platform's standard process.
 
 ---
 
