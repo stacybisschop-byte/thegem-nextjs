@@ -115,6 +115,7 @@ const KICKER_EXTRAS: Record<string, string> = {
   'garrard-history':             'House Histories',
   'fine-jewellery-festival-layering': 'How To',
   'architects-of-luxury':        'House Histories',
+  'monica-vinader-vs-mejuri-vs-missoma': 'Buying Guides',
 }
 
 // ── Hero image map ────────────────────────────────────────────────────────────
