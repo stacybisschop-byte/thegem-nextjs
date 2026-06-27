@@ -1,0 +1,25 @@
+name: Publish scheduled articles
+
+on:
+  schedule:
+    # 6:30 AM UTC daily — 30 min after the Vercel cron, so Vercel gets first shot
+    - cron: '30 6 * * *'
+  workflow_dispatch: # allow manual trigger from GitHub Actions UI
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger publish-due endpoint
+        run: |
+          response=$(curl -s -w "\n%{http_code}" \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            https://thegem.press/api/publish-due)
+          body=$(echo "$response" | head -n -1)
+          status=$(echo "$response" | tail -n 1)
+          echo "Status: $status"
+          echo "Response: $body"
+          if [ "$status" != "200" ]; then
+            echo "::error::publish-due returned HTTP $status"
+            exit 1
+          fi

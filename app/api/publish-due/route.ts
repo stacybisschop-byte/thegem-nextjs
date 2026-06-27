@@ -27,14 +27,19 @@ interface DueArticle {
 }
 
 export async function GET(req: NextRequest) {
+  const now = new Date().toISOString()
+  console.log(`[publish-due] invoked at ${now}`)
+
   // Vercel Cron attaches `Authorization: Bearer $CRON_SECRET` when CRON_SECRET
   // is set in project env. Reject anything that doesn't match.
   const auth = req.headers.get('authorization')
   if (!process.env.CRON_SECRET || auth !== `Bearer ${process.env.CRON_SECRET}`) {
+    console.log('[publish-due] auth failed — header:', auth?.slice(0, 20) ?? 'missing')
     return Response.json({ error: 'Unauthorized' }, { status: 401 })
   }
 
   if (!process.env.SANITY_API_TOKEN) {
+    console.log('[publish-due] SANITY_API_TOKEN not set')
     return Response.json(
       { error: 'SANITY_API_TOKEN is not configured' },
       { status: 500 }
@@ -47,6 +52,8 @@ export async function GET(req: NextRequest) {
     } | order(publishedAt asc)`
   )
 
+  console.log(`[publish-due] ${due.length} due article(s):`, due.map(d => d._id))
+
   const published: Array<{ id: string; title: string; path: string }> = []
 
   for (const doc of due) {
@@ -54,6 +61,7 @@ export async function GET(req: NextRequest) {
     const path = `/${doc.pillar.toLowerCase()}/${doc.slug.current}`
     revalidatePath(path)
     published.push({ id: doc._id, title: doc.title, path })
+    console.log(`[publish-due] published ${doc._id} → ${path}`)
   }
 
   // Bust the listing/index caches only when something actually changed.
