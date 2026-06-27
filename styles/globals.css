@@ -537,7 +537,17 @@ footer a:hover { color: var(--cream); }
   margin-bottom: 8px;
 }
 
+.guide-card--featured {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .guide-card--featured-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background: #F0EBE3;
   text-align: center;
   padding: 2rem 1.5rem;
