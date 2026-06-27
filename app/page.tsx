@@ -128,7 +128,6 @@ export default async function HomePage() {
               ? urlForImage(a.heroImage).width(600).height(400).url()
               : a.heroImageUrl ?? null
             const alt = a.heroImage?.alt ?? a.heroImageAlt ?? a.title
-            const kicker = `${a.pillar}${a.kickerExtra ? ` · ${a.kickerExtra}` : ''}`
             return (
               <Link key={a._id} href={articleHref(a)} className="guide-card guide-card--small">
                 {src && (
@@ -143,7 +142,6 @@ export default async function HomePage() {
                     />
                   </div>
                 )}
-                <div className="kicker">{kicker}</div>
                 <h3 dangerouslySetInnerHTML={{ __html: a.title.replace(/\*([^*]+)\*/g, '<em>$1</em>') }} />
               </Link>
             )
