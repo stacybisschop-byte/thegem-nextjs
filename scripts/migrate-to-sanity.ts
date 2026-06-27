@@ -113,7 +113,7 @@ const KICKER_EXTRAS: Record<string, string> = {
   'ring-stacking-guide':         'How To',
   'tennis-bracelet-history':     'Famous Pieces',
   'garrard-history':             'House Histories',
-  'festival-jewellery-guide':    'How To',
+  'fine-jewellery-festival-layering': 'How To',
   'architects-of-luxury':        'House Histories',
 }
 
