@@ -123,7 +123,7 @@ export default async function HomePage() {
           )
         })()}
         <div className="guide-card-grid">
-          {guides.slice(0, 4).map((a) => {
+          {guides.slice(0, 6).map((a) => {
             const src = a.heroImage
               ? urlForImage(a.heroImage).width(600).height(400).url()
               : a.heroImageUrl ?? null
