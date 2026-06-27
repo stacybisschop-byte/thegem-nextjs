@@ -22,6 +22,8 @@ Item nine was an oval Ceylon sapphire of approximately twelve carats, surrounded
 
 The ring is now on Catherine, Princess of Wales's left hand. It is one of the most recognisable pieces of jewellery in the world. Its origin as catalogue item nine at a house that had been Crown Jeweller for the previous 138 years is a detail that says something particular about how Garrard operated, and about how British royal jewellery has worked historically: not as the product of extravagant custom commission, but as the product of excellent craft, available at price, which the right person happened to select at the right moment.
 
+> *In Brief: Garrard was founded in 1735 by George Wickes and appointed Crown Jeweller by Queen Victoria in 1843, a position it held for 164 years. In 1981, Diana Spencer chose her engagement ring from a Garrard catalogue — a twelve-carat Ceylon sapphire cluster at £28,000, available to any buyer. The ring is now on Catherine, Princess of Wales. Garrard still operates on Regent Street and takes bespoke commissions; Wartski of Jermyn Street has been Crown Jeweller since 2007.*
+
 ## George Wickes and the beginning
 
 The business that became Garrard was founded in 1735 by George Wickes, a goldsmith from Bury St Edmunds who had trained in London and established himself on Panton Street, near Haymarket. His early commissions included work for the Prince of Wales, Frederick, eldest son of George II, which provided the royal connection that would sustain and eventually define the house.
@@ -44,7 +46,7 @@ The appointment ended in 2007, when Wartski of Jermyn Street was appointed Crown
 
 The ring Diana chose in 1981 is not the most technically remarkable piece Garrard has made. It is not the largest, or the most expensive, or the most historically significant in terms of the stones it contains.
 
-It is, however, the most looked-at piece of jewellery in the world in the years since Diana wore it — and since it passed to Catherine. The reasons are not purely to do with the ring itself. They have to do with Diana, and with the public relationship with Diana that made everything she wore and said and did into something freighted with meaning it would not otherwise have carried.
+It is, however, the most looked-at piece of jewellery in the world since Diana wore it, and since it passed to Catherine. The reasons are not purely to do with the ring itself. They have to do with Diana, and with the public relationship with Diana that made everything she wore and said and did into something freighted with meaning it would not otherwise have carried.
 
 What the ring's story adds, specifically, is this: Diana chose it herself. She was shown a catalogue and she pointed at the ring she wanted. This was reported at the time as a slight eccentricity — a catalogue ring for a future Princess of Wales — and dismissed. In retrospect, it reads differently. The choice was an exercise of preference over deference: this one, not whatever you were expecting me to choose. The ring she pointed at was the ring she liked.
 
@@ -57,6 +59,8 @@ When Diana died in 1997, William and Harry were each offered a piece of her jewe
 Garrard continued as a luxury jeweller after the Crown Jeweller appointment moved to Wartski in 2007. The house went through a period of difficulty: ownership changes, repositioning, the challenge of trading on heritage in a market where heritage is both an asset and a constraint. It relaunched with a focus on fine jewellery collections that drew on its archival design language: the flower, the leaf, the simple geometric forms that had been in production since the nineteenth century.
 
 The current house is smaller and differently positioned than the 1843-to-2007 Garrard that held the Crown Jeweller appointment. It is still on Regent Street. It still makes fine jewellery. It still takes commissions for significant one-off pieces. It no longer maintains the Crown Jewels.
+
+The sapphire cluster ring Diana chose remains the most requested reference point when clients commission engagement rings from [Garrard](https://www.garrard.com) today. The house produces its own version of the style. Ceylon sapphires of the quality at its centre now cost considerably more than £28,000; for buyers researching sapphire engagement rings more broadly, the [sapphire buying guide](/guides/engagement-ring-stones) covers what to look for in the stone itself.
 
 The business George Wickes started on Panton Street in 1735 is still operating. That is, by any measure, a remarkable thing. Very few businesses of any kind survive three centuries. Almost none survive three centuries in the same trade, serving successively the Georgian aristocracy, the Victorian court, the twentieth-century monarchy, and the contemporary luxury market, with sufficient continuity that the thread from Wickes to the current house can be traced without interruption. [Cartier](/stories/cartier-family-history), the only contemporary house at the same tier with a comparable continuity claim, started 112 years later.
 
@@ -91,16 +95,6 @@ Princess Diana's sapphire engagement ring is now worn by Catherine, Princess of 
 ### Is Garrard still operating?
 
 Yes. Garrard continues to operate as a luxury jewellery house on Regent Street, London. Following the end of its Crown Jeweller appointment in 2007, the house repositioned as a contemporary fine jeweller drawing on its archival design heritage. It continues to accept bespoke commissions and produce fine jewellery collections.
-
----
-
-## Related reading
-
-- [Princess Diana's Jewellery](/stories/princess-diana-jewellery) — the wider story of the woman who chose Garrard catalogue item nine
-- [Cartier: A Family History](/stories/cartier-family-history) — the parallel four-generation house at a similar tier
-- [Tiffany & Co: A History](/stories/tiffany-and-co-history) — the American counterpart in the same conversation
-- [Bulgari: A History](/stories/bulgari-history) — the Roman house whose family-to-LVMH arc parallels Garrard's ownership changes
-- [The Cullinan Diamond](/stories/cullinan-diamond) — one of the major stones Garrard worked with during its Crown Jeweller tenure
 
 ---
 
