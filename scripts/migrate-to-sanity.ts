@@ -114,6 +114,7 @@ const KICKER_EXTRAS: Record<string, string> = {
   'tennis-bracelet-history':     'Famous Pieces',
   'garrard-history':             'House Histories',
   'festival-jewellery-guide':    'How To',
+  'architects-of-luxury':        'House Histories',
 }
 
 // ── Hero image map ────────────────────────────────────────────────────────────
