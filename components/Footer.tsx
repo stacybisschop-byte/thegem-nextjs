@@ -46,6 +46,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-base">
+        <p className="footer-disclosure">Some links on The Gem are <Link href="/affiliate-disclosure">affiliate links</Link>. We earn a small commission on purchases made through them, at no cost to you.</p>
         <span>© The Gem, {new Date().getFullYear()} · London</span>
         <span>Designed and built with care</span>
       </div>
