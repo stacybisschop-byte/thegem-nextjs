@@ -29,7 +29,7 @@ This guide is for someone making a real buying decision, usually an engagement r
 
 If you want the biggest, brightest, most spectacular stone your budget will allow, and you don't intend to ever resell, buy lab. You will get two to three times the carat for the same money. The stone is, by every meaningful measure, a diamond.
 
-If you want the piece to hold meaningful resale value, or to function as a transferable asset that your children might one day sell, or you simply prefer the geological provenance, buy natural. Specifically, buy natural with a GIA certificate, in the highest clarity and colour grade you can afford, ideally above one carat.
+If you want the piece to hold meaningful resale value, or to function as a transferable asset that your children might one day sell, or you simply prefer the geological provenance, buy natural. Specifically, buy natural with a [GIA](https://www.gia.edu) certificate, in the highest clarity and colour grade you can afford, ideally above one carat.
 
 The middle ground, which is where most people land, is buying lab for the centre stone in an engagement ring and not worrying about resale, because the ring is for wearing, not for trading. There is no shame in this. The shame is in pretending the resale market for lab diamonds is anything other than what it is, which is approximately zero.
 
@@ -87,7 +87,7 @@ This means the "investment" framing common to diamond marketing is, for most buy
 
 The instinctive assumption (that lab is greener and more ethical, while natural is environmentally and morally compromised) is too simple in both directions.
 
-**Lab diamonds** require enormous amounts of energy to produce. A single CVD or HPHT diamond consumes roughly 250 to 700 kWh per carat depending on the process and the producer. The carbon footprint depends entirely on the energy source. A lab diamond made with coal-powered electricity in the Surat industrial corridor has a substantially worse climate footprint than a mined diamond. A lab diamond made with renewable energy has a much better one. The major producers (Diamond Foundry, VRAI, Pandora) increasingly publish certifications about renewable energy use, and these claims are increasingly verifiable.
+**Lab diamonds** require enormous amounts of energy to produce. A single CVD or HPHT diamond consumes roughly 250 to 700 kWh per carat depending on the process and the producer. The carbon footprint depends entirely on the energy source. A lab diamond made with coal-powered electricity in the Surat industrial corridor has a substantially worse climate footprint than a mined diamond. A lab diamond made with renewable energy has a much better one. The major producers (Diamond Foundry, [Vrai](https://vrai.com), Pandora) increasingly publish certifications about renewable energy use, and these claims are increasingly verifiable.
 
 **Natural diamonds** carry the legacy of conflict-zone mining, which the Kimberley Process was created in 2003 to address. The Process has serious weaknesses (its definition of "conflict diamond" is narrow, and enforcement varies enormously by country), but the modern mainstream natural diamond trade has worked harder than most extractive industries on traceability. Major retailers ([Tiffany & Co](https://www.tiffany.com/), De Beers, [Brilliant Earth](https://www.brilliantearth.com/)) can document the origin of stones they sell. Mining still has substantial local environmental impact, but the per-carat impact has fallen significantly as mines have modernised. The industry employs roughly 10 million people directly and indirectly, mostly in low-income countries; those jobs go away if the industry shrinks.
 
@@ -121,7 +121,7 @@ The honest position is that both options have meaningful ethical considerations 
 **For natural diamonds:**
 
 - **[James Allen](https://www.jamesallen.com)**. The standard recommendation for online natural diamond buying. Every stone is photographed in 360°. GIA-certified inventory is huge.
-- **[Blue Nile](https://www.bluenile.com)**. The original online diamond retailer, broad inventory, slightly less granular photography than James Allen but reliable.
+- **[Blue Nile](https://www.bluenile.com/uk)**. The original online diamond retailer, broad inventory, slightly less granular photography than James Allen but reliable.
 - **[Brilliant Earth](https://www.brilliantearth.com)**. Strong on traceability claims, premium online experience.
 - For larger stones (£15,000+), it's worth talking directly to a London jeweller. Hatton Garden remains a serious market, and the British Antique Dealers' Association can point to vetted specialists. A 1stDibs search can also surface vintage natural stones at attractive prices. (We've collected our favourites in [the vintage jewellery guide](/guides/where-to-buy-vintage-jewellery).)
 
