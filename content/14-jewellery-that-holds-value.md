@@ -45,7 +45,7 @@ The single largest category of value-retaining jewellery is signed work from the
 
 The houses whose signatures consistently hold and appreciate are: Cartier (across all periods, with particular premiums on Art Deco and 1950s work); Van Cleef & Arpels (Mystery Set and Alhambra-tradition pieces especially); Bulgari (1960s and 1970s Tubogas and Serpenti work); Boucheron (Art Deco and Belle Époque); Tiffany & Co. (Jean Schlumberger pieces and early Tiffany Studios); Harry Winston (mid-century diamond work); Buccellati (the tulle-style engraved pieces of any period); David Webb (1960s and 1970s figural pieces); JAR (the contemporary Joel Arthur Rosenthal Paris workshop); and Suzanne Belperron (whose mid-twentieth-century work has become one of the most appreciating categories in the entire market).
 
-Signed pieces from these houses, in good condition with original components, regularly appreciate 5 to 8 per cent annually over multi-decade timeframes. Pieces with original boxes, certificates of authenticity, and documented provenance command additional premiums of 20 to 50 per cent over equivalent unverified examples. Auction records over the past decade have repeatedly shown signed pieces achieving multiples of their pre-sale estimates: the 2011 Elizabeth Taylor sale at Christie's, in which signed Bulgari pieces routinely exceeded estimates by two to three times, is the headline example, but similar patterns appear in every major signed-jewellery auction.
+Signed pieces from these houses, in good condition with original components, regularly appreciate 5 to 8 per cent annually over multi-decade timeframes. Pieces with original boxes, certificates of authenticity, and documented provenance command additional premiums of 20 to 50 per cent over equivalent unverified examples. Auction records over the past decade have repeatedly shown signed pieces achieving multiples of their pre-sale estimates: the 2011 Elizabeth Taylor sale at [Christie's](https://www.christies.com/en/departments/jewellery), in which signed Bulgari pieces routinely exceeded estimates by two to three times, is the headline example, but similar patterns appear in every major signed-jewellery auction.
 
 ### Fine antique pieces with provenance
 
@@ -94,7 +94,7 @@ The categories that consistently lose value, beyond the broader new-retail depre
 
 ## What the auction record shows
 
-The clearest data on jewellery value retention comes from major auction houses. Christie's and Sotheby's publish summary auction data for major sales, and the consistent pattern over the past two decades has been:
+The clearest data on jewellery value retention comes from major auction houses. Christie's and [Sotheby's](https://www.sothebys.com/en/buy/jewelry) publish summary auction data for major sales, and the consistent pattern over the past two decades has been:
 
 - Signed pieces from the major historical houses consistently realise above their pre-sale estimates, often by 50 to 200 per cent.
 - Unsigned pieces of equivalent material quality typically realise within their estimates or below.
