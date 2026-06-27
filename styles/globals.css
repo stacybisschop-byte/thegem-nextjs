@@ -508,6 +508,15 @@ footer a:hover { color: var(--cream); }
   margin: 0 auto;
 }
 
+.storiesGrid {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: var(--gap);
+  padding: 40px var(--pad-x) 80px;
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+
 .guide-card {
   display: block;
   text-decoration: none;
@@ -707,6 +716,8 @@ footer a:hover { color: var(--cream); }
     padding: clamp(32px, 8vw, 64px) clamp(24px, 6vw, 48px);
   }
   .guidesGrid { grid-template-columns: 1fr; }
+  .storiesGrid { grid-template-columns: 1fr; }
+  .storiesGrid .guide-card--featured { order: -1; }
   .guide-card-grid { grid-template-columns: 1fr; }
 }
 

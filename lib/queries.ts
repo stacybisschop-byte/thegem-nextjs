@@ -64,7 +64,7 @@ export async function getHomePageData(): Promise<HomePageData> {
                | order(publishedAt desc)[0] { ${CARD_FIELDS} },
 
       "stories": *[_type == "article" && published == true && pillar == "Stories"]
-               | order(publishedAt desc)[0...11] { ${CARD_FIELDS} },
+               | order(publishedAt desc)[0...8] { ${CARD_FIELDS} },
 
       "guides": *[_type == "article" && published == true && pillar == "Guides"]
                | order(publishedAt desc)[0...8] { ${CARD_FIELDS} },
@@ -85,7 +85,7 @@ export async function getHomePageData(): Promise<HomePageData> {
 
   return {
     ...data,
-    stories: data.stories.filter((a) => a._id !== storiesHeadId).slice(0, 10),
+    stories: data.stories.filter((a) => a._id !== storiesHeadId).slice(0, 6),
     guides: data.guides.filter((a) => a._id !== guidesHeadId).slice(0, 6),
     recent: data.recent.filter((a) => !headlineIds.has(a._id)).slice(0, 4),
   }

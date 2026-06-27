@@ -157,42 +157,60 @@ export default async function HomePage() {
         <Link href="/stories">More stories →</Link>
       </div>
 
-      <section className="pillarSingle">
-        <div className="pillarBlock">
-          {storiesHeadline && (
-            <Link href={articleHref(storiesHeadline)} className="headline-card">
-              {(() => {
-                const src = storiesHeadline.heroImage
-                  ? urlForImage(storiesHeadline.heroImage).width(800).height(533).url()
-                  : storiesHeadline.heroImageUrl ?? null
-                const alt = storiesHeadline.heroImage?.alt ?? storiesHeadline.heroImageAlt ?? storiesHeadline.title
-                return src ? (
+      <section className="storiesGrid">
+        <div className="guide-card-grid">
+          {stories.slice(0, 6).map((a) => {
+            const src = a.heroImage
+              ? urlForImage(a.heroImage).width(600).height(400).url()
+              : a.heroImageUrl ?? null
+            const alt = a.heroImage?.alt ?? a.heroImageAlt ?? a.title
+            return (
+              <Link key={a._id} href={articleHref(a)} className="guide-card guide-card--small">
+                {src && (
                   <div className="image-wrap">
                     <Image
                       src={src}
                       alt={alt}
-                      width={800} height={533}
-                      sizes="(max-width: 900px) 100vw, 650px"
+                      width={600}
+                      height={400}
+                      sizes="(max-width: 768px) 100vw, 20vw"
                       style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                     />
                   </div>
-                ) : null
-              })()}
-              <h3 dangerouslySetInnerHTML={{ __html: storiesHeadline.title }} />
-              {storiesHeadline.metaDescription && <p>{storiesHeadline.metaDescription}</p>}
-            </Link>
-          )}
-          <ul className="pillarList">
-            {stories.slice(0, 9).map((a) => (
-              <li key={a._id}>
-                <Link href={articleHref(a)}>
-                  <span className="title" dangerouslySetInnerHTML={{ __html: a.title }} />
-                  <span className="read-time">{a.readMin ?? 10} min</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
+                )}
+                <h3 dangerouslySetInnerHTML={{ __html: a.title.replace(/\*([^*]+)\*/g, '<em>$1</em>') }} />
+              </Link>
+            )
+          })}
         </div>
+        {storiesHeadline && (() => {
+          const src = storiesHeadline.heroImage
+            ? urlForImage(storiesHeadline.heroImage).width(1200).height(800).url()
+            : storiesHeadline.heroImageUrl ?? null
+          const alt = storiesHeadline.heroImage?.alt ?? storiesHeadline.heroImageAlt ?? storiesHeadline.title
+          const kicker = `${storiesHeadline.pillar}${storiesHeadline.kickerExtra ? ` · ${storiesHeadline.kickerExtra}` : ''}`
+          return (
+            <Link href={articleHref(storiesHeadline)} className="guide-card guide-card--featured">
+              {src && (
+                <div className="image-wrap">
+                  <Image
+                    src={src}
+                    alt={alt}
+                    width={1200}
+                    height={800}
+                    sizes="(max-width: 768px) 100vw, 60vw"
+                    style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+                  />
+                </div>
+              )}
+              <div className="guide-card--featured-text">
+                <div className="kicker">{kicker}</div>
+                <h3 dangerouslySetInnerHTML={{ __html: storiesHeadline.title.replace(/\*([^*]+)\*/g, '<em>$1</em>') }} />
+                {storiesHeadline.metaDescription && <p className="excerpt">{storiesHeadline.metaDescription}</p>}
+              </div>
+            </Link>
+          )
+        })()}
       </section>
 
       {/* ── Style Edit ──────────────────────────────────────────────── */}
