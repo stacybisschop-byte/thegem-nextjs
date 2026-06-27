@@ -62,7 +62,7 @@ If buying new, buy from a VCA boutique or their official website rather than a d
 
 The [pre-owned Alhambra market](/guides/where-to-buy-vintage-jewellery) is substantial and largely trustworthy if approached correctly. The caveats are authentication (the Alhambra is the most widely faked fine jewellery piece in the world) and condition assessment.
 
-**Where to buy:** Reputable pre-owned dealers with specific Van Cleef expertise (there are several in London and online with verifiable authentication processes), 1stDibs with authentication guarantees, and the major auction houses (Christie's, Sotheby's, Bonhams) where pieces are authenticated before sale. Vestiaire Collective has Alhambra pieces but the authentication is less rigorous; buyer knowledge is important there.
+**Where to buy:** Reputable pre-owned dealers with specific Van Cleef expertise (there are several in London and online with verifiable authentication processes), [1stDibs](https://www.1stdibs.com/jewelry/necklaces/) with authentication guarantees, and the major auction houses ([Christie's](https://www.christies.com/en/departments/jewellery), [Sotheby's](https://www.sothebys.com/en/buy/jewelry), [Bonhams](https://www.bonhams.com/departments/JEW/)) where pieces are authenticated before sale. [Vestiaire Collective](https://www.vestiairecollective.com/women-jewellery/necklaces/) has Alhambra pieces but the authentication is less rigorous; buyer knowledge is important there.
 
 Avoid: eBay without very specific seller history, any source that cannot provide original papers, and any piece priced substantially below market rate without a clear explanation.
 
@@ -114,7 +114,7 @@ The Vintage Alhambra features a single four-petal motif in the original 1968 for
 
 ### Where can I buy a pre-owned Van Cleef Alhambra in the UK?
 
-Reputable sources for pre-owned Alhambra pieces in the UK include specialist pre-owned fine jewellery dealers with documented Van Cleef expertise, the jewellery sales at Christie's, Sotheby's, and Bonhams, and authenticated listings on 1stDibs. Have any piece from a private or unfamiliar source checked by a jeweller with Van Cleef experience before purchasing.
+Reputable sources for pre-owned Alhambra pieces in the UK include specialist pre-owned fine jewellery dealers with documented Van Cleef expertise, the jewellery sales at [Christie's](https://www.christies.com/en/departments/jewellery), [Sotheby's](https://www.sothebys.com/en/buy/jewelry), and [Bonhams](https://www.bonhams.com/departments/JEW/), and authenticated listings on [1stDibs](https://www.1stdibs.com/jewelry/necklaces/). Have any piece from a private or unfamiliar source checked by a jeweller with Van Cleef experience before purchasing.
 
 ### What stone should I choose for an Alhambra?
 
