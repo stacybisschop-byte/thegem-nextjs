@@ -46,30 +46,38 @@ export async function GET(req: NextRequest) {
     )
   }
 
-  const due = await writeClient.fetch<DueArticle[]>(
-    `*[_type == "article" && published == false && defined(publishedAt) && publishedAt <= now()]{
-      _id, title, pillar, slug, publishedAt
-    } | order(publishedAt asc)`
-  )
+  try {
+    const due = await writeClient.fetch<DueArticle[]>(
+      `*[_type == "article" && published == false && defined(publishedAt) && publishedAt <= now()]{
+        _id, title, pillar, slug, publishedAt
+      } | order(publishedAt asc)`
+    )
 
-  console.log(`[publish-due] ${due.length} due article(s):`, due.map(d => d._id))
+    console.log(`[publish-due] ${due.length} due article(s):`, due.map(d => d._id))
 
-  const published: Array<{ id: string; title: string; path: string }> = []
+    const published: Array<{ id: string; title: string; path: string }> = []
 
-  for (const doc of due) {
-    await writeClient.patch(doc._id).set({ published: true }).commit()
-    const path = `/${doc.pillar.toLowerCase()}/${doc.slug.current}`
-    revalidatePath(path)
-    published.push({ id: doc._id, title: doc.title, path })
-    console.log(`[publish-due] published ${doc._id} → ${path}`)
-  }
-
-  // Bust the listing/index caches only when something actually changed.
-  if (published.length > 0) {
-    for (const path of ['/', '/stories', '/guides', '/style', '/archive', '/rss']) {
+    for (const doc of due) {
+      await writeClient.patch(doc._id).set({ published: true }).commit()
+      const pillar = (doc.pillar ?? '').toLowerCase()
+      const slug = doc.slug?.current ?? doc._id
+      const path = `/${pillar}/${slug}`
       revalidatePath(path)
+      published.push({ id: doc._id, title: doc.title, path })
+      console.log(`[publish-due] published ${doc._id} → ${path}`)
     }
-  }
 
-  return Response.json({ publishedCount: published.length, published })
+    // Bust the listing/index caches only when something actually changed.
+    if (published.length > 0) {
+      for (const path of ['/', '/stories', '/guides', '/style', '/archive', '/rss']) {
+        revalidatePath(path)
+      }
+    }
+
+    return Response.json({ publishedCount: published.length, published })
+  } catch (err) {
+    const message = err instanceof Error ? err.message : String(err)
+    console.error('[publish-due] error:', message)
+    return Response.json({ error: message }, { status: 500 })
+  }
 }
