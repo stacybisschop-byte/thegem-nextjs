@@ -94,45 +94,39 @@ export default async function HomePage() {
         <cite>— The Gem, since 2026</cite>
       </div>
 
-      {/* ── Stories + Guides Pillar Pair ────────────────────────────── */}
+      {/* ── The Guides ──────────────────────────────────────────────── */}
       <div className="section-head">
-        <h2>Two stories, one <em>obsession</em></h2>
-        <div className="pillarLinks">
-          <Link href="/stories">More stories →</Link>
-          <Link href="/guides">More guides →</Link>
-        </div>
+        <h2>The <em>Guides</em></h2>
+        <Link href="/guides">More guides →</Link>
       </div>
 
-      <section className="pillarPair">
+      <section className="pillarSingle">
         <div className="pillarBlock">
-          {storiesHeadline && (
-            <>
-              <div className="pillar-label">The Stories</div>
-              <Link href={articleHref(storiesHeadline)} className="headline-card">
-                {(() => {
-                  const src = storiesHeadline.heroImage
-                    ? urlForImage(storiesHeadline.heroImage).width(800).height(533).url()
-                    : storiesHeadline.heroImageUrl ?? null
-                  const alt = storiesHeadline.heroImage?.alt ?? storiesHeadline.heroImageAlt ?? storiesHeadline.title
-                  return src ? (
-                    <div className="image-wrap">
-                      <Image
-                        src={src}
-                        alt={alt}
-                        width={800} height={533}
-                        sizes="(max-width: 900px) 100vw, 650px"
-                        style={{ objectFit: 'cover', width: '100%', height: '100%' }}
-                      />
-                    </div>
-                  ) : null
-                })()}
-                <h3 dangerouslySetInnerHTML={{ __html: storiesHeadline.title }} />
-                {storiesHeadline.metaDescription && <p>{storiesHeadline.metaDescription}</p>}
-              </Link>
-            </>
+          {guidesHeadline && (
+            <Link href={articleHref(guidesHeadline)} className="headline-card">
+              {(() => {
+                const src = guidesHeadline.heroImage
+                  ? urlForImage(guidesHeadline.heroImage).width(800).height(533).url()
+                  : guidesHeadline.heroImageUrl ?? null
+                const alt = guidesHeadline.heroImage?.alt ?? guidesHeadline.heroImageAlt ?? guidesHeadline.title
+                return src ? (
+                  <div className="image-wrap">
+                    <Image
+                      src={src}
+                      alt={alt}
+                      width={800} height={533}
+                      sizes="(max-width: 900px) 100vw, 650px"
+                      style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+                    />
+                  </div>
+                ) : null
+              })()}
+              <h3 dangerouslySetInnerHTML={{ __html: guidesHeadline.title }} />
+              {guidesHeadline.metaDescription && <p>{guidesHeadline.metaDescription}</p>}
+            </Link>
           )}
           <ul className="pillarList">
-            {stories.slice(0, 9).map((a) => (
+            {guides.slice(0, 9).map((a) => (
               <li key={a._id}>
                 <Link href={articleHref(a)}>
                   <span className="title" dangerouslySetInnerHTML={{ __html: a.title }} />
@@ -142,36 +136,41 @@ export default async function HomePage() {
             ))}
           </ul>
         </div>
+      </section>
 
+      {/* ── From the Magazine (Stories) ──────────────────────────────── */}
+      <div className="section-head">
+        <h2>From the <em>magazine</em></h2>
+        <Link href="/stories">More stories →</Link>
+      </div>
+
+      <section className="pillarSingle">
         <div className="pillarBlock">
-          {guidesHeadline && (
-            <>
-              <div className="pillar-label">The Guides</div>
-              <Link href={articleHref(guidesHeadline)} className="headline-card">
-                {(() => {
-                  const src = guidesHeadline.heroImage
-                    ? urlForImage(guidesHeadline.heroImage).width(800).height(533).url()
-                    : guidesHeadline.heroImageUrl ?? null
-                  const alt = guidesHeadline.heroImage?.alt ?? guidesHeadline.heroImageAlt ?? guidesHeadline.title
-                  return src ? (
-                    <div className="image-wrap">
-                      <Image
-                        src={src}
-                        alt={alt}
-                        width={800} height={533}
-                        sizes="(max-width: 900px) 100vw, 650px"
-                        style={{ objectFit: 'cover', width: '100%', height: '100%' }}
-                      />
-                    </div>
-                  ) : null
-                })()}
-                <h3 dangerouslySetInnerHTML={{ __html: guidesHeadline.title }} />
-                {guidesHeadline.metaDescription && <p>{guidesHeadline.metaDescription}</p>}
-              </Link>
-            </>
+          {storiesHeadline && (
+            <Link href={articleHref(storiesHeadline)} className="headline-card">
+              {(() => {
+                const src = storiesHeadline.heroImage
+                  ? urlForImage(storiesHeadline.heroImage).width(800).height(533).url()
+                  : storiesHeadline.heroImageUrl ?? null
+                const alt = storiesHeadline.heroImage?.alt ?? storiesHeadline.heroImageAlt ?? storiesHeadline.title
+                return src ? (
+                  <div className="image-wrap">
+                    <Image
+                      src={src}
+                      alt={alt}
+                      width={800} height={533}
+                      sizes="(max-width: 900px) 100vw, 650px"
+                      style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+                    />
+                  </div>
+                ) : null
+              })()}
+              <h3 dangerouslySetInnerHTML={{ __html: storiesHeadline.title }} />
+              {storiesHeadline.metaDescription && <p>{storiesHeadline.metaDescription}</p>}
+            </Link>
           )}
           <ul className="pillarList">
-            {guides.slice(0, 9).map((a) => (
+            {stories.slice(0, 9).map((a) => (
               <li key={a._id}>
                 <Link href={articleHref(a)}>
                   <span className="title" dangerouslySetInnerHTML={{ __html: a.title }} />

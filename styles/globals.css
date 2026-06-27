@@ -516,6 +516,11 @@ footer a:hover { color: var(--cream); }
   max-width: var(--max-w);
   margin: 0 auto;
 }
+.pillarSingle {
+  padding: 60px var(--pad-x) 80px;
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
 .pillarBlock .pillar-label {
   font-family: var(--font-mono);
   font-size: 10px;
