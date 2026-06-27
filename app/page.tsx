@@ -116,9 +116,11 @@ export default async function HomePage() {
                   />
                 </div>
               )}
-              <div className="kicker">{kicker}</div>
-              <h3 dangerouslySetInnerHTML={{ __html: guidesHeadline.title.replace(/\*([^*]+)\*/g, '<em>$1</em>') }} />
-              {guidesHeadline.metaDescription && <p className="excerpt">{guidesHeadline.metaDescription}</p>}
+              <div className="guide-card--featured-text">
+                <div className="kicker">{kicker}</div>
+                <h3 dangerouslySetInnerHTML={{ __html: guidesHeadline.title.replace(/\*([^*]+)\*/g, '<em>$1</em>') }} />
+                {guidesHeadline.metaDescription && <p className="excerpt">{guidesHeadline.metaDescription}</p>}
+              </div>
             </Link>
           )
         })()}
