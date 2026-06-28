@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Terms of Use',
@@ -11,10 +11,10 @@ export const metadata: Metadata = {
     url: '/terms',
     title: 'Terms of Use',
     description: 'Terms of use for The Gem, the editorial fine jewellery publication. Read before using or reproducing content from thegem.press.',
-    images: [{ url: '/og-cover.jpg', width: 1200, height: 630 }],
+    images: [{ url: '/og-cover-v2.webp', width: 1200, height: 630 }],
   },
   twitter: {
-    images: ['/og-cover.jpg'],
+    images: ['/og-cover-v2.webp'],
   },
 }
 
@@ -46,7 +46,7 @@ export default function TermsPage() {
 
       <h2>Intellectual property</h2>
       <p>
-        All content on the Site — including articles, text, images, and the site design — is the
+        All content on the Site â€” including articles, text, images, and the site design â€” is the
         intellectual property of The Gem or its respective rights holders, and is protected by
         copyright and other applicable laws.
       </p>
@@ -65,7 +65,7 @@ export default function TermsPage() {
       <p>
         Some articles on The Gem contain affiliate links. If you click an affiliate link and make a
         purchase, we may earn a small commission at no additional cost to you. Affiliate relationships
-        never influence our editorial recommendations — we only recommend products and retailers we
+        never influence our editorial recommendations â€” we only recommend products and retailers we
         would recommend to a friend. All articles containing affiliate links are labelled as such.
       </p>
 
@@ -128,3 +128,4 @@ export default function TermsPage() {
     </div>
   )
 }
+

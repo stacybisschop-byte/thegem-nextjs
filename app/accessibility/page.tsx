@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Accessibility Statement',
@@ -11,10 +11,10 @@ export const metadata: Metadata = {
     url: '/accessibility',
     title: 'Accessibility Statement',
     description: 'The Gem\'s accessibility statement: our commitment to WCAG 2.1 AA compliance and making fine jewellery writing available to all.',
-    images: [{ url: '/og-cover.jpg', width: 1200, height: 630 }],
+    images: [{ url: '/og-cover-v2.webp', width: 1200, height: 630 }],
   },
   twitter: {
-    images: ['/og-cover.jpg'],
+    images: ['/og-cover-v2.webp'],
   },
 }
 
@@ -82,3 +82,4 @@ export default function AccessibilityPage() {
     </div>
   )
 }
+

@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? article.heroImageUrl
       : `https://thegem.press${article.heroImageUrl.startsWith('/') ? article.heroImageUrl : `/${article.heroImageUrl}`}`
     : undefined
-  const ogImage = sanityOgImage ?? fallbackOgImage ?? '/og-cover.jpg'
+  const ogImage = sanityOgImage ?? fallbackOgImage ?? '/og-cover-v2.webp'
   const path = `/${params.pillar}/${params.slug}`
 
   return {

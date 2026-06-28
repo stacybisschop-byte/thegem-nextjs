@@ -1,8 +1,8 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Contact',
-  description: 'How to get in touch with The Gem — for editorial enquiries, corrections, press, and reader questions.',
+  description: 'How to get in touch with The Gem â€” for editorial enquiries, corrections, press, and reader questions.',
   alternates: { canonical: '/contact' },
   openGraph: {
     type: 'website',
@@ -10,11 +10,11 @@ export const metadata: Metadata = {
     locale: 'en_GB',
     url: '/contact',
     title: 'Contact',
-    description: 'How to get in touch with The Gem — for editorial enquiries, corrections, press, and reader questions.',
-    images: [{ url: '/og-cover.jpg', width: 1200, height: 630 }],
+    description: 'How to get in touch with The Gem â€” for editorial enquiries, corrections, press, and reader questions.',
+    images: [{ url: '/og-cover-v2.webp', width: 1200, height: 630 }],
   },
   twitter: {
-    images: ['/og-cover.jpg'],
+    images: ['/og-cover-v2.webp'],
   },
 }
 
@@ -58,9 +58,10 @@ export default function ContactPage() {
 
       <h2>Corrections</h2>
       <p>
-        If you spot something wrong — a date, a name, a sourcing error — please tell us. We correct
+        If you spot something wrong â€” a date, a name, a sourcing error â€” please tell us. We correct
         promptly and note material changes at the foot of the affected article.
       </p>
     </div>
   )
 }
+

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'About Florence',
@@ -13,10 +13,10 @@ export const metadata: Metadata = {
     title: 'About Florence',
     description:
       'About Florence, founding editor of The Gem. Magazine writer and editor based in London with fifteen years of experience.',
-    images: [{ url: '/og-cover.jpg', width: 1200, height: 630 }],
+    images: [{ url: '/og-cover-v2.webp', width: 1200, height: 630 }],
   },
   twitter: {
-    images: ['/og-cover.jpg'],
+    images: ['/og-cover-v2.webp'],
   },
 }
 
@@ -80,7 +80,7 @@ export default function AboutPage() {
               marginBottom: 24,
             }}
           >
-            The Gem · About
+            The Gem Â· About
           </div>
           <h1
             style={{
@@ -101,7 +101,7 @@ export default function AboutPage() {
 
         <p>
           A few years ago I bought a Victorian mourning brooch at an antiques fair in Suffolk for
-          £40. Black enamel, a small woven plait of hair under glass, an inscription on the back
+          Â£40. Black enamel, a small woven plait of hair under glass, an inscription on the back
           that I had to take to a museum in Bath to decipher from copperplate. It had belonged to
           a Sarah Cooke, who lost her husband Edward in 1862, and who I&rsquo;m fairly sure went
           on to live another forty years and remarry someone called Joseph. That brooch sits in a
@@ -138,7 +138,7 @@ export default function AboutPage() {
           V&amp;A, both of which I recommend even &mdash; especially &mdash; if you have no plans
           to buy anything. The pieces I own are a complete mess: a Cartier-something from my
           grandmother, a signet I bought myself for my thirtieth that I wear every day, several
-          rings that cost about £30 each and that I love equally, and the Sarah Cooke brooch.
+          rings that cost about Â£30 each and that I love equally, and the Sarah Cooke brooch.
         </p>
 
         <h2>What you&rsquo;ll find here</h2>
@@ -174,3 +174,4 @@ export default function AboutPage() {
     </>
   )
 }
+

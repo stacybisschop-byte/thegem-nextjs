@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { getHomePageData } from '@/lib/queries'
@@ -15,10 +15,10 @@ export const metadata: Metadata = {
     locale: 'en_GB',
     url: '/',
     description: 'The Gem is an editorial jewellery publication covering the history, culture, and commerce of fine jewellery. For people who buy beautiful things.',
-    images: [{ url: '/og-cover.jpg', width: 1200, height: 630 }],
+    images: [{ url: '/og-cover-v2.webp', width: 1200, height: 630 }],
   },
   twitter: {
-    images: ['/og-cover.jpg'],
+    images: ['/og-cover-v2.webp'],
   },
 }
 
@@ -30,14 +30,14 @@ export default async function HomePage() {
 
   return (
     <>
-      {/* ── Hero Feature ────────────────────────────────────────────── */}
+      {/* â”€â”€ Hero Feature â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       {latest[0] && (() => {
         const lead = latest[0]
         const src = lead.heroImage
           ? urlForImage(lead.heroImage).width(2400).height(1350).url()
           : lead.heroImageUrl ?? null
         const alt = lead.heroImage?.alt ?? lead.heroImageAlt ?? lead.title
-        const kicker = `${lead.pillar}${lead.kickerExtra ? ` · ${lead.kickerExtra}` : ''}`
+        const kicker = `${lead.pillar}${lead.kickerExtra ? ` Â· ${lead.kickerExtra}` : ''}`
         return (
           <Link href={articleHref(lead)} className="hero-feature">
             <div className="hero-feature-text">
@@ -66,7 +66,7 @@ export default async function HomePage() {
         )
       })()}
 
-      {/* ── Also New This Week (slots 2 + 3) ────────────────────────── */}
+      {/* â”€â”€ Also New This Week (slots 2 + 3) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       {(latest[1] || latest[2]) && (
         <section className="alsoNew">
           <div className="section-head">
@@ -79,20 +79,20 @@ export default async function HomePage() {
         </section>
       )}
 
-      {/* ── Editorial Break ─────────────────────────────────────────── */}
+      {/* â”€â”€ Editorial Break â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <div className="editorialBreak">
         <span className="quote-mark">&ldquo;</span>
         <blockquote>
           For people who buy beautiful things,<br />
           and want to know the <em>story</em> behind them.
         </blockquote>
-        <cite>— The Gem, since 2026</cite>
+        <cite>â€” The Gem, since 2026</cite>
       </div>
 
-      {/* ── The Guides ──────────────────────────────────────────────── */}
+      {/* â”€â”€ The Guides â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <div className="section-head">
         <h2>The <em>Guides</em></h2>
-        <Link href="/guides">More guides →</Link>
+        <Link href="/guides">More guides â†’</Link>
       </div>
 
       <section className="guidesGrid">
@@ -101,7 +101,7 @@ export default async function HomePage() {
             ? urlForImage(guidesHeadline.heroImage).width(1200).height(800).url()
             : guidesHeadline.heroImageUrl ?? null
           const alt = guidesHeadline.heroImage?.alt ?? guidesHeadline.heroImageAlt ?? guidesHeadline.title
-          const kicker = `${guidesHeadline.pillar}${guidesHeadline.kickerExtra ? ` · ${guidesHeadline.kickerExtra}` : ''}`
+          const kicker = `${guidesHeadline.pillar}${guidesHeadline.kickerExtra ? ` Â· ${guidesHeadline.kickerExtra}` : ''}`
           return (
             <Link href={articleHref(guidesHeadline)} className="guide-card guide-card--featured">
               {src && (
@@ -151,10 +151,10 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* ── From the Magazine (Stories) ──────────────────────────────── */}
+      {/* â”€â”€ From the Magazine (Stories) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <div className="section-head">
         <h2>From the <em>magazine</em></h2>
-        <Link href="/stories">More stories →</Link>
+        <Link href="/stories">More stories â†’</Link>
       </div>
 
       <section className="storiesGrid">
@@ -188,7 +188,7 @@ export default async function HomePage() {
             ? urlForImage(storiesHeadline.heroImage).width(1200).height(800).url()
             : storiesHeadline.heroImageUrl ?? null
           const alt = storiesHeadline.heroImage?.alt ?? storiesHeadline.heroImageAlt ?? storiesHeadline.title
-          const kicker = `${storiesHeadline.pillar}${storiesHeadline.kickerExtra ? ` · ${storiesHeadline.kickerExtra}` : ''}`
+          const kicker = `${storiesHeadline.pillar}${storiesHeadline.kickerExtra ? ` Â· ${storiesHeadline.kickerExtra}` : ''}`
           return (
             <Link href={articleHref(storiesHeadline)} className="guide-card guide-card--featured">
               {src && (
@@ -213,12 +213,12 @@ export default async function HomePage() {
         })()}
       </section>
 
-      {/* ── Style Edit ──────────────────────────────────────────────── */}
+      {/* â”€â”€ Style Edit â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       {style.length > 0 && (
         <>
           <div className="section-head">
             <h2>The <em>Style</em> edit</h2>
-            <Link href="/style">More style →</Link>
+            <Link href="/style">More style â†’</Link>
           </div>
           <section className="styleEdit">
             {style.map((a) => (
@@ -230,11 +230,11 @@ export default async function HomePage() {
 
       <Newsletter />
 
-      {/* ── Recent Grid ─────────────────────────────────────────────── */}
+      {/* â”€â”€ Recent Grid â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <div className="recentGridSection">
         <div className="section-head" style={{ padding: 0, marginBottom: 40 }}>
           <h2>More from the <em>magazine</em></h2>
-          <Link href="/archive">Full archive →</Link>
+          <Link href="/archive">Full archive â†’</Link>
         </div>
         <div className="recentGrid">
           {recent.map((a) => (
@@ -245,3 +245,4 @@ export default async function HomePage() {
     </>
   )
 }
+

@@ -33,12 +33,12 @@ export async function generateMetadata({ params }: { params: { pillar: string } 
       url: path,
       title: pillar.title,
       description: pillar.description,
-      images: [{ url: '/og-cover.jpg', width: 1200, height: 630 }],
+      images: [{ url: '/og-cover-v2.webp', width: 1200, height: 630 }],
     },
     twitter: {
       title: pillar.title,
       description: pillar.description,
-      images: ['/og-cover.jpg'],
+      images: ['/og-cover-v2.webp'],
     },
   }
 }

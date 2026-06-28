@@ -1,11 +1,11 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import { client } from '@/lib/sanity'
 import { articleHref } from '@/lib/sanity'
 
 export const metadata: Metadata = {
   title: 'Archive',
-  description: 'Every piece published on The Gem, organised by section — Stories, Style, and Guides. Browse the full archive of fine jewellery writing.',
+  description: 'Every piece published on The Gem, organised by section â€” Stories, Style, and Guides. Browse the full archive of fine jewellery writing.',
   alternates: { canonical: '/archive' },
   openGraph: {
     type: 'website',
@@ -13,11 +13,11 @@ export const metadata: Metadata = {
     locale: 'en_GB',
     url: '/archive',
     title: 'Archive',
-    description: 'Every piece published on The Gem, organised by section — Stories, Style, and Guides. Browse the full archive of fine jewellery writing.',
-    images: [{ url: '/og-cover.jpg', width: 1200, height: 630 }],
+    description: 'Every piece published on The Gem, organised by section â€” Stories, Style, and Guides. Browse the full archive of fine jewellery writing.',
+    images: [{ url: '/og-cover-v2.webp', width: 1200, height: 630 }],
   },
   twitter: {
-    images: ['/og-cover.jpg'],
+    images: ['/og-cover-v2.webp'],
   },
 }
 
@@ -54,9 +54,9 @@ function formatDate(iso?: string): string {
 const PILLAR_ORDER: Array<ArchiveItem['pillar']> = ['Stories', 'Guides', 'Style']
 
 const PILLAR_BLURB: Record<ArchiveItem['pillar'], string> = {
-  Stories: 'The history of fine jewellery told through the objects themselves. How the Cullinan diamond was sent to England in a plain registered parcel. Why the Black Prince\'s Ruby in the Imperial State Crown is not a ruby. What Wallis Simpson\'s collection revealed when it sold at Sotheby\'s Geneva for £31 million. House histories, famous stones, royal jewellery, and the archaeology of what people have worn and why — from Viking burial hoards to the 1987 US Open.',
-  Guides: 'Buying guides, market analysis, and honest assessments of what jewellery is actually worth. Platinum versus white gold — the maintenance costs most jewellers don\'t mention. How to navigate Hatton Garden without overpaying. What the Cartier Love bracelet costs pre-owned and how to authenticate one. The state of the diamond market in 2026, why lab-grown prices have fallen 75% since 2022, and what that means if you are buying or selling.',
-  Style: 'Practical guidance on wearing fine jewellery well. How to layer necklaces without tangling them. Where to pin a brooch on a blazer. Which pearl types are worth knowing and why baroque now outperforms round. The seven pieces that constitute a working women\'s jewellery wardrobe, and the order to buy them in. Men\'s jewellery from signet rings to gold chains — what works, what doesn\'t, and what to ignore.',
+  Stories: 'The history of fine jewellery told through the objects themselves. How the Cullinan diamond was sent to England in a plain registered parcel. Why the Black Prince\'s Ruby in the Imperial State Crown is not a ruby. What Wallis Simpson\'s collection revealed when it sold at Sotheby\'s Geneva for Â£31 million. House histories, famous stones, royal jewellery, and the archaeology of what people have worn and why â€” from Viking burial hoards to the 1987 US Open.',
+  Guides: 'Buying guides, market analysis, and honest assessments of what jewellery is actually worth. Platinum versus white gold â€” the maintenance costs most jewellers don\'t mention. How to navigate Hatton Garden without overpaying. What the Cartier Love bracelet costs pre-owned and how to authenticate one. The state of the diamond market in 2026, why lab-grown prices have fallen 75% since 2022, and what that means if you are buying or selling.',
+  Style: 'Practical guidance on wearing fine jewellery well. How to layer necklaces without tangling them. Where to pin a brooch on a blazer. Which pearl types are worth knowing and why baroque now outperforms round. The seven pieces that constitute a working women\'s jewellery wardrobe, and the order to buy them in. Men\'s jewellery from signet rings to gold chains â€” what works, what doesn\'t, and what to ignore.',
 }
 
 export default async function ArchivePage() {
@@ -106,7 +106,7 @@ export default async function ArchivePage() {
                     </span>
                     <span style={{ fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--ink-secondary)', whiteSpace: 'nowrap' }}>
                       {formatDate(a.publishedAt)}
-                      {a.readMin ? ` · ${a.readMin} min` : ''}
+                      {a.readMin ? ` Â· ${a.readMin} min` : ''}
                     </span>
                   </Link>
                 </li>
@@ -118,3 +118,4 @@ export default async function ArchivePage() {
     </div>
   )
 }
+
