@@ -73,6 +73,10 @@ const websiteSchema = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${fraunces.variable} ${plusJakarta.variable} ${jetbrainsMono.variable}`}>
+      <head>
+        <link rel="preconnect" href="https://r.skimresources.com" />
+        <link rel="preconnect" href="https://t.skimresources.com" />
+      </head>
       <body>
         <script
           type="application/ld+json"

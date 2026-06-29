@@ -25,6 +25,20 @@
     "remark-gfm": "^4.0.0",
     "sanity": "^3.45.0"
   },
+  "browserslist": {
+    "production": [
+      "chrome >= 96",
+      "firefox >= 93",
+      "safari >= 15.4",
+      "edge >= 96",
+      "ios_saf >= 15.4"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "devDependencies": {
     "@next/bundle-analyzer": "^16.2.6",
     "@types/node": "^20.0.0",
