@@ -38,7 +38,7 @@ export default function ArticleCard({ article, size = 'medium', showExcerpt = tr
           )}
         </div>
         <div className="kicker">{article.pillar}</div>
-        <h4
+        <h3
           dangerouslySetInnerHTML={{
             __html: article.title.replace(/\*([^*]+)\*/g, '<em>$1</em>'),
           }}
