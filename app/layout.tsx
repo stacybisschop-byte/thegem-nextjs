@@ -13,7 +13,7 @@ const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mon
 export const metadata: Metadata = {
   metadataBase: new URL('https://thegem.press'),
   title: {
-    default: 'The Gem — Editorial Jewellery Publication, London',
+    default: 'The Gem — Fine Jewellery: Reviews, Style & Guides, London',
     template: '%s — The Gem',
   },
   description:
