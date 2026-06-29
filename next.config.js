@@ -2,15 +2,16 @@
 
 const ContentSecurityPolicy = [
   "default-src 'self'",
-  // Next.js needs unsafe-inline for its runtime; JSON-LD script tags also need it
-  "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
-  // Fonts are self-hosted via next/font; add your Fathom script domain to script-src when wiring
+  // Next.js needs unsafe-inline for its runtime; JSON-LD script tags also need it.
+  // GTM and Skimlinks load their JS from external origins.
+  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://s.skimresources.com",
+  // Fonts are self-hosted via next/font
   "style-src 'self' 'unsafe-inline'",
   "font-src 'self' data:",
-  // Sanity CDN + Unsplash placeholders (remove unsplash once real images are in)
-  "img-src 'self' data: blob: https://cdn.sanity.io https://images.unsplash.com",
-  // Sanity API + Vercel vitals
-  "connect-src 'self' https://*.api.sanity.io https://vitals.vercel-insights.com https://cdn.sanity.io",
+  // Sanity CDN + GTM/GA pixel endpoints + Skimlinks tracking pixel
+  "img-src 'self' data: blob: https://cdn.sanity.io https://images.unsplash.com https://www.googletagmanager.com https://www.google-analytics.com https://i.skimresources.com",
+  // Sanity API + Vercel vitals + GA4 collection + Skimlinks API
+  "connect-src 'self' https://*.api.sanity.io https://vitals.vercel-insights.com https://cdn.sanity.io https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://*.skimresources.com",
   "media-src 'self'",
   // Sanity Studio needs to frame some Sanity-hosted content
   "frame-src 'self' https://www.sanity.io https://*.sanity.studio",
