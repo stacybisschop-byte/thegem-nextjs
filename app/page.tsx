@@ -228,20 +228,7 @@ export default async function HomePage() {
         </>
       )}
 
-      <Newsletter />
 
-      {/* â”€â”€ Recent Grid â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
-      <div className="recentGridSection">
-        <div className="section-head" style={{ padding: 0, marginBottom: 40 }}>
-          <h2>More from the <em>magazine</em></h2>
-          <Link href="/archive">Full archive â†’</Link>
-        </div>
-        <div className="recentGrid">
-          {recent.map((a) => (
-            <ArticleCard key={a._id} article={a} size="recent" />
-          ))}
-        </div>
-      </div>
 
       {/* ── Editorial Statement ─────────────────────────────────────────────── */}
       <div className="editorialStatement">
@@ -259,6 +246,21 @@ export default async function HomePage() {
             sizes="(max-width: 768px) 100vw, 50vw"
             style={{ objectFit: 'cover' }}
           />
+        </div>
+      </div>
+
+      <Newsletter />
+
+      {/* â”€â”€ Recent Grid â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      <div className="recentGridSection">
+        <div className="section-head" style={{ padding: 0, marginBottom: 40 }}>
+          <h2>More from the <em>magazine</em></h2>
+          <Link href="/archive">Full archive â†’</Link>
+        </div>
+        <div className="recentGrid">
+          {recent.map((a) => (
+            <ArticleCard key={a._id} article={a} size="recent" />
+          ))}
         </div>
       </div>
     </>
