@@ -24,7 +24,7 @@ export default function NewsletterPage() {
     <>
       <div style={{ maxWidth: 720, margin: '0 auto', padding: '80px var(--pad-x) 40px', textAlign: 'center' }}>
         <div style={{ fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--gold-accessible)', marginBottom: 20 }}>
-          The Gem Â· Every Friday
+          The Gem · Every Friday
         </div>
         <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 56px)', fontWeight: 300, lineHeight: 1.1, letterSpacing: '-0.02em', marginBottom: 24 }}>
           One letter from <em style={{ fontStyle: 'italic', color: 'var(--gold-large)' }}>Florence</em>, every Friday morning.
@@ -38,13 +38,13 @@ export default function NewsletterPage() {
       <div className="article-body" style={{ maxWidth: 720, margin: '0 auto', padding: '0 var(--pad-x) 40px' }}>
         <h2>What you&rsquo;ll get</h2>
         <p>
-          <strong>The long read.</strong> One piece chosen from the week&rsquo;s publishing â€” usually a
+          <strong>The long read.</strong> One piece chosen from the week&rsquo;s publishing — usually a
           history, a market analysis, or a considered guide. The kind of thing worth setting aside
           fifteen minutes for, not skimming on a phone.
         </p>
         <p>
           <strong>Three things worth knowing.</strong> Short notes on what&rsquo;s moving in the
-          jewellery world â€” an auction result, a maker we&rsquo;ve been watching, a piece of news that
+          jewellery world — an auction result, a maker we&rsquo;ve been watching, a piece of news that
           actually matters. Curated, not aggregated.
         </p>
         <p>

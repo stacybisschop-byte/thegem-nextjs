@@ -2,7 +2,7 @@
 
 export const metadata: Metadata = {
   title: 'Affiliate Disclosure',
-  description: 'How The Gem uses affiliate links â€” and why our editorial recommendations are never influenced by commercial relationships.',
+  description: 'How The Gem uses affiliate links — and why our editorial recommendations are never influenced by commercial relationships.',
   alternates: { canonical: '/affiliate-disclosure' },
   openGraph: {
     type: 'website',
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     locale: 'en_GB',
     url: '/affiliate-disclosure',
     title: 'Affiliate Disclosure',
-    description: 'How The Gem uses affiliate links â€” and why our editorial recommendations are never influenced by commercial relationships.',
+    description: 'How The Gem uses affiliate links — and why our editorial recommendations are never influenced by commercial relationships.',
     images: [{ url: '/og-cover-v2.webp', width: 1200, height: 630 }],
   },
   twitter: {
@@ -41,7 +41,7 @@ export default function AffiliateDisclosurePage() {
       <h2>How we choose what to feature</h2>
       <p>
         Editorial decisions on The Gem are made independently. We choose pieces, makers, and stories
-        based on craft, design, history, and what we think our readers will find interesting â€” not
+        based on craft, design, history, and what we think our readers will find interesting — not
         based on whether a retailer offers an affiliate programme. A piece is not more likely to be
         featured because there is a commission attached, and a piece is not excluded because there is not.
       </p>
@@ -53,7 +53,7 @@ export default function AffiliateDisclosurePage() {
       <h2>Which articles contain affiliate links</h2>
       <p>
         Articles that contain affiliate links carry a brief disclosure near the top of the page. We do
-        not bury this â€” if there is a commercial relationship in play, you will see it before you click.
+        not bury this — if there is a commercial relationship in play, you will see it before you click.
       </p>
       <p>
         Editorial features, interviews, and essays generally do not contain affiliate links. Shopping
@@ -65,7 +65,7 @@ export default function AffiliateDisclosurePage() {
         We work with a small number of established affiliate networks, including Awin, Skimlinks, and
         direct partnerships with selected retailers. When you click an affiliate link, the retailer
         may set their own cookies to attribute the referral. We do not receive any personal data
-        about you from these transactions â€” only an aggregate commission report.
+        about you from these transactions — only an aggregate commission report.
       </p>
 
       <h2>Sponsored content</h2>

@@ -2,7 +2,7 @@
 
 export const metadata: Metadata = {
   title: 'Press',
-  description: 'Press information for The Gem â€” what we cover, how to send samples and pitches, and our editorial standards.',
+  description: 'Press information for The Gem — what we cover, how to send samples and pitches, and our editorial standards.',
   alternates: { canonical: '/press' },
   openGraph: {
     type: 'website',
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     locale: 'en_GB',
     url: '/press',
     title: 'Press',
-    description: 'Press information for The Gem â€” what we cover, how to send samples and pitches, and our editorial standards.',
+    description: 'Press information for The Gem — what we cover, how to send samples and pitches, and our editorial standards.',
     images: [{ url: '/og-cover-v2.webp', width: 1200, height: 630 }],
   },
   twitter: {
@@ -64,7 +64,7 @@ export default function PressPage() {
       <p>
         Pitches are read but rarely answered individually. Please keep them short and lead with the
         story, not the product. We are most likely to cover launches that have an angle beyond
-        availability â€” a new technique, an unusual stone, a meaningful change in approach.
+        availability — a new technique, an unusual stone, a meaningful change in approach.
       </p>
 
       <h2>Interviews</h2>
@@ -77,7 +77,7 @@ export default function PressPage() {
       <h2>Collaborations</h2>
       <p>
         We&rsquo;re open to collaborating with others who write seriously about fine jewellery, gemstones,
-        antiques, or adjacent fields â€” whether that&rsquo;s a guest post on a relevant site, a mention on
+        antiques, or adjacent fields — whether that&rsquo;s a guest post on a relevant site, a mention on
         a curated resource page, or simply getting to know other people working in this space. If
         you&rsquo;re building something thoughtful and think there&rsquo;s a natural fit, email{' '}
         <a href="mailto:thegemmag@proton.me">thegemmag@proton.me</a> and introduce yourself.

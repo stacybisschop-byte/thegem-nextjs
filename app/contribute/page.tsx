@@ -30,7 +30,7 @@ export default function ContributePage() {
 
       <p>
         Most pieces on The Gem are written by Florence. We commission a small number of outside
-        contributors each year â€” writers whose work we already know and admire, or who arrive with a
+        contributors each year — writers whose work we already know and admire, or who arrive with a
         story we couldn&rsquo;t have written ourselves.
       </p>
 
@@ -47,7 +47,7 @@ export default function ContributePage() {
 
       <h2>How to pitch</h2>
       <p>
-        Send a short pitch â€” three to five paragraphs â€” to <a href="mailto:thegemmag@proton.me">thegemmag@proton.me</a>.
+        Send a short pitch — three to five paragraphs — to <a href="mailto:thegemmag@proton.me">thegemmag@proton.me</a>.
         Tell us what the piece is, why it matters, who you&rsquo;d talk to, and roughly how long it would
         be. Attach two or three published clips.
       </p>
@@ -64,7 +64,7 @@ export default function ContributePage() {
       <h2>What you can expect</h2>
       <p>
         A reply within two weeks. Edits that take the piece seriously. Your byline, a short bio, and
-        a link to wherever you want readers to find you next. Your piece treated as yours â€” we edit
+        a link to wherever you want readers to find you next. Your piece treated as yours — we edit
         for clarity and fact, not voice.
       </p>
     </div>

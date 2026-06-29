@@ -76,36 +76,36 @@ export default function PrivacyPage() {
         privacy-first approach means this does not materially affect your privacy.
       </p>
       <p>
-        <strong>Contact form.</strong> Legitimate interests â€” responding to your enquiry.
+        <strong>Contact form.</strong> Legitimate interests — responding to your enquiry.
       </p>
 
       <h2>How long we keep data</h2>
       <p>
         Newsletter subscriptions are held until you unsubscribe. Contact form submissions are retained
         for 12 months then deleted. Server logs are retained by Vercel for 30 days. Analytics data is
-        anonymised and aggregated â€” no individual records are retained.
+        anonymised and aggregated — no individual records are retained.
       </p>
 
       <h2>Third parties</h2>
       <p>We share data with the following third parties as part of running the publication:</p>
       <p>
-        <strong>Vercel Inc.</strong> (hosting) â€” processes server logs. Privacy policy at vercel.com/legal/privacy-policy.
+        <strong>Vercel Inc.</strong> (hosting) — processes server logs. Privacy policy at vercel.com/legal/privacy-policy.
       </p>
       <p>
-        <strong>Beehiiv Inc.</strong> (newsletter) â€” processes email addresses of subscribers.
+        <strong>Beehiiv Inc.</strong> (newsletter) — processes email addresses of subscribers.
         Privacy policy at beehiiv.com/privacy.
       </p>
       <p>
-        <strong>Fathom Analytics</strong> â€” processes anonymised analytics. Privacy policy at usefathom.com/privacy.
+        <strong>Fathom Analytics</strong> — processes anonymised analytics. Privacy policy at usefathom.com/privacy.
       </p>
       <p>
-        <strong>Sanity.io</strong> (content management) â€” stores article content. No personal
+        <strong>Sanity.io</strong> (content management) — stores article content. No personal
         data is stored in our content management system.
       </p>
       <p>
         <strong>Affiliate partners.</strong> Some articles contain affiliate links. When you click
         an affiliate link and make a purchase, the retailer may set their own cookies. We do not receive
-        personal data from affiliate transactions â€” we receive a commission only. Affiliate relationships
+        personal data from affiliate transactions — we receive a commission only. Affiliate relationships
         are disclosed in every article that contains them.
       </p>
       <p>We do not sell personal data. We do not use data for advertising or profiling.</p>
@@ -113,7 +113,7 @@ export default function PrivacyPage() {
       <h2>Cookies</h2>
       <p>
         The Gem does not set first-party cookies. Fathom Analytics does not use cookies. If you
-        click affiliate links, third-party retailers may set their own cookies â€” these are governed
+        click affiliate links, third-party retailers may set their own cookies — these are governed
         by their own privacy policies.
       </p>
 
