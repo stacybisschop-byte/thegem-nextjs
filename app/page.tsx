@@ -37,7 +37,7 @@ export default async function HomePage() {
           ? urlForImage(lead.heroImage).width(2400).height(1350).url()
           : lead.heroImageUrl ?? null
         const alt = lead.heroImage?.alt ?? lead.heroImageAlt ?? lead.title
-        const kicker = `${lead.pillar}${lead.kickerExtra ? ` Â· ${lead.kickerExtra}` : ''}`
+        const kicker = `${lead.pillar}${lead.kickerExtra ? ` · ${lead.kickerExtra}` : ''}`
         return (
           <Link href={articleHref(lead)} className="hero-feature">
             <div className="hero-feature-text">
@@ -86,7 +86,7 @@ export default async function HomePage() {
           For people who buy beautiful things,<br />
           and want to know the <em>story</em> behind them.
         </blockquote>
-        <cite>â€” The Gem, since 2026</cite>
+        <cite>— The Gem, since 2026</cite>
       </div>
 
       {/* â”€â”€ The Guides â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
@@ -101,7 +101,7 @@ export default async function HomePage() {
             ? urlForImage(guidesHeadline.heroImage).width(1200).height(800).url()
             : guidesHeadline.heroImageUrl ?? null
           const alt = guidesHeadline.heroImage?.alt ?? guidesHeadline.heroImageAlt ?? guidesHeadline.title
-          const kicker = `${guidesHeadline.pillar}${guidesHeadline.kickerExtra ? ` Â· ${guidesHeadline.kickerExtra}` : ''}`
+          const kicker = `${guidesHeadline.pillar}${guidesHeadline.kickerExtra ? ` · ${guidesHeadline.kickerExtra}` : ''}`
           return (
             <Link href={articleHref(guidesHeadline)} className="guide-card guide-card--featured">
               {src && (
@@ -188,7 +188,7 @@ export default async function HomePage() {
             ? urlForImage(storiesHeadline.heroImage).width(1200).height(800).url()
             : storiesHeadline.heroImageUrl ?? null
           const alt = storiesHeadline.heroImage?.alt ?? storiesHeadline.heroImageAlt ?? storiesHeadline.title
-          const kicker = `${storiesHeadline.pillar}${storiesHeadline.kickerExtra ? ` Â· ${storiesHeadline.kickerExtra}` : ''}`
+          const kicker = `${storiesHeadline.pillar}${storiesHeadline.kickerExtra ? ` · ${storiesHeadline.kickerExtra}` : ''}`
           return (
             <Link href={articleHref(storiesHeadline)} className="guide-card guide-card--featured">
               {src && (
