@@ -242,6 +242,25 @@ export default async function HomePage() {
           ))}
         </div>
       </div>
+
+      {/* ── Editorial Statement ─────────────────────────────────────────────── */}
+      <div className="editorialStatement">
+        <div className="editorialStatement-text">
+          <p>The Gem exists because most jewellery writing is either breathless PR or impenetrable gemology. Neither is much use when you&rsquo;re trying to decide whether a Cartier Love bracelet is worth the mortgage payment, or whether lab-grown diamonds are genuinely identical to mined ones (they are, with caveats).</p>
+          <p>This is a magazine for people who take jewellery seriously without taking themselves too seriously. We publish buying guides built on research rather than press releases, histories of the houses that shaped the industry, and the occasional strong opinion about why signet rings are having a moment for entirely the right reasons.</p>
+          <p>Florence writes everything. She has been known to be wrong, but not about jewellery.</p>
+          <Link href="/about" className="editorialStatement-btn">About The Gem</Link>
+        </div>
+        <div className="editorialStatement-image">
+          <Image
+            src="/images/editorial-about.jpg"
+            alt="Gold hoop earrings and chain necklace resting on an open book beside an ornate mirror, with dried lavender"
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
+            style={{ objectFit: ‘cover’ }}
+          />
+        </div>
+      </div>
     </>
   )
 }

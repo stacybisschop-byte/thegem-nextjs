@@ -688,6 +688,49 @@ footer a:hover { color: var(--cream); }
 .recentGridSection { padding: 80px var(--pad-x); max-width: var(--max-w); margin: 0 auto; }
 .recentGrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px 32px; margin-top: 40px; }
 
+/* ── Editorial Statement ──────────────────────────────────────────────────── */
+
+.editorialStatement {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 6vw, 80px);
+  padding: clamp(60px, 8vw, 100px) var(--pad-x);
+  max-width: var(--max-w);
+  margin: 0 auto;
+  border-top: 1px solid var(--border);
+}
+.editorialStatement-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.editorialStatement-text p {
+  font-style: italic;
+  color: var(--ink-muted);
+  line-height: 1.75;
+  margin-bottom: 1.4em;
+}
+.editorialStatement-text p:last-of-type { margin-bottom: 36px; }
+.editorialStatement-btn {
+  display: inline-block;
+  border: 1px solid var(--ink);
+  padding: 10px 24px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink);
+  align-self: flex-start;
+  transition: var(--transition);
+}
+.editorialStatement-btn:hover { background: var(--ink); color: var(--cream); }
+.editorialStatement-image {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
 /* ── Responsive ───────────────────────────────────────────────────────────── */
 
 @media (max-width: 1200px) {
@@ -719,6 +762,8 @@ footer a:hover { color: var(--cream); }
   .storiesGrid { grid-template-columns: 1fr; }
   .storiesGrid .guide-card--featured { order: -1; }
   .guide-card-grid { grid-template-columns: 1fr; }
+  .editorialStatement { grid-template-columns: 1fr; }
+  .editorialStatement-image { order: 1; }
 }
 
 @media (max-width: 600px) {
