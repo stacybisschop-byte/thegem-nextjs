@@ -257,7 +257,7 @@ export default async function HomePage() {
             alt="Gold hoop earrings and chain necklace resting on an open book beside an ornate mirror, with dried lavender"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
-            style={{ objectFit: ‘cover’ }}
+            style={{ objectFit: 'cover' }}
           />
         </div>
       </div>
