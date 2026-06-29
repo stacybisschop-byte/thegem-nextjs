@@ -405,7 +405,7 @@ footer a:hover { color: var(--cream); }
   font-size: 10px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--gold-accessible);
+  color: var(--gold-light); /* --gold-accessible is for cream backgrounds; dark bg needs lighter gold */
   margin-bottom: 16px;
 }
 .newsletter h2 {
