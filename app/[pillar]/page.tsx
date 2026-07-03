@@ -16,6 +16,10 @@ const PILLARS = {
     title: 'Style',
     description: 'Practical guidance on wearing fine jewellery well. Layering necklaces, brooch placement, pearl types, and building a working jewellery wardrobe.',
   },
+  edit: {
+    title: 'The Edit',
+    description: 'What is being worn now, what to buy because of it. Shop edits, trend pieces, and fashion-forward jewellery from Florence.',
+  },
 }
 
 export async function generateMetadata({ params }: { params: { pillar: string } }): Promise<Metadata> {
