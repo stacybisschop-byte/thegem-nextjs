@@ -28,6 +28,7 @@ export const articleType = defineType({
           { title: 'Stories', value: 'Stories' },
           { title: 'Guides', value: 'Guides' },
           { title: 'Style', value: 'Style' },
+          { title: 'Edit', value: 'Edit' },
         ],
         layout: 'radio',
       },
