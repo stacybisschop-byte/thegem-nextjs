@@ -48,11 +48,13 @@ Lapis lazuli's associations with royalty and wisdom are old enough that they wou
 
 If the Carousel Jewels Stella is on a five-week wait and you would like a lapis and moonstone earring now, or a variation that takes the same pairing in a different direction:
 
-**[Etsy: Lapis Lazuli and Rainbow Moonstone Earrings, Sterling Silver](https://www.etsy.com/listing/893629269/lapis-lazuli-and-rainbow-moonstone)** — the closest match to the Carousel Jewels pairing: the same two stones, handmade, in sterling silver. Stone quality will vary more than in the Carousel Jewels piece; read seller reviews and look for images that show the actual stones rather than stock photography. Available now.
+**[Etsy: Natural Lapis Lazuli Drop Earrings, Solid 14k Gold](https://www.etsy.com/uk/listing/4318867760/14k-gold-lapis-lazuli-drop-earrings)** — lapis on its own rather than paired with moonstone, handmade in solid 14k gold rather than silver vermeil. Stone quality will vary more than in the Carousel Jewels piece; read seller reviews and look for images that show the actual stones rather than stock photography. Available now.
 
-**[Wolf & Badger: Freshwater Pearl with Lapis Lazuli Hook Earrings, Farra](https://www.wolfandbadger.com/uk/freshwater-pearl-with-lapis-lazuli-hook-earrings/)** — a related structure substituting pearl for moonstone. Pearl adds warmth where moonstone adds iridescence; the overall effect is slightly more traditional but equally considered. Available now.
+**[Wolf & Badger: Clara Cultured Freshwater Pearls & Lapis Lazuli Drop Earrings, Pearls of the Orient](https://www.wolfandbadger.com/uk/clara-cultured-freshwater-pearls-lapis-lazuli-drop-earrings/)** — a related structure substituting pearl for moonstone, set in gold vermeil. Pearl adds warmth where moonstone adds iridescence; the overall effect is slightly more traditional but equally considered. Available now.
 
 **[British Museum Shop: Lapis and Moonstone Earrings](https://www.britishmuseumshoponline.org/lapis-and-moonstone-earrings.html)** — the Museum shop's own version, which carries the additional satisfaction of supporting an institution that holds some of the most important lapis lazuli objects in existence, including pieces from the Royal Tombs of Ur. Available now.
+
+For readers who'd rather skip the pre-order queue altogether and buy the real thing: **[1stDibs: Angela Cummings 1988 Clip-On Earrings, 18kt Yellow Gold and Lapis Lazuli](https://www.1stdibs.com/jewelry/earrings/clip-on-earrings/angela-cummings-1988-clips-on-earrings-18kt-yellow-gold-lapis-lazuli/id-j_23887392/)** — a vintage designer pair, two oval lapis lazuli cabochons set in brushed and polished 18-karat gold, from Cummings's celebrated 1980s tenure designing for Tiffany & Co. This is a different order of piece entirely, priced accordingly (price on request via the listing), but it's the version of this idea that doesn't need a pre-order.
 
 For those who would rather wear lapis lazuli as a single-stone piece without the combination: lapis in a simple gold bezel makes one of the most elegant low-profile earrings available, and it's worth knowing [what actually separates a precious stone from a semi-precious one](/guides/precious-vs-semi-precious) before you buy — the distinction shapes price far more than most people assume.
 
@@ -74,7 +76,7 @@ Lapis lazuli has been associated with royalty, wisdom, honour, and truth across 
 
 ### Where can I buy the same earrings as Kate Middleton?
 
-The Carousel Jewels Stella earrings in lapis and moonstone are currently on pre-order at [carouseljewels.com](https://carouseljewels.com/products/stella-earrings-with-lapis-and-moonstone) for £170, with a five to six week wait. Similar lapis and moonstone drop earrings are available now from Etsy, Wolf & Badger, and the British Museum Shop, linked in this article.
+The Carousel Jewels Stella earrings in lapis and moonstone are currently on pre-order at [carouseljewels.com](https://carouseljewels.com/products/stella-earrings-with-lapis-and-moonstone) for £170, with a five to six week wait. Similar lapis and moonstone pairings are available now from Wolf & Badger and the British Museum Shop, and a lapis-only alternative from Etsy, all linked in this article.
 
 ### What is lapis lazuli and why is it significant?
 

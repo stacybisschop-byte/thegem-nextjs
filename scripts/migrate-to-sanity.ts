@@ -122,6 +122,7 @@ const KICKER_EXTRAS: Record<string, string> = {
   'emerald-buying-guide':                'Buying Guides',
   'cheapside-hoard':                     'London History',
   'signet-ring-edit':                    'The Edit',
+  'kate-wimbledon-earrings':              'Royal Jewellery',
 }
 
 // ── Hero image map ────────────────────────────────────────────────────────────
