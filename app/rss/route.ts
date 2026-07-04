@@ -5,7 +5,7 @@ export const revalidate = 3600
 interface FeedItem {
   title: string
   slug: { current: string }
-  pillar: 'Stories' | 'Guides' | 'Style'
+  pillar: 'Stories' | 'Guides' | 'Style' | 'Edit'
   metaDescription?: string
   publishedAt?: string
 }

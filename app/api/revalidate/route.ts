@@ -28,13 +28,14 @@ export async function POST(req: NextRequest) {
     '/stories',
     '/guides',
     '/style',
+    '/edit',
     '/archive',
     '/rss',
     '/llms.txt',
     '/llms-full.txt',
   ])
 
-  if (pillar && slug && ['stories', 'guides', 'style'].includes(pillar)) {
+  if (pillar && slug && ['stories', 'guides', 'style', 'edit'].includes(pillar)) {
     paths.add(`/${pillar}/${slug}`)
   }
 

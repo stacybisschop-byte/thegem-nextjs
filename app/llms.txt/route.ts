@@ -20,6 +20,7 @@ export async function GET() {
     }
   `)
 
+  const edit    = articles.filter((a) => a.pillar === 'Edit')
   const stories = articles.filter((a) => a.pillar === 'Stories')
   const guides  = articles.filter((a) => a.pillar === 'Guides')
   const style   = articles.filter((a) => a.pillar === 'Style')
@@ -47,11 +48,22 @@ export async function GET() {
     '',
     '## Sections',
     '',
+    '- Edit: Time-sensitive shop edits, trend pieces, and celebrity jewellery moments',
     '- Stories: Long-form jewellery history, provenance, and culture',
     '- Guides: Practical buying guides, market analysis, and ownership advice',
     '- Style: How to wear jewellery and build a wardrobe',
     '',
   ]
+
+  if (edit.length) {
+    lines.push('## Edit')
+    lines.push('')
+    for (const a of edit) {
+      const desc = a.metaDescription ? ` — ${a.metaDescription}` : ''
+      lines.push(`- [${a.title}](https://thegem.press/edit/${a.slug.current})${desc}`)
+    }
+    lines.push('')
+  }
 
   if (stories.length) {
     lines.push('## Stories')
