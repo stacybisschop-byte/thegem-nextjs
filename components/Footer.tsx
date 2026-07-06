@@ -12,7 +12,7 @@ export default function Footer() {
           <h2>The Magazine</h2>
           <ul>
             <li><Link href="/stories">Stories</Link></li>
-            <li><Link href="/style">Style</Link></li>
+            <li><Link href="/edit">Edit</Link></li>
             <li><Link href="/guides">Guides</Link></li>
             <li><Link href="/archive">Archive</Link></li>
           </ul>

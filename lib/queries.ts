@@ -44,7 +44,6 @@ export interface HomePageData {
   latest: ArticleCard[]        // up to 3 featured articles for the Latest grid
   stories: ArticleCard[]       // up to 10 stories for the pillar list
   guides: ArticleCard[]        // up to 10 guides for the pillar list
-  style: ArticleCard[]         // up to 5 style articles for the Style Edit block
   edit: ArticleCard[]
   recent: ArticleCard[]        // up to 4 recent articles for the Recent grid
   storiesHeadline: ArticleCard | null
@@ -69,9 +68,6 @@ export async function getHomePageData(): Promise<HomePageData> {
 
       "guides": *[_type == "article" && published == true && pillar == "Guides"]
                | order(publishedAt desc)[0...8] { ${CARD_FIELDS} },
-
-      "style": *[_type == "article" && published == true && pillar == "Style"]
-               | order(publishedAt desc)[0...5] { ${CARD_FIELDS} },
 
       "edit": *[_type == "article" && published == true && pillar == "Edit"]
                | order(publishedAt desc)[0...5] { ${CARD_FIELDS} },

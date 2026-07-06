@@ -12,10 +12,6 @@ const PILLARS = {
     title: 'Guides',
     description: 'Buying guides and honest assessments of fine jewellery. Platinum vs white gold, Hatton Garden, Cartier Love pre-owned, and the diamond market in 2026.',
   },
-  style: {
-    title: 'Style',
-    description: 'Practical guidance on wearing fine jewellery well. Layering necklaces, brooch placement, pearl types, and building a working jewellery wardrobe.',
-  },
   edit: {
     title: 'The Edit',
     description: 'What is being worn now, what to buy because of it. Shop edits, trend pieces, and fashion-forward jewellery from Florence.',

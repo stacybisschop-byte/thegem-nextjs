@@ -291,7 +291,7 @@ function pillarFromFrontmatter(rawSlug: string, rawPillar?: string): string {
   if (rawPillar) return rawPillar
   if (rawSlug.startsWith('stories/')) return 'Stories'
   if (rawSlug.startsWith('guides/')) return 'Guides'
-  if (rawSlug.startsWith('style/')) return 'Style'
+  if (rawSlug.startsWith('edit/')) return 'Edit'
   return 'Stories'
 }
 

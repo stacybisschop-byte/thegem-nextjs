@@ -23,7 +23,6 @@ export async function GET() {
   const edit    = articles.filter((a) => a.pillar === 'Edit')
   const stories = articles.filter((a) => a.pillar === 'Stories')
   const guides  = articles.filter((a) => a.pillar === 'Guides')
-  const style   = articles.filter((a) => a.pillar === 'Style')
 
   const lines: string[] = [
     '# The Gem',
@@ -48,10 +47,9 @@ export async function GET() {
     '',
     '## Sections',
     '',
-    '- Edit: Time-sensitive shop edits, trend pieces, and celebrity jewellery moments',
+    '- Edit: What is being worn now, shop edits, trend pieces, and how to wear jewellery well',
     '- Stories: Long-form jewellery history, provenance, and culture',
     '- Guides: Practical buying guides, market analysis, and ownership advice',
-    '- Style: How to wear jewellery and build a wardrobe',
     '',
   ]
 
@@ -81,16 +79,6 @@ export async function GET() {
     for (const a of guides) {
       const desc = a.metaDescription ? ` — ${a.metaDescription}` : ''
       lines.push(`- [${a.title}](https://thegem.press/guides/${a.slug.current})${desc}`)
-    }
-    lines.push('')
-  }
-
-  if (style.length) {
-    lines.push('## Style')
-    lines.push('')
-    for (const a of style) {
-      const desc = a.metaDescription ? ` — ${a.metaDescription}` : ''
-      lines.push(`- [${a.title}](https://thegem.press/style/${a.slug.current})${desc}`)
     }
     lines.push('')
   }

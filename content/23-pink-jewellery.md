@@ -1,7 +1,7 @@
 ---
 title: "Pink Jewellery, and the I-Hate-Pink Phase: A Reclamation"
-slug: style/pink-jewellery
-pillar: Style
+slug: edit/pink-jewellery
+pillar: Edit
 author: Florence
 published: false
 publishDate: 2026-01-14

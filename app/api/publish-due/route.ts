@@ -69,7 +69,7 @@ export async function GET(req: NextRequest) {
 
     // Bust the listing/index caches only when something actually changed.
     if (published.length > 0) {
-      for (const path of ['/', '/stories', '/guides', '/style', '/archive', '/rss']) {
+      for (const path of ['/', '/stories', '/guides', '/edit', '/archive', '/rss']) {
         revalidatePath(path)
       }
     }

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 export const revalidate = 60
 
 export default async function HomePage() {
-  const { latest, stories, guides, style, edit, recent, storiesHeadline, guidesHeadline } =
+  const { latest, stories, guides, edit, recent, storiesHeadline, guidesHeadline } =
     await getHomePageData()
 
   return (
@@ -227,23 +227,6 @@ export default async function HomePage() {
           )
         })()}
       </section>
-
-      {/* â”€â”€ Style Edit â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
-      {style.length > 0 && (
-        <>
-          <div className="section-head">
-            <h2>The <em>Style</em> edit</h2>
-            <Link href="/style">More style â†’</Link>
-          </div>
-          <section className="styleEdit">
-            {style.map((a) => (
-              <ArticleCard key={a._id} article={a} size="medium" showExcerpt />
-            ))}
-          </section>
-        </>
-      )}
-
-
 
       {/* ── Editorial Statement ─────────────────────────────────────────────── */}
       <div className="editorialStatement">

@@ -1,7 +1,7 @@
 ---
 title: "How to Wear a Brooch in 2026 Without Looking Like Your Grandmother"
-slug: style/how-to-wear-a-brooch
-pillar: Style
+slug: guides/how-to-wear-a-brooch
+pillar: Guides
 author: Florence
 published: true
 publishDate: 2026-05-24

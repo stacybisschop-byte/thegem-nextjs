@@ -1,7 +1,7 @@
 ---
 title: "How to Wear Pearls in 2026: The New Rules"
-slug: style/how-to-wear-pearls
-pillar: Style
+slug: guides/how-to-wear-pearls
+pillar: Guides
 author: Florence
 published: false
 publishDate: 2026-01-26

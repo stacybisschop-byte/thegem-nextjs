@@ -27,7 +27,6 @@ export async function POST(req: NextRequest) {
     '/',
     '/stories',
     '/guides',
-    '/style',
     '/edit',
     '/archive',
     '/rss',
@@ -35,7 +34,7 @@ export async function POST(req: NextRequest) {
     '/llms-full.txt',
   ])
 
-  if (pillar && slug && ['stories', 'guides', 'style', 'edit'].includes(pillar)) {
+  if (pillar && slug && ['stories', 'guides', 'edit'].includes(pillar)) {
     paths.add(`/${pillar}/${slug}`)
   }
 

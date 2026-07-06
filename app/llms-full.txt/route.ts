@@ -5,7 +5,7 @@ export const revalidate = 3600 // regenerate hourly
 interface ArticleFull {
   title: string
   slug: { current: string }
-  pillar: 'Stories' | 'Guides' | 'Style' | 'Edit'
+  pillar: 'Stories' | 'Guides' | 'Edit'
   body: string
 }
 

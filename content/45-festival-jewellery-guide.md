@@ -1,7 +1,7 @@
 ---
 title: "How to Wear Fine Jewellery to a Festival: The Layering Guide"
-slug: style/fine-jewellery-festival-layering
-pillar: Style
+slug: edit/fine-jewellery-festival-layering
+pillar: Edit
 author: Florence
 published: false
 publishDate: 2026-07-10

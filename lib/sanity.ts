@@ -41,7 +41,7 @@ export interface Article {
   _updatedAt: string
   title: string
   slug: { current: string }
-  pillar: 'Stories' | 'Guides' | 'Style' | 'Edit'
+  pillar: 'Stories' | 'Guides' | 'Edit'
   author: string
   published: boolean
   publishedAt?: string
@@ -63,7 +63,7 @@ export interface ArticleCard {
   _id: string
   title: string
   slug: { current: string }
-  pillar: 'Stories' | 'Guides' | 'Style' | 'Edit'
+  pillar: 'Stories' | 'Guides' | 'Edit'
   metaDescription?: string
   heroImage?: SanityImage
   heroImageUrl?: string

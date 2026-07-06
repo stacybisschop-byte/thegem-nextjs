@@ -1,7 +1,7 @@
 ---
 title: "Ring Stacking in 2026: The Rules, the Breaks, and What Actually Works"
-slug: style/ring-stacking-guide
-pillar: Style
+slug: edit/ring-stacking-guide
+pillar: Edit
 author: Florence
 published: true
 publishDate: 2026-06-26

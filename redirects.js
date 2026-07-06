@@ -10,4 +10,7 @@ module.exports = [
   { source: '/style/how-to-wear-pearls', destination: '/guides/how-to-wear-pearls', permanent: true },
   { source: '/style/how-to-build-a-jewellery-collection', destination: '/guides/how-to-build-a-jewellery-collection', permanent: true },
   { source: '/style/floral-jewellery', destination: '/stories/floral-jewellery', permanent: true },
+  { source: '/style/signet-ring-edit', destination: '/edit/signet-ring-edit', permanent: true },
+  { source: '/style/fine-jewellery-festival-layering', destination: '/edit/fine-jewellery-festival-layering', permanent: true },
+  { source: '/style', destination: '/edit', permanent: true },
 ]

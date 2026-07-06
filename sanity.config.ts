@@ -28,8 +28,8 @@ export default defineConfig({
               .title('Guides')
               .child(S.documentList().title('Guides').filter('_type == "article" && pillar == "Guides"')),
             S.listItem()
-              .title('Style')
-              .child(S.documentList().title('Style').filter('_type == "article" && pillar == "Style"')),
+              .title('Edit')
+              .child(S.documentList().title('Edit').filter('_type == "article" && pillar == "Edit"')),
             S.divider(),
             S.listItem()
               .title('Drafts')

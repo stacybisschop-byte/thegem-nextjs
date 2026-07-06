@@ -1,7 +1,7 @@
 ---
 title: "The Art of Layering Necklaces: How to Get It Right"
-slug: style/layering-necklaces
-pillar: Style
+slug: edit/layering-necklaces
+pillar: Edit
 author: Florence
 published: false
 publishDate: 2026-01-23

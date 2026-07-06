@@ -1,7 +1,7 @@
 ---
 title: "The Signet Ring Edit: From Engraved to Statement"
-slug: style/signet-ring-edit
-pillar: Style
+slug: edit/signet-ring-edit
+pillar: Edit
 author: Florence
 published: false
 publishDate: 2026-07-30

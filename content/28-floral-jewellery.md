@@ -1,7 +1,7 @@
 ---
 title: "The Language of Flowers in Fine Jewellery"
-slug: style/floral-jewellery
-pillar: Style
+slug: stories/floral-jewellery
+pillar: Stories
 author: Florence
 published: false
 publishDate: 2026-02-04

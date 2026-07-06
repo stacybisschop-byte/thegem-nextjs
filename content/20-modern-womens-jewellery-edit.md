@@ -1,7 +1,7 @@
 ---
 title: "The Modern Women's Jewellery Edit: Seven Pieces Worth Owning"
-slug: style/modern-womens-jewellery-edit
-pillar: Style
+slug: edit/modern-womens-jewellery-edit
+pillar: Edit
 author: Florence
 published: false
 publishDate: 2026-01-17

@@ -1,7 +1,7 @@
 ---
 title: "How to Build a Jewellery Collection: A Practical Guide to Starting Well"
-slug: style/how-to-build-a-jewellery-collection
-pillar: Style
+slug: guides/how-to-build-a-jewellery-collection
+pillar: Guides
 author: Florence
 published: false
 publishDate: 2026-06-17

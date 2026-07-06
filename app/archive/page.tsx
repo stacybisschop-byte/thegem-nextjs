@@ -27,7 +27,7 @@ interface ArchiveItem {
   _id: string
   title: string
   slug: { current: string }
-  pillar: 'Stories' | 'Guides' | 'Style' | 'Edit'
+  pillar: 'Stories' | 'Guides' | 'Edit'
   publishedAt?: string
   readMin?: number
 }
@@ -51,13 +51,12 @@ function formatDate(iso?: string): string {
   return new Date(iso).toLocaleDateString('en-GB', { month: 'short', year: 'numeric' })
 }
 
-const PILLAR_ORDER: Array<ArchiveItem['pillar']> = ['Edit', 'Guides', 'Stories', 'Style']
+const PILLAR_ORDER: Array<ArchiveItem['pillar']> = ['Edit', 'Guides', 'Stories']
 
 const PILLAR_BLURB: Record<ArchiveItem['pillar'], string> = {
-  Edit: 'What is being worn now, and what to buy because of it. Royal and celebrity jewellery moments, shop edits, and trend-driven roundups — reactive, current, and tied to whatever is happening this week.',
+  Edit: 'What is being worn now, and what to buy and wear because of it. Royal and celebrity jewellery moments, shop edits, and trend-driven roundups, alongside practical styling guidance — how to layer necklaces without tangling them, where to pin a brooch, the pieces that constitute a working jewellery wardrobe and the order to buy them in.',
   Stories: 'The history of fine jewellery told through the objects themselves. How the Cullinan diamond was sent to England in a plain registered parcel. Why the Black Prince\'s Ruby in the Imperial State Crown is not a ruby. What Wallis Simpson\'s collection revealed when it sold at Sotheby\'s Geneva for £31 million. House histories, famous stones, royal jewellery, and the archaeology of what people have worn and why — from Viking burial hoards to the 1987 US Open.',
   Guides: 'Buying guides, market analysis, and honest assessments of what jewellery is actually worth. Platinum versus white gold — the maintenance costs most jewellers don\'t mention. How to navigate Hatton Garden without overpaying. What the Cartier Love bracelet costs pre-owned and how to authenticate one. The state of the diamond market in 2026, why lab-grown prices have fallen 75% since 2022, and what that means if you are buying or selling.',
-  Style: 'Practical guidance on wearing fine jewellery well. How to layer necklaces without tangling them. Where to pin a brooch on a blazer. Which pearl types are worth knowing and why baroque now outperforms round. The seven pieces that constitute a working women\'s jewellery wardrobe, and the order to buy them in. Men\'s jewellery from signet rings to gold chains — what works, what doesn\'t, and what to ignore.',
 }
 
 export default async function ArchivePage() {
@@ -67,7 +66,6 @@ export default async function ArchivePage() {
     Edit: [],
     Stories: [],
     Guides: [],
-    Style: [],
   }
   for (const a of articles) grouped[a.pillar].push(a)
 

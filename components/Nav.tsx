@@ -5,7 +5,7 @@ export default function Nav() {
     <nav className="primary-nav">
       <div className="nav-left">
         <Link href="/stories">Stories</Link>
-        <Link href="/style">Style</Link>
+        <Link href="/edit">Edit</Link>
         <Link href="/guides">Guides</Link>
       </div>
 
