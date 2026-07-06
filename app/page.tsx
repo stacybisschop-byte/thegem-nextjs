@@ -34,7 +34,7 @@ export default async function HomePage() {
       {latest[0] && (() => {
         const lead = latest[0]
         const src = lead.heroImage
-          ? urlForImage(lead.heroImage).width(1600).url()
+          ? urlForImage(lead.heroImage).width(1600).height(900).url()
           : lead.heroImageUrl ?? null
         const alt = lead.heroImage?.alt ?? lead.heroImageAlt ?? lead.title
         const kicker = `${lead.pillar}${lead.kickerExtra ? ` · ${lead.kickerExtra}` : ''}`
