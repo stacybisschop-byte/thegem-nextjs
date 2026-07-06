@@ -46,9 +46,9 @@ const MD_DIR = join(__dirname, '../content')
 // lib/queries.ts. Until they publish, the remaining slots shuffle up by
 // featuredOrder.
 const FEATURED: Record<string, number> = {
-  'garrard-history':                     1,
-  'tennis-bracelet-history':             2,
-  'ring-stacking-guide':                 3,
+  'attilio-codognato':                   1,
+  'garrard-history':                     2,
+  'tennis-bracelet-history':             3,
   'jewellery-hallmarks-uk':              4,
   'cullinan-diamond':                    5,
   'how-to-build-a-jewellery-collection': 6,
@@ -123,6 +123,7 @@ const KICKER_EXTRAS: Record<string, string> = {
   'cheapside-hoard':                     'London History',
   'signet-ring-edit':                    'The Edit',
   'kate-wimbledon-earrings':              'Royal Jewellery',
+  'attilio-codognato':                    'House Histories',
 }
 
 // ── Hero image map ────────────────────────────────────────────────────────────
