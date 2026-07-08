@@ -7,12 +7,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const records = await getAllArticlesForSitemap()
   const buildDate = new Date()
 
-  const articles = records.map(({ pillar, slug, updatedAt }) => ({
-    url: `https://thegem.press/${pillar}/${slug}`,
-    lastModified: new Date(updatedAt),
-    changeFrequency: 'monthly' as const,
-    priority: 0.8,
-  }))
+  const articles = records.map(({ pillar, slug, updatedAt }) => {
+    const bareSlug = slug.startsWith(`${pillar}/`) ? slug.slice(pillar.length + 1) : slug
+    return {
+      url: `https://thegem.press/${pillar}/${bareSlug}`,
+      lastModified: new Date(updatedAt),
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    }
+  })
 
   return [
     {

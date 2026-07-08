@@ -82,7 +82,11 @@ export function pillarPath(pillar: string): string {
 }
 
 export function articleHref(article: Pick<Article, 'pillar' | 'slug'>): string {
-  return `/${pillarPath(article.pillar)}/${article.slug.current}`
+  const pillar = pillarPath(article.pillar)
+  const slug = article.slug.current.startsWith(`${pillar}/`)
+    ? article.slug.current.slice(pillar.length + 1)
+    : article.slug.current
+  return `/${pillar}/${slug}`
 }
 
 // Estimate reading time from body length
