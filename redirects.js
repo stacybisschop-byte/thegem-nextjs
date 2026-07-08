@@ -13,4 +13,9 @@ module.exports = [
   { source: '/style/signet-ring-edit', destination: '/edit/signet-ring-edit', permanent: true },
   { source: '/style/fine-jewellery-festival-layering', destination: '/edit/fine-jewellery-festival-layering', permanent: true },
   { source: '/style', destination: '/edit', permanent: true },
+
+  // Fallback for any /style/ URL not covered by a specific redirect above
+  // (stale search/backlinks, old bookmarks) — sends to the pillar index
+  // rather than letting it fall through to a tracked 404.
+  { source: '/style/:path*', destination: '/edit', permanent: true },
 ]

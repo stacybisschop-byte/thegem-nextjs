@@ -98,7 +98,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-EM8L6SR6S7');
+          var is404Page = !!document.querySelector('meta[name="next-error"]');
+          gtag('config', 'G-EM8L6SR6S7', { send_page_view: !is404Page });
         `}</Script>
         <Script
           src="https://s.skimresources.com/js/305061X1793253.skimlinks.js"
