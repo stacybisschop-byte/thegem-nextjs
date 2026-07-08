@@ -1,7 +1,16 @@
 'use client'
 
 import { useState } from 'react'
-export default function Newsletter() {
+
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void
+  }
+}
+
+type NewsletterLocation = 'homepage' | 'article' | 'newsletter_page'
+
+export default function Newsletter({ location }: { location: NewsletterLocation }) {
   const [submitted, setSubmitted] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
@@ -22,6 +31,7 @@ export default function Newsletter() {
         setError(data.error ?? 'Something went wrong. Please try again.')
       } else {
         setSubmitted(true)
+        window.gtag?.('event', 'newsletter_signup', { signup_location: location })
       }
     } catch {
       setError('Something went wrong. Please try again.')

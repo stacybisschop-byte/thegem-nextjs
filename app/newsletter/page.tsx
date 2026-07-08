@@ -67,7 +67,7 @@ export default function NewsletterPage() {
         </p>
       </div>
 
-      <Newsletter />
+      <Newsletter location="newsletter_page" />
     </>
   )
 }

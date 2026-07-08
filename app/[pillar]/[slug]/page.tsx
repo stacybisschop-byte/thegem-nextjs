@@ -242,7 +242,7 @@ export default async function ArticlePage({ params }: Props) {
       )}
 
       {/* ── Newsletter ───────────────────────────────────────────────── */}
-      <Newsletter />
+      <Newsletter location="article" />
     </>
   )
 }

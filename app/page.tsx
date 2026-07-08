@@ -247,7 +247,7 @@ export default async function HomePage() {
         </div>
       </div>
 
-      <Newsletter />
+      <Newsletter location="homepage" />
 
       {/* â”€â”€ Recent Grid â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <div className="recentGridSection">
