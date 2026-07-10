@@ -126,6 +126,7 @@ const KICKER_EXTRAS: Record<string, string> = {
   'kate-wimbledon-earrings':              'Royal Jewellery',
   'attilio-codognato':                    'House Histories',
   'zendaya-odyssey-press-tour-jewellery': 'Red Carpet Jewellery',
+  'gemstone-durability-mohs-scale':       'Gemstone Knowledge',
 }
 
 // ── Hero image map ────────────────────────────────────────────────────────────
@@ -284,6 +285,10 @@ const HERO_IMAGES: Record<string, { url: string; alt: string }> = {
   'zendaya-odyssey-press-tour-jewellery': {
     url: 'https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=1600&q=85',
     alt: 'Diamond and gold jewellery styled against a structural red carpet look.',
+  },
+  'gemstone-durability-mohs-scale': {
+    url: 'https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?w=1600&q=85',
+    alt: 'An assortment of coloured gemstone rings illustrating varying hardness and durability.',
   },
 }
 
