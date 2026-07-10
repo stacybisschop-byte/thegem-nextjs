@@ -34,7 +34,7 @@ export default function ContactPage() {
 
       <h2>General enquiries</h2>
       <p>
-        Editorial, reader questions, corrections, and everything else: <a href="mailto:thegemmag@proton.me">thegemmag@proton.me</a>.
+        Editorial, reader questions, corrections, and everything else: <a href="mailto:hello@thegem.press">hello@thegem.press</a>.
         We read every email. Most replies go out within a couple of days.
       </p>
 

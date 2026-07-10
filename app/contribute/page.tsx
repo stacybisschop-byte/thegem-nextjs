@@ -47,7 +47,7 @@ export default function ContributePage() {
 
       <h2>How to pitch</h2>
       <p>
-        Send a short pitch — three to five paragraphs — to <a href="mailto:thegemmag@proton.me">thegemmag@proton.me</a>.
+        Send a short pitch — three to five paragraphs — to <a href="mailto:hello@thegem.press">hello@thegem.press</a>.
         Tell us what the piece is, why it matters, who you&rsquo;d talk to, and roughly how long it would
         be. Attach two or three published clips.
       </p>

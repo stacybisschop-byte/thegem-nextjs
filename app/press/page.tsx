@@ -30,7 +30,7 @@ export default function PressPage() {
 
       <p>
         Thank you for considering The Gem. This page covers what we cover, what we don&rsquo;t, and how
-        to reach us. For anything not addressed here, email <a href="mailto:thegemmag@proton.me">thegemmag@proton.me</a>.
+        to reach us. For anything not addressed here, email <a href="mailto:hello@thegem.press">hello@thegem.press</a>.
       </p>
 
       <h2>What we cover</h2>
@@ -70,7 +70,7 @@ export default function PressPage() {
       <h2>Interviews</h2>
       <p>
         Florence is occasionally available for interviews about jewellery, the publication, and the
-        wider market. Please email <a href="mailto:thegemmag@proton.me">thegemmag@proton.me</a> with the
+        wider market. Please email <a href="mailto:hello@thegem.press">hello@thegem.press</a> with the
         outlet, the angle, and your deadline.
       </p>
 
@@ -80,13 +80,13 @@ export default function PressPage() {
         antiques, or adjacent fields — whether that&rsquo;s a guest post on a relevant site, a mention on
         a curated resource page, or simply getting to know other people working in this space. If
         you&rsquo;re building something thoughtful and think there&rsquo;s a natural fit, email{' '}
-        <a href="mailto:thegemmag@proton.me">thegemmag@proton.me</a> and introduce yourself.
+        <a href="mailto:hello@thegem.press">hello@thegem.press</a> and introduce yourself.
       </p>
 
       <h2>Logos and assets</h2>
       <p>
         High-resolution logos and a short publication bio are available on request from{' '}
-        <a href="mailto:thegemmag@proton.me">thegemmag@proton.me</a>.
+        <a href="mailto:hello@thegem.press">hello@thegem.press</a>.
       </p>
     </div>
   )
