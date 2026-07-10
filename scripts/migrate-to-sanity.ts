@@ -287,8 +287,8 @@ const HERO_IMAGES: Record<string, { url: string; alt: string }> = {
     alt: 'Diamond and gold jewellery styled against a structural red carpet look.',
   },
   'gemstone-durability-mohs-scale': {
-    url: 'https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?w=1600&q=85',
-    alt: 'An assortment of coloured gemstone rings illustrating varying hardness and durability.',
+    url: '/blog/gemstone-durability-mohs-scale.jpg',
+    alt: 'Close-up of a clear diamond and a blue gemstone side by side, illustrating hardness and durability differences among gemstones.',
   },
 }
 
