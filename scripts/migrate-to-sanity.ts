@@ -372,6 +372,25 @@ async function migrate() {
       { id: docId }
     )
 
+    // Guard against re-creating a stub duplicate of an article that's since
+    // been taken over for direct editing in Studio (a different-ID document
+    // with the same slug — Studio-authored docs get random IDs, not
+    // `article-${slug}`). Blindly upserting here would resurrect a deleted
+    // duplicate every time the migration re-runs. Skip and warn instead;
+    // delete the stale .md file from /content once Studio owns the article.
+    const slugCollision = await client.fetch<{ _id: string } | null>(
+      `*[_type == "article" && slug.current == $slug && _id != $docId && _id != $draftId][0]{ _id }`,
+      { slug, docId, draftId: `drafts.${docId}` }
+    )
+    if (slugCollision) {
+      console.warn(
+        `  ⚠️  Skipping ${slug} — a different document (${slugCollision._id}) already owns this slug in Sanity. ` +
+        `Delete content/${file} if this article is now managed directly in Studio.`
+      )
+      skipCount++
+      continue
+    }
+
     const doc = {
       _id: docId,
       _type: 'article',
