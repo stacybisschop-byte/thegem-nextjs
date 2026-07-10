@@ -46,6 +46,7 @@ const MD_DIR = join(__dirname, '../content')
 // lib/queries.ts. Until they publish, the remaining slots shuffle up by
 // featuredOrder.
 const FEATURED: Record<string, number> = {
+  'zendaya-odyssey-press-tour-jewellery': 0,
   'attilio-codognato':                   1,
   'garrard-history':                     2,
   'tennis-bracelet-history':             3,
@@ -124,6 +125,7 @@ const KICKER_EXTRAS: Record<string, string> = {
   'signet-ring-edit':                    'The Edit',
   'kate-wimbledon-earrings':              'Royal Jewellery',
   'attilio-codognato':                    'House Histories',
+  'zendaya-odyssey-press-tour-jewellery': 'Red Carpet Jewellery',
 }
 
 // ── Hero image map ────────────────────────────────────────────────────────────
@@ -278,6 +280,10 @@ const HERO_IMAGES: Record<string, { url: string; alt: string }> = {
   'signet-ring-edit': {
     url: 'https://images.unsplash.com/photo-1705326455036-0fab8ecba04d?w=2400&q=80&fit=crop&crop=entropy',
     alt: 'A gold signet ring with hand-engraved crest on a pale surface.',
+  },
+  'zendaya-odyssey-press-tour-jewellery': {
+    url: 'https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=1600&q=85',
+    alt: 'Diamond and gold jewellery styled against a structural red carpet look.',
   },
 }
 
