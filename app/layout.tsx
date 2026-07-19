@@ -92,9 +92,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Analytics />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-EM8L6SR6S7"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="gtag-init" strategy="afterInteractive">{`
+        <Script id="gtag-init" strategy="lazyOnload">{`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
