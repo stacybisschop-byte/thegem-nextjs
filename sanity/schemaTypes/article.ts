@@ -118,6 +118,13 @@ export const articleType = defineType({
       description: 'Article body in Markdown. Paste from the .md source files. Rendered on the frontend via react-markdown.',
       validation: (Rule) => Rule.required(),
     }),
+    defineField({
+      name: 'bodyMigratedHash',
+      title: 'Body Migrated Hash (internal)',
+      type: 'string',
+      hidden: true,
+      description: 'Set by scripts/migrate-to-sanity.ts to detect Studio edits to Body and avoid overwriting them on the next migration run. Do not edit.',
+    }),
 
     // Affiliate disclosure
     defineField({

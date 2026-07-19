@@ -11,7 +11,11 @@
  *
  * Safe to re-run. Uses createOrReplace, so existing documents are updated,
  * not duplicated. heroImageUrl is sourced from the HERO_IMAGES map below so
- * that re-running the migration doesn't wipe placeholder images.
+ * that re-running the migration doesn't wipe placeholder images. Body text
+ * edited directly in Studio is protected the same way: the script fingerprints
+ * (bodyMigratedHash) whatever it last wrote to `body`, and skips an article
+ * with a warning if the live body no longer matches that fingerprint, rather
+ * than clobbering a Studio edit with stale .md content.
  *
  * Scheduling: if an article's frontmatter sets `publishDate: YYYY-MM-DD`, the
  * script writes published=false while that date is in the future and flips it
@@ -22,6 +26,7 @@ import { createClient } from '@sanity/client'
 import matter from 'gray-matter'
 import { readFileSync, readdirSync } from 'fs'
 import { join, basename } from 'path'
+import { createHash } from 'crypto'
 import dotenv from 'dotenv'
 
 dotenv.config({ path: '.env.local' })
@@ -294,6 +299,10 @@ const HERO_IMAGES: Record<string, { url: string; alt: string }> = {
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
+function hashBody(body: string): string {
+  return createHash('sha256').update(body).digest('hex')
+}
+
 function slugFromFrontmatter(rawSlug: string): string {
   return rawSlug.includes('/') ? rawSlug.split('/').pop()! : rawSlug
 }
@@ -367,10 +376,43 @@ async function migrate() {
     // Preserve any heroImage asset that was uploaded through Sanity Studio.
     // createOrReplace overwrites the document wholesale, so without this read
     // the asset reference would be wiped on every migration run.
-    const existing = await client.fetch<{ heroImage?: unknown } | null>(
-      `*[_id == $id][0]{ heroImage }`,
+    const existing = await client.fetch<{
+      heroImage?: unknown
+      body?: string
+      bodyMigratedHash?: string
+    } | null>(
+      `*[_id == $id][0]{ heroImage, body, bodyMigratedHash }`,
       { id: docId }
     )
+
+    const newBody = content.trim()
+    const newBodyHash = hashBody(newBody)
+
+    // Guard against clobbering body text added directly in Studio (e.g.
+    // in-body images pasted into the markdown field). createOrReplace always
+    // overwrote `body` from the local .md file, so a Studio edit made after
+    // the last migration run would silently vanish on the next `npm run
+    // migrate` — this happened to zendaya-odyssey-press-tour-jewellery and
+    // attilio-codognato. bodyMigratedHash records the hash of the body this
+    // script itself last wrote; if the live body's hash no longer matches
+    // it, something else (Studio) has touched it since, so skip rather than
+    // overwrite. For documents that predate this guard (no hash stored yet),
+    // fall back to comparing the live body against the current .md content —
+    // only adopt tracking silently if they still match.
+    if (existing) {
+      const liveBodyHash = existing.body != null ? hashBody(existing.body) : null
+      const bodyDiverged = existing.bodyMigratedHash
+        ? existing.bodyMigratedHash !== liveBodyHash
+        : existing.body != null && existing.body !== newBody
+      if (bodyDiverged) {
+        console.warn(
+          `  ⚠️  Skipping ${slug} — its body in Sanity has been edited directly in Studio since the last migration run. ` +
+          `Delete content/${file} if this article is now managed directly in Studio, or overwrite manually if the .md source should win.`
+        )
+        skipCount++
+        continue
+      }
+    }
 
     // Guard against re-creating a stub duplicate of an article that's since
     // been taken over for direct editing in Studio (a different-ID document
@@ -406,7 +448,8 @@ async function migrate() {
       heroImageUrl: hero?.url ?? undefined,
       heroImageAlt: hero?.alt ?? undefined,
       kickerExtra: KICKER_EXTRAS[slug] ?? undefined,
-      body: content.trim(),
+      body: newBody,
+      bodyMigratedHash: newBodyHash,
       affiliateDisclosure: content.includes('affiliate') ? true : false,
       ...(existing?.heroImage != null && { heroImage: existing.heroImage }),
       ...(FEATURED[slug] != null && {
