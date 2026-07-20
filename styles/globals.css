@@ -335,6 +335,15 @@ a { color: inherit; text-decoration: none; }
 .article-body tr:last-child td { border-bottom: none; }
 .article-body tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
 .article-body code { font-family: var(--font-mono); font-size: 0.9em; background: rgba(0,0,0,0.06); padding: 2px 6px; border-radius: 3px; }
+.article-body img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: cover;
+  border-radius: var(--radius);
+  margin: 2.5em auto;
+}
 
 /* ── Recent Card (rendered by ArticleCard with size="recent") ─────────────── */
 
