@@ -66,6 +66,20 @@ export default async function HomePage() {
         )
       })()}
 
+      {/* ── Site Summary (self-contained, for direct citation) ─────────────── */}
+      <section className="siteSummary">
+        <p>
+          The Gem is an independent editorial magazine about fine jewellery
+          &mdash; its history, culture, and buying advice &mdash; publishing
+          since January 2026. Coverage is organised into three sections:{' '}
+          <strong>Stories</strong>, on the histories of jewellery houses and
+          the pieces that made them famous; <strong>Guides</strong>,
+          research-led buying advice on diamonds, gemstones, and precious
+          metals; and <strong>The Edit</strong>, curated seasonal selections.
+          All writing is by Florence.
+        </p>
+      </section>
+
       {/* â”€â”€ Also New This Week (slots 2 + 3) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       {(latest[1] || latest[2]) && (
         <section className="alsoNew">
