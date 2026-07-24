@@ -9,7 +9,7 @@ import { readFileSync } from 'fs'
 import { join } from 'path'
 import dotenv from 'dotenv'
 
-dotenv.config({ path: '.env.local' })
+dotenv.config({ path: '.env.local', quiet: true })
 
 const client = createClient({
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!,

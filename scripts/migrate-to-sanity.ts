@@ -29,7 +29,7 @@ import { join, basename } from 'path'
 import { createHash } from 'crypto'
 import dotenv from 'dotenv'
 
-dotenv.config({ path: '.env.local' })
+dotenv.config({ path: '.env.local', quiet: true })
 
 // ── Sanity client (write access) ─────────────────────────────────────────────
 
