@@ -1,3 +1,4 @@
+import { cache } from 'react'
 import { client } from './sanity'
 import type { Article, ArticleCard } from './sanity'
 
@@ -147,7 +148,7 @@ export async function getAllArticlesForSitemap(): Promise<
 
 // ---- Article + related (single round-trip) ----------------------------------
 
-export async function getArticleWithRelated(
+export const getArticleWithRelated = cache(async function getArticleWithRelated(
   pillar: string,
   slug: string
 ): Promise<{ article: Article | null; related: ArticleCard[] }> {
@@ -171,7 +172,7 @@ export async function getArticleWithRelated(
   )
   const related = [...data.samePillar, ...data.crossPillar].slice(0, 3)
   return { article: data.article ?? null, related }
-}
+})
 
 // ---- Related articles (standalone, kept for any direct callers) -------------
 
