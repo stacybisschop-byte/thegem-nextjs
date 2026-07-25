@@ -30,6 +30,7 @@ const FULL_ARTICLE_FIELDS = `
   publishedAt,
   metaTitle,
   metaDescription,
+  metaDescriptionOverride,
   heroImage { asset, hotspot, alt, caption },
   heroImageUrl,
   heroImageAlt,

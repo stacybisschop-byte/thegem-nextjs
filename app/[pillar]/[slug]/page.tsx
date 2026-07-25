@@ -36,10 +36,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     : undefined
   const ogImage = sanityOgImage ?? fallbackOgImage ?? '/og-cover-v2.webp'
   const path = `/${params.pillar}/${params.slug}`
+  const searchDescription = article.metaDescriptionOverride || article.metaDescription
 
   return {
     title: article.metaTitle ?? article.title,
-    description: article.metaDescription,
+    description: searchDescription,
     alternates: { canonical: path },
     openGraph: {
       type: 'article',
@@ -47,7 +48,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       locale: 'en_GB',
       url: path,
       title: article.metaTitle ?? article.title,
-      description: article.metaDescription,
+      description: searchDescription,
       publishedTime: article.publishedAt,
       authors: [article.author ?? 'Florence'],
       images: [{ url: ogImage, width: 1200, height: 630 }],
@@ -55,7 +56,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     twitter: {
       card: 'summary_large_image',
       title: article.metaTitle ?? article.title,
-      description: article.metaDescription,
+      description: searchDescription,
       images: [ogImage],
     },
   }
@@ -89,11 +90,12 @@ export default async function ArticlePage({ params }: Props) {
       : datePublished
 
   // JSON-LD structured data
+  const searchDescription = article.metaDescriptionOverride || article.metaDescription
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: article.title,
-    description: article.metaDescription,
+    description: searchDescription,
     author: { '@type': 'Person', name: article.author ?? 'Florence' },
     ...(datePublished && { datePublished }),
     ...(dateModified && { dateModified }),

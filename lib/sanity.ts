@@ -47,6 +47,7 @@ export interface Article {
   publishedAt?: string
   metaTitle?: string
   metaDescription?: string
+  metaDescriptionOverride?: string
   heroImage?: SanityImage
   heroImageUrl?: string
   heroImageAlt?: string

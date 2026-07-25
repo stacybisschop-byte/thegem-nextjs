@@ -67,6 +67,14 @@ export const articleType = defineType({
       description: 'Keep under 160 characters.',
       validation: (Rule) => Rule.max(160).warning('Meta description should be under 160 characters.'),
     }),
+    defineField({
+      name: 'metaDescriptionOverride',
+      title: 'Search description (override)',
+      type: 'text',
+      rows: 2,
+      description: 'Optional. Overrides the deck in Google and social previews only — the on-page deck is unaffected. Aim for 140-155 characters. Leave blank to use the deck.',
+      validation: (Rule) => Rule.max(155).warning('Keep under 155 characters.'),
+    }),
 
     // Hero
     defineField({
