@@ -168,7 +168,7 @@ export const getArticleWithRelated = cache(async function getArticleWithRelated(
         | order(publishedAt desc)[0...1] { ${CARD_FIELDS} }
     }`,
     { slug, pillar: pillarCapitalised },
-    { next: { revalidate: 60 } }
+    { next: { revalidate: 60, tags: [`article-${slug}`] } }
   )
   const related = [...data.samePillar, ...data.crossPillar].slice(0, 3)
   return { article: data.article ?? null, related }

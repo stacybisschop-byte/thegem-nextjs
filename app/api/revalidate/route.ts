@@ -1,4 +1,4 @@
-import { revalidatePath } from 'next/cache'
+import { revalidatePath, revalidateTag } from 'next/cache'
 import { NextRequest } from 'next/server'
 
 export async function POST(req: NextRequest) {
@@ -42,6 +42,13 @@ export async function POST(req: NextRequest) {
     revalidatePath(path)
   }
 
+  // Tag-based invalidation, additive to the path list above: targets the
+  // specific getArticleWithRelated fetch by slug regardless of which route
+  // segment it's cached under.
+  if (slug) {
+    revalidateTag(`article-${slug}`)
+  }
+
   if (process.env.INDEXNOW_KEY) {
     const key = process.env.INDEXNOW_KEY
     const urlList = Array.from(paths).map(p => `https://thegem.press${p}`)
@@ -60,6 +67,7 @@ export async function POST(req: NextRequest) {
   return Response.json({
     revalidated: true,
     paths: Array.from(paths),
+    tag: slug ? `article-${slug}` : null,
     now: Date.now(),
   })
 }
