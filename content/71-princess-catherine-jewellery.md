@@ -49,6 +49,8 @@ The British jeweller [Kiki McDonough](https://www.kiki.co.uk) is the clearest ex
 
 This is a different register entirely from the inherited pieces. Nobody is tracking the provenance of a £2,300 pair of earrings back through four generations of the Royal Collection. They're simply hers, chosen because she likes them, worn because they suit a life spent moving between engagements instead of sitting in a vault waiting for a state banquet.
 
+The same instinct showed up again at Wimbledon 2026, when [she wore a £170 pair of earrings from the independent British brand Carousel Jewels](/stories/kate-wimbledon-earrings) instead of anything from the Royal Collection, and sold the design out within a day. It's the same pattern as the Kiki McDonough pieces: small, personal, chosen on its own merits, with none of the institutional weight the inherited jewellery carries.
+
 ## The pattern underneath it
 
 Read together, the split isn't incidental. Inherited pieces appear at the moments that call for institutional weight: state visits, formal portraits, the events where Catherine is representing the monarchy's continuity, not herself specifically. Her own choices appear everywhere else, in the much larger volume of ordinary public life a working royal actually has. One says the institution persists. The other says the person wearing it has her own taste, and isn't defined entirely by what she married into.
