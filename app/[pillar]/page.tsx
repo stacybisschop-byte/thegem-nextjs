@@ -6,14 +6,17 @@ import ArticleCard from '@/components/ArticleCard'
 const PILLARS = {
   stories: {
     title: 'Stories',
+    metaTitle: 'Stories: Jewellery History & House Archives',
     description: 'The history of fine jewellery told through the objects themselves. House histories, famous stones, royal collections, and the archaeology of what people wore.',
   },
   guides: {
     title: 'Guides',
+    metaTitle: 'Guides: Fine Jewellery Buying Advice',
     description: 'Buying guides and honest assessments of fine jewellery. Platinum vs white gold, Hatton Garden, Cartier Love pre-owned, and the diamond market in 2026.',
   },
   edit: {
     title: 'The Edit',
+    metaTitle: 'The Edit: Seasonal Jewellery Style Picks',
     description: 'What is being worn now, what to buy because of it. Shop edits, trend pieces, and fashion-forward jewellery from Florence.',
   },
 }
@@ -23,7 +26,7 @@ export async function generateMetadata({ params }: { params: { pillar: string } 
   if (!pillar) return {}
   const path = `/${params.pillar}`
   return {
-    title: pillar.title,
+    title: pillar.metaTitle,
     description: pillar.description,
     alternates: { canonical: path },
     openGraph: {
@@ -31,12 +34,12 @@ export async function generateMetadata({ params }: { params: { pillar: string } 
       siteName: 'The Gem',
       locale: 'en_GB',
       url: path,
-      title: pillar.title,
+      title: pillar.metaTitle,
       description: pillar.description,
       images: [{ url: '/og-cover-v2.webp', width: 1200, height: 630 }],
     },
     twitter: {
-      title: pillar.title,
+      title: pillar.metaTitle,
       description: pillar.description,
       images: ['/og-cover-v2.webp'],
     },

@@ -2,7 +2,7 @@
 import Newsletter from '@/components/Newsletter'
 
 export const metadata: Metadata = {
-  title: 'The Newsletter',
+  title: 'The Newsletter: One Letter Every Friday',
   description: 'One letter from Florence every Friday morning. A long piece worth reading, three things worth knowing, one thing worth buying. Free.',
   alternates: { canonical: '/newsletter' },
   openGraph: {
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     siteName: 'The Gem',
     locale: 'en_GB',
     url: '/newsletter',
-    title: 'The Newsletter',
+    title: 'The Newsletter: One Letter Every Friday',
     description: 'One letter from Florence every Friday morning. A long piece worth reading, three things worth knowing, one thing worth buying. Free.',
     images: [{ url: '/og-cover-v2.webp', width: 1200, height: 630 }],
   },

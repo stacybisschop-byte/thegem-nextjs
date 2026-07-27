@@ -1,7 +1,7 @@
 ﻿import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Contact',
+  title: 'Contact: Editorial, Press & Corrections',
   description: 'How to get in touch with The Gem — for editorial enquiries, corrections, press, and reader questions.',
   alternates: { canonical: '/contact' },
   openGraph: {
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     siteName: 'The Gem',
     locale: 'en_GB',
     url: '/contact',
-    title: 'Contact',
+    title: 'Contact: Editorial, Press & Corrections',
     description: 'How to get in touch with The Gem — for editorial enquiries, corrections, press, and reader questions.',
     images: [{ url: '/og-cover-v2.webp', width: 1200, height: 630 }],
   },

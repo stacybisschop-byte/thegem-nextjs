@@ -1,7 +1,7 @@
 ﻿import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy',
+  title: 'Privacy Policy: How We Use Your Data',
   description: 'How The Gem collects, uses, and protects your personal data. Fully compliant with GDPR and UK GDPR. Your privacy, clearly explained.',
   alternates: { canonical: '/privacy' },
   openGraph: {
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     siteName: 'The Gem',
     locale: 'en_GB',
     url: '/privacy',
-    title: 'Privacy Policy',
+    title: 'Privacy Policy: How We Use Your Data',
     description: 'How The Gem collects, uses, and protects your personal data. Fully compliant with GDPR and UK GDPR. Your privacy, clearly explained.',
     images: [{ url: '/og-cover-v2.webp', width: 1200, height: 630 }],
   },

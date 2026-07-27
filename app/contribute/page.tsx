@@ -1,7 +1,7 @@
 ﻿import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Contribute',
+  title: 'Contribute: Pitch Guidelines for Writers',
   description: 'How to pitch The Gem. What we publish, what we pay, and what we are looking for from outside writers.',
   alternates: { canonical: '/contribute' },
   openGraph: {
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     siteName: 'The Gem',
     locale: 'en_GB',
     url: '/contribute',
-    title: 'Contribute',
+    title: 'Contribute: Pitch Guidelines for Writers',
     description: 'How to pitch The Gem. What we publish, what we pay, and what we are looking for from outside writers.',
     images: [{ url: '/og-cover-v2.webp', width: 1200, height: 630 }],
   },

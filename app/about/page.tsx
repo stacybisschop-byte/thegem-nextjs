@@ -1,7 +1,7 @@
 ﻿import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'About Florence',
+  title: 'About Florence: Founding Editor & Writer',
   description:
     'About Florence, founding editor of The Gem. Magazine writer and editor based in London with fifteen years of experience.',
   alternates: { canonical: '/about' },
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     siteName: 'The Gem',
     locale: 'en_GB',
     url: '/about',
-    title: 'About Florence',
+    title: 'About Florence: Founding Editor & Writer',
     description:
       'About Florence, founding editor of The Gem. Magazine writer and editor based in London with fifteen years of experience.',
     images: [{ url: '/og-cover-v2.webp', width: 1200, height: 630 }],

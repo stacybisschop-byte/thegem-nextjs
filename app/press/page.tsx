@@ -1,7 +1,7 @@
 ﻿import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Press',
+  title: 'Press: Media Enquiries & Coverage Requests',
   description: 'Press information for The Gem — what we cover, how to send samples and pitches, and our editorial standards.',
   alternates: { canonical: '/press' },
   openGraph: {
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     siteName: 'The Gem',
     locale: 'en_GB',
     url: '/press',
-    title: 'Press',
+    title: 'Press: Media Enquiries & Coverage Requests',
     description: 'Press information for The Gem — what we cover, how to send samples and pitches, and our editorial standards.',
     images: [{ url: '/og-cover-v2.webp', width: 1200, height: 630 }],
   },
