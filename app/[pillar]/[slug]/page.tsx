@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const searchDescription = article.metaDescriptionOverride || article.metaDescription
 
   return {
-    title: article.metaTitle ?? article.title,
+    title: { absolute: article.metaTitle ?? article.title },
     description: searchDescription,
     alternates: { canonical: path },
     openGraph: {
