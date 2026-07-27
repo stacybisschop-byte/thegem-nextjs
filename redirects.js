@@ -1,5 +1,6 @@
 module.exports = [
   { source: '/stories/cartier-family', destination: '/stories/cartier-family-history', permanent: true },
+  { source: '/guides/historic-jewellery-houses', destination: '/stories/historic-jewellery-houses', permanent: true },
 
   { source: '/style/ring-stacking-guide', destination: '/edit/ring-stacking-guide', permanent: true },
   { source: '/style/layering-necklaces', destination: '/edit/layering-necklaces', permanent: true },
