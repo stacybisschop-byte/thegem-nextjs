@@ -86,7 +86,7 @@ Two houses. Same stone. Same festival. This is not coincidence.
 
 [Chopard has been the festival's official jewellery partner](/stories/chopard-cannes) for long enough that its choices at Cannes function almost as editorial statements about where the fine jewellery market is heading. When Chopard puts a stone on the Cannes red carpet, it is making a bet on that stone's moment. That Pomellato made the same bet independently, in the same week, suggests the bet is well-placed.
 
-It also fits the broader shape of the [2026 coloured-stone market](/stories/diamond-market-2026), in which buyers and houses alike have been moving away from the white diamond default toward stones with a story attached.
+It also fits the broader shape of the [2026 coloured-stone market](/guides/diamond-market-2026), in which buyers and houses alike have been moving away from the white diamond default toward stones with a story attached.
 
 ## A stone with no history
 
@@ -132,7 +132,7 @@ Heitor Dimas Barbosa, an independent prospector, drove the years of hand-tunnell
 - [Engagement Ring Stones Beyond Diamond](/guides/engagement-ring-stones) — where paraiba sits in the wider coloured-stone landscape, and how it compares
 - [Jewellery That Holds Its Value](/guides/jewellery-that-holds-value) — the case for buying stones with scarcity stories
 - [Precious vs Semi-Precious](/guides/precious-vs-semi-precious) — why the old categories don't capture stones like paraiba
-- [The 2026 Diamond Market](/stories/diamond-market-2026) — the wider shift away from white diamonds that paraiba's Cannes moment fits inside
+- [The 2026 Diamond Market](/guides/diamond-market-2026) — the wider shift away from white diamonds that paraiba's Cannes moment fits inside
 
 ---
 

@@ -39,7 +39,7 @@ Each stone in a mystery set piece must be cut with extraordinary precision to fi
 
 The pieces this produces are extraordinary and strange in equal measure. When you first see a mystery set ruby flower brooch, the brain does not immediately process what it is looking at. The surface is pure red. The red is not flat; it has depth and variation. There is no visible means of support. It takes a moment to understand that you are looking at a jewelled object at all, and not at some other kind of surface.
 
-I have written elsewhere, in [our guide to the historic jewellery houses](/guides/historic-jewellery-houses), that the Mystery Setting is the clearest example in fine jewellery of a technique functioning as a competitive moat. That remains true. You cannot buy this from anyone else. The premiums mystery set pieces command at auction (a ruby flower brooch from the 1950s can reach £500,000 at Christie's or Sotheby's) reflect that exclusivity accurately. They are not paying for the name. They are paying for the object.
+I have written elsewhere, in [our guide to the historic jewellery houses](/stories/historic-jewellery-houses), that the Mystery Setting is the clearest example in fine jewellery of a technique functioning as a competitive moat. That remains true. You cannot buy this from anyone else. The premiums mystery set pieces command at auction (a ruby flower brooch from the 1950s can reach £500,000 at Christie's or Sotheby's) reflect that exclusivity accurately. They are not paying for the name. They are paying for the object.
 
 ## The minaudière and the Zip
 

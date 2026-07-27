@@ -65,7 +65,7 @@ Everything above applies primarily to diamonds, but the emerald cut is historica
 
 The reason is saturation. Step cuts allow light to travel through the stone in a way that maximises the display of colour rather than scattering it into brilliance. An emerald cut emerald (the pairing that gave the format its name) shows colour with an intensity that no brilliant cut can match. The same is true of sapphires, rubies, and particularly aquamarines, where the pale blue-green colour benefits from the depth the step cut provides.
 
-For anyone considering a coloured stone engagement ring or a significant coloured stone purchase, the emerald cut is worth serious consideration specifically because it is not trying to compete with the colour; it is trying to show it. The [emerald buying guide](/guides/emerald-buying-guide) covers what to look for in the stone itself; the [sapphire buying guide](/guides/sapphire-buying-guide) addresses the same for sapphires, where the cut choice significantly affects how the colour reads in different lights.
+For anyone considering a coloured stone engagement ring or a significant coloured stone purchase, the emerald cut is worth serious consideration specifically because it is not trying to compete with the colour; it is trying to show it. The [emerald buying guide](/guides/emerald-buying-guide) covers what to look for in the stone itself; the [sapphire buying guide](/guides/sapphire-engagement-rings) addresses the same for sapphires, where the cut choice significantly affects how the colour reads in different lights.
 
 ## What to look for
 
