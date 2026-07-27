@@ -30,6 +30,8 @@ export default async function HomePage() {
 
   return (
     <>
+      <h1 className="sr-only">Fine Jewellery Reviews, Guides and Stories from London</h1>
+
       {/* â”€â”€ Hero Feature â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       {latest[0] && (() => {
         const lead = latest[0]
@@ -42,7 +44,7 @@ export default async function HomePage() {
           <Link href={articleHref(lead)} className="hero-feature">
             <div className="hero-feature-text">
               <div className="kicker">{kicker}</div>
-              <h1
+              <h2
                 dangerouslySetInnerHTML={{
                   __html: lead.title.replace(/\*([^*]+)\*/g, '<em>$1</em>'),
                 }}
