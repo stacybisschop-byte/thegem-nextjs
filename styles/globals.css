@@ -481,7 +481,7 @@ footer a:hover { color: var(--cream); }
 
 .section-divider {
   max-width: var(--max-w);
-  margin: 60px auto;
+  margin: 0 auto;
   padding: 0 var(--pad-x);
 }
 .section-divider::after {
@@ -489,9 +489,16 @@ footer a:hover { color: var(--cream); }
   display: block;
   border-top: 1px solid var(--border);
 }
+/* Each divider sits between one section that already carries its own
+   spacing on one side and one that doesn't -- top up only the side
+   that would otherwise be flush, so every divider reads as a 60px gap. */
+.hero-feature + .section-divider,
+.siteSummary + .section-divider { margin: 60px auto; }
+.styleEdit + .section-divider,
+.guidesGrid + .section-divider { margin-top: 60px; }
 
 .alsoNew {
-  padding: clamp(48px, 6vw, 80px) var(--pad-x) 0;
+  padding: 0 var(--pad-x);
   max-width: var(--max-w);
   margin: 0 auto;
 }
@@ -542,7 +549,7 @@ footer a:hover { color: var(--cream); }
   display: grid;
   grid-template-columns: 3fr 2fr;
   gap: var(--gap);
-  padding: 40px var(--pad-x) 80px;
+  padding: 40px var(--pad-x) 0;
   max-width: var(--max-w);
   margin: 0 auto;
 }
@@ -717,7 +724,7 @@ footer a:hover { color: var(--cream); }
   white-space: nowrap;
 }
 .styleEdit {
-  padding: 0 var(--pad-x) 80px;
+  padding: 0 var(--pad-x);
   max-width: var(--max-w);
   margin: 0 auto;
   display: grid;
@@ -732,7 +739,7 @@ footer a:hover { color: var(--cream); }
 .siteSummary {
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: clamp(28px, 4vw, 40px) var(--pad-x);
+  padding: 0 var(--pad-x);
 }
 .siteSummary p {
   max-width: 68ch;
