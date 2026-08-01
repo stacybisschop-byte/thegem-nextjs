@@ -72,7 +72,7 @@ export default async function SearchPage({
   return (
     <div style={{ maxWidth: 860, margin: '0 auto', padding: '80px var(--pad-x) 80px' }}>
       <div style={{ textAlign: 'center', marginBottom: 48 }}>
-        <div style={{ fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--gold-accessible)', marginBottom: 20 }}>
+        <div style={{ fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--chocolate-fondant)', marginBottom: 20 }}>
           The Gem
         </div>
         <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 56px)', fontWeight: 300, lineHeight: 1.1, letterSpacing: '-0.02em', marginBottom: 24 }}>

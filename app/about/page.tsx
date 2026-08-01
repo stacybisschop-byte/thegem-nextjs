@@ -76,7 +76,7 @@ export default function AboutPage() {
               fontSize: 11,
               letterSpacing: '0.15em',
               textTransform: 'uppercase',
-              color: 'var(--gold-accessible)',
+              color: 'var(--chocolate-fondant)',
               marginBottom: 24,
             }}
           >
@@ -93,7 +93,7 @@ export default function AboutPage() {
             }}
           >
             About{' '}
-            <em style={{ fontStyle: 'italic', color: 'var(--gold-large)', fontWeight: 200 }}>
+            <em style={{ fontStyle: 'italic', color: 'var(--chocolate-fondant-large)', fontWeight: 200}}>
               Florence
             </em>
           </h1>

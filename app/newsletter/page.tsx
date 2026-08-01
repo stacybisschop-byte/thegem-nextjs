@@ -23,11 +23,11 @@ export default function NewsletterPage() {
   return (
     <>
       <div style={{ maxWidth: 720, margin: '0 auto', padding: '80px var(--pad-x) 40px', textAlign: 'center' }}>
-        <div style={{ fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--gold-accessible)', marginBottom: 20 }}>
+        <div style={{ fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--chocolate-fondant)', marginBottom: 20 }}>
           The Gem · Every Friday
         </div>
         <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 56px)', fontWeight: 300, lineHeight: 1.1, letterSpacing: '-0.02em', marginBottom: 24 }}>
-          One letter from <em style={{ fontStyle: 'italic', color: 'var(--gold-large)' }}>Florence</em>, every Friday morning.
+          One letter from <em style={{ fontStyle: 'italic', color: 'var(--chocolate-fondant-large)' }}>Florence</em>, every Friday morning.
         </h1>
         <p style={{ fontSize: 18, color: 'var(--ink-muted)', lineHeight: 1.6, maxWidth: 560, margin: '0 auto' }}>
           A long piece worth reading, three things worth knowing, one thing worth buying. Free.

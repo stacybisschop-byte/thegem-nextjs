@@ -49,7 +49,7 @@ export default function Newsletter({ location }: { location: NewsletterLocation 
         Free. No nonsense. Roughly twelve minutes of your week.
       </p>
       {submitted ? (
-        <p style={{ fontSize: 18, color: 'var(--gold)' }}>You&rsquo;re in. See you Friday.</p>
+        <p style={{ fontSize: 18, color: 'var(--dutch-canal)' }}>You&rsquo;re in. See you Friday.</p>
       ) : (
         <>
           <form onSubmit={handleSubmit}>

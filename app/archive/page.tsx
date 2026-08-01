@@ -72,11 +72,11 @@ export default async function ArchivePage() {
   return (
     <div style={{ maxWidth: 860, margin: '0 auto', padding: '80px var(--pad-x) 80px' }}>
       <div style={{ textAlign: 'center', marginBottom: 64 }}>
-        <div style={{ fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--gold-accessible)', marginBottom: 20 }}>
+        <div style={{ fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--chocolate-fondant)', marginBottom: 20 }}>
           The Gem
         </div>
         <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 56px)', fontWeight: 300, lineHeight: 1.1, letterSpacing: '-0.02em', marginBottom: 16 }}>
-          The <em style={{ fontStyle: 'italic', color: 'var(--gold-large)' }}>archive</em>
+          The <em style={{ fontStyle: 'italic', color: 'var(--chocolate-fondant-large)' }}>archive</em>
         </h1>
         <p style={{ fontSize: 17, color: 'var(--ink-muted)', maxWidth: 560, margin: '0 auto' }}>
           Everything we&rsquo;ve published, in one place. {articles.length} {articles.length === 1 ? 'piece' : 'pieces'} and counting.

@@ -149,7 +149,7 @@ export default async function ArticlePage({ params }: Props) {
         <div
           style={{
             background: 'rgba(184,149,106,0.08)',
-            borderTop: '1px solid var(--gold)',
+            borderTop: '1px solid var(--chocolate-fondant-mid)',
             padding: '12px var(--pad-x)',
             textAlign: 'center',
             fontSize: 13,

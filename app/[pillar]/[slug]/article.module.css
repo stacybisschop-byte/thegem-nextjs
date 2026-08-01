@@ -10,7 +10,7 @@
   color: var(--ink-faint);
   margin-bottom: 20px;
 }
-.breadcrumb a { color: var(--gold-accessible); text-decoration: none; }
+.breadcrumb a { color: var(--chocolate-fondant); text-decoration: none; }
 .breadcrumb a:hover { text-decoration: underline; }
 
 .articleHero {
@@ -24,7 +24,7 @@
   font-size: 11px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--gold-accessible);
+  color: var(--chocolate-fondant);
   margin-bottom: 24px;
 }
 .articleHero h1 {
@@ -36,7 +36,7 @@
   margin-bottom: 24px;
   font-variation-settings: 'opsz' 72, 'SOFT' 20;
 }
-.articleHero h1 em { font-style: italic; color: var(--gold-large); font-weight: 200; }
+.articleHero h1 em { font-style: italic; color: var(--chocolate-fondant-large); font-weight: 200; }
 .articleHero :global(.deck) {
   font-size: clamp(16px, 2vw, 20px);
   color: var(--ink-muted);
@@ -118,7 +118,7 @@
   margin-bottom: 8px;
   font-variation-settings: 'opsz' 48;
 }
-.relatedSection h2 em { font-style: italic; color: var(--gold-large); font-weight: 200; }
+.relatedSection h2 em { font-style: italic; color: var(--chocolate-fondant-large); font-weight: 200; }
 .relatedSection :global(.subhead) { font-size: 14px; color: var(--ink-muted); margin-bottom: 40px; }
 .relatedGrid {
   display: grid;
