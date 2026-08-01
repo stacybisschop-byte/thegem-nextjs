@@ -89,7 +89,7 @@ export default async function PillarPage({ params }: { params: { pillar: string 
         </p>
       </div>
 
-      <section style={{ maxWidth: 'var(--max-w)', margin: '0 auto', padding: '0 var(--pad-x) 80px', display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 40 }}>
+      <section className="pillar-grid">
         {articles.map((article) => (
           <ArticleCard key={article._id} article={article} size="medium" showExcerpt />
         ))}

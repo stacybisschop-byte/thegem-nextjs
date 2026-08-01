@@ -734,6 +734,17 @@ footer a:hover { color: var(--cream); }
 .recentGridSection { padding: 80px var(--pad-x); max-width: var(--max-w); margin: 0 auto; }
 .recentGrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px 32px; margin-top: 40px; }
 
+/* ── Pillar Listing Pages (/stories, /guides, /edit) ──────────────────────── */
+
+.pillar-grid {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 var(--pad-x) 80px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+}
+
 /* ── Editorial Statement ──────────────────────────────────────────────────── */
 
 .siteSummary {
@@ -805,6 +816,7 @@ footer a:hover { color: var(--cream); }
   .pillarPair { grid-template-columns: 1fr; }
   .recentGrid { grid-template-columns: repeat(2, 1fr); }
   .alsoNewGrid { grid-template-columns: 1fr; }
+  .pillar-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 768px) {
@@ -831,4 +843,5 @@ footer a:hover { color: var(--cream); }
   .nav-left { display: none; }
   .styleEdit { grid-template-columns: 1fr; }
   .recentGrid { grid-template-columns: 1fr; }
+  .pillar-grid { grid-template-columns: 1fr; }
 }
