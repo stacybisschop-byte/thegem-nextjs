@@ -564,7 +564,7 @@ footer a:hover { color: var(--cream); }
 
 .guide-card .image-wrap {
   position: relative;
-  aspect-ratio: 3/2;
+  aspect-ratio: 16/9;
   overflow: hidden;
   border-radius: var(--radius);
   margin-bottom: 14px;

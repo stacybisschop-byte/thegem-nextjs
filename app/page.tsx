@@ -135,7 +135,7 @@ export default async function HomePage() {
       <section className="guidesGrid">
         {guidesHeadline && (() => {
           const src = guidesHeadline.heroImage
-            ? urlForImage(guidesHeadline.heroImage).width(1200).height(800).url()
+            ? urlForImage(guidesHeadline.heroImage).width(1200).height(675).url()
             : guidesHeadline.heroImageUrl ?? null
           const alt = guidesHeadline.heroImage?.alt ?? guidesHeadline.heroImageAlt ?? guidesHeadline.title
           const kicker = `${guidesHeadline.pillar}${guidesHeadline.kickerExtra ? ` · ${guidesHeadline.kickerExtra}` : ''}`
@@ -147,7 +147,7 @@ export default async function HomePage() {
                     src={src}
                     alt={alt}
                     width={1200}
-                    height={800}
+                    height={675}
                     sizes="(max-width: 768px) 100vw, 60vw"
                     style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                   />
@@ -164,7 +164,7 @@ export default async function HomePage() {
         <div className="guide-card-grid">
           {guides.slice(0, 6).map((a) => {
             const src = a.heroImage
-              ? urlForImage(a.heroImage).width(600).height(400).url()
+              ? urlForImage(a.heroImage).width(600).height(338).url()
               : a.heroImageUrl ?? null
             const alt = a.heroImage?.alt ?? a.heroImageAlt ?? a.title
             return (
@@ -175,7 +175,7 @@ export default async function HomePage() {
                       src={src}
                       alt={alt}
                       width={600}
-                      height={400}
+                      height={338}
                       sizes="(max-width: 768px) 100vw, 20vw"
                       style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                     />
@@ -200,7 +200,7 @@ export default async function HomePage() {
         <div className="guide-card-grid">
           {stories.slice(0, 6).map((a) => {
             const src = a.heroImage
-              ? urlForImage(a.heroImage).width(600).height(400).url()
+              ? urlForImage(a.heroImage).width(600).height(338).url()
               : a.heroImageUrl ?? null
             const alt = a.heroImage?.alt ?? a.heroImageAlt ?? a.title
             return (
@@ -211,7 +211,7 @@ export default async function HomePage() {
                       src={src}
                       alt={alt}
                       width={600}
-                      height={400}
+                      height={338}
                       sizes="(max-width: 768px) 100vw, 20vw"
                       style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                     />
@@ -224,7 +224,7 @@ export default async function HomePage() {
         </div>
         {storiesHeadline && (() => {
           const src = storiesHeadline.heroImage
-            ? urlForImage(storiesHeadline.heroImage).width(1200).height(800).url()
+            ? urlForImage(storiesHeadline.heroImage).width(1200).height(675).url()
             : storiesHeadline.heroImageUrl ?? null
           const alt = storiesHeadline.heroImage?.alt ?? storiesHeadline.heroImageAlt ?? storiesHeadline.title
           const kicker = `${storiesHeadline.pillar}${storiesHeadline.kickerExtra ? ` · ${storiesHeadline.kickerExtra}` : ''}`
@@ -236,7 +236,7 @@ export default async function HomePage() {
                     src={src}
                     alt={alt}
                     width={1200}
-                    height={800}
+                    height={675}
                     sizes="(max-width: 768px) 100vw, 60vw"
                     style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                   />
