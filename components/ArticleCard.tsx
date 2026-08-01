@@ -14,7 +14,7 @@ export default function ArticleCard({ article, size = 'medium', showExcerpt = tr
   const kicker = `${article.pillar}${article.kickerExtra ? ` · ${article.kickerExtra}` : ''}`
 
   const heroSrc = article.heroImage
-    ? urlForImage(article.heroImage).width(800).height(600).url()
+    ? urlForImage(article.heroImage).width(800).height(size === 'recent' ? 600 : 450).url()
     : article.heroImageUrl ?? null
   const heroAlt = article.heroImage?.alt ?? article.heroImageAlt ?? article.title
 
@@ -58,7 +58,7 @@ export default function ArticleCard({ article, size = 'medium', showExcerpt = tr
 
   return (
     <Link href={href} className={cardClass}>
-      <div className="image-wrap" style={{ aspectRatio: size === 'large' ? '16/10' : '4/3' }}>
+      <div className="image-wrap" style={{ aspectRatio: '16/9' }}>
         {heroSrc ? (
           <Image
             src={heroSrc}
