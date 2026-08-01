@@ -123,7 +123,7 @@ export default async function HomePage() {
       {/* â”€â”€ The Guides â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <div className="section-head">
         <h2>The <em>Guides</em></h2>
-        <Link href="/guides">More guides â†’</Link>
+        <Link href="/guides">More guides →</Link>
       </div>
 
       <section className="guidesGrid">
@@ -185,7 +185,7 @@ export default async function HomePage() {
       {/* â”€â”€ From the Magazine (Stories) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <div className="section-head">
         <h2>From the <em>magazine</em></h2>
-        <Link href="/stories">More stories â†’</Link>
+        <Link href="/stories">More stories →</Link>
       </div>
 
       <section className="storiesGrid">
@@ -269,7 +269,7 @@ export default async function HomePage() {
       <div className="recentGridSection">
         <div className="section-head" style={{ padding: 0, marginBottom: 40 }}>
           <h2>More from the <em>magazine</em></h2>
-          <Link href="/archive">Full archive â†’</Link>
+          <Link href="/archive">Full archive →</Link>
         </div>
         <div className="recentGrid">
           {recent.map((a) => (
