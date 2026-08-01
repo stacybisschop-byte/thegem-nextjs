@@ -68,6 +68,8 @@ export default async function HomePage() {
         )
       })()}
 
+      <div className="section-divider" />
+
       {/* ── Site Summary (self-contained, for direct citation) ─────────────── */}
       <section className="siteSummary">
         <p>
@@ -84,15 +86,18 @@ export default async function HomePage() {
 
       {/* â”€â”€ Also New This Week (slots 2 + 3) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       {(latest[1] || latest[2]) && (
-        <section className="alsoNew">
-          <div className="section-head">
-            <h2>Also new <em>this week</em></h2>
-          </div>
-          <div className="alsoNewGrid">
-            {latest[1] && <ArticleCard article={latest[1]} size="medium" showExcerpt />}
-            {latest[2] && <ArticleCard article={latest[2]} size="medium" showExcerpt />}
-          </div>
-        </section>
+        <>
+          <div className="section-divider" />
+          <section className="alsoNew">
+            <div className="section-head">
+              <h2>Also new <em>this week</em></h2>
+            </div>
+            <div className="alsoNewGrid">
+              {latest[1] && <ArticleCard article={latest[1]} size="medium" showExcerpt />}
+              {latest[2] && <ArticleCard article={latest[2]} size="medium" showExcerpt />}
+            </div>
+          </section>
+        </>
       )}
 
       {/* â”€â”€ Editorial Break â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
@@ -117,6 +122,7 @@ export default async function HomePage() {
               <ArticleCard key={a._id} article={a} size="medium" showExcerpt />
             ))}
           </section>
+          <div className="section-divider" />
         </>
       )}
 
@@ -181,6 +187,8 @@ export default async function HomePage() {
           })}
         </div>
       </section>
+
+      <div className="section-divider" />
 
       {/* â”€â”€ From the Magazine (Stories) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <div className="section-head">
