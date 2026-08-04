@@ -25,7 +25,7 @@ All three sit in what the industry calls demi-fine: sterling silver as the base,
 
 Connie Nam founded [Astrid & Miyu](https://www.astridandmiyu.com) in 2012 from a flat in Notting Hill, after finishing an MBA at London Business School and finding nothing in the UK market that replicated the spontaneous, personal way she'd bought jewellery from small sellers in Seoul. What she built instead is less a jewellery brand than a jewellery-adjacent retail format: physical stores that double as piercing studios and tattoo parlours, where the actual product is as much the visit as the object you leave with.
 
-The permanent jewellery service (a bracelet, anklet, or ring measured to your wrist and welded shut on the spot, no clasp) is the clearest expression of this and the thing that actually sets Astrid & Miyu apart from the other two. It's not sold online. It requires a store visit. And it's built the brand's culture around repeat, in-person transactions instead of a single online purchase, which shows in how the loyalty programme, the piercing studios, and the customisable Story Chain pieces all point back toward the same physical destination.
+The permanent jewellery service (a bracelet, anklet, or ring measured to your wrist and welded shut on the spot, no clasp) is the clearest expression of this and the thing that actually sets Astrid & Miyu apart from the other two. It's not sold online. It requires a store visit. And it's built the brand's culture around repeat, in-person transactions instead of a single online purchase, which shows in how the loyalty programme, the piercing studios, and the customisable Story Chain pieces all point back toward the same physical destination. I had a flat piercing done at the Westbourne Grove store in 2024, the flagship that runs piercing, tattooing, and welding under one roof, and it was a genuinely good experience: quick, clean, and properly explained before the needle came near my ear.
 
 The materials are honest, not aspirational: recycled sterling silver, 18k gold-plated sterling silver, and 9k, 10k, and 14k recycled solid gold across the higher end of the range (on what those carat numbers actually mean for wear, [our gold guide](/guides/9ct-vs-18ct-gold) covers the difference). A pair of solid gold hoops runs around £230 to £400 depending on weight and finish; silver studs and huggies start much lower, in the £25 to £50 range typical of the category's entry point. The brand also runs a take-back scheme for unwanted sterling silver pieces, recycling them and donating the proceeds to The Felix Project, a London food redistribution charity.
 
@@ -65,7 +65,7 @@ For how any of these sit in a stack once you've chosen one, [the ring stacking g
 | **Price range** | £25–£400 | £50–£300 | £150–£800 |
 | **Solid gold available** | Yes, 9k–14k | No, vermeil only | Yes, 9ct |
 | **Signature offer** | Permanent jewellery, piercing | Meaning-led collections | Minimalist design, re-plating scheme |
-| **Where to buy** | Own stores and site | Own site, John Lewis, Harvey Nichols | Own site |
+| **Where to buy** | Own stores and site | Own site, John Lewis, Harvey Nichols | Own site, Holland Park flagship |
 | **Best for** | Starting or expanding a stack | Gifting, meaning-driven buys | Long-term daily wear, higher price tolerance |
 
 ## Frequently asked questions
