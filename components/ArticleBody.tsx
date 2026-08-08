@@ -18,7 +18,7 @@ function stripLeadingH1(md: string): string {
 
 // Extract FAQ pairs for JSON-LD structured data
 export function extractFAQs(body: string): Array<{ question: string; answer: string }> {
-  const faqSection = body.match(/## Frequently asked questions\n([\s\S]*?)(?=\n##|$)/i)
+  const faqSection = body.match(/## Frequently asked questions\n([\s\S]*?)(?=\n## |$)/i)
   if (!faqSection) return []
 
   const pairs: Array<{ question: string; answer: string }> = []

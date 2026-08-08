@@ -23,17 +23,15 @@ export async function GET() {
   const edit    = articles.filter((a) => a.pillar === 'Edit')
   const stories = articles.filter((a) => a.pillar === 'Stories')
   const guides  = articles.filter((a) => a.pillar === 'Guides')
+  const lastUpdated = new Date().toISOString()
 
   const lines: string[] = [
     '# The Gem',
     '',
-    '> Editorial jewellery publication.',
-    '> For people who buy beautiful things and want to know the story behind them.',
-    '> Editor: Florence. London. Est. 2026.',
-    '',
+    '> Editorial jewellery publication for people who buy beautiful things and want to know',
+    '> the story behind them. Editor: Florence. London. Est. 2026.',
     '> Full content: https://thegem.press/llms-full.txt',
-    '',
-    '## About',
+    `> Last updated: ${lastUpdated}`,
     '',
     'The Gem is an independent editorial publication covering the history, culture, and',
     'commerce of fine jewellery. Content is written by Florence, a magazine editor and',
@@ -47,9 +45,9 @@ export async function GET() {
     '',
     '## Sections',
     '',
-    '- Edit: What is being worn now, shop edits, trend pieces, and how to wear jewellery well',
-    '- Stories: Long-form jewellery history, provenance, and culture',
-    '- Guides: Practical buying guides, market analysis, and ownership advice',
+    '- [Edit](https://thegem.press/edit): What is being worn now, shop edits, trend pieces, and how to wear jewellery well',
+    '- [Stories](https://thegem.press/stories): Long-form jewellery history, provenance, and culture',
+    '- [Guides](https://thegem.press/guides): Practical buying guides, market analysis, and ownership advice',
     '',
   ]
 
@@ -57,7 +55,7 @@ export async function GET() {
     lines.push('## Edit')
     lines.push('')
     for (const a of edit) {
-      const desc = a.metaDescription ? ` — ${a.metaDescription}` : ''
+      const desc = a.metaDescription ? `: ${a.metaDescription}` : ''
       lines.push(`- [${a.title}](https://thegem.press/edit/${a.slug.current})${desc}`)
     }
     lines.push('')
@@ -67,7 +65,7 @@ export async function GET() {
     lines.push('## Stories')
     lines.push('')
     for (const a of stories) {
-      const desc = a.metaDescription ? ` — ${a.metaDescription}` : ''
+      const desc = a.metaDescription ? `: ${a.metaDescription}` : ''
       lines.push(`- [${a.title}](https://thegem.press/stories/${a.slug.current})${desc}`)
     }
     lines.push('')
@@ -77,7 +75,7 @@ export async function GET() {
     lines.push('## Guides')
     lines.push('')
     for (const a of guides) {
-      const desc = a.metaDescription ? ` — ${a.metaDescription}` : ''
+      const desc = a.metaDescription ? `: ${a.metaDescription}` : ''
       lines.push(`- [${a.title}](https://thegem.press/guides/${a.slug.current})${desc}`)
     }
     lines.push('')
@@ -86,12 +84,8 @@ export async function GET() {
   lines.push(
     '## Contact',
     '',
-    'Editorial: https://thegem.press/contact',
-    'Affiliate disclosure: https://thegem.press/affiliate-disclosure',
-    '',
-    `## Last updated`,
-    '',
-    new Date().toISOString(),
+    '- [Editorial](https://thegem.press/contact): Get in touch with editorial',
+    '- [Affiliate disclosure](https://thegem.press/affiliate-disclosure): How affiliate relationships are disclosed',
   )
 
   return new Response(lines.join('\n'), {

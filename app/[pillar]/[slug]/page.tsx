@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getArticleWithRelated, getAllArticleSlugs } from '@/lib/queries'
 import { urlForImage, readMin } from '@/lib/sanity'
-import ArticleBody from '@/components/ArticleBody'
+import ArticleBody, { extractFAQs } from '@/components/ArticleBody'
 import ArticleCard from '@/components/ArticleCard'
 import Newsletter from '@/components/Newsletter'
 import styles from './article.module.css'
@@ -89,14 +89,41 @@ export default async function ArticlePage({ params }: Props) {
       ? article._updatedAt
       : datePublished
 
+  // Only show a visible "Updated" badge for a real edit, not migration-time
+  // clock skew (datePublished/dateModified routinely differ by seconds/minutes
+  // from the createOrReplace + clamping logic above). One day is comfortably
+  // past that noise floor.
+  const UPDATED_THRESHOLD_MS = 24 * 60 * 60 * 1000
+  const wasUpdated =
+    datePublished &&
+    dateModified &&
+    new Date(dateModified).getTime() - new Date(datePublished).getTime() > UPDATED_THRESHOLD_MS
+
   // JSON-LD structured data
   const searchDescription = article.metaDescriptionOverride || article.metaDescription
+  const authorName = article.author ?? 'Florence'
+  // Florence has a full ProfilePage with sameAs at /about — link back to it for
+  // E-E-A-T. Other/commissioned bylines don't have a profile page yet, so they
+  // only get a bare name until one exists.
+  const authorJsonLd = authorName === 'Florence'
+    ? {
+        '@type': 'Person',
+        name: 'Florence',
+        url: 'https://thegem.press/about',
+        sameAs: [
+          'https://thegemmag.substack.com',
+          'https://www.instagram.com/thegem.press/',
+          'https://x.com/GemstInsider',
+          'https://www.pinterest.com/thegemmag',
+        ],
+      }
+    : { '@type': 'Person', name: authorName }
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: article.title,
     description: searchDescription,
-    author: { '@type': 'Person', name: article.author ?? 'Florence' },
+    author: authorJsonLd,
     ...(datePublished && { datePublished }),
     ...(dateModified && { dateModified }),
     publisher: {
@@ -132,6 +159,22 @@ export default async function ArticlePage({ params }: Props) {
     ],
   }
 
+  // FAQPage JSON-LD. Scoped to article pages only — not eligible for Google's
+  // rich-result FAQ box (restricted to gov/health sites since Aug 2023), but
+  // gives AI crawlers (ChatGPT, Claude, Perplexity) clean structured Q&A to
+  // cite. See FULL-AUDIT-REPORT.md for why this was previously removed
+  // site-wide; this reintroduces it narrowly for AEO rather than Google SEO.
+  const faqs = extractFAQs(article.body)
+  const faqJsonLd = faqs.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map(({ question, answer }) => ({
+      '@type': 'Question',
+      name: question,
+      acceptedAnswer: { '@type': 'Answer', text: answer },
+    })),
+  } : null
+
   return (
     <>
       {/* ── Structured Data ──────────────────────────────────────────── */}
@@ -143,6 +186,12 @@ export default async function ArticlePage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
 
       {/* ── Affiliate Disclosure ─────────────────────────────────────── */}
       {article.affiliateDisclosure && (
@@ -184,6 +233,17 @@ export default async function ArticlePage({ params }: Props) {
               <span className="meta-dot" />
               <time className="byline" dateTime={article.publishedAt}>
                 {new Date(article.publishedAt).toLocaleDateString('en-GB', {
+                  month: 'long',
+                  year: 'numeric',
+                })}
+              </time>
+            </>
+          )}
+          {wasUpdated && dateModified && (
+            <>
+              <span className="meta-dot" />
+              <time className="byline" dateTime={dateModified}>
+                Updated {new Date(dateModified).toLocaleDateString('en-GB', {
                   month: 'long',
                   year: 'numeric',
                 })}

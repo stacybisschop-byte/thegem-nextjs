@@ -54,6 +54,12 @@ const profilePageJsonLd = {
       addressLocality: 'London',
       addressCountry: 'GB',
     },
+    sameAs: [
+      'https://thegemmag.substack.com',
+      'https://www.instagram.com/thegem.press/',
+      'https://x.com/GemstInsider',
+      'https://www.pinterest.com/thegemmag',
+    ],
   },
 }
 
