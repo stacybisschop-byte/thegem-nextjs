@@ -72,7 +72,7 @@ export async function getHomePageData(): Promise<HomePageData> {
                | order(publishedAt desc)[0...8] { ${CARD_FIELDS} },
 
       "edit": *[_type == "article" && published == true && pillar == "Edit"]
-               | order(publishedAt desc)[0...5] { ${CARD_FIELDS} },
+               | order(publishedAt desc)[0...8] { ${CARD_FIELDS} },
 
       "recent": *[_type == "article" && published == true && featured != true]
                | order(publishedAt desc)[0...6] { ${CARD_FIELDS} },
