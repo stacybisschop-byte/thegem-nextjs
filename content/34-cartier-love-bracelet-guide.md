@@ -5,13 +5,13 @@ pillar: Guides
 author: Florence
 published: false
 publishDate: 2026-06-05
-last_reviewed_at: 2026-06
+last_reviewed_at: 2026-10
 meta_title: "Cartier Love Bracelet Guide: New, Pre-Owned & Fake"
 meta_description: "The Cartier Love bracelet is one of the most traded — and most faked — luxury pieces. What it costs, how to authenticate, new vs pre-owned."
 hero_image_brief: "A close-up of a pair of Cartier Love bracelets in 18-carat yellow gold stacked on a wrist, photographed against a soft neutral background. License from Adobe Stock, Getty Images, or commission. 16:9. Alt text: 'A pair of 18-carat yellow gold Cartier Love bracelets stacked on a wrist.'"
 schema: Article + FAQPage
 word_count: ~2,300
-status: First draft. Voice, SEO and GEO compliant. Fact-check pass recommended for Aldo Cipullo biographical dates, Burton-Taylor 1969 purchase claim, current UK retail price for plain yellow gold Love bracelet, secondary market discount bands, and 18ct gold weight range across sizes before publication.
+status: Synced to live Sanity body 2026-10-03. UK retail prices and resale figures refreshed October 2026. Still unverified from the original draft notes - Cipullo biographical dates, the Burton-Taylor 1969 purchase, 18ct gold weight range by size.
 ---
 
 # The Cartier Love Bracelet: A Buyer's Guide to New, Pre-Owned, and Fake
@@ -42,7 +42,7 @@ Sizing is specific and matters more than most buyers expect. The Love bracelet c
 
 The case for buying new from a Cartier boutique: the piece is guaranteed authentic, comes with full papers and the specific serial number registered to you, and includes the two screwdrivers in their leather sleeve. The experience of buying it is designed to feel significant, which is either important to you or it isn't.
 
-The case against: the retail price for a plain yellow gold Love bracelet in the UK currently sits above £6,500. This is, as with most fine jewellery bought new, the highest price the piece will ever command. The secondary market sells the same bracelet, in good condition with papers, for [60–75% of retail](/guides/jewellery-that-holds-value). The discount is consistent and has been for years, which means buying new requires a deliberate decision to pay a premium for the new-object experience and the complete provenance.
+The case against: the retail price for a plain yellow gold Love bracelet, classic model, is currently £7,050 in the UK. This is, as with most fine jewellery bought new, the highest price the piece will ever command. The secondary market sells the same bracelet, in good condition with papers, for roughly [65–85% of current retail](/guides/jewellery-that-holds-value). The discount is consistent and has been for years, which means buying new requires a deliberate decision to pay a premium for the new-object experience and the complete provenance.
 
 The [pre-owned market](/guides/where-to-buy-vintage-jewellery) for the Love bracelet is large, liquid, and well-established. The pieces trade frequently enough that pricing is transparent and consistent. The main risk in the pre-owned market is not overpaying; it is buying a fake.
 
@@ -66,7 +66,7 @@ For any significant purchase from a private seller or unfamiliar dealer, have th
 
 **[Cartier Certified Pre-Owned](https://www.cartier.com/en-gb/jewellery/bracelets.html):** Cartier now offers its own pre-owned programme in selected markets, with authentication and a limited guarantee. The pieces are priced at a smaller discount to new than the open market but carry the full authentication of the house. Worth considering if the provenance is important.
 
-**Specialist dealers:** Several UK dealers specialise in Cartier and have the expertise to authenticate correctly. Their prices are typically 65–75% of new retail for pieces in good condition with papers. The dealer assumes the authentication risk.
+**Specialist dealers:** Several UK dealers specialise in Cartier and have the expertise to authenticate correctly. Their prices are typically 70–85% of current retail for pieces in good condition with papers. The dealer assumes the authentication risk.
 
 **[1stDibs](https://www.1stdibs.com/jewelry/bracelets/bangles/) with authentication:** The platform offers an authentication service for pieces above a certain price threshold. Useful if a specific piece is only available there.
 
@@ -94,7 +94,7 @@ Cartier is aware of all of this and does nothing to dispel it. The screwdriver m
 
 ### How much does a Cartier Love bracelet cost?
 
-A plain 18-carat yellow gold Cartier Love bracelet currently retails above £6,500 in the UK from Cartier directly. Pre-owned examples in good condition with original papers typically sell for 60–75% of retail, approximately £4,000–£5,000. Diamond-set versions retail significantly higher, depending on configuration.
+A plain 18-carat yellow gold Cartier Love bracelet currently retails for £7,050 in the UK from Cartier directly in the classic model, with the medium model at £5,850, the small model at £4,550 and the Love bracelet on chain at £1,830. Pre-owned classic examples in good condition with original papers typically sell for 65–85% of current retail, approximately £4,600–£6,000. Diamond-set versions retail significantly higher, depending on configuration.
 
 ### How can you tell a fake Cartier Love bracelet?
 
@@ -102,7 +102,7 @@ The most reliable authentication indicators are the screws (which should be perf
 
 ### Is the Cartier Love bracelet a good investment?
 
-The Love bracelet consistently retains 60–75% of its retail value on the secondary market in good condition with papers. It does not typically appreciate. It is a poor financial investment and a reasonable emotional one: a piece that holds most of its value, is wearable daily, and has a liquid secondary market if circumstances change.
+The Love bracelet consistently retains roughly 65–85% of its current retail value on the secondary market in good condition with papers. It does not typically appreciate. It is a poor financial investment and a reasonable emotional one: a piece that holds most of its value, is wearable daily, and has a liquid secondary market if circumstances change.
 
 ### What size Cartier Love bracelet should I buy?
 
@@ -123,9 +123,9 @@ Reputable sources include Cartier's own Certified Pre-Owned programme, specialis
 - [Cartier: A Family History](/stories/cartier-family-history) — the house context the Love bracelet emerged from
 - [The Van Cleef Alhambra: A Buyer's Guide](/guides/van-cleef-alhambra-guide) — the parallel modern iconic piece with comparable value-retention and authentication dynamics
 - [Jewellery That Holds Its Value](/guides/jewellery-that-holds-value) — the strategic framework that explains the Love bracelet's price stability
-- [The Men's Jewellery Edit](/style/mens-jewellery-guide) — where the Love bracelet sits as one of the strongest men's pieces
+- [The Men's Jewellery Edit](/edit/mens-jewellery-guide) — where the Love bracelet sits as one of the strongest men's pieces
 - [Where to Buy Vintage Jewellery in the UK](/guides/where-to-buy-vintage-jewellery) — the broader sourcing context for pre-owned fine jewellery
 
 ---
 
-*Sources: Cartier official archive documentation; Vivienne Becker, Cartier (Thames & Hudson, 2015); current secondary market data from 1stDibs, WP Diamonds, and UK dealer pricing 2025–2026; Christie's and Sotheby's jewellery sale results; Cartier boutique retail pricing, UK, May 2026.*
+*Sources: Cartier official archive documentation; Vivienne Becker, Cartier (Thames & Hudson, 2015); current secondary market data from 1stDibs, WP Diamonds, and UK dealer pricing 2025–2026; Christie's and Sotheby's jewellery sale results; Cartier UK retail pricing, October 2026; The RealReal resale data.*
