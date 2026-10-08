@@ -112,7 +112,6 @@ export default async function ArticlePage({ params }: Props) {
         url: 'https://thegem.press/about',
         sameAs: [
           'https://thegemmag.substack.com',
-          'https://www.instagram.com/thegem.press/',
           'https://x.com/GemstInsider',
           'https://www.pinterest.com/thegemmag',
         ],
