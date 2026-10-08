@@ -6,6 +6,7 @@ import { getArticleWithRelated, getAllArticleSlugs } from '@/lib/queries'
 import { urlForImage, readMin } from '@/lib/sanity'
 import ArticleBody, { extractFAQs } from '@/components/ArticleBody'
 import ArticleCard from '@/components/ArticleCard'
+import AffiliateNotice from '@/components/AffiliateNotice'
 import Newsletter from '@/components/Newsletter'
 import styles from './article.module.css'
 
@@ -192,25 +193,6 @@ export default async function ArticlePage({ params }: Props) {
         />
       )}
 
-      {/* ── Affiliate Disclosure ─────────────────────────────────────── */}
-      {article.affiliateDisclosure && (
-        <div
-          style={{
-            background: 'rgba(184,149,106,0.08)',
-            borderTop: '1px solid var(--chocolate-fondant-mid)',
-            padding: '12px var(--pad-x)',
-            textAlign: 'center',
-            fontSize: 13,
-            fontFamily: 'var(--font-mono)',
-            letterSpacing: '0.05em',
-            color: 'var(--ink-muted)',
-          }}
-        >
-          This article contains affiliate links. We earn a small commission on purchases made through them.
-          We only recommend retailers we&apos;d send a friend to.
-        </div>
-      )}
-
       {/* ── Article Hero ─────────────────────────────────────────────── */}
       <header className={styles.articleHero}>
         <nav aria-label="Breadcrumb" className={styles.breadcrumb}>
@@ -274,6 +256,7 @@ export default async function ArticlePage({ params }: Props) {
 
       {/* ── Article Body ─────────────────────────────────────────────── */}
       <article>
+        {article.affiliateDisclosure && <AffiliateNotice />}
         <ArticleBody body={article.body} />
       </article>
 

@@ -137,10 +137,10 @@ export const articleType = defineType({
     // Affiliate disclosure
     defineField({
       name: 'affiliateDisclosure',
-      title: 'Affiliate Disclosure',
+      title: 'Contains affiliate links',
       type: 'boolean',
       initialValue: false,
-      description: 'Show the affiliate disclosure note on this article.',
+      description: 'Tick when this article contains affiliate links. Shows the disclosure notice at the top of the article.',
     }),
 
     // Homepage featuring
