@@ -48,7 +48,13 @@ const orgSchema = {
     height: 60,
   },
   foundingDate: '2026',
-  address: { '@type': 'PostalAddress', addressLocality: 'London', addressCountry: 'GB' },
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '4th Floor, Silverstream House, 45 Fitzroy Street',
+    addressLocality: 'London',
+    postalCode: 'W1T 6EB',
+    addressCountry: 'GB',
+  },
   sameAs: [
     'https://thegemmag.substack.com',
     'https://x.com/GemstInsider',

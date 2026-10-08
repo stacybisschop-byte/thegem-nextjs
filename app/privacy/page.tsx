@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 }
 
-const lastUpdated = '14 May 2026'
+const lastUpdated = '8 October 2026'
 
 export default function PrivacyPage() {
   return (
@@ -33,7 +33,9 @@ export default function PrivacyPage() {
 
       <h2>Who we are</h2>
       <p>
-        The Gem is an editorial jewellery publication operated by Florence Bisschop, based in London, England.
+        The Gem is published by Persephone Digital Studios, the trading name of Stacy Bisschop, 4th Floor,
+        Silverstream House, 45 Fitzroy Street, London W1T 6EB. Contact:{' '}
+        <a href="mailto:hello@thegem.press">hello@thegem.press</a>.
         When this policy refers to "we", "us", or "The Gem", it means the publication and its editor.
       </p>
       <p>
