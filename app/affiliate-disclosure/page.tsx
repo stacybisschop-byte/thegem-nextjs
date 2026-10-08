@@ -2,7 +2,7 @@
 
 export const metadata: Metadata = {
   title: 'Affiliate Disclosure',
-  description: 'How The Gem uses affiliate links — and why our editorial recommendations are never influenced by commercial relationships.',
+  description: 'How The Gem uses affiliate links, and why commercial relationships never decide what we recommend.',
   alternates: { canonical: '/affiliate-disclosure' },
   openGraph: {
     type: 'website',
@@ -10,15 +10,16 @@ export const metadata: Metadata = {
     locale: 'en_GB',
     url: '/affiliate-disclosure',
     title: 'Affiliate Disclosure',
-    description: 'How The Gem uses affiliate links — and why our editorial recommendations are never influenced by commercial relationships.',
+    description: 'How The Gem uses affiliate links, and why commercial relationships never decide what we recommend.',
     images: [{ url: '/og-cover-v2.webp', width: 1200, height: 630 }],
   },
   twitter: {
+    description: 'How The Gem uses affiliate links, and why commercial relationships never decide what we recommend.',
     images: ['/og-cover-v2.webp'],
   },
 }
 
-const lastUpdated = '14 May 2026'
+const lastUpdated = '8 October 2026'
 
 export default function AffiliateDisclosurePage() {
   return (
@@ -33,46 +34,51 @@ export default function AffiliateDisclosurePage() {
 
       <h2>The short version</h2>
       <p>
-        Some articles on The Gem contain affiliate links. If you click one and make a purchase, we
-        may receive a small commission from the retailer at no additional cost to you. Affiliate
-        relationships never influence which pieces, makers, or brands we cover.
+        Some articles and newsletters from The Gem contain affiliate links. If you click one and buy
+        something, we may receive a small commission from the retailer at no extra cost to you.
+        Affiliate relationships never decide which pieces, makers or brands we cover.
       </p>
 
       <h2>How we choose what to feature</h2>
       <p>
-        Editorial decisions on The Gem are made independently. We choose pieces, makers, and stories
-        based on craft, design, history, and what we think our readers will find interesting — not
-        based on whether a retailer offers an affiliate programme. A piece is not more likely to be
-        featured because there is a commission attached, and a piece is not excluded because there is not.
+        Editorial decisions on The Gem are made independently. We choose pieces, makers and stories
+        on craft, design, history and what we think readers will find worth their time. Whether a
+        retailer runs an affiliate programme plays no part. A piece is not more likely to be featured
+        because a commission is attached, and it is not left out because there isn&apos;t one.
       </p>
       <p>
         Where an affiliate link is available, we use it. Where one is not, we link to the maker or
-        retailer directly. The reader experience and the recommendation are the same either way.
+        retailer directly. The recommendation is the same either way.
       </p>
 
-      <h2>Which articles contain affiliate links</h2>
+      <h2>Where you&apos;ll find affiliate links</h2>
       <p>
-        Articles that contain affiliate links carry a brief disclosure near the top of the page. We do
-        not bury this — if there is a commercial relationship in play, you will see it before you click.
+        Any article containing affiliate links carries a short notice near the top of the page, before
+        the first link. We do not bury it.
       </p>
       <p>
-        Editorial features, interviews, and essays generally do not contain affiliate links. Shopping
-        guides, gift edits, and round-ups are the most likely to.
+        The Edit and Guides are where affiliate links most often appear: curated selections and buying
+        advice. Stories, our house histories and cultural pieces, generally do not contain them.
+      </p>
+
+      <h2>The newsletter</h2>
+      <p>
+        The Friday newsletter may also contain affiliate links. When it does, the letter says so.
       </p>
 
       <h2>Affiliate networks we work with</h2>
       <p>
-        We work with a small number of established affiliate networks, including Awin, Skimlinks, and
-        direct partnerships with selected retailers. When you click an affiliate link, the retailer
-        may set their own cookies to attribute the referral. We do not receive any personal data
-        about you from these transactions — only an aggregate commission report.
+        We work with Awin and with selected retailers directly, and may add other established networks
+        over time. When you click an affiliate link, the retailer may set its own cookies to attribute
+        the referral. We do not receive personal data about you from these transactions, only an
+        aggregate commission report.
       </p>
 
       <h2>Sponsored content</h2>
       <p>
-        Sponsored content is a different thing entirely. Where a piece has been paid for by a brand
-        or maker, it is clearly labelled as <em>Sponsored</em> or <em>Partner content</em> at the top
-        of the article. Sponsored content is rare on The Gem and is always editorially reviewed.
+        Sponsored content is a different thing entirely. Where a brand or maker has paid for a piece, it
+        is clearly labelled <em>Sponsored</em> or <em>Partner content</em> at the top of the article.
+        Sponsored content is rare on The Gem and is always editorially reviewed.
       </p>
 
       <h2>Gifts and press samples</h2>
@@ -84,7 +90,7 @@ export default function AffiliateDisclosurePage() {
 
       <h2>Questions</h2>
       <p>
-        If you have any questions about affiliate links, sponsored content, or our editorial
+        If you have any questions about affiliate links, sponsored content or our editorial
         independence, please use the <a href="/contact">contact page</a>. We are happy to answer.
       </p>
     </div>
