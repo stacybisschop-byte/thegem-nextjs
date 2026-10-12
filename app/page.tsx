@@ -76,10 +76,10 @@ export default async function HomePage() {
           The Gem is an independent editorial magazine about fine jewellery
           &mdash; its history, culture, and buying advice &mdash; publishing
           since January 2026. Coverage is organised into three sections:{' '}
-          <strong>Stories</strong>, on the histories of jewellery houses and
-          the pieces that made them famous; <strong>Guides</strong>,
+          <Link href="/stories"><strong>Stories</strong></Link>, on the histories of jewellery houses and
+          the pieces that made them famous; <Link href="/guides"><strong>Guides</strong></Link>,
           research-led buying advice on diamonds, gemstones, and precious
-          metals; and <strong>The Edit</strong>, curated seasonal selections.
+          metals; and <Link href="/edit"><strong>The Edit</strong></Link>, curated seasonal selections.
           All writing is by Florence.
         </p>
       </section>

@@ -762,6 +762,13 @@ footer a:hover { color: var(--cream); }
   font-size: 15px;
 }
 .siteSummary strong { color: var(--ink); font-weight: 600; }
+.siteSummary a {
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+.siteSummary a:hover { text-decoration-color: var(--ink); }
 
 .editorialStatement {
   display: grid;
