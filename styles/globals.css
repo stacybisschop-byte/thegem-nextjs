@@ -770,6 +770,23 @@ footer a:hover { color: var(--cream); }
 }
 .siteSummary a:hover { text-decoration-color: var(--ink); }
 
+/* Section page (/stories, /guides, /edit) intro with internal links */
+.pillar-intro {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--ink-muted);
+  max-width: 780px;
+  margin: 0 auto;
+}
+.pillar-intro a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+.pillar-intro a:hover { text-decoration-color: var(--ink); }
+
 .editorialStatement {
   display: grid;
   grid-template-columns: 1fr 1fr;
