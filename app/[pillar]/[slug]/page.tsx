@@ -8,7 +8,16 @@ import ArticleBody, { extractFAQs } from '@/components/ArticleBody'
 import ArticleCard from '@/components/ArticleCard'
 import AffiliateNotice from '@/components/AffiliateNotice'
 import Newsletter from '@/components/Newsletter'
+import ShareButton from '@/components/ShareButton'
+import CiteArticle from '@/components/CiteArticle'
 import styles from './article.module.css'
+
+// Format in London time: scheduled posts go live at 23:00 UTC (midnight BST),
+// so formatting in the server's UTC would show the previous day.
+function formatDate(iso: string, opts: Intl.DateTimeFormatOptions) {
+  return new Date(iso).toLocaleDateString('en-GB', { ...opts, timeZone: 'Europe/London' })
+}
+const FULL_DATE: Intl.DateTimeFormatOptions = { day: 'numeric', month: 'long', year: 'numeric' }
 
 interface Props {
   params: { pillar: string; slug: string }
@@ -74,6 +83,7 @@ export default async function ArticlePage({ params }: Props) {
   const heroAlt = article.heroImage?.alt ?? article.heroImageAlt ?? article.title
 
   const kicker = `${article.pillar} · ${article.kickerExtra ?? 'The Gem'}`
+  const canonicalUrl = `https://thegem.press/${params.pillar}/${params.slug}`
 
   // Schema image must be an absolute URL — heroImageUrl fallback may be relative.
   const schemaImage = heroSrc
@@ -122,6 +132,8 @@ export default async function ArticlePage({ params }: Props) {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: article.title,
+    url: canonicalUrl,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalUrl },
     description: searchDescription,
     author: authorJsonLd,
     ...(datePublished && { datePublished }),
@@ -213,10 +225,7 @@ export default async function ArticlePage({ params }: Props) {
             <>
               <span className="meta-dot" />
               <time className="byline" dateTime={article.publishedAt}>
-                {new Date(article.publishedAt).toLocaleDateString('en-GB', {
-                  month: 'long',
-                  year: 'numeric',
-                })}
+                {formatDate(article.publishedAt, FULL_DATE)}
               </time>
             </>
           )}
@@ -224,14 +233,12 @@ export default async function ArticlePage({ params }: Props) {
             <>
               <span className="meta-dot" />
               <time className="byline" dateTime={dateModified}>
-                Updated {new Date(dateModified).toLocaleDateString('en-GB', {
-                  month: 'long',
-                  year: 'numeric',
-                })}
+                Updated {formatDate(dateModified, FULL_DATE)}
               </time>
             </>
           )}
         </div>
+        <ShareButton title={article.title} url={canonicalUrl} />
       </header>
 
       {/* ── Hero Image ───────────────────────────────────────────────── */}
@@ -259,6 +266,17 @@ export default async function ArticlePage({ params }: Props) {
         {article.affiliateDisclosure && <AffiliateNotice />}
         <ArticleBody body={article.body} />
       </article>
+
+      {/* ── Cite this article ────────────────────────────────────────── */}
+      {datePublished && (
+        <CiteArticle
+          author={authorName}
+          title={article.title}
+          url={canonicalUrl}
+          publishedYear={formatDate(datePublished, { year: 'numeric' })}
+          publishedDayMonth={formatDate(datePublished, { day: 'numeric', month: 'long' })}
+        />
+      )}
 
       {/* ── Author Bio ───────────────────────────────────────────────── */}
       <div className={styles.articleFooter}>
