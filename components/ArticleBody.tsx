@@ -46,7 +46,8 @@ export default function ArticleBody({ body }: Props) {
         remarkPlugins={[remarkGfm]}
         components={{
           // Open external links in new tab
-          a: ({ href, children, ...props }) => {
+          // `node` is react-markdown's hast element; keep it out of the DOM props
+          a: ({ node, href, children, ...props }) => {
             const isExternal = href?.startsWith('http')
             // Awin affiliate links must be marked sponsored for Google
             const isAwin = href?.startsWith('https://www.awin1.com/')
@@ -74,7 +75,7 @@ export default function ArticleBody({ body }: Props) {
             return <pre {...props}>{children}</pre>
           },
           // Style tables
-          table: ({ children, ...props }) => (
+          table: ({ node, children, ...props }) => (
             <div style={{ overflowX: 'auto', marginBottom: '1.5em' }}>
               <table {...props}>{children}</table>
             </div>
@@ -82,7 +83,7 @@ export default function ArticleBody({ body }: Props) {
           // Safety net for any markdown ![](...) that slips into body content.
           // Real inline images should be Sanity asset blocks so they get full
           // next/image optimization (AVIF, responsive srcset, etc.).
-          img: ({ src, alt, ...props }) => (
+          img: ({ node, src, alt, ...props }) => (
             // eslint-disable-next-line @next/next/no-img-element
             <img src={src} alt={alt ?? ''} loading="lazy" decoding="async" {...props} />
           ),
