@@ -48,7 +48,7 @@ export async function GET(req: NextRequest) {
 
   try {
     const due = await writeClient.fetch<DueArticle[]>(
-      `*[_type == "article" && published == false && defined(publishedAt) && publishedAt <= now()]{
+      `*[_type == "article" && published == false && defined(publishedAt) && publishedAt <= now() && !(_id in path("drafts.**"))]{
         _id, title, pillar, slug, publishedAt
       } | order(publishedAt asc)`
     )
