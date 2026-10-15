@@ -1,5 +1,7 @@
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import type { Element, Text } from 'hast'
+import ProductGrid, { parseProducts } from './ProductGrid'
 
 interface Props {
   body: string
@@ -55,6 +57,17 @@ export default function ArticleBody({ body }: Props) {
                 {children}
               </a>
             )
+          },
+          // ```products fenced blocks become a shoppable grid; every other
+          // code block renders exactly as react-markdown's default <pre>.
+          pre: ({ node, children, ...props }) => {
+            const code = node?.children[0] as Element | undefined
+            const classes = code?.properties?.className
+            if (Array.isArray(classes) && classes.includes('language-products')) {
+              const source = code!.children.map((c) => (c as Text).value ?? '').join('')
+              return <ProductGrid items={parseProducts(source)} />
+            }
+            return <pre {...props}>{children}</pre>
           },
           // Style tables
           table: ({ children, ...props }) => (

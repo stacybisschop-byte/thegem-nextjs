@@ -1,0 +1,46 @@
+/* ── Product grid (```products blocks in article markdown) ─────────────────── */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(16px, 3vw, 32px);
+  margin: 2.5em 0;
+}
+.single {
+  grid-template-columns: minmax(0, 1fr);
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item { margin: 0; }
+
+.image {
+  position: relative;
+  display: block;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: var(--image-bg);
+  border-radius: var(--radius);
+  margin-bottom: 12px;
+}
+/* Undo the .article-body img safety-net margins for next/image here */
+.grid .image img { margin: 0; max-height: none; }
+
+.name {
+  display: block;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.3;
+}
+.grid .name { color: var(--ink); text-decoration: none; }
+.grid .name:hover { color: var(--chocolate-fondant-mid); text-decoration: underline; text-underline-offset: 3px; }
+
+.meta {
+  display: block;
+  margin-top: 4px;
+  font-size: 13px;
+  color: var(--ink-muted);
+}

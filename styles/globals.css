@@ -21,6 +21,7 @@
   --ink-secondary:   #5C5048;  /* darker than ink-faint, passes 4.5:1 on cream */
   --ink-on-dark-muted: rgba(245, 240, 232, 0.55);  /* muted cream on ink, ≥4.5:1 */
   --border:      #E0D8CE;
+  --image-bg:    #fff;  /* product tiles: photos are shot on white */
 
   --font-display: 'Fraunces', Georgia, serif;
   --font-body:    'Plus Jakarta Sans', system-ui, sans-serif;
