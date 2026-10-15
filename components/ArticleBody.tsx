@@ -48,10 +48,14 @@ export default function ArticleBody({ body }: Props) {
           // Open external links in new tab
           a: ({ href, children, ...props }) => {
             const isExternal = href?.startsWith('http')
+            // Awin affiliate links must be marked sponsored for Google
+            const isAwin = href?.startsWith('https://www.awin1.com/')
             return (
               <a
                 href={href}
-                {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                {...(isExternal
+                  ? { target: '_blank', rel: isAwin ? 'sponsored noopener noreferrer' : 'noopener noreferrer' }
+                  : {})}
                 {...props}
               >
                 {children}
